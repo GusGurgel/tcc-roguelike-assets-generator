@@ -349,7 +349,7 @@ def load_zombie_souls_asset_bundle() -> AssetBundle:
 
 
 if __name__ == "__main__":
-    model_key = GroqModels.OPENAI_GPT_OSS_120B
+    model_key = GroqModels.OPENAI_GPT_OSS_20B
     prompt_index = 0
 
     asset_generator = AssetsGenerator(prompts[prompt_index])

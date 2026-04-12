@@ -1,10 +1,10 @@
 :root {
-    --bg-color: #1a1a1a;
-    --card-bg: #252525;
-    --text-main: #e0e0e0;
-    --text-muted: #a0a0a0;
-    --accent: #4a90e2;
-    --border: #333;
+    --bg-color: #f0f2f5; /* Cinza bem claro para o fundo da página */
+    --card-bg: #ffffff;  /* Branco para os cartões e área principal */
+    --text-main: #2d2d2d; /* Cinza escuro para o texto (melhor que preto puro) */
+    --text-muted: #6c757d; /* Cinza médio para textos secundários */
+    --accent: #0066cc; /* Azul levemente mais escuro para melhor contraste */
+    --border: #dee2e6; /* Cinza claro para bordas */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -46,13 +46,18 @@ header.no-print {
     cursor: pointer;
     font-weight: bold;
     font-size: 14px;
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s;
 }
 
 .upload-btn {
-    background-color: #444;
-    color: white;
+    background-color: #e9ecef;
+    color: #333;
+    border: 1px solid #ccc;
     display: inline-block;
+}
+
+.upload-btn:hover {
+    background-color: #dde0e3;
 }
 
 .upload-btn input {
@@ -64,10 +69,15 @@ header.no-print {
     color: white;
 }
 
+.save-btn:hover {
+    background-color: #0052a3;
+}
+
 .save-btn:disabled {
-    background-color: #555;
+    background-color: #cccccc;
+    color: #888;
     cursor: not-allowed;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .status {
@@ -78,12 +88,12 @@ header.no-print {
 
 /* Área de Captura (O visual do AssetBundle) */
 #capture-area {
-    background-color: #1e1e1e;
+    background-color: var(--card-bg);
     width: 800px; /* Largura fixa para garantir consistência na imagem */
     min-height: 600px;
     padding: 40px;
-    border: 1px solid #333;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08); /* Sombra mais suave para tema claro */
     border-radius: 8px;
 }
 
@@ -100,7 +110,7 @@ header.no-print {
 
 #bundle-title {
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--text-main);
     margin-bottom: 10px;
 }
 
@@ -112,7 +122,9 @@ header.no-print {
 
 .meta-tag {
     display: inline-block;
-    background: #333;
+    background: #f1f3f5;
+    color: #495057;
+    border: 1px solid var(--border);
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 0.8rem;
@@ -150,7 +162,8 @@ header.no-print {
     display: flex;
     align-items: center;
     gap: 15px;
-    background: rgba(0,0,0,0.2);
+    background: #f8f9fa; /* Fundo cinza bem claro */
+    border: 1px solid var(--border); /* Adicionada borda para destaque */
     padding: 10px;
     border-radius: 4px;
 }
@@ -164,7 +177,7 @@ header.no-print {
 .tile-canvas {
     image-rendering: pixelated; /* Importante para Pixel Art */
     background-color: transparent;
-    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.3));
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15)); /* Sombra mais fraca */
 }
 
 .item-info h3 {
@@ -188,7 +201,8 @@ header.no-print {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr; /* Nome, Wall, Floor */
     align-items: center;
-    background: rgba(0,0,0,0.2);
+    background: #f8f9fa;
+    border: 1px solid var(--border);
     padding: 10px;
     border-radius: 4px;
     gap: 10px;

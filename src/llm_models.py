@@ -21,8 +21,8 @@ if "GOOGLE_API_KEY" not in os.environ:
 if "GROQ_API_KEY" not in os.environ:
     raise Exception("Missing GROQ_API_KEY on .env file.")
 
-# if "NVIDIA_API_KEY" not in os.environ:
-#     raise Exception("Missing NVIDIA_API_KEY on .env file.")
+if "NVIDIA_API_KEY" not in os.environ:
+    raise Exception("Missing NVIDIA_API_KEY on .env file.")
 
 
 # https://github.com/cheahjs/free-llm-api-resources?tab=readme-ov-file

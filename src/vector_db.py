@@ -1,6 +1,7 @@
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
+from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
 from os.path import join
 from utils import MAIN_PATH
 from typing import Literal
@@ -12,7 +13,14 @@ import math
 
 dotenv.load_dotenv(join(MAIN_PATH, "..", ".env"))
 
-embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
+# embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
+embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
+embeddings= NVIDIAEmbeddings(
+  model="nvidia/nv-embed-v1", 
+  truncate="NONE"
+)
+# embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-2-preview")
+
 
 StoreType = Literal["items", "environments", "entities"]
 
@@ -196,17 +204,24 @@ def query_vector_store(
 
 
 if __name__ == "__main__":
-    original = ""
-    reconstruction = ""
+    pass
+    # original = ""
+    # reconstruction = ""
 
-    with open(join(MAIN_PATH, "original.txt"), "r") as file:
-        original = file.read()
+    # with open(join(MAIN_PATH, "original.txt"), "r") as file:
+    #     original = file.read()
 
-    with open(join(MAIN_PATH, "reconstruction.txt"), "r") as file:
-        reconstruction = file.read()
+    # with open(join(MAIN_PATH, "reconstruction.txt"), "r") as file:
+    #     reconstruction = file.read()
 
-    print(original)
-    print("-" * 80)
-    print(reconstruction)
-    print("-" * 80)
-    print(get_cosine_similarity(original, reconstruction))
+    # print(original)
+    # print("-" * 80)
+    # print(reconstruction)
+    # print("-" * 80)
+    # print(get_cosine_similarity(original, reconstruction))
+    # get_vector_store("entities")
+    # get_vector_store("environments")
+    # get_vector_store("entities")
+
+    # print(query_vector_store("stone wall", "environments", 1))
+    
