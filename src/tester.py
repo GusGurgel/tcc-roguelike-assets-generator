@@ -1,6 +1,8 @@
 import os
 import json
 import uuid
+import time
+
 from os.path import join
 from typing import List, Dict, Any, Type, TypeVar
 
@@ -239,18 +241,91 @@ Do not list the JSON fields or stats; write only the narrative setting descripti
             
         print(f"[{prompt_name}] Teste concluído! Resultados salvos em: {file_path}")
         results.append(final_result_data)
+        time.sleep(60*2) # Wait 2 minutes
+        
         
     return results
 
 
 if __name__ == "__main__":
-    # Exemplo de uso
-    test_inputs_mock = [
+
+    # 15 Prompts extremamente variados para testar robustez no TCC
+    test_inputs_tcc = [
         {
             "prompt": "A submerged neon-gothic underwater city filled with mutated fish-people cultists.",
             "prompt_name": "neon_gothic_underwater",
             "prompt_index": 1
-        }
+        },
+        {
+            "prompt": "An abandoned orbital space station overgrown by aggressive, bioluminescent plant life and hive-mind fungi.",
+            "prompt_name": "overgrown_space_station",
+            "prompt_index": 2
+        },
+        {
+            "prompt": "A clockwork purgatory inside a colossal ticking pocket watch, guarded by rusted brass automatons and ticking gear-wraiths.",
+            "prompt_name": "clockwork_purgatory",
+            "prompt_index": 3
+        },
+        {
+            "prompt": "A desolate, sun-scorched desert canyon littered with the colossal bones of ancient titans, inhabited by scavengers and blood-magic shamans.",
+            "prompt_name": "titan_bone_desert",
+            "prompt_index": 4
+        },
+        {
+            "prompt": "A frozen medieval citadel trapped in eternal blizzard, where cursed frost-knights and ice-gargoyles protect a shattered frozen throne.",
+            "prompt_name": "frozen_citadel",
+            "prompt_index": 5
+        },
+        # {
+        #     "prompt": "A twisted, flesh-and-bone labyrinth inside the stomach of a sleeping eldritch god, swarming with parasitic worms and twisted digestive demons.",
+        #     "prompt_name": "eldritch_flesh_labyrinth",
+        #     "prompt_index": 6
+        # },
+        # {
+        #     "prompt": "A cyberpunk mega-slum built on top of a massive toxic landfill, controlled by cyborg syndicates and rogue surgical drones.",
+        #     "prompt_name": "toxic_cyberpunk_slum",
+        #     "prompt_index": 7
+        # },
+        # {
+        #     "prompt": "An ethereal floating library in the astral plane, slowly crumbling into the void, haunted by ink-elementals and corrupted scholars.",
+        #     "prompt_name": "astral_floating_library",
+        #     "prompt_index": 8
+        # },
+        # {
+        #     "prompt": "A Victorian-era train hurtling infinitely through a realm of thick fog, infested with shapeshifting vampires and spectral passengers.",
+        #     "prompt_name": "victorian_ghost_train",
+        #     "prompt_index": 9
+        # },
+        # {
+        #     "prompt": "A subterranean dwarven mining complex entirely corrupted by liquid gold and animated greed-spirits, featuring molten rivers and gemstone golems.",
+        #     "prompt_name": "corrupted_gold_mines",
+        #     "prompt_index": 10
+        # },
+        # {
+        #     "prompt": "A post-apocalyptic amusement park in a radioactive wasteland, patrolled by deranged animatronics and mutated clowns.",
+        #     "prompt_name": "radioactive_amusement_park",
+        #     "prompt_index": 11
+        # },
+        # {
+        #     "prompt": "A hyper-advanced alien mothership made of living crystalline structures, defended by light-bending templars and prismatic sentinels.",
+        #     "prompt_name": "crystalline_alien_mothership",
+        #     "prompt_index": 12
+        # },
+        # {
+        #     "prompt": "A cursed feudal Japanese village trapped in an eternal blood-moon night, stalked by vengeful yokai and undead samurai.",
+        #     "prompt_name": "blood_moon_yokai_village",
+        #     "prompt_index": 13
+        # },
+        # {
+        #     "prompt": "A dreamscape realm made of floating staircases and melting clocks, populated by faceless manifestations of forgotten memories and nightmare weavers.",
+        #     "prompt_name": "surreal_dreamscape",
+        #     "prompt_index": 14
+        # },
+        # {
+        #     "prompt": "A sprawling trench-warfare wasteland locked in World War I era technology, but twisted by necromancy, featuring zombie infantry and chemical-mutated behemoths.",
+        #     "prompt_name": "dieselpunk_necromancy_trenches",
+        #     "prompt_index": 15
+        # }
     ]
     
     # Definição dos Modelos Testado e Juiz
