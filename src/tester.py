@@ -218,8 +218,25 @@ Do not list the JSON fields or stats; write only the narrative setting descripti
 
 
         # ------------------------------------------------------------
-        # SALVAR RESULTADOS
+        # SALVAR RESULTADOS SEPARADOS (AVALIAÇÃO E BUNDLE)
         # ------------------------------------------------------------
+        
+        # Gerar identificadores seguros e únicos
+        safe_tested_name = tested_model_name.replace("/", "_").replace("-", "_")
+        unique_id = uuid.uuid4().hex[:6]
+        
+        eval_filename = f"eval_{prompt_name}_{safe_tested_name}_{unique_id}.json"
+        bundle_filename = f"bundle_{prompt_name}_{safe_tested_name}_{unique_id}.json"
+        
+        eval_file_path = join(tests_dir, eval_filename)
+        bundle_file_path = join(tests_dir, bundle_filename)
+        
+        # 1. Salvar o Asset Bundle isoladamente no seu próprio arquivo
+        # Converte para dict, salva como JSON indentado (ou poderia usar bundle.model_dump_json(indent=4))
+        with open(bundle_file_path, "w", encoding="utf-8") as f:
+            f.write(bundle.model_dump_json(indent=4))
+        
+        # 2. Salvar as métricas com o nome do arquivo do bundle atrelado
         final_result_data = {
             "tested_model_name": tested_model_name,
             "judge_model_name": judge_model_name,
@@ -228,21 +245,21 @@ Do not list the JSON fields or stats; write only the narrative setting descripti
             "prompt": prompt_text,
             "prompt_name": prompt_name,
             "prompt_index": prompt_index,
-            "result_json": bundle.model_dump_json()  # Salva o JSON intacto e completo do bundle final
+            "asset_bundle_file": bundle_filename  # Referência ao arquivo gerado
         }
         
-        # Nome único (Ex: eval_ciberpunk_gpt_oss_20b_17154212.json)
-        safe_tested_name = tested_model_name.replace("/", "_").replace("-", "_")
-        unique_filename = f"eval_{prompt_name}_{safe_tested_name}_{uuid.uuid4().hex[:6]}.json"
-        file_path = join(tests_dir, unique_filename)
-        
-        with open(file_path, "w", encoding="utf-8") as f:
+        with open(eval_file_path, "w", encoding="utf-8") as f:
             json.dump(final_result_data, f, ensure_ascii=False, indent=4)
             
-        print(f"[{prompt_name}] Teste concluído! Resultados salvos em: {file_path}")
-        results.append(final_result_data)
-        time.sleep(60*2) # Wait 2 minutes
+        print(f"[{prompt_name}] Teste concluído!")
+        print(f" -> Avaliação salva em: {eval_filename}")
+        print(f" -> Asset Bundle salvo em: {bundle_filename}")
         
+        results.append(final_result_data)
+        
+        # Aguarda 2 minutos (para evitar Rate Limits pesados das APIs free)
+        print("Aguardando 2 minutos antes do próximo teste...\n")
+        time.sleep(60 * 2)
         
     return results
 
@@ -250,7 +267,7 @@ Do not list the JSON fields or stats; write only the narrative setting descripti
 if __name__ == "__main__":
 
     # 15 Prompts extremamente variados para testar robustez no TCC
-    test_inputs_tcc = [
+    test_inputs = [
         {
             "prompt": "A submerged neon-gothic underwater city filled with mutated fish-people cultists.",
             "prompt_name": "neon_gothic_underwater",
@@ -341,6 +358,6 @@ if __name__ == "__main__":
         tested_model_name=tested_model,
         judge_provider=judge_prov,
         judge_model_name=judge_model,
-        test_inputs=test_inputs_mock
+        test_inputs=test_inputs 
     )
     print("\nTodos os testes finalizados com sucesso!")
