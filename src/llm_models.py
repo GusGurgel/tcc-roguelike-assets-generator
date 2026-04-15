@@ -47,21 +47,27 @@ class GroqModels:
 
     # https://console.groq.com/docs/model/openai/gpt-oss-120b
     # RDP = 1K
+
+    # Structure Outputs Models (All 1K Requisitions Per Day)
     OPENAI_GPT_OSS_120B = "openai/gpt-oss-120b"
 
     OPENAI_GPT_OSS_20B = "openai/gpt-oss-20b"
 
-    # RDP = 1K
+    OPENAI_GPT_OSS_SAFEGUARD_20B = "openai/gpt-oss-safeguard-20b"
+
+    META_LLAMA_LLAMA_4_SCOUT_17B_16E_INSTRUCT = "meta-llama/llama-4-scout-17b-16e-instruct"
+
     MOONSHOTAI_KIMI_K2_INSTRUCT = "moonshotai/kimi-k2-instruct"
 
-    # RDP = 1K
     MOONSHOTAI_KIMI_K2_INSTRUCT_0905 = "moonshotai/kimi-k2-instruct-0905"
+
+    QWEN_QWEN3_32B = "qwen/qwen3-32b"
+
+    # --------------------------------------------------------------------------
+
 
     # RDP = 1K
     LLAMA_3_3_70B_VERSATILE = "llama-3.3-70b-versatile"
-
-    # RDP = 1K
-    META_LLAMA_LLAMA_4_SCOUT_17B_16E_INSTRUCT = "meta-llama/llama-4-scout-17b-16e-instruct"
 
     # RDP = 14.4k
     LLAMA_3_1_8B_INSTANT = "llama-3.1-8b-instant"
