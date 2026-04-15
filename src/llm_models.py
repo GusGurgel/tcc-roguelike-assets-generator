@@ -51,13 +51,21 @@ class GroqModels:
 
     OPENAI_GPT_OSS_20B = "openai/gpt-oss-20b"
 
+    # RDP = 1K
     MOONSHOTAI_KIMI_K2_INSTRUCT = "moonshotai/kimi-k2-instruct"
 
-    # LLAMA_3_1_8B_INSTANT = "llama-3.1-8b-instant"
+    # RDP = 1K
+    MOONSHOTAI_KIMI_K2_INSTRUCT_0905 = "moonshotai/kimi-k2-instruct-0905"
 
-    META_LLAMA_LLAMA_4_MAVERICK_17B_128E_INSTRUCT = (
-        "meta-llama/llama-4-maverick-17b-128e-instruct"
-    )
+    # RDP = 1K
+    LLAMA_3_3_70B_VERSATILE = "llama-3.3-70b-versatile"
+
+    # RDP = 1K
+    META_LLAMA_LLAMA_4_SCOUT_17B_16E_INSTRUCT = "meta-llama/llama-4-scout-17b-16e-instruct"
+
+    # RDP = 14.4k
+    LLAMA_3_1_8B_INSTANT = "llama-3.1-8b-instant"
+
 
 
 class NvidiaModels:

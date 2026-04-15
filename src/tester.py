@@ -278,21 +278,21 @@ if __name__ == "__main__":
             "prompt_name": "overgrown_space_station",
             "prompt_index": 2
         },
-        {
-            "prompt": "A clockwork purgatory inside a colossal ticking pocket watch, guarded by rusted brass automatons and ticking gear-wraiths.",
-            "prompt_name": "clockwork_purgatory",
-            "prompt_index": 3
-        },
-        {
-            "prompt": "A desolate, sun-scorched desert canyon littered with the colossal bones of ancient titans, inhabited by scavengers and blood-magic shamans.",
-            "prompt_name": "titan_bone_desert",
-            "prompt_index": 4
-        },
-        {
-            "prompt": "A frozen medieval citadel trapped in eternal blizzard, where cursed frost-knights and ice-gargoyles protect a shattered frozen throne.",
-            "prompt_name": "frozen_citadel",
-            "prompt_index": 5
-        },
+        # {
+        #     "prompt": "A clockwork purgatory inside a colossal ticking pocket watch, guarded by rusted brass automatons and ticking gear-wraiths.",
+        #     "prompt_name": "clockwork_purgatory",
+        #     "prompt_index": 3
+        # },
+        # {
+        #     "prompt": "A desolate, sun-scorched desert canyon littered with the colossal bones of ancient titans, inhabited by scavengers and blood-magic shamans.",
+        #     "prompt_name": "titan_bone_desert",
+        #     "prompt_index": 4
+        # },
+        # {
+        #     "prompt": "A frozen medieval citadel trapped in eternal blizzard, where cursed frost-knights and ice-gargoyles protect a shattered frozen throne.",
+        #     "prompt_name": "frozen_citadel",
+        #     "prompt_index": 5
+        # },
         # {
         #     "prompt": "A twisted, flesh-and-bone labyrinth inside the stomach of a sleeping eldritch god, swarming with parasitic worms and twisted digestive demons.",
         #     "prompt_name": "eldritch_flesh_labyrinth",
