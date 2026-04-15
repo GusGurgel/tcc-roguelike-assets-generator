@@ -1,4 +1,4 @@
-from typing import Type, TypeVar
+from typing import Type, TypeVar, List
 from pydantic import BaseModel, ValidationError
 from os.path import join
 from math import floor
@@ -7,7 +7,6 @@ import json
 
 from langchain.messages import SystemMessage, HumanMessage, AIMessage
 from langchain_core.callbacks import UsageMetadataCallbackHandler
-
 
 from utils import *
 from llm_models import get_model, Providers, GroqModels, GoogleModels
@@ -21,10 +20,19 @@ T = TypeVar("T", bound=BaseModel)
 
 save_path = join(MAIN_PATH, "saves")
 
+# Constante de fortificação para garantir a saída estruturada
+JSON_CONSTRAINT_PROMPT = """
+**CRITICAL JSON REQUIREMENT:**
+You MUST output ONLY a valid JSON object that strictly adheres to the requested schema.
+Do NOT include any conversational text, explanations, or markdown code blocks (like ```json) outside the pure JSON structure.
+Your entire response must be parseable by a standard JSON parser.
+"""
+
 
 class AssetsGenerator:
 
     def __init__(self, theme_description) -> None:
+        # A inicialização usa variáveis globais provider_key e model_key que podem ser injetadas
         self.model = get_model(provider_key, model_key)
         self.usage_callback = UsageMetadataCallbackHandler()
 
@@ -90,12 +98,11 @@ Do not list specific item stats yet. Focus on the narrative and sensory details 
                 # O loop continua para a próxima iteração automaticamente
             except Exception as e:
                 # Captura outros erros inesperados (ex: erro de conexão com a API)
-                # Se quiser que erros de conexão falhem imediatamente, remova este except
                 last_exception = e
                 print(f"Erro inesperado na tentativa {attempt}: {e}")
 
         # Se sair do loop, significa que falhou 5 vezes
-        print("Todas as 5 tentativas de gerar o mapa falharam.")
+        print("Todas as 5 tentativas de gerar a saída estruturada falharam.")
         if last_exception:
             raise last_exception
         else:
@@ -120,6 +127,7 @@ Guidelines:
 3. **Visuals**: Describe their appearance, starting gear look, and distinct physical traits matching the visual style of the theme.
 
 Generate the Player profile now.
+{JSON_CONSTRAINT_PROMPT}
 """
                 )
             ],
@@ -145,6 +153,7 @@ Guidelines:
 4. **Motivation**: Clearly state why leaving it down there is not an option.
 
 Generate the legendary Final Objective now.
+{JSON_CONSTRAINT_PROMPT}
 """
                 )
             ],
@@ -167,6 +176,7 @@ Guidelines for generation:
 4. **Variety**: Avoid repeating the exact same descriptions.
 
 Generate the {number_of_levels_per_bundle} levels now.
+{JSON_CONSTRAINT_PROMPT}
 """
                 )
             ],
@@ -196,6 +206,7 @@ Guidelines:
 5. **Range of Fields**: The fields rarity, weight and mana_cost need to be in the range [0, 10] (inclusive).
 
 Generate the list of {number_of_weapons_per_bundle} weapons now.
+{JSON_CONSTRAINT_PROMPT}
 """
                 )
             ],
@@ -220,6 +231,7 @@ Guidelines:
 4. **Range of Fields**: The fields thread and weight need to be in the range [0, 10] (inclusive). 
 
 Generate the {number_of_enemies_per_bundle} enemies now.
+{JSON_CONSTRAINT_PROMPT}
 """
                 )
             ],
@@ -245,6 +257,7 @@ Guidelines:
 3. **Format**: Use Title Case. Keep it concise (2 to 6 words). Avoid generic names like "Dungeon Pack 1".
 
 Generate the title now.
+{JSON_CONSTRAINT_PROMPT}
 """
                 )
             ],
@@ -349,6 +362,8 @@ def load_zombie_souls_asset_bundle() -> AssetBundle:
 
 
 if __name__ == "__main__":
+    # Variáveis injetadas simulando um teste unitário local
+    provider_key = Providers.GROQ
     model_key = GroqModels.OPENAI_GPT_OSS_20B
     prompt_index = 0
 
@@ -356,7 +371,7 @@ if __name__ == "__main__":
 
     asset_bundle: AssetBundle = asset_generator.generate_asset_bundle()
 
-    name = f"p_{prompt_index+1}_{model_key.replace("-","_").replace("/","_").lower().strip()}"
+    name = f"p_{prompt_index+1}_{model_key.replace('-', '_').replace('/', '_').lower().strip()}"
 
     asset_bundle.name = name
 
@@ -368,65 +383,3 @@ if __name__ == "__main__":
         file.write(asset_bundle.model_dump_json())
 
     insert_asset_bundle(asset_bundle, model_key)
-
-#     asset_bundle_dict = asset_bundle.model_dump()
-#     metadata = {}
-#     metadata["name"] = asset_bundle_dict["name"]
-#     metadata["description"] = asset_bundle_dict["description"]
-#     metadata["raw_description"] = asset_bundle_dict["raw_description"]
-#     metadata["usage_metadata"] = asset_bundle_dict["usage_metadata"]
-#     metadata["generation_time_seconds"] = asset_bundle_dict["generation_time_seconds"]
-
-#     del asset_bundle_dict["name"]
-#     del asset_bundle_dict["description"]
-#     del asset_bundle_dict["raw_description"]
-#     del asset_bundle_dict["usage_metadata"]
-#     del asset_bundle_dict["generation_time_seconds"]
-
-#     with open(
-#         join(MAIN_PATH, "tests", f"{name}_assets.json"), "w", encoding="utf-8"
-#     ) as file:
-#         file.write(json.dumps(asset_bundle_dict))
-
-#     with open(
-#         join(MAIN_PATH, "tests", f"{name}_metadata.json"), "w", encoding="utf-8"
-#     ) as file:
-#         file.write(json.dumps(metadata))
-
-#     with open(
-#         join(MAIN_PATH, "tests", f"{name}_prompt_analyzer.txt"), "w", encoding="utf-8"
-#     ) as file:
-#         prompt_to_save = f"""
-# Por favor, realize a auditoria de coerência para o seguinte par de Descrição e Asset Bundle.
-
-# === DESCRIÇÃO MELHORADA (Narrativa) ===
-# {asset_bundle.description}
-
-# === ASSET BUNDLE GERADO (JSON) ===
-# {json.dumps(asset_bundle_dict)}
-
-# Realize a avaliação agora.
-# """
-#         file.write(prompt_to_save)
-
-#     with open(
-#         join(MAIN_PATH, "tests", f"{name}_prompt_reconstruction.txt"),
-#         "w",
-#         encoding="utf-8",
-#     ) as file:
-#         prompt_to_save = f"""
-# Please, reconstruct the thematic description based strictly on this Asset Bundle:
-
-# === ASSET BUNDLE (JSON) ===
-# {json.dumps(asset_bundle_dict)}
-
-# Write the narrative description of the environment represented above (in English).
-# """
-#         file.write(prompt_to_save)
-
-#     with open(
-#         join(MAIN_PATH, "tests", f"{name}_results.txt"),
-#         "w",
-#         encoding="utf-8",
-#     ) as file:
-#         file.write("")
