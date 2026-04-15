@@ -51,6 +51,8 @@ class GroqModels:
 
     OPENAI_GPT_OSS_20B = "openai/gpt-oss-20b"
 
+    MOONSHOTAI_KIMI_K2_INSTRUCT = "moonshotai/kimi-k2-instruct"
+
     # LLAMA_3_1_8B_INSTANT = "llama-3.1-8b-instant"
 
     META_LLAMA_LLAMA_4_MAVERICK_17B_128E_INSTRUCT = (
@@ -61,7 +63,24 @@ class GroqModels:
 class NvidiaModels:
     # https://build.nvidia.com/models
 
-    DEEPSEEK_V3_2 = "deepseek-ai/deepseek-v3.2"
+    DEEPSEEK_AI_DEEPSEEK_V3_2 = "deepseek-ai/deepseek-v3.2"
+
+    DEEPSEEK_AI_DEEPSEEK_V3_1 = "deepseek-ai/deepseek-v3.1"
+
+    MOONSHOTAI_KIMI_K2_INSTRUCT = "moonshotai/kimi-k2-instruct"
+
+    Z_AI_GLM4_7 = "z-ai/glm4.7"
+
+    MICROSOFT_PHI_3_5_MINI_INSTRUCT = "microsoft/phi-3.5-mini-instruct"
+
+    NVIDIA_MISTRAL_NEMO_MINITRON_8B_BASE = "nvidia/mistral-nemo-minitron-8b-base"
+
+    GOOGLE_GEMMA_2_27B_IT = "google/gemma-2-27b-it"
+
+    MINIMAXAI_MINIMAX_M2_7 = "minimaxai/minimax-m2.7"
+
+    META_LLAMA_GUARD_4_12B = "meta/llama-guard-4-12b"
+
 
 
 def get_model(provider, model):

@@ -1,0 +1,271 @@
+import os
+import json
+import uuid
+from os.path import join
+from typing import List, Dict, Any, Type, TypeVar
+
+from pydantic import BaseModel, Field, ValidationError
+from langchain.messages import HumanMessage
+from langchain_core.callbacks import UsageMetadataCallbackHandler
+
+# Importações dos seus módulos locais
+from utils import MAIN_PATH
+from llm_models import get_model, Providers, GroqModels, NvidiaModels
+from vector_db import get_cosine_similarity
+
+# Importação do gerador e injeção (patching) de globais
+import asset_generator
+from asset_generator import AssetsGenerator
+
+
+T = TypeVar("T", bound=BaseModel)
+
+# --- Pydantic Models para Saída Estruturada do Modelo Juiz ---
+
+class CoherenceEvaluation(BaseModel):
+    score: int = Field(
+        description="A score from 0 to 100 quantifying the alignment, visual similarity, and thematic consistency between the textual intent and the generated game artifacts."
+    )
+
+
+class Evaluator:
+    """
+    Classe responsável por aplicar o modelo Juiz e garantir que os outputs 
+    estruturados sejam validados corretamente via Pydantic com lógica de retentativas.
+    """
+    def __init__(self, provider, model_name) -> None:
+        self.model = get_model(provider, model_name)
+        self.usage_callback = UsageMetadataCallbackHandler()
+
+    def _get_structured_model(self, schema_class: Type[T]):
+        return self.model.with_structured_output(
+            schema=schema_class.model_json_schema(), method="json_schema"
+        )
+
+    def _ask_llm_structured(self, schema_class: Type[T], messages: list) -> T:
+        structured_llm = self._get_structured_model(schema_class)
+
+        last_exception = None
+        max_attempts = 5
+
+        for attempt in range(1, max_attempts + 1):
+            try:
+                # Tenta invocar o modelo
+                result = structured_llm.invoke(
+                    messages,
+                    config={"callbacks": [self.usage_callback]},
+                )
+
+                # Tenta validar o resultado com o Pydantic
+                return schema_class.model_validate(result)
+
+            except (ValidationError, ValueError, TypeError) as e:
+                # Captura erros de validação do Pydantic ou erros de tipo
+                last_exception = e
+                print(
+                    f"Tentativa {attempt}/{max_attempts} falhou ao validar o esquema. Erro: {e}"
+                )
+                # O loop continua para a próxima iteração automaticamente
+            except Exception as e:
+                # Captura outros erros inesperados (ex: erro de conexão com a API)
+                last_exception = e
+                print(f"Erro inesperado na tentativa {attempt}: {e}")
+
+        # Se sair do loop, significa que falhou 5 vezes
+        print("Todas as 5 tentativas de gerar a saída estruturada falharam.")
+        if last_exception:
+            raise last_exception
+        else:
+            raise Exception(
+                "Falha desconhecida na geração estruturada após 5 tentativas."
+            )
+
+
+def remove_texture_fields(data: Any) -> Any:
+    """
+    Função recursiva para remover todas as chaves que terminam com '_with_texture'.
+    Isso elimina as duplicatas geradas pelas classes WithTexture (que já contêm a classe base),
+    reduzindo o tamanho do JSON e economizando tokens no LLM Juiz.
+    """
+    if isinstance(data, dict):
+        return {
+            k: remove_texture_fields(v)
+            for k, v in data.items()
+            if not k.endswith('_with_texture')
+        }
+    elif isinstance(data, list):
+        return [remove_texture_fields(item) for item in data]
+    else:
+        return data
+
+
+def run_evaluation_pipeline(
+    tested_provider, 
+    tested_model_name: str, 
+    judge_provider, 
+    judge_model_name: str, 
+    test_inputs: List[Dict[str, str]]
+) -> List[Dict]:
+    """
+    Função principal de teste que recebe a LLM testada, a LLM juíza e um vetor de inputs.
+    Realiza o teste de fidelidade semântica e fidelidade de reconstrução.
+    """
+    
+    # Prepara a pasta de destino
+    tests_dir = join(MAIN_PATH, "tests")
+    os.makedirs(tests_dir, exist_ok=True)
+    
+    # Instancia a classe Avaliadora que usa as funções seguras
+    print(f"Instanciando Judge Model via Evaluator: {judge_model_name}...")
+    evaluator = Evaluator(judge_provider, judge_model_name)
+    
+    results = []
+    
+    for t_input in test_inputs:
+        prompt_text = t_input.get("prompt", "")
+        prompt_name = t_input.get("prompt_name", "unnamed_prompt")
+        prompt_index = t_input.get("prompt_index", 0)
+        
+        print(f"\n[{prompt_name}] Iniciando teste com o Tested Model: {tested_model_name}...")
+        
+        # 1. Injeta os parâmetros de LLM testada diretamente no módulo asset_generator
+        asset_generator.provider_key = tested_provider
+        asset_generator.model_key = tested_model_name
+        
+        # 2. Geração do Asset Bundle
+        try:
+            generator = AssetsGenerator(prompt_text)
+            bundle = generator.generate_asset_bundle()
+        except Exception as e:
+            print(f"[{prompt_name}] Falha ao gerar asset bundle com o Tested Model. Erro: {e}")
+            continue
+
+        # Extrai a descrição refinada e isolada gerada pelo modelo testado
+        refined_description = bundle.description
+        
+        # 3. Prepara o JSON do Asset Bundle para o Juiz
+        bundle_dict = bundle.model_dump()
+        
+        # Removemos as descrições originais para o teste cego da reconstrução
+        bundle_dict.pop("description", None)
+        bundle_dict.pop("raw_description", None)
+        
+        # Limpa os campos de textura duplicados para economizar tokens
+        clean_bundle_dict = remove_texture_fields(bundle_dict)
+        
+        stripped_bundle_json = json.dumps(clean_bundle_dict, indent=2)
+        
+        coherence_score = -1
+        reconstruction_score = -1.0
+        
+        # ------------------------------------------------------------
+        # MÉTRICA 1: Fidelidade Semântica (Coherence Metric)
+        # ------------------------------------------------------------
+        print(f"[{prompt_name}] Avaliando Coerência Semântica...")
+        coherence_prompt = f"""
+Act as an expert game evaluator.
+You are tasked with evaluating the coherence between a game's intended thematic description and its generated procedural assets.
+
+=== REFINED THEME DESCRIPTION (INTENT) ===
+{refined_description}
+
+=== GENERATED ASSETS (JSON) ===
+{stripped_bundle_json}
+
+Review the alignment between the textual intent and the final game artifacts.
+Focus on visual similarity and thematic consistency across entities, environments, weapons, and enemies.
+Assign a score from 0 to 100, where 100 means perfect alignment and coherence.
+"""
+        try:
+            # Uso da função segura _ask_llm_structured com retentativas
+            coherence_eval = evaluator._ask_llm_structured(
+                CoherenceEvaluation, 
+                [HumanMessage(coherence_prompt)]
+            )
+            coherence_score = coherence_eval.score
+        except Exception as e:
+            print(f"[{prompt_name}] Erro definitivo na avaliação de Coerência: {e}")
+
+        # ------------------------------------------------------------
+        # MÉTRICA 2: Fidelidade de Reconstrução (Reconstruction Metric)
+        # ------------------------------------------------------------
+        print(f"[{prompt_name}] Avaliando Reconstrução Semântica...")
+        reconstruction_prompt = f"""
+Act as a Lead Game Designer and Narrative Architect.
+You are given the JSON data of procedurally generated game assets for a Roguelike game.
+Your task is to infer and reconstruct the game's theme, setting, visual style, atmosphere, lore, and core conflict solely based on the provided assets.
+
+=== GENERATED ASSETS (JSON) ===
+{stripped_bundle_json}
+
+Write a cohesive "World Description" that conveys the thematic intent of these assets entirely in English.
+Do not list the JSON fields or stats; write only the narrative setting description.
+"""
+        try:
+            # Como a reconstrução gera apenas um texto livre, usamos a invocação direta do modelo
+            reconstruction_response = evaluator.model.invoke(
+                [HumanMessage(reconstruction_prompt)],
+                config={"callbacks": [evaluator.usage_callback]}
+            )
+            reconstructed_text = str(reconstruction_response.content)
+            
+            # Calcula a similaridade do cosseno entre o texto refinado original e o texto reconstruído
+            reconstruction_score = get_cosine_similarity(refined_description, reconstructed_text)
+        except Exception as e:
+            print(f"[{prompt_name}] Erro na avaliação de Reconstrução: {e}")
+
+
+        # ------------------------------------------------------------
+        # SALVAR RESULTADOS
+        # ------------------------------------------------------------
+        final_result_data = {
+            "tested_model_name": tested_model_name,
+            "judge_model_name": judge_model_name,
+            "semantic_coherence_metric": coherence_score,
+            "semantic_reconstruction_metric": float(reconstruction_score),
+            "prompt": prompt_text,
+            "prompt_name": prompt_name,
+            "prompt_index": prompt_index,
+            "result_json": bundle.model_dump_json()  # Salva o JSON intacto e completo do bundle final
+        }
+        
+        # Nome único (Ex: eval_ciberpunk_gpt_oss_20b_17154212.json)
+        safe_tested_name = tested_model_name.replace("/", "_").replace("-", "_")
+        unique_filename = f"eval_{prompt_name}_{safe_tested_name}_{uuid.uuid4().hex[:6]}.json"
+        file_path = join(tests_dir, unique_filename)
+        
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(final_result_data, f, ensure_ascii=False, indent=4)
+            
+        print(f"[{prompt_name}] Teste concluído! Resultados salvos em: {file_path}")
+        results.append(final_result_data)
+        
+    return results
+
+
+if __name__ == "__main__":
+    # Exemplo de uso
+    test_inputs_mock = [
+        {
+            "prompt": "A submerged neon-gothic underwater city filled with mutated fish-people cultists.",
+            "prompt_name": "neon_gothic_underwater",
+            "prompt_index": 1
+        }
+    ]
+    
+    # Definição dos Modelos Testado e Juiz
+    tested_prov = Providers.GROQ
+    tested_model = GroqModels.OPENAI_GPT_OSS_20B
+    
+    judge_prov = Providers.GROQ
+    judge_model = GroqModels.MOONSHOTAI_KIMI_K2_INSTRUCT
+    
+    print("Iniciando bateria de testes...\n")
+    run_evaluation_pipeline(
+        tested_provider=tested_prov,
+        tested_model_name=tested_model,
+        judge_provider=judge_prov,
+        judge_model_name=judge_model,
+        test_inputs=test_inputs_mock
+    )
+    print("\nTodos os testes finalizados com sucesso!")
