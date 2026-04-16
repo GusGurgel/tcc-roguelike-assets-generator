@@ -1,0 +1,625 @@
+{
+    "name": "Crimson Maw Bloodborne Descent",
+    "raw_description": "A desolate, sun-scorched desert canyon littered with the colossal bones of ancient titans, inhabited by scavengers and blood-magic shamans.",
+    "description": "**1. Setting Name**  \n**The Crimson Maw of Kharos**\n\n**2. Visual Style & Atmosphere**  \nThe Crimson Maw is rendered in a stark, high‑contrast desert aesthetic that blends the raw brutality of a post‑apocalyptic wasteland with the haunting, other‑worldly glow of blood‑magic.  \n- **Color Palette**: Deep ochres, burnt sienna, and rusted copper dominate the canyon walls, punctuated by streaks of crimson that bleed into the sky at dusk. The titan bones themselves are a pale, bone‑white that refracts the sun’s light into a sickly, pinkish glow.  \n- **Lighting**: The sun is a relentless, scorching orb that never sets, casting harsh, elongated shadows across the sand dunes. At twilight, the sky turns a bruised red, and the canyon’s jagged edges glow with an eerie phosphorescent pulse from the blood‑magic.  \n- **Weather & Ambient Noise**: A constant, low‑humming wind carries fine sand that whips across the canyon floor, occasionally punctuated by the distant crackle of bone‑cracking and the low, mournful howls of scavenger packs. The air is thick with the metallic scent of blood and the faint, sweet perfume of ancient, dying flora.  \n- **Art Direction**: Think of a gritty, almost cinematic desert with a touch of gothic horror—crumbling stone, skeletal megastructures, and the ever‑present threat of a living, breathing ruin. The visual style emphasizes texture: cracked sandstone, weathered bone, and the slick, viscous sheen of blood‑magic.\n\n**3. The Lore**  \nLong before the sands settled, Kharos was a thriving empire of titan worshipers who believed the colossal beasts that once roamed the world were divine guardians. The people built massive temples and carved the canyon walls with hymns and sigils, honoring the titans as living gods.  \n\nWhen the titans finally fell—whether by a divine judgment, a catastrophic war, or a cosmic calamity—their bodies were left to decay in the canyon. The bones, however, were not inert. They absorbed the last remnants of the titans’ life force, becoming conduits for a dark, primal magic that seeped into the earth.  \n\nFrom the ruins of the temples rose the **Blood‑Shamans**, a sect of desperate survivors who learned to harness the bone‑infused blood‑magic. They wielded the colossal bones as ritual implements, channeling the ancient power to heal, to curse, and to summon the very spirits of the titans. Their blood‑magic is both a blessing and a curse: it grants them formidable power but also attracts the **Blood Maw**, a sentient, corrupted entity that feeds on the very blood they pour into the canyon.  \n\nThe rest of the world, now a desolate wasteland, is populated by **Scavenger Tribes**—mutated nomads, sand‑wraiths, and other hardy creatures that eke out a living in the harsh sun. They view the Blood‑Shamans as both a threat and a source of rare, blood‑charged relics. The canyon itself is a living battlefield where the bones of titans, the blood of shamans, and the hunger of the Maw collide.\n\n**4. The Core Conflict**  \nAt the heart of the Crimson Maw lies a living, sentient corruption known as **The Blood Maw**. This entity is a manifestation of the titan bones’ accumulated power, a colossal, shifting mass of bone and blood that roams the canyon, devouring anything that bleeds. It feeds on the blood‑magic of the shamans, growing stronger with each sacrifice, and in turn it spreads a curse that corrupts the land, turning flora into bone‑driven horrors and turning the sand itself into a living, blood‑thirsty entity.  \n\nThe Blood Maw’s ultimate goal is to consume the last remnants of life in Kharos, turning the canyon into a permanent mausoleum of bone and blood. The Blood‑Shamans, desperate to control or destroy the Maw, must navigate the treacherous canyon, harnessing the very magic that fuels the Maw while avoiding its insatiable hunger. Meanwhile, the scavenger tribes either seek to harvest the blood‑magic for themselves or to prevent the Maw from devouring the entire world.  \n\nIn this setting, every decision—whether to sacrifice a blood vial to appease the Maw, to raid a temple for bone relics, or to ally with a scavenger pack—has dire consequences, shaping the fate of the Crimson Maw and the last remnants of civilization in the sun‑scorched canyon.",
+    "generation_time_seconds": 251,
+    "player": {
+        "tile": {
+            "name": "blood_shaman",
+            "description": "A scarred Blood-Shaman wielding a bone staff, draped in crimson robes, eyes glowing with ancient blood-magic.",
+            "color": "#8B0000"
+        },
+        "back_history": "A once-illustrious Blood-Shaman named Vespera, exiled after a failed ritual that nearly consumed the entire canyon, now seeks redemption by confronting the Blood Maw to protect the remaining shards of Kharos.",
+        "tile_with_texture": {
+            "name": "blood_shaman",
+            "description": "A scarred Blood-Shaman wielding a bone staff, draped in crimson robes, eyes glowing with ancient blood-magic.",
+            "color": "#8B0000",
+            "texture": {
+                "tileset_position": {
+                    "x": 24,
+                    "y": 1
+                },
+                "tileset_description": "A wizard wearing a hood, carrying a staff in his hand."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A wide, sun‑blasted canyon mouth where dunes rise like waves and the first titan bones glint faintly.",
+                "name": "The Crimson Maw Entrance",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "sandstone_tile",
+                    "description": "Cracked sandstone walls that echo with distant howls.",
+                    "color": "#A0522D"
+                },
+                "floor_tile": {
+                    "name": "sand_tile",
+                    "description": "Fine, dry sand that shifts underfoot.",
+                    "color": "#C2B280"
+                },
+                "wall_tile_with_texture": {
+                    "name": "sandstone_tile",
+                    "description": "Cracked sandstone walls that echo with distant howls.",
+                    "color": "#A0522D",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "sand_tile",
+                    "description": "Fine, dry sand that shifts underfoot.",
+                    "color": "#C2B280",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The canyon walls grow darker, phosphorescent veins of blood‑magic pulse along bone‑laden walls, and the air tastes of iron.",
+                "name": "The Blood‑Infused Depths",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "bone_tile",
+                    "description": "Pale, bone‑white tiles that refract light into a sickly glow.",
+                    "color": "#F5F5DC"
+                },
+                "floor_tile": {
+                    "name": "blood_sand_tile",
+                    "description": "Sand tinged with crimson, slick with blood‑magic.",
+                    "color": "#8B0000"
+                },
+                "wall_tile_with_texture": {
+                    "name": "bone_tile",
+                    "description": "Pale, bone‑white tiles that refract light into a sickly glow.",
+                    "color": "#F5F5DC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "blood_sand_tile",
+                    "description": "Sand tinged with crimson, slick with blood‑magic.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The heart of the canyon, where the Blood Maw roams, bone shards erupt from the ground, and the air tastes of decay and iron.",
+                "name": "The Maw’s Lair",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "corrupted_bone_tile",
+                    "description": "Bone tiles warped by the Maw’s corruption, pulsing with dark energy.",
+                    "color": "#8B008B"
+                },
+                "floor_tile": {
+                    "name": "bone_tile",
+                    "description": "Pale, bone‑white tiles that refract light into a sickly glow.",
+                    "color": "#F5F5DC"
+                },
+                "wall_tile_with_texture": {
+                    "name": "corrupted_bone_tile",
+                    "description": "Bone tiles warped by the Maw’s corruption, pulsing with dark energy.",
+                    "color": "#8B008B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "bone_tile",
+                    "description": "Pale, bone‑white tiles that refract light into a sickly glow.",
+                    "color": "#F5F5DC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "scarred_bone_wraith",
+                    "description": "A translucent wraith made of bone fragments, its form flickering like a dying ember, with pale bone-white skin and crimson veins pulsing through.",
+                    "color": "#8B0000"
+                },
+                "weight": 2,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "scarred_bone_wraith",
+                    "description": "A translucent wraith made of bone fragments, its form flickering like a dying ember, with pale bone-white skin and crimson veins pulsing through.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crimson_scorpion",
+                    "description": "A massive scorpion with a skeleton exoskeleton, its tail dripping with blood magic, eyes glowing crimson.",
+                    "color": "#8B0000"
+                },
+                "weight": 3,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "crimson_scorpion",
+                    "description": "A massive scorpion with a skeleton exoskeleton, its tail dripping with blood magic, eyes glowing crimson.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_hound",
+                    "description": "A skeletal hound with elongated limbs, its body a tangle of bone, moving at breakneck speed.",
+                    "color": "#A52A2A"
+                },
+                "weight": 1,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "bone_hound",
+                    "description": "A skeletal hound with elongated limbs, its body a tangle of bone, moving at breakneck speed.",
+                    "color": "#A52A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_sand_wraith",
+                    "description": "A wraith that blends into the sand, its form made of swirling blood and bone dust.",
+                    "color": "#8B0000"
+                },
+                "weight": 2,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "blood_sand_wraith",
+                    "description": "A wraith that blends into the sand, its form made of swirling blood and bone dust.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 0
+                        },
+                        "tileset_description": "A person wearing a hooded coat. Could be a mage. A person from the desert."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scarred_bone_raptor",
+                    "description": "A raptor-like creature with bone armor, its claws dripping with crimson.",
+                    "color": "#8B0000"
+                },
+                "weight": 2,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "scarred_bone_raptor",
+                    "description": "A raptor-like creature with bone armor, its claws dripping with crimson.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 9
+                        },
+                        "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_colossus",
+                    "description": "A towering colossus of bone, its massive frame covered in rusted copper veins, exuding a sickly pink glow.",
+                    "color": "#B22222"
+                },
+                "weight": 9,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "bone_colossus",
+                    "description": "A towering colossus of bone, its massive frame covered in rusted copper veins, exuding a sickly pink glow.",
+                    "color": "#B22222",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crimson_titan_guard",
+                    "description": "A guardian of the canyon, its body a fusion of titan bone and blood magic, standing tall with a crimson aura.",
+                    "color": "#8B0000"
+                },
+                "weight": 8,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "crimson_titan_guard",
+                    "description": "A guardian of the canyon, its body a fusion of titan bone and blood magic, standing tall with a crimson aura.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_maw_minion",
+                    "description": "A hulking minion of the Blood Maw, its body a mass of bone and pulsating blood, slow but relentless.",
+                    "color": "#8B0000"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "blood_maw_minion",
+                    "description": "A hulking minion of the Blood Maw, its body a mass of bone and pulsating blood, slow but relentless.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scarred_bone_behemoth",
+                    "description": "A behemoth of bone, its massive bulk dripping with blood, its movements slow but devastating.",
+                    "color": "#8B0000"
+                },
+                "weight": 10,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "scarred_bone_behemoth",
+                    "description": "A behemoth of bone, its massive bulk dripping with blood, its movements slow but devastating.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_sand_colossus",
+                    "description": "A colossal creature made of sand and bone, its surface slick with blood magic, moving with a slow, grinding pace.",
+                    "color": "#8B0000"
+                },
+                "weight": 9,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "blood_sand_colossus",
+                    "description": "A colossal creature made of sand and bone, its surface slick with blood magic, moving with a slow, grinding pace.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 30,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem with a square on its belly."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_bone_dagger",
+                    "description": "A jagged dagger forged from scavenged titan bone, its edges dulled by centuries of sand.",
+                    "color": "#A52A2A"
+                },
+                "rarity": 1,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_bone_dagger",
+                    "description": "A jagged dagger forged from scavenged titan bone, its edges dulled by centuries of sand.",
+                    "color": "#A52A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bloodened_crossbow",
+                    "description": "A crude crossbow strung with dried blood, its limbs stained crimson.",
+                    "color": "#8B0000"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "bloodened_crossbow",
+                    "description": "A crude crossbow strung with dried blood, its limbs stained crimson.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sandstorm_sword",
+                    "description": "A blade etched with sigils that glow faintly when sand swirls.",
+                    "color": "#DEB887"
+                },
+                "rarity": 3,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "sandstorm_sword",
+                    "description": "A blade etched with sigils that glow faintly when sand swirls.",
+                    "color": "#DEB887",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium-rarity greatsword. With detailed blade."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scarlet_bow",
+                    "description": "A slender bow carved from bone, its string humming with blood magic.",
+                    "color": "#FF2400"
+                },
+                "rarity": 4,
+                "weight": 3,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "scarlet_bow",
+                    "description": "A slender bow carved from bone, its string humming with blood magic.",
+                    "color": "#FF2400",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_hammer",
+                    "description": "A heavy hammer made from fused titan bone, its head rattling with each strike.",
+                    "color": "#F5DEB3"
+                },
+                "rarity": 2,
+                "weight": 7,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "bone_hammer",
+                    "description": "A heavy hammer made from fused titan bone, its head rattling with each strike.",
+                    "color": "#F5DEB3",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_wand",
+                    "description": "A slender wand pulsing with crimson energy, its tip dripping with ancient blood.",
+                    "color": "#8B0000"
+                },
+                "rarity": 5,
+                "weight": 1,
+                "mana_cost": 6,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "blood_wand",
+                    "description": "A slender wand pulsing with crimson energy, its tip dripping with ancient blood.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scarlet_staff",
+                    "description": "A towering staff of bone and obsidian, its core throbbing with the Maw's pulse.",
+                    "color": "#8B0000"
+                },
+                "rarity": 7,
+                "weight": 3,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "scarlet_staff",
+                    "description": "A towering staff of bone and obsidian, its core throbbing with the Maw's pulse.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crimson_blade_of_the_maw",
+                    "description": "A blade forged from the Maw's own bone, its edge seething with blood, granting the wielder a taste of its hunger.",
+                    "color": "#8B0000"
+                },
+                "rarity": 9,
+                "weight": 6,
+                "mana_cost": 9,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "crimson_blade_of_the_maw",
+                    "description": "A blade forged from the Maw's own bone, its edge seething with blood, granting the wielder a taste of its hunger.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium rarity Greatsword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sanguine_gun",
+                    "description": "A gun that fires bullets of living blood, each shot a shard of the Maw's essence.",
+                    "color": "#8B0000"
+                },
+                "rarity": 10,
+                "weight": 4,
+                "mana_cost": 10,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "sanguine_gun",
+                    "description": "A gun that fires bullets of living blood, each shot a shard of the Maw's essence.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 9
+                        },
+                        "tileset_description": "Modern one-handed machine gun. Uzi submachine gun."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_spear_of_kharos",
+                    "description": "A spear carved from a titan's rib, etched with ancient hymns that hum when swung.",
+                    "color": "#F5DEB3"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 3,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "bone_spear_of_kharos",
+                    "description": "A spear carved from a titan's rib, etched with ancient hymns that hum when swung.",
+                    "color": "#F5DEB3",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "blood_heart_core",
+            "description": "A pulsating core of living bone and crimson essence, the very heart of the Blood Maw.",
+            "color": "#8B0000"
+        },
+        "back_history": "The Blood Maw's insatiable hunger is fueled by the Blood Heart Core, a living relic of the titan's last breath. Sealed deep within the canyon, the Core pulses with raw blood‑magic, feeding the Maw and corrupting the land. Only by extracting the Core can the Blood‑Shamans sever the Maw's lifeline and restore balance to Kharos. Leaving it buried would allow the Maw to grow, devouring all life. The Core is the key to breaking the Maw's curse and saving the world.",
+        "tile_with_texture": {
+            "name": "blood_heart_core",
+            "description": "A pulsating core of living bone and crimson essence, the very heart of the Blood Maw.",
+            "color": "#8B0000",
+            "texture": {
+                "tileset_position": {
+                    "x": 41,
+                    "y": 7
+                },
+                "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "input_tokens": 12028,
+            "output_tokens": 9864,
+            "output_token_details": {
+                "reasoning": 6984
+            },
+            "total_tokens": 21892
+        }
+    }
+}

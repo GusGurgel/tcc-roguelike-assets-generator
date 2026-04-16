@@ -1,0 +1,499 @@
+{
+    "name": "Ashen Trenches: Necro Front",
+    "raw_description": "A sprawling trench-warfare wasteland locked in World War I era technology, but twisted by necromancy, featuring zombie infantry and chemical-mutated behemoths.",
+    "description": "**1. Setting Name**  \n**The Necro‑Front: The Ashen Trenches**\n\n---\n\n**2. Visual Style & Atmosphere**  \nThe Necro‑Front is a bleak, industrial nightmare that marries the grime of trench warfare with the macabre glow of necromancy. Imagine a world where the soot‑blackened mud of the Western Front has been suffused with phosphorescent, sickly green fumes. Rusted steel rails, broken concrete, and skeletal remains rise from the earth like twisted monuments. The art direction is a gritty, low‑polish industrial aesthetic punctuated by gothic horror motifs: broken gas lamps that sputter with ectoplasmic light, skeletal artillery barrels, and the occasional flicker of a dying corpse’s eye.\n\nLighting is perpetually twilight—soft, diffused, and tinged with an unnatural amber from the lingering chemical haze. Rain falls in acid‑blue sheets, turning the trenches into a slick, reflective surface that mirrors the rotting silhouettes of the undead. Occasionally, a distant artillery shell explodes, casting a brief, blinding flash that reveals the grotesque forms of chemical‑mutated behemoths lurking in the mud.\n\nAmbient noise is a constant, oppressive chorus: the distant crack of artillery, the low, mournful groan of zombie infantry, the hiss of gas leaks, and the occasional metallic clang of a shattered machine gun. Wind whistles through the trenches, carrying the scent of burning oil, rotting flesh, and the faint, metallic tang of blood‑stained earth.\n\n---\n\n**3. The Lore**  \nThe war that birthed the Necro‑Front began in 1914, a brutal conflict between the Allied Powers and the Central Empires. In the heat of trench warfare, a clandestine cabal known as *The Brotherhood of the Black Cross* discovered a forbidden ritual that could bind the spirits of the fallen to the living. Their experiments—combining chemical warfare with necromantic sigils—were initially intended to create a new kind of super‑soldier: an army that would never surrender.\n\nThe first trials went awry. The chemical agents used in the trenches mutated the dead, turning them into slow‑moving, mind‑less zombies that clung to the battlefield like a second skin. The Brotherhood’s experiments also birthed monstrous, chemical‑mutated behemoths—gigantic, hulking creatures that devoured both flesh and artillery alike. As the war raged, the trench lines became a living, breathing organism of death and decay.\n\nWhen the armistice was signed, the war’s final scorched‑earth tactics left the front a wasteland of ruined towns, collapsed bridges, and endless rows of trenches. The Brotherhood’s necromantic influence seeped into the very soil, turning the land into a cursed, ever‑renewing battlefield. New soldiers, drawn by rumors of glory or desperation, find themselves pulled into the trenches, only to discover that the war never ended—it simply changed form.\n\n---\n\n**4. The Core Conflict**  \nThe Necro‑Front is controlled by a sentient, necromantic plague known as *The Rotting Legion*. This force is not merely a collection of undead; it is an entity that feeds on the life force of the living and the souls of the dead. The Legion’s power is amplified by the chemical fumes that permeate the trenches, creating a feedback loop that continually resurrects fallen soldiers and mutates the environment.\n\nThe primary enemy is *The Grave Emperor*, a towering, skeletal figure wielding a rusted, rune‑etched sword that can command the Legion. He seeks to expand the Necro‑Front beyond its borders, turning the entire world into a perpetual war zone of death. The living survivors—whether remnants of the old armies, rag‑tag resistance groups, or desperate wanderers—must navigate the treacherous trenches, avoid the relentless horde of zombie infantry, and confront the monstrous behemoths that guard the deeper, more corrupted layers of the front.\n\nThe core conflict is a desperate struggle for survival against an ever‑evolving, necromantic ecosystem that thrives on the blood of the living and the corpses of the dead. Every step deeper into the trenches brings the player closer to the heart of the Legion, where the fate of the world—and the chance to break the curse—hangs in a balance of grit, horror, and the relentless march of war.",
+    "generation_time_seconds": 155,
+    "player": {
+        "tile": {
+            "name": "warrior_soldier",
+            "description": "A scarred infantryman in tattered trench gear, eyes burning with determination.",
+            "color": "#4A4A4A"
+        },
+        "back_history": "A former artillery sergeant haunted by the loss of his squad, he seeks redemption by destroying the Rotting Legion and freeing the dead.",
+        "tile_with_texture": {
+            "name": "warrior_soldier",
+            "description": "A scarred infantryman in tattered trench gear, eyes burning with determination.",
+            "color": "#4A4A4A",
+            "texture": {
+                "tileset_position": {
+                    "x": 25,
+                    "y": 6
+                },
+                "tileset_description": "A gnome with a beard and a hat. It appears to be a warrior gnome with different armor. A small person with hat and beard."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A narrow, soot‑blackened trench littered with broken gas masks and rusted barbed wire. The sky is a perpetual twilight, filtered through a haze of phosphorescent green fumes. Acid‑blue rain slicks the mud, reflecting the flicker of dying gas lamps. The air tastes of burning oil and rotting flesh, while distant artillery crackles and the mournful groan of zombie infantry echoes over the trench walls.",
+                "name": "The Frontline Trenches",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "rusted_wall",
+                    "description": "Cracked concrete and rusted steel rails, scarred by artillery fire.",
+                    "color": "#4A4A4A"
+                },
+                "floor_tile": {
+                    "name": "mud_floor",
+                    "description": "Slick, muddy trench floor coated in phosphorescent sludge.",
+                    "color": "#2E2E2E"
+                },
+                "wall_tile_with_texture": {
+                    "name": "rusted_wall",
+                    "description": "Cracked concrete and rusted steel rails, scarred by artillery fire.",
+                    "color": "#4A4A4A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "mud_floor",
+                    "description": "Slick, muddy trench floor coated in phosphorescent sludge.",
+                    "color": "#2E2E2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Deeper trenches where the chemical fumes thicken into a sickly green mist. The walls are lined with skeletal artillery barrels and broken gas lamps sputtering ectoplasmic light. The ground is a mosaic of rusted rails and bone fragments, slick with acid rain. The smell of sulfur and decayed corpses hangs heavy. Distant artillery shells explode in brief flashes, revealing mutated behemoths lurking in the mud.",
+                "name": "The Soot‑Laden Depths",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "bone_rail_wall",
+                    "description": "Concrete walls embedded with skeletal artillery barrels and broken rails.",
+                    "color": "#5A5A5A"
+                },
+                "floor_tile": {
+                    "name": "rusted_mud",
+                    "description": "Mud mixed with rust flakes and phosphorescent residue.",
+                    "color": "#3C3C3C"
+                },
+                "wall_tile_with_texture": {
+                    "name": "bone_rail_wall",
+                    "description": "Concrete walls embedded with skeletal artillery barrels and broken rails.",
+                    "color": "#5A5A5A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "rusted_mud",
+                    "description": "Mud mixed with rust flakes and phosphorescent residue.",
+                    "color": "#3C3C3C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The heart of the Necro‑Front, a cavernous chamber where the Rotting Legion swirls in a vortex of green ash. The walls are a living tapestry of bone, rust, and pulsing ectoplasm. Lightning from artillery strikes illuminates the chamber, revealing the towering Grave Emperor's skeletal silhouette. The air is thick with the metallic tang of blood‑stained earth, the hiss of gas leaks, and the low, resonant chant of the Legion. The ground is a churned mass of rotted earth and shattered artillery.",
+                "name": "The Rotting Core",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "living_bone_wall",
+                    "description": "Walls of bone and rust, alive with pulsing ectoplasm.",
+                    "color": "#2A2A2A"
+                },
+                "floor_tile": {
+                    "name": "rotting_chamber_floor",
+                    "description": "A churned, rotted earth floor with splintered artillery fragments.",
+                    "color": "#1A1A1A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "living_bone_wall",
+                    "description": "Walls of bone and rust, alive with pulsing ectoplasm.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "rotting_chamber_floor",
+                    "description": "A churned, rotted earth floor with splintered artillery fragments.",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusted_scout",
+                    "description": "A gaunt, skeletal soldier draped in tattered trench coats, its joints creaking as it moves with unnerving speed.",
+                    "color": "#4A4A4A"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "rusted_scout",
+                    "description": "A gaunt, skeletal soldier draped in tattered trench coats, its joints creaking as it moves with unnerving speed.",
+                    "color": "#4A4A4A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 6
+                        },
+                        "tileset_description": "A skeleton without weapons or armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "skeleton_sapper",
+                    "description": "A hulking skeleton with a rusted pickaxe, its bone armor clanking as it trudges slowly through the mud.",
+                    "color": "#6B2C2C"
+                },
+                "weight": 4,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "skeleton_sapper",
+                    "description": "A hulking skeleton with a rusted pickaxe, its bone armor clanking as it trudges slowly through the mud.",
+                    "color": "#6B2C2C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "acid_goblin",
+                    "description": "A small, wiry creature with phosphorescent green eyes, dripping acidic slime from its cracked armor.",
+                    "color": "#0A8F0A"
+                },
+                "weight": 2,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "acid_goblin",
+                    "description": "A small, wiry creature with phosphorescent green eyes, dripping acidic slime from its cracked armor.",
+                    "color": "#0A8F0A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_armor",
+                    "description": "A towering figure clad in jagged bone plates, its massive frame exudes a slow, relentless presence.",
+                    "color": "#A9A9A9"
+                },
+                "weight": 7,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "bone_armor",
+                    "description": "A towering figure clad in jagged bone plates, its massive frame exudes a slow, relentless presence.",
+                    "color": "#A9A9A9",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_trench_dagger",
+                    "description": "A jagged dagger forged from scavenged trench steel, its blade stained with phosphorescent green sludge.",
+                    "color": "#4A4A4A"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_trench_dagger",
+                    "description": "A jagged dagger forged from scavenged trench steel, its blade stained with phosphorescent green sludge.",
+                    "color": "#4A4A4A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "phosphor_bow",
+                    "description": "A makeshift bow strung with twisted cables, its limbs glowing faintly with ectoplasmic residue.",
+                    "color": "#0A8F0A"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "phosphor_bow",
+                    "description": "A makeshift bow strung with twisted cables, its limbs glowing faintly with ectoplasmic residue.",
+                    "color": "#0A8F0A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 6
+                        },
+                        "tileset_description": "Simple bow of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gas_gun",
+                    "description": "A crude pistol that fires compressed chemical gas, its barrel etched with runes that pulse when fired.",
+                    "color": "#333333"
+                },
+                "rarity": 3,
+                "weight": 5,
+                "mana_cost": 4,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "gas_gun",
+                    "description": "A crude pistol that fires compressed chemical gas, its barrel etched with runes that pulse when fired.",
+                    "color": "#333333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 9
+                        },
+                        "tileset_description": "Old pistol. Alien pistol. Different pistol."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_spear",
+                    "description": "A polearm carved from the ribcage of a massive mutated beast, its tip dripping with necrotic ooze.",
+                    "color": "#8B0000"
+                },
+                "rarity": 5,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "bone_spear",
+                    "description": "A polearm carved from the ribcage of a massive mutated beast, its tip dripping with necrotic ooze.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "necro_staff",
+                    "description": "A staff topped with a cracked skull, its wood pulsing with a sickly green aura.",
+                    "color": "#006400"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 7,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "necro_staff",
+                    "description": "A staff topped with a cracked skull, its wood pulsing with a sickly green aura.",
+                    "color": "#006400",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rusted_crossbow",
+                    "description": "An ancient crossbow corroded by time, its bolts humming with a low, ominous vibration.",
+                    "color": "#8B4513"
+                },
+                "rarity": 9,
+                "weight": 7,
+                "mana_cost": 6,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "rusted_crossbow",
+                    "description": "An ancient crossbow corroded by time, its bolts humming with a low, ominous vibration.",
+                    "color": "#8B4513",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 5
+                        },
+                        "tileset_description": "Large wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "plague_throwing_knife",
+                    "description": "A small knife coated in a toxic sludge, its handle slick with phosphorescent slime.",
+                    "color": "#2F4F4F"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "plague_throwing_knife",
+                    "description": "A small knife coated in a toxic sludge, its handle slick with phosphorescent slime.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 8
+                        },
+                        "tileset_description": "Small, one-handed axe with only one blade at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "mutated_hammer",
+                    "description": "A massive hammer forged from the fused bones of a behemoth, its head crackling with electric green sparks.",
+                    "color": "#FF4500"
+                },
+                "rarity": 10,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "mutated_hammer",
+                    "description": "A massive hammer forged from the fused bones of a behemoth, its head crackling with electric green sparks.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "specter_wand",
+                    "description": "A slender wand made of blackened wood, its tip swirling with spectral blue light.",
+                    "color": "#00008B"
+                },
+                "rarity": 7,
+                "weight": 3,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "specter_wand",
+                    "description": "A slender wand made of blackened wood, its tip swirling with spectral blue light.",
+                    "color": "#00008B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a sword symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "chemical_explosive_device",
+                    "description": "A volatile device that releases a burst of acid-blue gas upon detonation, leaving a trail of phosphorescent residue.",
+                    "color": "#00FFFF"
+                },
+                "rarity": 9,
+                "weight": 5,
+                "mana_cost": 9,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "chemical_explosive_device",
+                    "description": "A volatile device that releases a burst of acid-blue gas upon detonation, leaving a trail of phosphorescent residue.",
+                    "color": "#00FFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 47,
+                            "y": 9
+                        },
+                        "tileset_description": "Smoke grenade."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "heart_of_the_legion",
+            "description": "A pulsating, blackened crystal that throbs with sickly green light, the living core of the Necro‑Front's necromantic plague.",
+            "color": "#0B0B0B"
+        },
+        "back_history": "The Heart of the Legion was forged in the crucible of the Brotherhood's forbidden ritual, a shard of the very soul that feeds the Rotting Legion. It sits at the deepest trench, pulsing with the stolen life‑force of every fallen soldier. Only by extracting this crystal can the player sever the connection between the plague and the battlefield, halting the endless cycle of death. Leaving it buried would allow the Legion to grow, spreading its corruption across the world and turning the war into an eternal nightmare.",
+        "tile_with_texture": {
+            "name": "heart_of_the_legion",
+            "description": "A pulsating, blackened crystal that throbs with sickly green light, the living core of the Necro‑Front's necromantic plague.",
+            "color": "#0B0B0B",
+            "texture": {
+                "tileset_position": {
+                    "x": 46,
+                    "y": 8
+                },
+                "tileset_description": "Diamond necklace with a strange figure in the middle, it looks like a spider, an insect."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "output_tokens": 8348,
+            "output_token_details": {
+                "reasoning": 5729
+            },
+            "input_tokens": 9737,
+            "total_tokens": 18085
+        }
+    }
+}

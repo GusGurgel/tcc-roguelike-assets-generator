@@ -1,0 +1,604 @@
+{
+    "name": "Titan's Gullet",
+    "raw_description": "A twisted, flesh-and-bone labyrinth inside the stomach of a sleeping eldritch god, swarming with parasitic worms and twisted digestive demons.",
+    "description": "**1. Setting Name**  \n**The Gullet of the Somnolent Titan**\n\n**2. Visual Style & Atmosphere**  \nThe Gullet is a living, breathing cathedral of flesh. Imagine a sprawling, cavernous maze carved from bone and muscle, its walls slick with a viscous, amber‑colored fluid that glows faintly with phosphorescent spores. The art direction is a blend of **Gothic Horror** and **Bio‑Mechanical**: towering ribcages rise like ruined cathedrals, while tendrils of living tissue pulse like veins of a colossal heart. Light is scarce, filtered through translucent membranes that drip with bile, casting long, trembling shadows. The atmosphere is thick with the metallic tang of blood and the acrid scent of rotting flesh, punctuated by the low, resonant groan of a stomach in slow, rhythmic contraction. Ambient noise is a constant, low hum of digestion—soft, almost musical, yet threatening—interrupted by the screech of parasitic worms and the guttural growls of digestive demons.\n\n**3. Lore**  \nLong before the world of mortals was born, a god of nightmares—known to the ancients as **Khor’vash, the Somnolent Titan**—was sealed beneath the earth by a coalition of star‑worshipping cultists. They bound the god with runes that turned its vast, cavernous stomach into a prison of living flesh. The Titan’s body became a labyrinthine organ, its digestive system a twisted maze of bone, muscle, and gut. Over eons, the seal has weakened, and the Titan’s dreams seep into the very walls of its stomach, warping reality into grotesque forms.\n\nThe Gullet is now a place of both awe and terror. It is a living archive of the Titan’s nightmares, a place where the boundaries between dream and flesh blur. Those who wander its corridors are swallowed by the Titan’s hunger, their bodies used as nourishment for the parasitic worms that thrive in the nutrient‑rich environment. The Titan’s own consciousness occasionally stirs, manifesting as a corrupting influence that twists the minds of intruders, turning allies into enemies and reality into a shifting nightmare.\n\n**4. Core Conflict**  \nThe heart of the Gullet is a battle between three forces:\n\n1. **The Digestive Demons** – twisted, flesh‑bound entities that feed on intruders, grow stronger with each bite, and can merge with the Titan’s own organs to form new, more powerful horrors.\n2. **The Parasitic Swarm** – a vast network of worm‑like parasites that infiltrate the body of any creature that enters, siphoning strength and spreading the Titan’s dream‑corruption through their bodies.\n3. **The Titan’s Dream‑Waking** – the latent consciousness of Khor’vash, which occasionally breaks through the seal. When it does, the dreamscape of the Titan floods the Gullet, warping physics, summoning nightmarish constructs, and attempting to consume the very fabric of reality.\n\nPlayers must navigate this living, breathing nightmare, battling the demons and worms while resisting the Titan’s dream‑corruption. The ultimate goal is either to survive and escape the Gullet, or to harness the Titan’s power to break the seal and unleash its full, eldritch might upon the world. The setting is a crucible of horror and ambition, where every breath could be the last and every decision could tip the balance between salvation and eternal consumption.",
+    "generation_time_seconds": 124,
+    "player": {
+        "tile": {
+            "name": "cursed_cultist",
+            "description": "A once‑holy cultist, now twisted by the Titan’s dreams, wielding a bone‑bound staff and a sigil of Khor’vash. He seeks redemption by destroying the seal, but his mind frays with each step.",
+            "color": "#4B2C2C"
+        },
+        "back_history": "A former cultist of the star‑worshipping sect, now a desperate wanderer seeking to break the Titan’s seal to save his dying sister, while battling the dream‑corruption that gnaws at his mind.",
+        "tile_with_texture": {
+            "name": "cursed_cultist",
+            "description": "A once‑holy cultist, now twisted by the Titan’s dreams, wielding a bone‑bound staff and a sigil of Khor’vash. He seeks redemption by destroying the seal, but his mind frays with each step.",
+            "color": "#4B2C2C",
+            "texture": {
+                "tileset_position": {
+                    "x": 28,
+                    "y": 2
+                },
+                "tileset_description": "A horned creature wielding a staff. Simple armor with some details."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A shallow, dimly lit corridor of bone and muscle, the walls slick with amber fluid. Light filters through translucent membranes, casting trembling shadows. The air smells of bile and rotting flesh, with a low hum of digestion. Parasite worms screech.",
+                "name": "The Gullet's Entrance",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "ribbed_wall",
+                    "description": "Walls of exposed ribcages, veins pulsing.",
+                    "color": "#4A2C2C"
+                },
+                "floor_tile": {
+                    "name": "slick_bone_floor",
+                    "description": "Floor made of polished bone slabs, slick with amber fluid.",
+                    "color": "#A67C52"
+                },
+                "wall_tile_with_texture": {
+                    "name": "ribbed_wall",
+                    "description": "Walls of exposed ribcages, veins pulsing.",
+                    "color": "#4A2C2C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "slick_bone_floor",
+                    "description": "Floor made of polished bone slabs, slick with amber fluid.",
+                    "color": "#A67C52",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A deeper chamber where the walls become thicker, the fluid glows brighter. Light is scarce, filtered through dripping membranes. Smell of blood and bile. Ambient sounds: rhythmic groan of the Titan's stomach, low growls of digestive demons.",
+                "name": "The Crimson Maw",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "muscle_wall",
+                    "description": "Walls of thick muscle tissue, veins pulsing like arteries.",
+                    "color": "#5C3A3A"
+                },
+                "floor_tile": {
+                    "name": "blood_soaked_floor",
+                    "description": "Floor of darkened flesh, stained with blood.",
+                    "color": "#8B0000"
+                },
+                "wall_tile_with_texture": {
+                    "name": "muscle_wall",
+                    "description": "Walls of thick muscle tissue, veins pulsing like arteries.",
+                    "color": "#5C3A3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "blood_soaked_floor",
+                    "description": "Floor of darkened flesh, stained with blood.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The deepest chamber where the Titan's consciousness stirs. Walls are a swirling vortex of dream‑corrupted flesh, phosphorescent spores glowing. Light is almost nonexistent, shadows shift. Smell of ozone and rotting flesh. Ambient: high‑pitched hum, echoing groans, and the crackling of reality tearing.",
+                "name": "The Titan's Dream Core",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "dream_vortex_wall",
+                    "description": "Walls of swirling dream‑corrupted tissue, veins like pulsating galaxies.",
+                    "color": "#1E3A3A"
+                },
+                "floor_tile": {
+                    "name": "dream_corrupted_floor",
+                    "description": "Floor of shifting, translucent flesh, constantly morphing.",
+                    "color": "#2F4F4F"
+                },
+                "wall_tile_with_texture": {
+                    "name": "dream_vortex_wall",
+                    "description": "Walls of swirling dream‑corrupted tissue, veins like pulsating galaxies.",
+                    "color": "#1E3A3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "dream_corrupted_floor",
+                    "description": "Floor of shifting, translucent flesh, constantly morphing.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "serrated_gullet_slither",
+                    "description": "A translucent, sinewy creature that slides along the walls, its body a ribbon of phosphorescent bile.",
+                    "color": "#4B2A1E"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "serrated_gullet_slither",
+                    "description": "A translucent, sinewy creature that slides along the walls, its body a ribbon of phosphorescent bile.",
+                    "color": "#4B2A1E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ribcage_maw",
+                    "description": "A hulking mass of bone and muscle, its ribcage exposed like a cathedral of flesh, exuding a faint greenish glow.",
+                    "color": "#556B2F"
+                },
+                "weight": 9,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "ribcage_maw",
+                    "description": "A hulking mass of bone and muscle, its ribcage exposed like a cathedral of flesh, exuding a faint greenish glow.",
+                    "color": "#556B2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 2
+                        },
+                        "tileset_description": "An orc, carrying nothing and wearing no armor. Details on the shoulders. Appears to be stronger than a normal orc."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bile_gland_maw",
+                    "description": "A grotesque maw dripping with acidic bile, its surface slick and pulsing with veins of amber.",
+                    "color": "#8B4513"
+                },
+                "weight": 1,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "bile_gland_maw",
+                    "description": "A grotesque maw dripping with acidic bile, its surface slick and pulsing with veins of amber.",
+                    "color": "#8B4513",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "digestive_goliath",
+                    "description": "A towering titan of muscle, its bulk a wall of sinew and bone, breathing slow, resonant groans.",
+                    "color": "#2F4F4F"
+                },
+                "weight": 10,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "digestive_goliath",
+                    "description": "A towering titan of muscle, its bulk a wall of sinew and bone, breathing slow, resonant groans.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 9
+                        },
+                        "tileset_description": "A giant, very strong human with a band across his chest."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "toxic_worm_queen",
+                    "description": "A swarm of parasitic worms coalesced into a queenly form, exuding a toxic, greenish vapor.",
+                    "color": "#006400"
+                },
+                "weight": 2,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "toxic_worm_queen",
+                    "description": "A swarm of parasitic worms coalesced into a queenly form, exuding a toxic, greenish vapor.",
+                    "color": "#006400",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupting_serpent",
+                    "description": "A long, coiling serpent of living tissue, its scales shimmering with phosphorescent spores.",
+                    "color": "#8B0000"
+                },
+                "weight": 8,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "corrupting_serpent",
+                    "description": "A long, coiling serpent of living tissue, its scales shimmering with phosphorescent spores.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "titanic_maw",
+                    "description": "The colossal, pulsing maw of the Titan itself, a cavernous void that swallows light.",
+                    "color": "#000000"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "titanic_maw",
+                    "description": "The colossal, pulsing maw of the Titan itself, a cavernous void that swallows light.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 8
+                        },
+                        "tileset_description": "An octopus, an alien, a creature from another universe."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "dream_waking_specter",
+                    "description": "A translucent, shifting specter that flickers between reality and nightmare, its form made of vaporous dream‑corruption.",
+                    "color": "#708090"
+                },
+                "weight": 3,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "dream_waking_specter",
+                    "description": "A translucent, shifting specter that flickers between reality and nightmare, its form made of vaporous dream‑corruption.",
+                    "color": "#708090",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_vein_horror",
+                    "description": "A monstrous entity formed from blood‑veins, its surface a network of pulsating crimson threads.",
+                    "color": "#8B0000"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "blood_vein_horror",
+                    "description": "A monstrous entity formed from blood‑veins, its surface a network of pulsating crimson threads.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "bloodstained_dagger_tile",
+                    "description": "A short blade, its handle wrapped in tattered flesh, dripping with amber fluid.",
+                    "color": "#8B0000"
+                },
+                "rarity": 1,
+                "weight": 2,
+                "mana_cost": 1,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "bloodstained_dagger_tile",
+                    "description": "A short blade, its handle wrapped in tattered flesh, dripping with amber fluid.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rusted_bone_sword_tile",
+                    "description": "A sword forged from a broken rib, its edge dulled by centuries of decay.",
+                    "color": "#A52A2A"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 2,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusted_bone_sword_tile",
+                    "description": "A sword forged from a broken rib, its edge dulled by centuries of decay.",
+                    "color": "#A52A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gullet_hammer_tile",
+                    "description": "A heavy hammer with a head of compressed muscle tissue, humming with latent power.",
+                    "color": "#8B4513"
+                },
+                "rarity": 3,
+                "weight": 6,
+                "mana_cost": 3,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "gullet_hammer_tile",
+                    "description": "A heavy hammer with a head of compressed muscle tissue, humming with latent power.",
+                    "color": "#8B4513",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "skeletal_bow_tile",
+                    "description": "A bow carved from a collapsed femur, its string a taut vein of phosphorescent fluid.",
+                    "color": "#708090"
+                },
+                "rarity": 5,
+                "weight": 3,
+                "mana_cost": 4,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "skeletal_bow_tile",
+                    "description": "A bow carved from a collapsed femur, its string a taut vein of phosphorescent fluid.",
+                    "color": "#708090",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "parasitic_crossbow_tile",
+                    "description": "A crossbow whose limbs are living tendrils, firing bolts of bile.",
+                    "color": "#556B2F"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "parasitic_crossbow_tile",
+                    "description": "A crossbow whose limbs are living tendrils, firing bolts of bile.",
+                    "color": "#556B2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "dreamfire_staff_tile",
+                    "description": "A staff pulsing with the Titan's dream‑corruption, its tip a swirling vortex of phosphorescent spores.",
+                    "color": "#4B0082"
+                },
+                "rarity": 9,
+                "weight": 4,
+                "mana_cost": 8,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "dreamfire_staff_tile",
+                    "description": "A staff pulsing with the Titan's dream‑corruption, its tip a swirling vortex of phosphorescent spores.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bile_cannon_tile",
+                    "description": "A massive gun that hurls globes of corrosive bile, leaving a trail of phosphorescent residue.",
+                    "color": "#FF4500"
+                },
+                "rarity": 10,
+                "weight": 8,
+                "mana_cost": 9,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "bile_cannon_tile",
+                    "description": "A massive gun that hurls globes of corrosive bile, leaving a trail of phosphorescent residue.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "wormblade_tile",
+                    "description": "A dagger forged from the spine of a giant parasitic worm, its edge slick with bile.",
+                    "color": "#2F4F4F"
+                },
+                "rarity": 1,
+                "weight": 2,
+                "mana_cost": 1,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "wormblade_tile",
+                    "description": "A dagger forged from the spine of a giant parasitic worm, its edge slick with bile.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 6
+                        },
+                        "tileset_description": "Highly rare iron dagger."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "digestive_axe_tile",
+                    "description": "An axe with a head of hardened gut, its haft wrapped in sinew, it cleaves through flesh as if it were paper.",
+                    "color": "#8B0000"
+                },
+                "rarity": 7,
+                "weight": 7,
+                "mana_cost": 6,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "digestive_axe_tile",
+                    "description": "An axe with a head of hardened gut, its haft wrapped in sinew, it cleaves through flesh as if it were paper.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "phosphor_throwing_knife_tile",
+                    "description": "A small knife that glows faintly with phosphorescent spores, it shimmers as it arcs.",
+                    "color": "#00FFFF"
+                },
+                "rarity": 2,
+                "weight": 1,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "phosphor_throwing_knife_tile",
+                    "description": "A small knife that glows faintly with phosphorescent spores, it shimmers as it arcs.",
+                    "color": "#00FFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 8
+                        },
+                        "tileset_description": "Small, one-handed axe with only one blade at the tip."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "khorvash_core_fragment",
+            "description": "A massive, iridescent shard of living bone, throbbing with a low, resonant hum that echoes the Titan's slow digestion. Its surface ripples like wet blood, and faint phosphorescent spores cling to its edges, making it glow with an otherworldly light.",
+            "color": "#8B0000"
+        },
+        "back_history": "The Khor’vash Core Fragment is the heart of the Titan’s dream‑waking. Sealed within the deepest recesses of the Gullet, it pulses with the raw will of Khor’vash, feeding the parasitic swarm and empowering the digestive demons. If the fragment remains bound, the Titan’s consciousness can never fully break free, and the world above will be forever protected from the Titan’s eldritch hunger. To free the world, the player must extract the fragment and carry it back to the entrance, where the seal’s runes can be shattered and the Titan’s dream‑waking sealed once more. Leaving it behind would allow the dream to flood the world, turning reality into a living nightmare.",
+        "tile_with_texture": {
+            "name": "khorvash_core_fragment",
+            "description": "A massive, iridescent shard of living bone, throbbing with a low, resonant hum that echoes the Titan's slow digestion. Its surface ripples like wet blood, and faint phosphorescent spores cling to its edges, making it glow with an otherworldly light.",
+            "color": "#8B0000",
+            "texture": {
+                "tileset_position": {
+                    "x": 41,
+                    "y": 7
+                },
+                "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "output_token_details": {
+                "reasoning": 6732
+            },
+            "input_tokens": 10084,
+            "output_tokens": 9918,
+            "total_tokens": 20002
+        }
+    }
+}

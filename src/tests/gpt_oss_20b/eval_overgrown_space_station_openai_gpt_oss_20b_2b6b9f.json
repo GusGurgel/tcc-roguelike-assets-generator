@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-20b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 90,
+    "semantic_reconstruction_metric": 0.8370752189912275,
+    "prompt": "An abandoned orbital space station overgrown by aggressive, bioluminescent plant life and hive-mind fungi.",
+    "prompt_name": "overgrown_space_station",
+    "prompt_index": 2,
+    "asset_bundle_file": "bundle_overgrown_space_station_openai_gpt_oss_20b_2b6b9f.json"
+}

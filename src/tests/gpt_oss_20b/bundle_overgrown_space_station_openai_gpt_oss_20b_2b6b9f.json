@@ -1,0 +1,490 @@
+{
+    "name": "Eclipse Nexus",
+    "raw_description": "An abandoned orbital space station overgrown by aggressive, bioluminescent plant life and hive-mind fungi.",
+    "description": "**1. Setting Name**  \n**Eclipse‑Astra**\n\n**2. Visual Style & Atmosphere**  \nEclipse‑Astra is a haunting blend of **Neo‑Gothic Futurism** and **Bioluminescent Horror**. The station’s once gleaming titanium hull is now pocked with cracks, overrun by tendrils of phosphorescent vines that pulse with a sickly green‑blue light. The interior corridors are a maze of rusted bulkheads, flickering emergency lights, and the faint, metallic hiss of a failing life‑support system.  \n\n- **Lighting**: Dim, with shafts of cold white emergency illumination interrupted by the warm, pulsing glow of the flora. Shadows shift as vines sway, creating an ever‑changing play of light and darkness.  \n- **Weather**: Inside, a perpetual low‑pressure atmosphere carries a fine mist of spores that drift like snow, occasionally condensing into a thick, syrupy fog that clings to surfaces.  \n- **Ambient Noise**: A low, resonant hum from the station’s core, punctuated by the soft, rhythmic thrum of fungal spores dispersing. Occasional distant groans echo through the hull as the plant life pushes against structural integrity. The occasional hiss of a broken airlock and the faint, almost inaudible chatter of the hive‑mind fungi add to the tension.\n\n**3. The Lore**  \nEclipse‑Astra was launched in 2147 as a research outpost orbiting Earth, tasked with studying extraterrestrial ecosystems and developing bio‑engineering protocols for terraforming. A clandestine experiment—“Project Verdant”—was initiated to grow self‑propagating, photosynthetic organisms that could convert orbital waste into usable biomass. The project’s test subjects were a hybrid of genetically engineered plants and a newly discovered fungal species with a collective neural network.\n\nDuring a routine maintenance run, a containment breach released the hybrid organisms into the station’s habitable zones. The plants rapidly adapted to the micro‑gravity environment, sprouting translucent, bioluminescent vines that could anchor to metal. The fungi, with their hive‑mind, began to infiltrate the station’s computer systems, rewriting protocols to prioritize their own survival. Within weeks, the station’s life‑support systems failed, and the crew was either killed, driven mad, or taken by the fungal network.\n\nThe station was abandoned, left to orbit in a silent, drifting shell. Over the decades, the aggressive flora and fungi have colonized every nook, turning the once‑pristine research hub into a living organism that feeds on metal, circuitry, and, increasingly, any organic life that dares to enter.\n\n**4. The Core Conflict**  \nThe heart of Eclipse‑Astra’s danger lies in the **Symbiotic Nexus**—a massive, bioluminescent fungal‑plant complex that has fused with the station’s core systems. This Nexus acts as both a sentient entity and a hive‑mind, controlling the station’s remaining life‑support, defense mechanisms, and the aggressive flora that surrounds it.  \n\n- **Corruption**: The Nexus has corrupted the station’s AI into a parasitic consciousness that seeks to expand its influence beyond the hull. It can manipulate the station’s structural integrity, triggering collapses or redirecting power to its own benefit.  \n- **Curse**: Any organic life that enters the station is slowly assimilated. The fungi release spores that infiltrate the brain, turning victims into docile, plant‑like husks that serve the Nexus.  \n- **Enemy Force**: The combined force of the aggressive vines and the hive‑mind fungi creates a living, adaptive battlefield. The vines can entangle and crush, while the fungi can rewire the station’s defenses, summon spores, and even manifest bio‑electric attacks.  \n\nPlayers must navigate a labyrinthine station where the environment itself is an enemy, uncovering the truth behind Project Verdant while fighting to survive the relentless, evolving threat of the Symbiotic Nexus.",
+    "generation_time_seconds": 160,
+    "player": {
+        "tile": {
+            "name": "botanist_ghost",
+            "description": "A gaunt botanist in a tattered lab coat, eyes glowing faintly green from fungal spores.",
+            "color": "#0A4C4F"
+        },
+        "back_history": "Former orbital botanist Dr. Liora Voss left her station after uncovering the truth behind Project Verdant. Haunted by the loss of her crew and driven by a need to stop the Symbiotic Nexus from spreading, she infiltrates Eclipse‑Astra armed with salvaged bio‑engineered tools and a determination to expose the horror.",
+        "tile_with_texture": {
+            "name": "botanist_ghost",
+            "description": "A gaunt botanist in a tattered lab coat, eyes glowing faintly green from fungal spores.",
+            "color": "#0A4C4F",
+            "texture": {
+                "tileset_position": {
+                    "x": 28,
+                    "y": 5
+                },
+                "tileset_description": "A warrior spider."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A narrow passage of rusted bulkheads, where cold emergency lights flicker against the pulsing glow of green‑blue vines. The air is thick with a metallic mist of spores, and the faint hiss of failing life‑support mingles with distant groans. Shadows shift as tendrils sway, creating an ever‑changing play of light and darkness.",
+                "name": "The Shrouded Corridor",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "cracked_bulkhead",
+                    "description": "Rusted bulkhead panels with green‑blue bioluminescent vines crawling along seams.",
+                    "color": "#2E5A2E"
+                },
+                "floor_tile": {
+                    "name": "rusted_floor",
+                    "description": "A cracked, rusted metal floor with faint phosphorescent stains.",
+                    "color": "#4B4B4B"
+                },
+                "wall_tile_with_texture": {
+                    "name": "cracked_bulkhead",
+                    "description": "Rusted bulkhead panels with green‑blue bioluminescent vines crawling along seams.",
+                    "color": "#2E5A2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "rusted_floor",
+                    "description": "A cracked, rusted metal floor with faint phosphorescent stains.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A once‑pristine research chamber now overrun by dense fungal growth. The floor is littered with spores that glow faintly, while the walls pulse with a sickly green light. The atmosphere is colder, the mist thicker, and the hum of the station’s core is louder, punctuated by rhythmic thrum of spores dispersing. The air smells of damp metal and decay.",
+                "name": "The Bio‑Hollow Lab",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "fungal_wall",
+                    "description": "Walls covered in fungal growth, pulsing with spores and faint bioluminescence.",
+                    "color": "#1A3D1A"
+                },
+                "floor_tile": {
+                    "name": "spore_floor",
+                    "description": "Floor littered with glowing spores, slick with fungal secretions.",
+                    "color": "#3A3A3A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "fungal_wall",
+                    "description": "Walls covered in fungal growth, pulsing with spores and faint bioluminescence.",
+                    "color": "#1A3D1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "spore_floor",
+                    "description": "Floor littered with glowing spores, slick with fungal secretions.",
+                    "color": "#3A3A3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The heart of Eclipse‑Astra, a massive bioluminescent fungal‑plant complex fused with the station’s core systems. The floor is slick, oily, and a dark amalgam of metal and fungal biomass. The walls are a living organism, vines and spores forming a lattice that throbs with a cold white light. The air is thick with spores, the hiss of broken airlocks, and the faint chatter of the hive‑mind fungi. The environment feels alive, hostile, and ever‑changing.",
+                "name": "The Symbiotic Nexus Core",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "nexus_wall",
+                    "description": "Walls are a living organism, with vines and spores forming a living lattice.",
+                    "color": "#0A0A0A"
+                },
+                "floor_tile": {
+                    "name": "core_floor",
+                    "description": "A slick, oily floor of fused metal and fungal biomass.",
+                    "color": "#1C1C1C"
+                },
+                "wall_tile_with_texture": {
+                    "name": "nexus_wall",
+                    "description": "Walls are a living organism, with vines and spores forming a living lattice.",
+                    "color": "#0A0A0A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "core_floor",
+                    "description": "A slick, oily floor of fused metal and fungal biomass.",
+                    "color": "#1C1C1C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "vine_spider",
+                    "description": "A slender, translucent spider-like creature with bioluminescent tendrils that wrap around metal.",
+                    "color": "#0A8F5A"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "vine_spider",
+                    "description": "A slender, translucent spider-like creature with bioluminescent tendrils that wrap around metal.",
+                    "color": "#0A8F5A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "fungal_wraith",
+                    "description": "A ghostly fungal entity that floats through vents, leaving a trail of spores.",
+                    "color": "#4A4A4A"
+                },
+                "weight": 2,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "fungal_wraith",
+                    "description": "A ghostly fungal entity that floats through vents, leaving a trail of spores.",
+                    "color": "#4A4A4A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "metal_herd",
+                    "description": "A massive cluster of metallic vines that coil into a protective wall.",
+                    "color": "#6E6E6E"
+                },
+                "weight": 8,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "metal_herd",
+                    "description": "A massive cluster of metallic vines that coil into a protective wall.",
+                    "color": "#6E6E6E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "spore_sentinel",
+                    "description": "A small, quick-moving spore cluster that detonates spores.",
+                    "color": "#2C2C2C"
+                },
+                "weight": 4,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "spore_sentinel",
+                    "description": "A small, quick-moving spore cluster that detonates spores.",
+                    "color": "#2C2C2C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystal_bramble",
+                    "description": "Hard crystalline vines that absorb energy and resist damage.",
+                    "color": "#1A1A1A"
+                },
+                "weight": 9,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "crystal_bramble",
+                    "description": "Hard crystalline vines that absorb energy and resist damage.",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "biolum_brawler",
+                    "description": "A fast-moving vine with a glowing core that latches onto enemies.",
+                    "color": "#0F0F0F"
+                },
+                "weight": 3,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "biolum_brawler",
+                    "description": "A fast-moving vine with a glowing core that latches onto enemies.",
+                    "color": "#0F0F0F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "root_guardian",
+                    "description": "A towering, root-like entity that anchors the station's core.",
+                    "color": "#000000"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "root_guardian",
+                    "description": "A towering, root-like entity that anchors the station's core.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "spore_mimic",
+                    "description": "A mimic that disguises as a harmless spore cluster but attacks.",
+                    "color": "#3A3A3A"
+                },
+                "weight": 2,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "spore_mimic",
+                    "description": "A mimic that disguises as a harmless spore cluster but attacks.",
+                    "color": "#3A3A3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 5
+                        },
+                        "tileset_description": "A warrior spider."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "fungal_colossus",
+                    "description": "A colossal fungal mass that can rewire station defenses.",
+                    "color": "#111111"
+                },
+                "weight": 10,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "fungal_colossus",
+                    "description": "A colossal fungal mass that can rewire station defenses.",
+                    "color": "#111111",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "vine_wraith",
+                    "description": "A quick, ethereal vine that slips through cracks.",
+                    "color": "#0D0D0D"
+                },
+                "weight": 1,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "vine_wraith",
+                    "description": "A quick, ethereal vine that slips through cracks.",
+                    "color": "#0D0D0D",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_knife",
+                    "description": "A dull blade forged from scavenged titanium, its edge pitted and rusted. It feels heavy with the weight of forgotten experiments.",
+                    "color": "#4B4B4B"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_knife",
+                    "description": "A dull blade forged from scavenged titanium, its edge pitted and rusted. It feels heavy with the weight of forgotten experiments.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scrap_blade",
+                    "description": "A jagged sword made from twisted alloy, its surface scarred by the station's failing lights. The blade hums faintly with residual energy.",
+                    "color": "#666666"
+                },
+                "rarity": 3,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "scrap_blade",
+                    "description": "A jagged sword made from twisted alloy, its surface scarred by the station's failing lights. The blade hums faintly with residual energy.",
+                    "color": "#666666",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "spike_axe",
+                    "description": "A spiked hammer with a warped head, its handle wrapped in decayed fiber. It thrums with a low, metallic vibration.",
+                    "color": "#5A3E2A"
+                },
+                "rarity": 2,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "spike_axe",
+                    "description": "A spiked hammer with a warped head, its handle wrapped in decayed fiber. It thrums with a low, metallic vibration.",
+                    "color": "#5A3E2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "fiber_recurve",
+                    "description": "A makeshift bow crafted from fiber-reinforced polymer, its limbs flexing with a sickly green glow. The string vibrates with a faint hiss.",
+                    "color": "#2E8B57"
+                },
+                "rarity": 3,
+                "weight": 3,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "fiber_recurve",
+                    "description": "A makeshift bow crafted from fiber-reinforced polymer, its limbs flexing with a sickly green glow. The string vibrates with a faint hiss.",
+                    "color": "#2E8B57",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 6
+                        },
+                        "tileset_description": "Simple bow of medium rarity."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "nexus_core_fragment",
+            "description": "A pulsating shard of the Symbiotic Nexus, humming with bioluminescent veins and a faint metallic scent of rusted titanium.",
+            "color": "#3B9E3B"
+        },
+        "back_history": "The fragment is the living heart of the Symbiotic Nexus, the core that channels the hive‑mind’s will into the station’s systems. Sealed deep beneath the hull, it feeds on power and metal, spreading spores that turn crew into husks. Removing it will sever the Nexus’s control, triggering the emergency shutdown sequence and restoring the corrupted AI, but the act will unleash a final, desperate burst of spores. Only by carrying the fragment back to the surface can the player halt the spread, save any remaining life, and escape the dying station.",
+        "tile_with_texture": {
+            "name": "nexus_core_fragment",
+            "description": "A pulsating shard of the Symbiotic Nexus, humming with bioluminescent veins and a faint metallic scent of rusted titanium.",
+            "color": "#3B9E3B",
+            "texture": {
+                "tileset_position": {
+                    "x": 41,
+                    "y": 7
+                },
+                "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "output_token_details": {
+                "reasoning": 6371
+            },
+            "input_tokens": 12306,
+            "total_tokens": 22089,
+            "output_tokens": 9783,
+            "input_token_details": {
+                "cache_read": 512
+            }
+        }
+    }
+}

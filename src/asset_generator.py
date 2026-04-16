@@ -23,7 +23,7 @@ save_path = join(MAIN_PATH, "saves")
 # Constante de fortificação para garantir a saída estruturada
 JSON_CONSTRAINT_PROMPT = """
 **CRITICAL JSON REQUIREMENT:**
-You MUST output ONLY a valid JSON object that strictly adheres to the requested schema.
+You MUST output ONLY a valid JSON object or Arrays of JSON objects that strictly adheres to the requested schema.
 Do NOT include any conversational text, explanations, or markdown code blocks (like ```json) outside the pure JSON structure.
 Your entire response must be parseable by a standard JSON parser.
 """
@@ -75,7 +75,7 @@ Do not list specific item stats yet. Focus on the narrative and sensory details 
         structured_llm = self._get_structured_model(schema_class)
 
         last_exception = None
-        max_attempts = 5
+        max_attempts = 30
 
         for attempt in range(1, max_attempts + 1):
             try:
@@ -263,10 +263,15 @@ Generate the title now.
             ],
         )
 
+        print("gerando player")
         player = self.generate_player()
+        print("gerando dungeon_levels")
         dungeon_levels = self.generate_dungeon_levels()
+        print("gerando inimigos")
         enemies = self.generate_enemies()
+        print("gerando armas")
         weapons = self.generate_weapons()
+        print("gerando objetivo final")
         final_objective = self.generate_final_objective()
 
         player_with_texture = PlayerWithTexture(
@@ -362,24 +367,8 @@ def load_zombie_souls_asset_bundle() -> AssetBundle:
 
 
 if __name__ == "__main__":
-    # Variáveis injetadas simulando um teste unitário local
-    provider_key = Providers.GROQ
-    model_key = GroqModels.OPENAI_GPT_OSS_20B
-    prompt_index = 0
+    asset_generator = AssetsGenerator("A submerged neon-gothic underwater city filled with mutated fish-people cultists.")
+    asset_generator.provider_key = GroqModels
+    asset_generator.model_key = GroqModels.OPENAI_GPT_OSS_20B
 
-    asset_generator = AssetsGenerator(prompts[prompt_index])
-
-    asset_bundle: AssetBundle = asset_generator.generate_asset_bundle()
-
-    name = f"p_{prompt_index+1}_{model_key.replace('-', '_').replace('/', '_').lower().strip()}"
-
-    asset_bundle.name = name
-
-    with open(
-        join(MAIN_PATH, "tests", f"{name}_bundle.txt"),
-        "w",
-        encoding="utf-8",
-    ) as file:
-        file.write(asset_bundle.model_dump_json())
-
-    insert_asset_bundle(asset_bundle, model_key)
+    print(asset_generator.generate_dungeon_levels())

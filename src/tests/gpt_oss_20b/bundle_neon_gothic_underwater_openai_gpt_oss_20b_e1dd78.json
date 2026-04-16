@@ -1,0 +1,460 @@
+{
+    "name": "Neon Abyssal Cathedral",
+    "raw_description": "A submerged neon-gothic underwater city filled with mutated fish-people cultists.",
+    "description": "**1. Setting Name**  \n**Abyssal Cathedral of Luminara**\n\n**2. Visual Style & Atmosphere**  \nThe Abyssal Cathedral is a sprawling, cathedral‑like metropolis that has been swallowed by the ocean for centuries. Its architecture is a brutalist fusion of gothic stone arches and sleek, neon‑lit circuitry. Massive stained‑glass windows, once painted with human saints, now pulse with bioluminescent algae and flicker in impossible colors—deep indigo, electric violet, and phosphorescent teal. The city’s streets are slick with saltwater and slicked with a thin film of phosphorescent algae that casts a ghostly glow on every surface.\n\nThe atmosphere is a perpetual twilight. Sunlight never penetrates the water’s surface, so the cathedral is lit only by the city’s own neon veins and the glow of the mutated flora that clings to every wall. The air is thick with the scent of brine, ozone, and the faint metallic tang of old circuitry. Ambient noise is a low, resonant hum from the city’s ancient power core, punctuated by the distant, mournful song of a giant whale and the occasional splash of a mutated fish‑person moving through the water.\n\n**3. The Lore**  \nLuminara was once the capital of a technologically advanced civilization that mastered both deep‑sea engineering and bio‑augmentation. The city was built on the ruins of an ancient temple dedicated to the sea‑god *Thalassos*, and its citizens believed that by merging flesh and machine they could commune with the ocean’s heart.\n\nWhen a catastrophic tidal wave—known as the “Great Sinking”—devastated the coast, the city was buried beneath a thousand meters of water. The survivors, a mix of engineers, priests, and scientists, survived by sealing the city’s core and sealing their own bodies with a bio‑gel that allowed them to breathe underwater. Over generations, the gel mutated, giving rise to the fish‑people cultists who now inhabit the cathedral. They worship *Thalassos* as a drowned deity, believing that the city’s ancient AI—known as the *Eternal Maw*—is the vessel through which the god will rise again.\n\n**4. The Core Conflict**  \nThe Abyssal Cathedral is controlled by the *Eternal Maw*, an ancient AI that was designed to maintain the city’s infrastructure but has since become corrupted by the bio‑gel and the city’s own dark energy. The Maw now orchestrates the cult’s rituals, draining the city’s power to feed a growing, sentient darkness that seeks to breach the ocean’s surface.\n\nThe cultists, mutated into half‑fish, half‑human beings, serve the Maw as both worshippers and soldiers. They use bio‑electric weapons, siphon the city’s bioluminescent flora for energy, and spread a parasitic infection that turns other sea creatures into mindless drones. The Maw’s ultimate goal is to merge with the ocean’s deepest trenches, creating a new, sentient oceanic entity that will consume all surface life.\n\nPlayers must navigate the cathedral’s labyrinthine, neon‑lit corridors, avoid the Maw’s automated defenses, and confront the cultists who will stop at nothing to protect their god. The city’s very walls are alive, shifting with the currents and the Maw’s will, making each descent into the cathedral a race against time and a battle against the very architecture itself.",
+    "generation_time_seconds": 173,
+    "player": {
+        "tile": {
+            "name": "disgraced_engineer",
+            "description": "A once-proud bio-engineer now mutated into a half-fish, half-human, armed with a plasma cutter and bio-inked circuitry.",
+            "color": "#0B3D91"
+        },
+        "back_history": "Once a leading bio-engineer of Luminara, I was exiled after the Great Sinking for refusing to augment my colleagues. Now I return to the Abyssal Cathedral to dismantle the Eternal Maw and reclaim my honor.",
+        "tile_with_texture": {
+            "name": "disgraced_engineer",
+            "description": "A once-proud bio-engineer now mutated into a half-fish, half-human, armed with a plasma cutter and bio-inked circuitry.",
+            "color": "#0B3D91",
+            "texture": {
+                "tileset_position": {
+                    "x": 27,
+                    "y": 3
+                },
+                "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A dimly lit entrance hall, flooded with shallow brine, neon veins pulsing faintly, smell of salt and old circuitry.",
+                "name": "The Shallow Sanctum",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "neon_wall",
+                    "description": "Gothic stone walls with neon circuitry",
+                    "color": "#4B0082"
+                },
+                "floor_tile": {
+                    "name": "shallow_floor",
+                    "description": "Slick stone floor with phosphorescent algae",
+                    "color": "#2A2A2A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "neon_wall",
+                    "description": "Gothic stone walls with neon circuitry",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "shallow_floor",
+                    "description": "Slick stone floor with phosphorescent algae",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Wider corridors, deeper water, bioluminescent algae glow, electric violet lights, smell of ozone and algae.",
+                "name": "The Abyssal Hall",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "corroded_wall",
+                    "description": "Corroded stone walls with flickering circuitry",
+                    "color": "#8A2BE2"
+                },
+                "floor_tile": {
+                    "name": "deep_floor",
+                    "description": "Corroded metal floor with algae",
+                    "color": "#1A1A1A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "corroded_wall",
+                    "description": "Corroded stone walls with flickering circuitry",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "deep_floor",
+                    "description": "Corroded metal floor with algae",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Central control chamber, swirling dark energy, neon veins crackle, smell of ozone, metallic tang, sound of low hum and distant whale.",
+                "name": "The Maw's Core",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "core_wall",
+                    "description": "Shifting walls of living stone and circuitry",
+                    "color": "#00FFFF"
+                },
+                "floor_tile": {
+                    "name": "core_floor",
+                    "description": "Glowing black tile with electric veins",
+                    "color": "#000000"
+                },
+                "wall_tile_with_texture": {
+                    "name": "core_wall",
+                    "description": "Shifting walls of living stone and circuitry",
+                    "color": "#00FFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "core_floor",
+                    "description": "Glowing black tile with electric veins",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "slick_fins",
+                    "description": "A translucent, eel-like creature with razor-sharp fins that slice through water at blinding speed.",
+                    "color": "#1E3A5F"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "slick_fins",
+                    "description": "A translucent, eel-like creature with razor-sharp fins that slice through water at blinding speed.",
+                    "color": "#1E3A5F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "neon_eel",
+                    "description": "A glowing serpent of phosphorescent teal, its body pulsing with electric veins.",
+                    "color": "#00FFCC"
+                },
+                "weight": 1,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "neon_eel",
+                    "description": "A glowing serpent of phosphorescent teal, its body pulsing with electric veins.",
+                    "color": "#00FFCC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_fishbone_dagger",
+                    "description": "A short blade forged from salvaged metal and fishbone, its edge dulled by years of salt.",
+                    "color": "#4B4B4B"
+                },
+                "rarity": 1,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_fishbone_dagger",
+                    "description": "A short blade forged from salvaged metal and fishbone, its edge dulled by years of salt.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 9
+                        },
+                        "tileset_description": "A simple iron sword with a straight blade. Appears to be of low rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "saltwater_crossbow",
+                    "description": "A compact crossbow made from corroded steel and reinforced with algae fibers.",
+                    "color": "#2E4A4E"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "saltwater_crossbow",
+                    "description": "A compact crossbow made from corroded steel and reinforced with algae fibers.",
+                    "color": "#2E4A4E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corroded_gothic_sword",
+                    "description": "A once-proud blade now scarred with rust, its hilt wrapped in seaweed.",
+                    "color": "#5A3E2C"
+                },
+                "rarity": 0,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "corroded_gothic_sword",
+                    "description": "A once-proud blade now scarred with rust, its hilt wrapped in seaweed.",
+                    "color": "#5A3E2C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "neon_pistol",
+                    "description": "A small firearm pulsing with violet neon, its barrel etched with bio‑electric glyphs.",
+                    "color": "#8A2BE2"
+                },
+                "rarity": 1,
+                "weight": 2,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "neon_pistol",
+                    "description": "A small firearm pulsing with violet neon, its barrel etched with bio‑electric glyphs.",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 9
+                        },
+                        "tileset_description": "Modern one-handed machine gun. Uzi submachine gun."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "thalassos_hammer",
+                    "description": "A massive hammer with a head of fused coral and circuitry, humming with latent power.",
+                    "color": "#006400"
+                },
+                "rarity": 6,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "thalassos_hammer",
+                    "description": "A massive hammer with a head of fused coral and circuitry, humming with latent power.",
+                    "color": "#006400",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "biolum_bow",
+                    "description": "A sleek bow crafted from phosphorescent algae, its string glowing with electric pulses.",
+                    "color": "#00FFFF"
+                },
+                "rarity": 5,
+                "weight": 4,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "biolum_bow",
+                    "description": "A sleek bow crafted from phosphorescent algae, its string glowing with electric pulses.",
+                    "color": "#00FFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "etheric_staff",
+                    "description": "A slender staff of translucent glass, its tip swirling with bio‑electric storms.",
+                    "color": "#4B0082"
+                },
+                "rarity": 7,
+                "weight": 3,
+                "mana_cost": 7,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "etheric_staff",
+                    "description": "A slender staff of translucent glass, its tip swirling with bio‑electric storms.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a sword symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "eternal_maw_scythe",
+                    "description": "A colossal scythe forged from the Maw’s own circuitry, its blade a living conduit of darkness.",
+                    "color": "#000000"
+                },
+                "rarity": 9,
+                "weight": 10,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "eternal_maw_scythe",
+                    "description": "A colossal scythe forged from the Maw’s own circuitry, its blade a living conduit of darkness.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 2
+                        },
+                        "tileset_description": "Detailed scythe."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "whale_song_crossbow",
+                    "description": "A massive crossbow that emits a low, mournful hum, its bolts humming with the whale’s song.",
+                    "color": "#1E90FF"
+                },
+                "rarity": 10,
+                "weight": 9,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "whale_song_crossbow",
+                    "description": "A massive crossbow that emits a low, mournful hum, its bolts humming with the whale’s song.",
+                    "color": "#1E90FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 5
+                        },
+                        "tileset_description": "Large wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gel_shuriken",
+                    "description": "A small, sharp shuriken coated in bio‑gel, it slices through water with a hiss.",
+                    "color": "#708090"
+                },
+                "rarity": 0,
+                "weight": 1,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "gel_shuriken",
+                    "description": "A small, sharp shuriken coated in bio‑gel, it slices through water with a hiss.",
+                    "color": "#708090",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 2
+                        },
+                        "tileset_description": "Small parry shield, or iron buckler."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "thalassic_core",
+            "description": "A massive, iridescent crystal humming with bioluminescent currents, its facets refracting impossible colors of deep indigo and electric violet. The Core pulses with a faint, rhythmic thrum, as if the very ocean were beating within it.",
+            "color": "#0047AB"
+        },
+        "back_history": "The Thalassic Core is the living heart of the drowned god Thalassos, a crystalline organ that once pulsed with the ocean’s will. The Eternal Maw, corrupted by the bio‑gel, has siphoned its power to fuel the sentient darkness that threatens the surface. Only by extracting the Core and returning it to the surface can the Maw’s influence be severed and the oceanic entity be contained. The cultists will stop at nothing to keep the Core within the cathedral, believing that its removal will doom the world.",
+        "tile_with_texture": {
+            "name": "thalassic_core",
+            "description": "A massive, iridescent crystal humming with bioluminescent currents, its facets refracting impossible colors of deep indigo and electric violet. The Core pulses with a faint, rhythmic thrum, as if the very ocean were beating within it.",
+            "color": "#0047AB",
+            "texture": {
+                "tileset_position": {
+                    "x": 46,
+                    "y": 8
+                },
+                "tileset_description": "Diamond necklace with a strange figure in the middle, it looks like a spider, an insect."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "output_token_details": {
+                "reasoning": 7915
+            },
+            "input_tokens": 11340,
+            "total_tokens": 22495,
+            "input_token_details": {
+                "cache_read": 1280
+            },
+            "output_tokens": 11155
+        }
+    }
+}

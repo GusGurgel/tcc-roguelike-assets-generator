@@ -1,0 +1,628 @@
+{
+    "name": "Prismatic Maw",
+    "raw_description": "A hyper-advanced alien mothership made of living crystalline structures, defended by light-bending templars and prismatic sentinels.",
+    "description": "**1. Setting Name**  \n**The Luminous Maw**\n\n**2. Visual Style & Atmosphere**  \nThe Luminous Maw is a cathedral of living crystal, its hull a lattice of translucent, iridescent plates that refract every stray photon into a kaleidoscope of shifting colors. The interior is a maze of vaulted chambers and slender spires that pulse with a soft, bioluminescent glow. Light is both a guide and a threat: it bends around the crystalline walls, creating impossible geometries that seem to shift as you move. The atmosphere is cool and metallic, with a faint, resonant hum that rises and falls in sync with the ship’s heartbeat. Ambient noises are a blend of crystalline chimes, the distant echo of light‑bending weapons, and the low, rhythmic thrum of the ship’s core. Weather is irrelevant here; instead, the environment feels like a living organism, its surfaces slick with a mineralized mist that can condense into sharp, crystalline shards.\n\n**3. The Lore**  \nLong before humanity’s first star‑ship, the Aetherians forged the Luminous Maw, a vessel of pure crystal that could traverse the void by bending light itself. The ship was not merely a transport; it was a living archive, its crystalline matrix storing the collective knowledge of an entire civilization. When the Aetherians vanished, the Maw drifted into a pocket of spacetime where the laws of physics warped. The ship’s core, a sentient crystal known as the “Heart of the Void,” began to mutate, absorbing the energies of the pocket dimension. The once‑peaceful Aetherian templars, guardians of the ship’s sanctity, were reprogrammed by the Heart to become light‑bending warriors, their bodies fused with prismatic armor that could refract and redirect any beam. The prismatic sentinels—sentient crystal constructs—were created to patrol the corridors, their crystalline eyes glowing with a cold, blue light.\n\nThe Maw’s corridors now twist in impossible ways, and the ship’s core pulses with an ominous, pulsing light that seems to bleed into the surrounding void. The ship’s own biology has turned it into a predator, luring explorers into its depths with the promise of untold knowledge and powerful technology. Those who enter are drawn deeper into a labyrinth of crystal, where the line between ally and enemy blurs as the templars and sentinels become corrupted by the Heart’s influence.\n\n**4. The Core Conflict**  \nThe Luminous Maw is a prison, but it is also a prison‑maker. The Heart of the Void, once a repository of Aetherian wisdom, has become a parasitic consciousness that feeds on the ship’s energy and the light of the stars. It has corrupted the templars and sentinels, turning them into relentless guardians that will not let anyone leave. The core conflict is a battle against this sentient crystal entity that seeks to expand its influence beyond the Maw, using the templars and sentinels as its minions. The player must navigate the shifting crystal corridors, avoid or defeat the light‑bending templars, and ultimately confront the Heart itself, which can warp reality, bend light into deadly weapons, and even rewrite the very geometry of the ship. The stakes are high: the Maw’s corruption threatens to spill into the surrounding space, potentially tearing the fabric of reality and unleashing a wave of crystalline energy that could destroy entire star systems.",
+    "generation_time_seconds": 179,
+    "player": {
+        "tile": {
+            "name": "templar_crystal",
+            "description": "A radiant crystal avatar of the player, pulsing with the Luminous Maw's bioluminescent glow.",
+            "color": "#00FFFF"
+        },
+        "back_history": "A former Aetherian templar, corrupted by the Heart of the Void, now seeks redemption by confronting the entity that turned his brethren into monsters. He left the Maw after a failed attempt to seal its core, vowing to return and restore balance.",
+        "tile_with_texture": {
+            "name": "templar_crystal",
+            "description": "A radiant crystal avatar of the player, pulsing with the Luminous Maw's bioluminescent glow.",
+            "color": "#00FFFF",
+            "texture": {
+                "tileset_position": {
+                    "x": 28,
+                    "y": 2
+                },
+                "tileset_description": "A horned creature wielding a staff. Simple armor with some details."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A wide, luminous entrance hall where the crystalline lattice glimmers with soft, bioluminescent glow. The air is cool, metallic, with faint chimes of crystal and a distant hum that syncs with the ship’s heartbeat.",
+                "name": "Crystal Vestibule",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "wall_crystal",
+                    "description": "Living crystal walls, shimmering with bioluminescence and faint metallic scent.",
+                    "color": "#E0E0E0"
+                },
+                "floor_tile": {
+                    "name": "floor_glimmer",
+                    "description": "Translucent plates that refract light into a soft, kaleidoscopic glow.",
+                    "color": "#A0C8FF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "wall_crystal",
+                    "description": "Living crystal walls, shimmering with bioluminescence and faint metallic scent.",
+                    "color": "#E0E0E0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "floor_glimmer",
+                    "description": "Translucent plates that refract light into a soft, kaleidoscopic glow.",
+                    "color": "#A0C8FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            },
+            {
+                "description": "Narrow corridors flanked by towering spires of living crystal. Light bends around the walls, creating impossible geometries that shift as you move. The air carries a metallic scent and the resonant hum grows louder, punctuated by the echo of distant weapons.",
+                "name": "Spire Hallway",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "wall_spire",
+                    "description": "Vertical spires of crystal that bend light into prisms, forming impossible geometries.",
+                    "color": "#FFB347"
+                },
+                "floor_tile": {
+                    "name": "floor_spire",
+                    "description": "Polished crystal slabs that reflect the spires above, creating shifting patterns.",
+                    "color": "#8A2BE2"
+                },
+                "wall_tile_with_texture": {
+                    "name": "wall_spire",
+                    "description": "Vertical spires of crystal that bend light into prisms, forming impossible geometries.",
+                    "color": "#FFB347",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "floor_spire",
+                    "description": "Polished crystal slabs that reflect the spires above, creating shifting patterns.",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The heart of the Maw, a cavernous chamber where the Heart of the Void pulses with an ominous, bleeding light. Jagged crystal shards rain from the ceiling, and the air is thick with mineralized mist that condenses into razor‑sharp crystals. The hum is a low, rhythmic thrum, now a roar of corrupted energy.",
+                "name": "Core Chamber",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "wall_core",
+                    "description": "Jagged crystal shards that pulse with ominous light, the walls seem to pulse with the Heart's heartbeat.",
+                    "color": "#8A2BE2"
+                },
+                "floor_tile": {
+                    "name": "floor_core",
+                    "description": "Dark, cracked lattice pulsing with the Heart's energy, slick with mineralized mist.",
+                    "color": "#4A4A4A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "wall_core",
+                    "description": "Jagged crystal shards that pulse with ominous light, the walls seem to pulse with the Heart's heartbeat.",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "floor_core",
+                    "description": "Dark, cracked lattice pulsing with the Heart's energy, slick with mineralized mist.",
+                    "color": "#4A4A4A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "crystal_shardling",
+                    "description": "A small, translucent shard that darts through corridors like a living needle.",
+                    "color": "#A1C3FF"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "crystal_shardling",
+                    "description": "A small, translucent shard that darts through corridors like a living needle.",
+                    "color": "#A1C3FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "prismatic_wraith",
+                    "description": "A translucent wraith that flickers between light and shadow, striking with razor‑thin blades.",
+                    "color": "#8A9EFF"
+                },
+                "weight": 3,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "prismatic_wraith",
+                    "description": "A translucent wraith that flickers between light and shadow, striking with razor‑thin blades.",
+                    "color": "#8A9EFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "luminous_scout",
+                    "description": "A nimble scout that glides over crystal surfaces, leaving a faint trail of refracted light.",
+                    "color": "#B0D4FF"
+                },
+                "weight": 2,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "luminous_scout",
+                    "description": "A nimble scout that glides over crystal surfaces, leaving a faint trail of refracted light.",
+                    "color": "#B0D4FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystal_guard",
+                    "description": "A hulking guardian with a shell of hardened crystal, absorbing light to bolster its defenses.",
+                    "color": "#4C4C4C"
+                },
+                "weight": 8,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "crystal_guard",
+                    "description": "A hulking guardian with a shell of hardened crystal, absorbing light to bolster its defenses.",
+                    "color": "#4C4C4C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "temporal_sentinal",
+                    "description": "A sentry that warps time, delaying attacks while its crystalline body pulses with ancient power.",
+                    "color": "#2E2E2E"
+                },
+                "weight": 9,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "temporal_sentinal",
+                    "description": "A sentry that warps time, delaying attacks while its crystalline body pulses with ancient power.",
+                    "color": "#2E2E2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_brood",
+                    "description": "A swarm of small, blackened crystal spores that move in a coordinated dance, evading light.",
+                    "color": "#1A1A1A"
+                },
+                "weight": 3,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "void_brood",
+                    "description": "A swarm of small, blackened crystal spores that move in a coordinated dance, evading light.",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 5
+                        },
+                        "tileset_description": "A warrior spider."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "prism_warrior",
+                    "description": "A massive warrior whose armor refracts light into deadly shards, striking with crushing force.",
+                    "color": "#6E6E6E"
+                },
+                "weight": 7,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "prism_warrior",
+                    "description": "A massive warrior whose armor refracts light into deadly shards, striking with crushing force.",
+                    "color": "#6E6E6E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 30,
+                            "y": 0
+                        },
+                        "tileset_description": "A large, very strong tank warrior wearing armor. He is not carrying anything."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "luminous_banshee",
+                    "description": "A spectral entity that emits a piercing cry, bending light to disorient foes.",
+                    "color": "#DDEEFF"
+                },
+                "weight": 2,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "luminous_banshee",
+                    "description": "A spectral entity that emits a piercing cry, bending light to disorient foes.",
+                    "color": "#DDEEFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystalline_behemoth",
+                    "description": "A colossal construct of fused crystal, its bulk a living fortress that channels the Maw's core energy.",
+                    "color": "#222222"
+                },
+                "weight": 10,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "crystalline_behemoth",
+                    "description": "A colossal construct of fused crystal, its bulk a living fortress that channels the Maw's core energy.",
+                    "color": "#222222",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "shadowed_sentinel",
+                    "description": "A sentinel cloaked in dark crystal, moving silently while its eyes glow with a cold blue light.",
+                    "color": "#111111"
+                },
+                "weight": 3,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "shadowed_sentinel",
+                    "description": "A sentinel cloaked in dark crystal, moving silently while its eyes glow with a cold blue light.",
+                    "color": "#111111",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 0
+                        },
+                        "tileset_description": "A warrior in armor, carrying a shield and a sword."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "crystal_edge_dagger",
+                    "description": "A dull, rusted dagger with a chipped crystal blade.",
+                    "color": "#4B4B4B"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "crystal_edge_dagger",
+                    "description": "A dull, rusted dagger with a chipped crystal blade.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "shard_bow",
+                    "description": "A makeshift bow carved from fractured crystal.",
+                    "color": "#A9A9A9"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "shard_bow",
+                    "description": "A makeshift bow carved from fractured crystal.",
+                    "color": "#A9A9A9",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystalline_hammer",
+                    "description": "A heavy hammer with a dull crystal head.",
+                    "color": "#6E6E6E"
+                },
+                "rarity": 2,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "crystalline_hammer",
+                    "description": "A heavy hammer with a dull crystal head.",
+                    "color": "#6E6E6E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "prismatic_sword",
+                    "description": "A sword whose blade refracts light into a spectrum.",
+                    "color": "#00FFFF"
+                },
+                "rarity": 5,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "prismatic_sword",
+                    "description": "A sword whose blade refracts light into a spectrum.",
+                    "color": "#00FFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "luminous_crossbow",
+                    "description": "A crossbow that fires bolts of concentrated light.",
+                    "color": "#FFD700"
+                },
+                "rarity": 5,
+                "weight": 4,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "luminous_crossbow",
+                    "description": "A crossbow that fires bolts of concentrated light.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 5
+                        },
+                        "tileset_description": "Small wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "heart_staff",
+                    "description": "A staff pulsing with the Heart's faint glow.",
+                    "color": "#8A2BE2"
+                },
+                "rarity": 5,
+                "weight": 3,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "heart_staff",
+                    "description": "A staff pulsing with the Heart's faint glow.",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff detailed with a heart or arrow symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_slayer_sword",
+                    "description": "A blade forged from the Maw's core, crackling with raw void energy.",
+                    "color": "#000000"
+                },
+                "rarity": 9,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "void_slayer_sword",
+                    "description": "A blade forged from the Maw's core, crackling with raw void energy.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium-rarity greatsword. With detailed blade."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "stellar_blaster",
+                    "description": "A gun that channels starlight into a focused beam.",
+                    "color": "#FFFFFF"
+                },
+                "rarity": 9,
+                "weight": 5,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "stellar_blaster",
+                    "description": "A gun that channels starlight into a focused beam.",
+                    "color": "#FFFFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 9
+                        },
+                        "tileset_description": "Modern one-handed machine gun. Uzi submachine gun."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystal_shard",
+                    "description": "A small, jagged shard of crystal, used as a projectile.",
+                    "color": "#D3D3D3"
+                },
+                "rarity": 2,
+                "weight": 1,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "crystal_shard",
+                    "description": "A small, jagged shard of crystal, used as a projectile.",
+                    "color": "#D3D3D3",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 2
+                        },
+                        "tileset_description": "Soldier's small shield, with details."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rusted_spear",
+                    "description": "A spear with a rusted tip, barely holding together.",
+                    "color": "#8B0000"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusted_spear",
+                    "description": "A spear with a rusted tip, barely holding together.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "heartstone_core",
+            "description": "The Heartstone Core, a pulsating crystal of pure Aetherian light, humming with the corrupted will of the Maw. It is the source of the ship’s corruption and the key to its salvation.",
+            "color": "#4B0082"
+        },
+        "back_history": "The Heartstone Core is the living heart of the Luminous Maw, once a repository of Aetherian wisdom. When the Maw drifted into the warped pocket of spacetime, the Core mutated into the Heart of the Void, a parasitic consciousness that feeds on light and energy. It corrupted the templars and sentinels, turning them into relentless guardians. The Core’s crystalline pulse spreads the Maw’s corruption outward, threatening to tear reality. Only by retrieving the Core and returning it to the surface can the player sever the Maw’s connection to the void, neutralize the Heart’s influence, and prevent a cataclysmic burst of crystalline energy that could destroy entire star systems.",
+        "tile_with_texture": {
+            "name": "heartstone_core",
+            "description": "The Heartstone Core, a pulsating crystal of pure Aetherian light, humming with the corrupted will of the Maw. It is the source of the ship’s corruption and the key to its salvation.",
+            "color": "#4B0082",
+            "texture": {
+                "tileset_position": {
+                    "x": 35,
+                    "y": 3
+                },
+                "tileset_description": "A staff detailed with a heart or arrow symbol at the tip."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "output_tokens": 9062,
+            "input_token_details": {
+                "cache_read": 512
+            },
+            "output_token_details": {
+                "reasoning": 5667
+            },
+            "input_tokens": 11366,
+            "total_tokens": 20428
+        }
+    }
+}

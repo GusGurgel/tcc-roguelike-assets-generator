@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-20b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 88,
+    "semantic_reconstruction_metric": 0.7757086422908058,
+    "prompt": "A dreamscape realm made of floating staircases and melting clocks, populated by faceless manifestations of forgotten memories and nightmare weavers.",
+    "prompt_name": "surreal_dreamscape",
+    "prompt_index": 14,
+    "asset_bundle_file": "bundle_surreal_dreamscape_openai_gpt_oss_20b_a3df26.json"
+}

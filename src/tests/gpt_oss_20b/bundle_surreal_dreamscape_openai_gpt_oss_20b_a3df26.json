@@ -1,0 +1,490 @@
+{
+    "name": "Dream Loom: Heart of Time",
+    "raw_description": "A dreamscape realm made of floating staircases and melting clocks, populated by faceless manifestations of forgotten memories and nightmare weavers.",
+    "description": "**1. Setting Name**  \n**The Loom of Reverie**\n\n**2. Visual Style & Atmosphere**  \nThe Loom of Reverie is a dream‑shaped cathedral of impossible geometry. Floating staircases rise and fall like the ribs of a sleeping leviathan, their steps made of translucent, glass‑like panels that refract light into prismatic rainbows. Melting clocks hang from the ceilings, their faces dripping like liquid silver, ticking in a time that is both endless and fleeting. The entire realm is bathed in a perpetual twilight, a soft amber glow that shifts with the rhythm of the dream.  \n\nThe atmosphere is a blend of **Surrealist Noir** and **Ethereal Gothic**. The air is cool and damp, carrying the faint scent of ozone and old parchment. Ambient sound is a low, resonant hum—like distant machinery—interspersed with the distant, echoing laughter of faceless figures and the soft, almost inaudible ticking of the clocks. Light flickers as if from unseen candles, casting long, wavering shadows that seem to move independently of their sources.\n\n**3. The Lore**  \nLong before the waking world, the Loom of Reverie was a sanctuary built by the forgotten Archivists, a sect of dream‑weavers who collected the lost memories of mortals and stored them in the Loom’s endless lattice. Each floating staircase was a conduit, each clock a chronicle, and the faceless manifestations were the memories themselves—neutral, unbound, and harmless.  \n\nWhen the Archivists vanished, the Loom was left alone. The dream‑weavers who remained grew complacent, and the forgotten memories began to stir. They twisted, merging with the fabric of the Loom, and gave birth to the Nightmare Weavers—shadowy entities that feed on the very essence of memory. The Loom’s once‑peaceful halls became a maze of shifting geometry, where forgotten memories become nightmares, and the nightmares feed on the dreamers who wander within.\n\n**4. The Core Conflict**  \nThe Nightmare Weavers have taken control of the Loom’s central nexus, a colossal, melting clock known as the *Heart of Time*. They siphon the memories of anyone who enters, turning them into grotesque, faceless manifestations that haunt and manipulate the dreamscape. The Loom itself is a sentient, ever‑changing labyrinth, and the Nightmare Weavers use its geometry to trap wanderers in endless loops of their own forgotten fears.  \n\nThe danger lies in the Loom’s ability to rewrite reality: a single forgotten memory can become a new stairway, a new nightmare, or a new trap. Those who linger too long risk losing their own identity, becoming part of the Loom’s endless tapestry of forgotten selves. The only hope lies in finding the Archivists’ lost sigils, restoring the original order of the Loom, and confronting the Nightmare Weavers before the Loom collapses into a permanent nightmare.",
+    "generation_time_seconds": 148,
+    "player": {
+        "tile": {
+            "name": "dream_weaver",
+            "description": "A translucent figure draped in shifting glass robes, eyes like prismatic lenses, moving through the Loom with silent grace.",
+            "color": "#4B0082"
+        },
+        "back_history": "A former Archivist apprentice, abandoned after the Loom's fall, now seeks the lost sigils to restore memory and halt the Nightmare Weavers.",
+        "tile_with_texture": {
+            "name": "dream_weaver",
+            "description": "A translucent figure draped in shifting glass robes, eyes like prismatic lenses, moving through the Loom with silent grace.",
+            "color": "#4B0082",
+            "texture": {
+                "tileset_position": {
+                    "x": 24,
+                    "y": 7
+                },
+                "tileset_description": "The specter of a person. It looks like a transparent person."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A gentle twilight bathes the first corridor of the Loom, where floating staircases rise like the ribs of a sleeping leviathan. Translucent glass panels refract amber light into prismatic rainbows, and the air carries a faint scent of ozone and old parchment. A low hum hums in the distance, punctuated by the soft ticking of melting clocks.",
+                "name": "The Gilded Threshold",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "crystal_wall",
+                    "description": "Walls of polished crystal that shimmer with faint reflections.",
+                    "color": "#C0C0C0"
+                },
+                "floor_tile": {
+                    "name": "glass_panel",
+                    "description": "Translucent glass panels that refract light into prismatic rainbows.",
+                    "color": "#E0E0FF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "crystal_wall",
+                    "description": "Walls of polished crystal that shimmer with faint reflections.",
+                    "color": "#C0C0C0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "glass_panel",
+                    "description": "Translucent glass panels that refract light into prismatic rainbows.",
+                    "color": "#E0E0FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            },
+            {
+                "description": "The corridor twists into a maze of shifting geometry, where the walls seem to breathe. The light flickers as if from unseen candles, casting wavering shadows that move independently. The scent of damp stone mingles with ozone, and the distant laughter of faceless figures echoes through the halls. Nightmare Weavers lurk behind every corner, their presence felt in the sudden drop in temperature.",
+                "name": "The Shifting Hall",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "shattered_wall",
+                    "description": "Walls fractured by time, with jagged edges and flickering light.",
+                    "color": "#808080"
+                },
+                "floor_tile": {
+                    "name": "mirrored_floor",
+                    "description": "Polished floor that reflects the shifting geometry above.",
+                    "color": "#A0A0FF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "shattered_wall",
+                    "description": "Walls fractured by time, with jagged edges and flickering light.",
+                    "color": "#808080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "mirrored_floor",
+                    "description": "Polished floor that reflects the shifting geometry above.",
+                    "color": "#A0A0FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "At the heart of the Loom, the colossal melting clock known as the Heart of Time dominates the chamber. The air grows colder, the amber glow turning to a pale, sickly hue. The walls are a lattice of gears and clockwork, each tick resonating with a chilling rhythm. The Nightmare Weavers have taken control, their shadows weaving through the geometry, ready to devour any memory that dares to enter.",
+                "name": "The Heart of Time",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "clockwork_wall",
+                    "description": "Walls embedded with gears and ticking mechanisms, pulsing with the rhythm of the Heart.",
+                    "color": "#4B4B4B"
+                },
+                "floor_tile": {
+                    "name": "obsidian_floor",
+                    "description": "Dark obsidian floor that absorbs light, reflecting only the heartbeat of the clock.",
+                    "color": "#1A1A1A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "clockwork_wall",
+                    "description": "Walls embedded with gears and ticking mechanisms, pulsing with the rhythm of the Heart.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "obsidian_floor",
+                    "description": "Dark obsidian floor that absorbs light, reflecting only the heartbeat of the clock.",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "glass_specter",
+                    "description": "A translucent, faceless figure that drifts along the glass panels, its form flickering like a mirage.",
+                    "color": "#8A8A8A"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "glass_specter",
+                    "description": "A translucent, faceless figure that drifts along the glass panels, its form flickering like a mirage.",
+                    "color": "#8A8A8A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "clockwork_wraith",
+                    "description": "A wraith with clock gears for eyes, moving in a blur.",
+                    "color": "#4B4B4B"
+                },
+                "weight": 4,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "clockwork_wraith",
+                    "description": "A wraith with clock gears for eyes, moving in a blur.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "memory_hound",
+                    "description": "A hulking, shadowy beast whose body is stitched from forgotten memories.",
+                    "color": "#2F2F2F"
+                },
+                "weight": 8,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "memory_hound",
+                    "description": "A hulking, shadowy beast whose body is stitched from forgotten memories.",
+                    "color": "#2F2F2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "echoing_figure",
+                    "description": "A fleeting silhouette that echoes the footsteps of the lost.",
+                    "color": "#6E6E6E"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "echoing_figure",
+                    "description": "A fleeting silhouette that echoes the footsteps of the lost.",
+                    "color": "#6E6E6E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeist. Ghost with a pointed head. A spectral creature. To be a ghost of a human being."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tide_of_ink",
+                    "description": "A massive, liquid-black entity that swallows the light, leaving only inked footprints.",
+                    "color": "#000000"
+                },
+                "weight": 9,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "tide_of_ink",
+                    "description": "A massive, liquid-black entity that swallows the light, leaving only inked footprints.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "fractured_angel",
+                    "description": "A broken angelic form, its wings shattered, moving with unnerving speed.",
+                    "color": "#B0B0B0"
+                },
+                "weight": 3,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "fractured_angel",
+                    "description": "A broken angelic form, its wings shattered, moving with unnerving speed.",
+                    "color": "#B0B0B0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "silence_brood",
+                    "description": "A brood of silent, stone-like creatures that absorb sound and grow in darkness.",
+                    "color": "#3C3C3C"
+                },
+                "weight": 7,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "silence_brood",
+                    "description": "A brood of silent, stone-like creatures that absorb sound and grow in darkness.",
+                    "color": "#3C3C3C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with a hat covering his eyes. He's not holding anything. He seems strong."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "dream_slicer",
+                    "description": "A razor-sharp entity that slices through dreams, leaving jagged shards.",
+                    "color": "#D4D4D4"
+                },
+                "weight": 4,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "dream_slicer",
+                    "description": "A razor-sharp entity that slices through dreams, leaving jagged shards.",
+                    "color": "#D4D4D4",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "nightmare_colossus",
+                    "description": "A towering colossus of nightmares, its bulk a shifting mass of terror.",
+                    "color": "#1A1A1A"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "nightmare_colossus",
+                    "description": "A towering colossus of nightmares, its bulk a shifting mass of terror.",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_warden",
+                    "description": "A guardian of void, its presence drains the color from surroundings.",
+                    "color": "#111111"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "void_warden",
+                    "description": "A guardian of void, its presence drains the color from surroundings.",
+                    "color": "#111111",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 8
+                        },
+                        "tileset_description": "The specter of a person. A person without a face. A transparent person."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_dagger",
+                    "description": "A dull, rust-coated dagger with a chipped handle, its blade reflecting the dim amber glow.",
+                    "color": "#8B0000"
+                },
+                "rarity": 2,
+                "weight": 1,
+                "mana_cost": 2,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_dagger",
+                    "description": "A dull, rust-coated dagger with a chipped handle, its blade reflecting the dim amber glow.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tattered_bow",
+                    "description": "A bow made of warped wood and frayed string, its limbs creak as if whispering forgotten memories.",
+                    "color": "#A52A2A"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "tattered_bow",
+                    "description": "A bow made of warped wood and frayed string, its limbs creak as if whispering forgotten memories.",
+                    "color": "#A52A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "cracked_staff",
+                    "description": "A warped staff with a cracked crystal at its tip, pulsing faintly with residual dream energy.",
+                    "color": "#708090"
+                },
+                "rarity": 3,
+                "weight": 4,
+                "mana_cost": 4,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "cracked_staff",
+                    "description": "A warped staff with a cracked crystal at its tip, pulsing faintly with residual dream energy.",
+                    "color": "#708090",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a gemstone at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "glimmering_sword",
+                    "description": "A silver blade that refracts the twilight into shifting prisms, humming with latent power.",
+                    "color": "#C0C0C0"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 5,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "glimmering_sword",
+                    "description": "A silver blade that refracts the twilight into shifting prisms, humming with latent power.",
+                    "color": "#C0C0C0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "heart_of_time",
+            "description": "A colossal, translucent clock face pulsing with raw temporal energy, its gears shimmering like liquid silver and its hands forever pointing toward an unseen, forgotten future.",
+            "color": "#4B0082"
+        },
+        "back_history": "The Heart of Time is the beating pulse of the Loom of Reverie, a colossal, liquid‑silver clock that once kept the dream‑weavers’ memories in orderly rhythm. When the Archivists vanished, the Nightmare Weavers seized the Heart, draining its temporal energy and twisting its gears into a vortex of corrupted memory. The Heart now siphons the memories of every dreamer who enters, turning them into faceless nightmares that feed the Loom’s ever‑shifting geometry. To break the Nightmare Weavers’ hold and restore the Loom’s original order, the player must retrieve the Heart, re‑establish its rightful cadence, and carry it back to the surface before the Loom collapses into an eternal nightmare.",
+        "tile_with_texture": {
+            "name": "heart_of_time",
+            "description": "A colossal, translucent clock face pulsing with raw temporal energy, its gears shimmering like liquid silver and its hands forever pointing toward an unseen, forgotten future.",
+            "color": "#4B0082",
+            "texture": {
+                "tileset_position": {
+                    "x": 42,
+                    "y": 12
+                },
+                "tileset_description": "Hourglass"
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "output_tokens": 10143,
+            "input_token_details": {
+                "cache_read": 512
+            },
+            "output_token_details": {
+                "reasoning": 6497
+            },
+            "input_tokens": 11772,
+            "total_tokens": 21915
+        }
+    }
+}

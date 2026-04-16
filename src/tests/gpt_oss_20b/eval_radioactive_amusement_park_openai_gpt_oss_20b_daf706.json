@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-20b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 85,
+    "semantic_reconstruction_metric": 0.7803847759374868,
+    "prompt": "A post-apocalyptic amusement park in a radioactive wasteland, patrolled by deranged animatronics and mutated clowns.",
+    "prompt_name": "radioactive_amusement_park",
+    "prompt_index": 11,
+    "asset_bundle_file": "bundle_radioactive_amusement_park_openai_gpt_oss_20b_daf706.json"
+}

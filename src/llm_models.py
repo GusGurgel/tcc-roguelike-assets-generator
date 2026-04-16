@@ -37,6 +37,12 @@ class GoogleModels:
     # RDP = 20
     GEMINI_2_5_FLASH = "gemini-2.5-flash"
 
+    GEMMA_4_26B_A4B_IT = "gemma-4-26b-a4b-it"
+
+    GEMMA_4_31B_IT = "gemma-4-31b-it"
+
+    GEMINI_3_1_FLASH_LITE_PREVIEW = "gemini-3.1-flash-lite-preview"
+
 
 class GroqModels:
     # https://console.groq.com/docs/rate-limits#rate-limits

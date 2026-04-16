@@ -1,0 +1,628 @@
+{
+    "name": "Frostbound Citadel",
+    "raw_description": "A frozen medieval citadel trapped in eternal blizzard, where cursed frost-knights and ice-gargoyles protect a shattered frozen throne.",
+    "description": "**1. Setting Name**  \n**The Frostbound Citadel of Kharaz**\n\n**2. Visual Style & Atmosphere**  \nThe citadel is a towering, snow‑clad fortress that rises from the jagged spine of the Icelit Mountains. Its stone walls are slick with frost, carved with runes that glow faintly blue in the low light. The architecture is a brutalist blend of medieval stonework and jagged ice‑spires, giving it a skeletal, almost skeletal‑like silhouette against the horizon.  \n\n*Art Direction:*  \n- **Gothic‑Ice Noir** – stark contrasts between the white snow and the deep, shadowed interiors.  \n- **Cold‑Metallic Palette** – icy blues, pale grays, and muted silver, punctuated by the occasional crimson of ancient sigils.  \n- **Dynamic Weather** – a perpetual blizzard that swirls around the citadel, with snowflakes that look like shards of glass.  \n\n*Mood & Sensory Details:*  \n- **Lighting** – the only illumination comes from bioluminescent fungi, flickering torches, and the faint glow of the shattered throne’s shards. The light is cold and blue‑tinged, casting long, elongated shadows.  \n- **Ambient Noise** – the howling wind, the distant crack of ice, the clank of armored footsteps, and the low, resonant hum of the curse that permeates the stone.  \n- **Temperature** – the air is biting, with a constant, icy mist that clings to the skin, making breathing a labor.  \n\n**3. The Lore**  \nIn the age of the First Winter, King Aldric of Kharaz built the citadel to protect his realm from the northern tribes. He forged a throne of pure crystal, a symbol of his dominion over the elements. When the kingdom fell to a rival warlord, the king’s son, Prince Eryndor, fled into the citadel’s depths, sealing the throne within a vault of enchanted ice.  \n\nA disgraced sorcerer, Malachor the Frostbinder, sought the throne’s power to command the eternal winter. He lured the prince to the vault, and in a desperate act of betrayal, shattered the crystal throne with a cursed blade. The shards released a wave of ancient, frost‑bound magic that twisted the citadel’s architecture into a labyrinth of ice and stone. The curse bound the souls of the fallen knights to the walls, turning them into frost‑knights, while the gargoyles that once guarded the citadel were transformed into sentient ice‑beasts that patrol the halls.  \n\nNow, the citadel is a frozen tomb, eternally trapped in a blizzard that never ceases. The shattered throne lies at its heart, pulsing with a cold, malevolent energy that feeds the curse and keeps the citadel alive.  \n\n**4. The Core Conflict**  \nThe citadel is controlled by the **Frost Warden**, a sentient, crystalline entity born from the shattered throne. The Warden feeds on the life force of the cursed knights and the icy breath of the gargoyles, growing ever stronger. Its goal is to spread the eternal blizzard beyond the citadel’s walls, turning the world into a perpetual winter wasteland.  \n\n- **Frost‑Knights** – armored warriors whose souls are trapped in the ice, they patrol the halls, their swords dripping with freezing mist.  \n- **Ice Gargoyles** – once stone guardians, now animate with a will of their own, their wings made of translucent ice that crackle with static.  \n- **The Shattered Throne** – a fractured crystal that pulses with a chilling aura, the source of the curse.  \n\nPlayers must navigate the labyrinthine, snow‑blasted corridors, survive the relentless blizzard, and confront the Frost Warden. To break the curse, they must either restore the throne’s shards, find the ancient sigils that can seal the Warden, or harness the power of the citadel’s own magic to turn the curse against itself.  \n\nThis setting offers a rich tapestry of icy visuals, relentless atmospheric tension, and a narrative that blends medieval heroism with supernatural horror, ideal for a roguelike that rewards exploration, strategic combat, and deep lore immersion.",
+    "generation_time_seconds": 110,
+    "player": {
+        "tile": {
+            "name": "frost_knight_reclaimer",
+            "description": "A spectral knight with a translucent blue armor, holding a shard of crystal that pulses with icy light.",
+            "color": "#8A9BAF"
+        },
+        "back_history": "A former Frost Knight named Liora, once bound to the citadel's walls, seeks to break the curse that stole her soul. She now wields a shattered shard of the throne, hoping to restore her freedom and free the other trapped knights.",
+        "tile_with_texture": {
+            "name": "frost_knight_reclaimer",
+            "description": "A spectral knight with a translucent blue armor, holding a shard of crystal that pulses with icy light.",
+            "color": "#8A9BAF",
+            "texture": {
+                "tileset_position": {
+                    "x": 24,
+                    "y": 7
+                },
+                "tileset_description": "The specter of a person. It looks like a transparent person."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A narrow, snow‑laden courtyard with cracked stone walls, faint blue runes glowing. The wind whips through the broken archways, and the scent of damp ice lingers.",
+                "name": "The Frostbound Entrance",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "cracked_frost_wall",
+                    "description": "Cracked stone wall slick with frost, faint blue runes etched into the surface.",
+                    "color": "#A0A0A0"
+                },
+                "floor_tile": {
+                    "name": "slick_snow_floor",
+                    "description": "Frozen snow packed into a slick surface, with occasional shards of ice.",
+                    "color": "#E0E0FF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "cracked_frost_wall",
+                    "description": "Cracked stone wall slick with frost, faint blue runes etched into the surface.",
+                    "color": "#A0A0A0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "slick_snow_floor",
+                    "description": "Frozen snow packed into a slick surface, with occasional shards of ice.",
+                    "color": "#E0E0FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A vast hall where the walls are now jagged, the floor is a mosaic of broken crystal shards. The air is colder, the blizzard intensifies, and the distant hum of the curse grows louder.",
+                "name": "Hall of Shattered Runes",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "jagged_ice_wall",
+                    "description": "Jagged ice walls with glimmering shards, faint crimson sigils pulsing.",
+                    "color": "#4A4A6A"
+                },
+                "floor_tile": {
+                    "name": "crystal_shard_floor",
+                    "description": "Floor of scattered crystal shards that reflect the blue glow.",
+                    "color": "#C0C0FF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "jagged_ice_wall",
+                    "description": "Jagged ice walls with glimmering shards, faint crimson sigils pulsing.",
+                    "color": "#4A4A6A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "crystal_shard_floor",
+                    "description": "Floor of scattered crystal shards that reflect the blue glow.",
+                    "color": "#C0C0FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The inner sanctum where the shattered throne sits, surrounded by swirling blizzard, the air thick with frost. The walls are now a lattice of ice and stone, and the glow of the throne pulses with malevolent energy.",
+                "name": "Heart of the Citadel",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "ice_lattice_wall",
+                    "description": "Interlocking ice and stone lattice, with veins of crimson sigils.",
+                    "color": "#2A2A4A"
+                },
+                "floor_tile": {
+                    "name": "throne_ice_floor",
+                    "description": "A floor of pure ice, slick and reflective, with faint frost patterns.",
+                    "color": "#B0B0FF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "ice_lattice_wall",
+                    "description": "Interlocking ice and stone lattice, with veins of crimson sigils.",
+                    "color": "#2A2A4A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "throne_ice_floor",
+                    "description": "A floor of pure ice, slick and reflective, with faint frost patterns.",
+                    "color": "#B0B0FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "frost_knight",
+                    "description": "A spectral knight bound to ice, glinting armor, sword dripping frost.",
+                    "color": "#A0D8FF"
+                },
+                "weight": 8,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "frost_knight",
+                    "description": "A spectral knight bound to ice, glinting armor, sword dripping frost.",
+                    "color": "#A0D8FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 0
+                        },
+                        "tileset_description": "A warrior in armor, carrying a shield and a sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ice_gargoyle",
+                    "description": "A gargoyle of translucent ice, wings crackling.",
+                    "color": "#B0C4DE"
+                },
+                "weight": 7,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "ice_gargoyle",
+                    "description": "A gargoyle of translucent ice, wings crackling.",
+                    "color": "#B0C4DE",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blizzard_scout",
+                    "description": "A nimble scout that moves like a gust of snow.",
+                    "color": "#E0FFFF"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "blizzard_scout",
+                    "description": "A nimble scout that moves like a gust of snow.",
+                    "color": "#E0FFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeist. Ghost with a pointed head. A spectral creature. To be a ghost of a human being."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "frost_banshee",
+                    "description": "A wailing spirit that freezes the air.",
+                    "color": "#F0F8FF"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "frost_banshee",
+                    "description": "A wailing spirit that freezes the air.",
+                    "color": "#F0F8FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ice_wraith",
+                    "description": "A wraith made of swirling ice.",
+                    "color": "#D3D3D3"
+                },
+                "weight": 4,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "ice_wraith",
+                    "description": "A wraith made of swirling ice.",
+                    "color": "#D3D3D3",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "glacial_colossus",
+                    "description": "A massive titan of ice, slow but devastating.",
+                    "color": "#708090"
+                },
+                "weight": 9,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "glacial_colossus",
+                    "description": "A massive titan of ice, slow but devastating.",
+                    "color": "#708090",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "frost_warden_minion",
+                    "description": "A minion of the Warden, armored in crystal.",
+                    "color": "#2F4F4F"
+                },
+                "weight": 8,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "frost_warden_minion",
+                    "description": "A minion of the Warden, armored in crystal.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 0
+                        },
+                        "tileset_description": "A warrior in armor, carrying a shield and a spear."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystal_sentinel",
+                    "description": "A swift sentinel of shattered crystal.",
+                    "color": "#C0C0C0"
+                },
+                "weight": 5,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "crystal_sentinel",
+                    "description": "A swift sentinel of shattered crystal.",
+                    "color": "#C0C0C0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 0
+                        },
+                        "tileset_description": "A warrior in armor, carrying a shield and a sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ice_specter",
+                    "description": "A spectral entity that chills the heart.",
+                    "color": "#FFFFFF"
+                },
+                "weight": 4,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "ice_specter",
+                    "description": "A spectral entity that chills the heart.",
+                    "color": "#FFFFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "frost_brood",
+                    "description": "A swarm of icy creatures that overwhelm.",
+                    "color": "#778899"
+                },
+                "weight": 5,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "frost_brood",
+                    "description": "A swarm of icy creatures that overwhelm.",
+                    "color": "#778899",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "frostbite_dagger",
+                    "description": "A dull, chipped dagger with a blade of cracked ice, its hilt wrapped in frayed bone.",
+                    "color": "#A0C8FF"
+                },
+                "rarity": 1,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "frostbite_dagger",
+                    "description": "A dull, chipped dagger with a blade of cracked ice, its hilt wrapped in frayed bone.",
+                    "color": "#A0C8FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "cracked_sword",
+                    "description": "A once-shining blade now marred by fissures, its edge humming with residual cold.",
+                    "color": "#B0B0B0"
+                },
+                "rarity": 2,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "cracked_sword",
+                    "description": "A once-shining blade now marred by fissures, its edge humming with residual cold.",
+                    "color": "#B0B0B0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "icebound_axe",
+                    "description": "A hefty axe forged from a fallen glacier, its haft carved with rune sigils that glow faintly.",
+                    "color": "#6C9FFF"
+                },
+                "rarity": 5,
+                "weight": 7,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "icebound_axe",
+                    "description": "A hefty axe forged from a fallen glacier, its haft carved with rune sigils that glow faintly.",
+                    "color": "#6C9FFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blizzard_bow",
+                    "description": "A slender longbow made of frost‑touched yew, its string humming with icy wind.",
+                    "color": "#8FA8FF"
+                },
+                "rarity": 6,
+                "weight": 3,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "blizzard_bow",
+                    "description": "A slender longbow made of frost‑touched yew, its string humming with icy wind.",
+                    "color": "#8FA8FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "glacial_crossbow",
+                    "description": "A compact crossbow with a barrel of translucent ice, bolts crackle with static.",
+                    "color": "#C0D8FF"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 4,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "glacial_crossbow",
+                    "description": "A compact crossbow with a barrel of translucent ice, bolts crackle with static.",
+                    "color": "#C0D8FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 5
+                        },
+                        "tileset_description": "Small wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystal_staff",
+                    "description": "A slender staff topped with a fragment of the shattered throne, pulsing with cold energy.",
+                    "color": "#FFFFFF"
+                },
+                "rarity": 9,
+                "weight": 4,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "crystal_staff",
+                    "description": "A slender staff topped with a fragment of the shattered throne, pulsing with cold energy.",
+                    "color": "#FFFFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff with a dagger symbol on the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "frostbinder_wand",
+                    "description": "A wand carved from the heart of an ice gargoyle, its tip swirling with frosted sigils.",
+                    "color": "#D0E8FF"
+                },
+                "rarity": 10,
+                "weight": 2,
+                "mana_cost": 9,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "frostbinder_wand",
+                    "description": "A wand carved from the heart of an ice gargoyle, its tip swirling with frosted sigils.",
+                    "color": "#D0E8FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff detailed with a heart or arrow symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sundered_hammer",
+                    "description": "A battered warhammer with a head cracked into shards, its handle wrapped in frayed leather.",
+                    "color": "#7F7F7F"
+                },
+                "rarity": 1,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "sundered_hammer",
+                    "description": "A battered warhammer with a head cracked into shards, its handle wrapped in frayed leather.",
+                    "color": "#7F7F7F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "aurora_throwing_star",
+                    "description": "A star‑shaped projectile that glows with auroral light, leaving a trail of frost.",
+                    "color": "#A8E8FF"
+                },
+                "rarity": 5,
+                "weight": 1,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "aurora_throwing_star",
+                    "description": "A star‑shaped projectile that glows with auroral light, leaving a trail of frost.",
+                    "color": "#A8E8FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff detailed with a heart or arrow symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "frostfire_gun",
+                    "description": "A crude firearm made of ice‑reinforced steel, its barrel etched with swirling runes.",
+                    "color": "#B0E0FF"
+                },
+                "rarity": 2,
+                "weight": 5,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "frostfire_gun",
+                    "description": "A crude firearm made of ice‑reinforced steel, its barrel etched with swirling runes.",
+                    "color": "#B0E0FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "frost_warden_core",
+            "description": "A pulsating crystal heart, the beating core of the Frost Warden, radiating chilling energy and a faint blue glow that cuts through the perpetual blizzard.",
+            "color": "#0A0A3A"
+        },
+        "back_history": "The Frost Warden’s heart is a single, jagged crystal shard that was forged when Prince Eryndor’s shattered throne shattered into a thousand pieces.  The shard absorbed the curse’s raw frost‑magic and became the living core of the Warden, feeding on the souls of the frost‑knights and the breath of the ice‑gargoyles.  It is the very engine that keeps the citadel alive and the blizzard raging.  To break the curse, the player must seize the core and bring it to the citadel’s entrance, where the ancient sigils of the First Winter can seal the Warden’s power.  Leaving it buried in the deepest vault would allow the Warden to grow stronger, spreading eternal winter across the world.",
+        "tile_with_texture": {
+            "name": "frost_warden_core",
+            "description": "A pulsating crystal heart, the beating core of the Frost Warden, radiating chilling energy and a faint blue glow that cuts through the perpetual blizzard.",
+            "color": "#0A0A3A",
+            "texture": {
+                "tileset_position": {
+                    "x": 41,
+                    "y": 7
+                },
+                "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "input_tokens": 9665,
+            "output_tokens": 6215,
+            "input_token_details": {
+                "cache_read": 768
+            },
+            "output_token_details": {
+                "reasoning": 3544
+            },
+            "total_tokens": 15880
+        }
+    }
+}

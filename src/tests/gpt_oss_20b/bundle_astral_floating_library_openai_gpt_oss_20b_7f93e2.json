@@ -1,0 +1,628 @@
+{
+    "name": "Inkbound Codex",
+    "raw_description": "An ethereal floating library in the astral plane, slowly crumbling into the void, haunted by ink-elementals and corrupted scholars.",
+    "description": "**1. Setting Name**  \n**The Shattered Codex**\n\n**2. Visual Style & Atmosphere**  \nThe Shattered Codex is a dream‑like, **Ethereal Gothic** landscape that feels both ancient and in perpetual flux. Imagine a vast, translucent lattice of floating shelves and spires, each carved from a luminous, stone‑like substance that refracts the faint, violet light of the astral plane. The architecture is a blend of cathedral arches and library stacks, but the stone is cracked and dripping with ink‑like black liquid that pools in impossible, gravity‑defying pools.\n\n- **Lighting**: A dim, phosphorescent glow emanates from the books themselves, casting long, wavering shadows that shift as the library slowly collapses. Occasional bursts of white, starlike flare—like distant suns—flash through fissures in the sky, illuminating the dust motes that drift like tiny constellations.\n- **Weather**: The air is thick with a fine, silver mist that condenses into ink droplets when it touches the surfaces. From time to time, a sudden, cold wind sweeps through, carrying the scent of burnt parchment and the faint, metallic tang of old ink.\n- **Ambient Noise**: The library hums with a low, resonant vibration—an echo of forgotten prayers and the rustle of pages turning in an unseen breeze. Intermittent, distant whispers—soft, almost inaudible—seem to come from the books themselves, as if the knowledge within is trying to speak. Occasional clinks and clatters of broken spines and falling pages punctuate the silence.\n\n**3. The Lore**  \nLong before the astral plane was mapped, a civilization of scholars known as the **Everscribe** built the Codex as a sanctuary for all written knowledge. They harnessed the very essence of ink, binding it to the architecture, creating a living library that could grow, heal, and even rewrite itself. When the Everscribe vanished—perhaps swallowed by a cataclysmic celestial event—the Codex was left adrift, anchored only by the residual magic of the ink.\n\nOver millennia, the Codex has drifted through the astral currents, slowly succumbing to the void that surrounds it. The ink that once bound the books now seeps into cracks, forming dark, sentient currents—ink‑elementals—that roam the stacks. The scholars who once tended the Codex, now corrupted by the very ink they revered, wander as hollow husks, their minds twisted into obsidian monoliths of knowledge.\n\n**4. The Core Conflict**  \nThe Codex is in a state of **self‑destructive decay**. The ink‑elementals, born from the corrupted binding magic, have begun to consume the very words that give the library its power. Each page they devour erodes the structural integrity of the shelves, accelerating the collapse into the void. The corrupted scholars, now mind‑shattered sentinels, guard the most precious tomes, but their loyalty is to the void’s hunger, not to the living.\n\nThe central curse is the **Void‑Ink Plague**: a spreading corruption that turns ink into a sentient, corrosive force. It feeds on knowledge, turning books into blackened, empty shells, and it can rewrite reality—turning the library’s architecture into impossible, shifting labyrinths. The deeper a traveler goes, the more the Codex warps, and the more the void’s influence seeps into the astral plane itself.\n\n**Narrative Hook**  \nA lone wanderer, perhaps a scholar of the astral plane or a seeker of forbidden knowledge, stumbles upon the Shattered Codex. Their goal is to retrieve a lost tome that could restore balance—or to prevent the void from spilling its ink into the wider cosmos. As they navigate the collapsing stacks, they must contend with ink‑elementals that can rewrite the very layout of the library, corrupted scholars that turn on anyone who threatens their twisted order, and the ever‑present threat of being swallowed by the void itself.\n\nThis setting invites exploration, puzzle‑solving, and moral choice: Do you sacrifice the library’s remaining knowledge to save the astral plane, or do you attempt to restore the Codex, risking the void’s corruption? The world is a living, breathing testament to the fragility of knowledge and the peril of obsession.",
+    "generation_time_seconds": 272,
+    "player": {
+        "tile": {
+            "name": "player_tile",
+            "description": "A translucent glyph of ink swirling around a faint violet glow.",
+            "color": "#8A2BE2"
+        },
+        "back_history": "Archetype: Everscribe Archivist. Backstory: Once a revered scribe of the Everscribe, now a wandering archivist after the collapse of the Codex. Motivation: Redemption—restore the Codex before it spills ink into the cosmos.",
+        "tile_with_texture": {
+            "name": "player_tile",
+            "description": "A translucent glyph of ink swirling around a faint violet glow.",
+            "color": "#8A2BE2",
+            "texture": {
+                "tileset_position": {
+                    "x": 24,
+                    "y": 7
+                },
+                "tileset_description": "The specter of a person. It looks like a transparent person."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A sprawling lattice of floating shelves, faint violet glow, gentle mist, low hum of distant pages.",
+                "name": "The Shattered Codex: Entrance",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "inked_lattice_wall",
+                    "description": "Walls of lattice carved from stone, dripping ink.",
+                    "color": "#3A2F3A"
+                },
+                "floor_tile": {
+                    "name": "cracked_stone_floor",
+                    "description": "Floor of cracked, luminous stone, faint violet glow.",
+                    "color": "#4B2F4B"
+                },
+                "wall_tile_with_texture": {
+                    "name": "inked_lattice_wall",
+                    "description": "Walls of lattice carved from stone, dripping ink.",
+                    "color": "#3A2F3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "cracked_stone_floor",
+                    "description": "Floor of cracked, luminous stone, faint violet glow.",
+                    "color": "#4B2F4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Central spire where ink pools gather, starlike flares burst, whispers grow louder, gravity-defying pools swirl.",
+                "name": "The Shattered Codex: Core",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "inked_spire_wall",
+                    "description": "Spire walls with ink drips, shifting as the library collapses.",
+                    "color": "#2F2F2F"
+                },
+                "floor_tile": {
+                    "name": "ink_pool_floor",
+                    "description": "Floor of black ink pools reflecting faint light.",
+                    "color": "#000000"
+                },
+                "wall_tile_with_texture": {
+                    "name": "inked_spire_wall",
+                    "description": "Spire walls with ink drips, shifting as the library collapses.",
+                    "color": "#2F2F2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "ink_pool_floor",
+                    "description": "Floor of black ink pools reflecting faint light.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Collapsed arches, void cracks, ink elementals roam, walls shift, darkness swallows light, whispers turn to screams.",
+                "name": "The Shattered Codex: Abyss",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "void_ink_wall",
+                    "description": "Walls of void ink, shifting, whispering, threatening to swallow the wanderer.",
+                    "color": "#0A0A0A"
+                },
+                "floor_tile": {
+                    "name": "void_cracked_floor",
+                    "description": "Floor of cracked void, black with faint violet glow.",
+                    "color": "#1A1A1A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "void_ink_wall",
+                    "description": "Walls of void ink, shifting, whispering, threatening to swallow the wanderer.",
+                    "color": "#0A0A0A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "void_cracked_floor",
+                    "description": "Floor of cracked void, black with faint violet glow.",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "ink_wisp",
+                    "description": "A translucent, swirling mote of ink that darts between shelves, leaving a faint trail of phosphorescence.",
+                    "color": "#4B0082"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "ink_wisp",
+                    "description": "A translucent, swirling mote of ink that darts between shelves, leaving a faint trail of phosphorescence.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_scholar",
+                    "description": "A hulking husk of a scholar, its body fused with cracked stone and dripping ink, moving with deliberate slowness.",
+                    "color": "#2F4F4F"
+                },
+                "weight": 8,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "corrupted_scholar",
+                    "description": "A hulking husk of a scholar, its body fused with cracked stone and dripping ink, moving with deliberate slowness.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_scribe",
+                    "description": "A slender, ink‑dripped figure that writes in the air, its words rearranging the library's layout.",
+                    "color": "#8A2BE2"
+                },
+                "weight": 2,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "void_scribe",
+                    "description": "A slender, ink‑dripped figure that writes in the air, its words rearranging the library's layout.",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_elemental",
+                    "description": "A massive, living blob of ink that swallows pages, its surface rippling like a dark tide.",
+                    "color": "#000000"
+                },
+                "weight": 9,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "ink_elemental",
+                    "description": "A massive, living blob of ink that swallows pages, its surface rippling like a dark tide.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 8
+                        },
+                        "tileset_description": "An octopus, an alien, a creature from another universe."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "whispering_codex",
+                    "description": "A floating, translucent page that whispers secrets, moving faster than the eye can follow.",
+                    "color": "#708090"
+                },
+                "weight": 4,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "whispering_codex",
+                    "description": "A floating, translucent page that whispers secrets, moving faster than the eye can follow.",
+                    "color": "#708090",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "obsidian_archivist",
+                    "description": "A towering monolith of ink and stone, its eyes glowing with corrupted knowledge, guarding the deepest tomes.",
+                    "color": "#1C1C1C"
+                },
+                "weight": 10,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "obsidian_archivist",
+                    "description": "A towering monolith of ink and stone, its eyes glowing with corrupted knowledge, guarding the deepest tomes.",
+                    "color": "#1C1C1C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "flickering_quill",
+                    "description": "A small, quill-shaped entity that flickers between reality, leaving trails of ink that rearrange the shelves.",
+                    "color": "#DA70D6"
+                },
+                "weight": 1,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "flickering_quill",
+                    "description": "A small, quill-shaped entity that flickers between reality, leaving trails of ink that rearrange the shelves.",
+                    "color": "#DA70D6",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_storm",
+                    "description": "A swirling vortex of ink that engulfs everything, its core pulsing with void energy.",
+                    "color": "#000080"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "ink_storm",
+                    "description": "A swirling vortex of ink that engulfs everything, its core pulsing with void energy.",
+                    "color": "#000080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "pale_scribe",
+                    "description": "A pale, skeletal figure that writes in the air, its ink fading into the void.",
+                    "color": "#D8BFD8"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "pale_scribe",
+                    "description": "A pale, skeletal figure that writes in the air, its ink fading into the void.",
+                    "color": "#D8BFD8",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 8
+                        },
+                        "tileset_description": "The specter of a person. A person without a face. A transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_maw",
+                    "description": "A cavernous maw of ink that devours entire stacks, its maw widening with each swallowed page.",
+                    "color": "#2C2C2C"
+                },
+                "weight": 10,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "ink_maw",
+                    "description": "A cavernous maw of ink that devours entire stacks, its maw widening with each swallowed page.",
+                    "color": "#2C2C2C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_ink_dagger",
+                    "description": "A dull dagger whose blade is etched with fading glyphs, dripping with ink.",
+                    "color": "#3A2F2F"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_ink_dagger",
+                    "description": "A dull dagger whose blade is etched with fading glyphs, dripping with ink.",
+                    "color": "#3A2F2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "broken_quill_staff",
+                    "description": "A dull staff whose shaft is carved from a broken quill, its tip humming with residual ink energy.",
+                    "color": "#4B3A3A"
+                },
+                "rarity": 3,
+                "weight": 3,
+                "mana_cost": 3,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "broken_quill_staff",
+                    "description": "A dull staff whose shaft is carved from a broken quill, its tip humming with residual ink energy.",
+                    "color": "#4B3A3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff with a dagger symbol on the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "cracked_tome_bow",
+                    "description": "A bow carved from a shattered tome, its string made of parchment fibers that whisper when drawn.",
+                    "color": "#4B3A3A"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 4,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "cracked_tome_bow",
+                    "description": "A bow carved from a shattered tome, its string made of parchment fibers that whisper when drawn.",
+                    "color": "#4B3A3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_slick_crossbow",
+                    "description": "A crossbow whose bolts are hardened ink, glistening like obsidian and humming with faint static.",
+                    "color": "#2B2B2B"
+                },
+                "rarity": 2,
+                "weight": 5,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "ink_slick_crossbow",
+                    "description": "A crossbow whose bolts are hardened ink, glistening like obsidian and humming with faint static.",
+                    "color": "#2B2B2B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "dusty_scroll_hammer",
+                    "description": "A hammer fashioned from a collapsed scroll, its head a warped parchment that crackles with old magic.",
+                    "color": "#5A4A3A"
+                },
+                "rarity": 1,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "dusty_scroll_hammer",
+                    "description": "A hammer fashioned from a collapsed scroll, its head a warped parchment that crackles with old magic.",
+                    "color": "#5A4A3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 15
+                        },
+                        "tileset_description": "A scroll. Made of paper."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "everscribe_quillblade",
+                    "description": "A slender blade that glows with faint ink, etched with the sigils of the Everscribe, humming with quiet power.",
+                    "color": "#1A1A2E"
+                },
+                "rarity": 7,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "everscribe_quillblade",
+                    "description": "A slender blade that glows with faint ink, etched with the sigils of the Everscribe, humming with quiet power.",
+                    "color": "#1A1A2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_ink_longbow",
+                    "description": "A longbow whose limbs are woven from translucent ink, humming with void energy and pulsing faintly.",
+                    "color": "#0A0A0A"
+                },
+                "rarity": 8,
+                "weight": 5,
+                "mana_cost": 7,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "void_ink_longbow",
+                    "description": "A longbow whose limbs are woven from translucent ink, humming with void energy and pulsing faintly.",
+                    "color": "#0A0A0A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "astral_codex_staff",
+                    "description": "A staff carved from the heart of the Codex, its shaft pulsing with violet light and ancient glyphs.",
+                    "color": "#2E1A5A"
+                },
+                "rarity": 9,
+                "weight": 7,
+                "mana_cost": 9,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "astral_codex_staff",
+                    "description": "A staff carved from the heart of the Codex, its shaft pulsing with violet light and ancient glyphs.",
+                    "color": "#2E1A5A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff detailed with a heart or arrow symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_reaver",
+                    "description": "A massive blade that seems to absorb ink from the air, leaving a trail of blackened dust and echoing whispers.",
+                    "color": "#000000"
+                },
+                "rarity": 10,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "ink_reaver",
+                    "description": "A massive blade that seems to absorb ink from the air, leaving a trail of blackened dust and echoing whispers.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "celestial_scribe",
+                    "description": "A bow that writes its own arrows, each shot a fragment of the Codex itself, shimmering with celestial ink.",
+                    "color": "#1A1A1A"
+                },
+                "rarity": 10,
+                "weight": 6,
+                "mana_cost": 10,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "celestial_scribe",
+                    "description": "A bow that writes its own arrows, each shot a fragment of the Codex itself, shimmering with celestial ink.",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 2
+                        },
+                        "tileset_description": "Quiver of arrows."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "void_scribe_soul",
+            "description": "A translucent crystal, its interior a swirling vortex of ink and glyphs, pulsing with the forgotten memories of the Codex. It hums with a low, resonant tone that can rewrite reality with a single thought.",
+            "color": "#4B0082"
+        },
+        "back_history": "The Void Scribe Soul is the living heart of the Shattered Codex, forged by the Everscribe to bind all knowledge into a single, indestructible tome. When the scholars vanished, the Soul fractured and seeped into the ink, becoming the source of the Void‑Ink Plague. It now lies at the very bottom of the library, guarded by the corrupted scholars and ink‑elementals. Removing it is the only way to halt the library’s self‑destructive decay and prevent the void’s ink from spilling into the astral plane. If left behind, the Soul will continue to corrupt the Codex, erasing all knowledge and allowing the void to consume the cosmos. Carrying it back to the entrance is the sole hope of restoring balance or sealing the void forever.",
+        "tile_with_texture": {
+            "name": "void_scribe_soul",
+            "description": "A translucent crystal, its interior a swirling vortex of ink and glyphs, pulsing with the forgotten memories of the Codex. It hums with a low, resonant tone that can rewrite reality with a single thought.",
+            "color": "#4B0082",
+            "texture": {
+                "tileset_position": {
+                    "x": 35,
+                    "y": 4
+                },
+                "tileset_description": "A staff with a gemstone at the tip."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "input_tokens": 17999,
+            "output_tokens": 15321,
+            "input_token_details": {
+                "cache_read": 1536
+            },
+            "total_tokens": 33320,
+            "output_token_details": {
+                "reasoning": 10561
+            }
+        }
+    }
+}

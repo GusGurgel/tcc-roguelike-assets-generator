@@ -1,0 +1,520 @@
+{
+    "name": "Goldheart Maw",
+    "raw_description": "A subterranean dwarven mining complex entirely corrupted by liquid gold and animated greed-spirits, featuring molten rivers and gemstone golems.",
+    "description": "**1. Setting Name**  \n**Aurum Maw** – the deep, glittering heart of the dwarven mining complex now known as the “Gilded Maw.”\n\n**2. Visual Style & Atmosphere**  \n- **Art Direction:** A brutalist, industrial aesthetic fused with a surreal, metallic‑gold dreamscape. Rough stone walls, iron latticework, and ancient dwarven runes are overlaid with dripping, liquid‑gold veins that pulse like veins of molten metal.  \n- **Lighting:** Warm, amber‑tinted light emanates from the rivers of liquid gold, casting long, flickering shadows. Occasional bursts of bright, almost blinding gold from the molten streams create a disorienting glare that makes navigation treacherous.  \n- **Ambient Noise:** The constant clatter of mining tools, the hiss of molten gold, the low, resonant growls of gemstone golems, and the whispering, almost chanting voices of the greed‑spirits echo through the tunnels. Occasional deep, resonant thumps reverberate as the ground shifts under the weight of the corrupted ore.  \n- **Weather/Environment:** The air is thick with a metallic, almost sweet scent of gold and sulfur. Steam rises from fissures in the stone, mingling with the ever‑present glow of molten rivers. The deeper you go, the more the light dims to a soft, golden haze, as if the very darkness has been replaced by a low‑level, omnipresent glow.\n\n**3. The Lore**  \nFor centuries, the dwarves of the Ironspine clan carved the Aurum Maw, a sprawling network of tunnels and chambers that yielded some of the world’s finest ore and precious gems. Their mastery of metalwork and stonecraft turned the complex into a shining beacon of dwarven industry.  \n\nOne fateful night, a rogue dwarven alchemist, obsessed with the idea of “golden perfection,” attempted to fuse liquid gold with the very essence of the mine. The experiment backfired catastrophically: the liquid gold seeped into the stone, seeping into the dwarven hearts and minds. The mine itself seemed to awaken, its walls pulsing with a living, greedy hunger.  \n\nThe dwarves, once proud and stoic, became consumed by an insatiable lust for wealth. Their tools turned to gold, their eyes glowed amber, and their spirits were overtaken by animated greed‑spirits—shadows of their former selves that now seek to hoard every precious thing they encounter. The mine’s ore was corrupted, forming gemstone golems that patrol the tunnels, their bodies forged from the very gems the dwarves once mined. The molten rivers of liquid gold now flow like veins of the mine’s own heart, feeding the greed‑spirits and powering the golems.\n\nThe Aurum Maw is now a living, breathing entity, a corrupted cathedral of wealth that devours both the living and the riches they seek. The once‑proud dwarven halls have become a labyrinth of shimmering danger, where every glittering surface may hide a trap or a hungry spirit.\n\n**4. The Core Conflict**  \nThe Aurum Maw is controlled by a triad of malevolent forces:  \n\n1. **The Liquid Gold** – A sentient, viscous substance that flows through the mine’s veins. It can shape itself, engulfing metal and stone, and it feeds on the greed of any creature that touches it. It can also harden into a solid, golden armor or weapon, but at the cost of binding the user to its will.  \n\n2. **Greed‑Spirits** – Manifestations of the dwarves’ corrupted souls. These incorporeal entities drift through the tunnels, whispering promises of wealth and coaxing adventurers to take more than they need. They can possess tools, turn them into traps, or summon the gemstone golems.  \n\n3. **Gemstone Golems** – Massive constructs forged from the mine’s own precious stones. They patrol the corridors, guarding the liquid gold and the greed‑spirits. Their bodies are a mosaic of polished gems, each shard resonating with a different elemental power (fire, earth, crystal). They are immune to conventional weapons but vulnerable to the very greed that fuels them; if a creature’s greed is amplified, the golems become more aggressive and powerful.\n\nThe conflict is one of survival against a living, wealth‑driven ecosystem. Adventurers must navigate the glittering labyrinth, resist the pull of the liquid gold, outwit the greed‑spirits, and avoid or defeat the gemstone golems. Every treasure found is a double‑edged sword: it may grant power, but it also feeds the corruption that threatens to swallow the entire complex.",
+    "generation_time_seconds": 187,
+    "player": {
+        "tile": {
+            "name": "corrupted_dwarf_smith",
+            "description": "A scarred dwarf with molten gold veins running through his armor, wielding a hammer forged from liquid gold.",
+            "color": "#B8860B"
+        },
+        "back_history": "A former dwarf smith turned wanderer, seeking redemption for the greed that corrupted his clan, now ventures into Aurum Maw to reclaim the lost honor and free his people.",
+        "tile_with_texture": {
+            "name": "corrupted_dwarf_smith",
+            "description": "A scarred dwarf with molten gold veins running through his armor, wielding a hammer forged from liquid gold.",
+            "color": "#B8860B",
+            "texture": {
+                "tileset_position": {
+                    "x": 25,
+                    "y": 6
+                },
+                "tileset_description": "A gnome with a beard and a hat. It appears to be a warrior gnome with different armor. A small person with hat and beard."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The first tunnel glows with warm amber light from thin rivers of liquid gold that trickle along the stone floor. The air smells of sweet metal and faint sulfur, and the clatter of ancient mining tools echoes through the walls. The glow is gentle, casting long flickering shadows that dance across rough stone, making the path feel both inviting and slightly treacherous.",
+                "name": "The Shimmering Entrance",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "stone_wall",
+                    "description": "Rough stone walls etched with dwarven runes, overlaid with dripping liquid‑gold veins that pulse like living veins.",
+                    "color": "#B8860B"
+                },
+                "floor_tile": {
+                    "name": "stone_floor",
+                    "description": "Rough stone floor speckled with faint gold veins that pulse softly.",
+                    "color": "#A67B5B"
+                },
+                "wall_tile_with_texture": {
+                    "name": "stone_wall",
+                    "description": "Rough stone walls etched with dwarven runes, overlaid with dripping liquid‑gold veins that pulse like living veins.",
+                    "color": "#B8860B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "stone_floor",
+                    "description": "Rough stone floor speckled with faint gold veins that pulse softly.",
+                    "color": "#A67B5B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Deeper in the Maw, the tunnels widen into a corridor where molten rivers of liquid gold flow like veins through the floor. The amber light becomes brighter and more intense, casting harsh, disorienting glare. Steam rises from fissures, mingling with the metallic scent, while the low growls of gemstone golems echo from the walls. The corridor feels alive, as if the very stone is breathing gold.",
+                "name": "The Golden Vein Corridor",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "veined_wall",
+                    "description": "Walls pulsing with molten veins, the gold dripping and hardening into sharp, golden ridges.",
+                    "color": "#DAA520"
+                },
+                "floor_tile": {
+                    "name": "golden_river_floor",
+                    "description": "Floor lined with flowing liquid gold that glistens and pulses with each heartbeat of the mine.",
+                    "color": "#FFD700"
+                },
+                "wall_tile_with_texture": {
+                    "name": "veined_wall",
+                    "description": "Walls pulsing with molten veins, the gold dripping and hardening into sharp, golden ridges.",
+                    "color": "#DAA520",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "golden_river_floor",
+                    "description": "Floor lined with flowing liquid gold that glistens and pulses with each heartbeat of the mine.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "At the heart of the Maw lies the Gilded Core, a cavern of solidified molten gold that shimmers with an inner light. The floor is a mosaic of hardened gold plates, each reflecting the surrounding glow. The walls are fused with gemstone shards that hum with elemental energy, and the air is thick with the scent of burnt metal and sulfur. The ambient noise is a low, resonant thump as the core shifts, punctuated by the distant, echoing growls of massive gemstone golems guarding the liquid gold. This level is the most perilous, where every gleam may hide a trap or a hungry spirit.",
+                "name": "The Gilded Core",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "corrupted_wall",
+                    "description": "Walls fused with gemstone shards, glowing with elemental hues and humming with power.",
+                    "color": "#B8860B"
+                },
+                "floor_tile": {
+                    "name": "molten_core_floor",
+                    "description": "Solidified molten gold floor, shimmering and reflective, with faint cracks that pulse with heat.",
+                    "color": "#FFCC00"
+                },
+                "wall_tile_with_texture": {
+                    "name": "corrupted_wall",
+                    "description": "Walls fused with gemstone shards, glowing with elemental hues and humming with power.",
+                    "color": "#B8860B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "molten_core_floor",
+                    "description": "Solidified molten gold floor, shimmering and reflective, with faint cracks that pulse with heat.",
+                    "color": "#FFCC00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "golden_scarab",
+                    "description": "A small beetle-like creature with a shell of molten gold, darting through the tunnels at lightning speed.",
+                    "color": "#FFD700"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "golden_scarab",
+                    "description": "A small beetle-like creature with a shell of molten gold, darting through the tunnels at lightning speed.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "amber_wisp",
+                    "description": "A translucent wisp of liquid gold swirling, leaving a faint golden trail as it moves.",
+                    "color": "#FFBF00"
+                },
+                "weight": 1,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "amber_wisp",
+                    "description": "A translucent wisp of liquid gold swirling, leaving a faint golden trail as it moves.",
+                    "color": "#FFBF00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystal_warden",
+                    "description": "A massive golem forged from polished quartz, slow and heavily armored, guarding the deeper chambers.",
+                    "color": "#C0C0C0"
+                },
+                "weight": 8,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "crystal_warden",
+                    "description": "A massive golem forged from polished quartz, slow and heavily armored, guarding the deeper chambers.",
+                    "color": "#C0C0C0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "molten_guard",
+                    "description": "A hulking golem of hardened liquid gold, its body pulsing with molten veins, a true tank of the Maw.",
+                    "color": "#DAA520"
+                },
+                "weight": 9,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "molten_guard",
+                    "description": "A hulking golem of hardened liquid gold, its body pulsing with molten veins, a true tank of the Maw.",
+                    "color": "#DAA520",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "greed_spirit",
+                    "description": "An incorporeal shadow with amber eyes, whispering promises of wealth, quick to possess tools.",
+                    "color": "#B8860B"
+                },
+                "weight": 2,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "greed_spirit",
+                    "description": "An incorporeal shadow with amber eyes, whispering promises of wealth, quick to possess tools.",
+                    "color": "#B8860B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_dagger_tile",
+                    "description": "A dull, oxidized dagger with a chipped steel blade, its handle wrapped in frayed leather.",
+                    "color": "#8B0000"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 1,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_dagger_tile",
+                    "description": "A dull, oxidized dagger with a chipped steel blade, its handle wrapped in frayed leather.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "burning_bow_tile",
+                    "description": "A crude wooden bow with a string of molten gold, crackling faintly.",
+                    "color": "#FF4500"
+                },
+                "rarity": 3,
+                "weight": 3,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "burning_bow_tile",
+                    "description": "A crude wooden bow with a string of molten gold, crackling faintly.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "golden_hammer_tile",
+                    "description": "A heavy hammer whose head is a solid chunk of liquid gold, still warm to the touch.",
+                    "color": "#FFD700"
+                },
+                "rarity": 1,
+                "weight": 5,
+                "mana_cost": 1,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "golden_hammer_tile",
+                    "description": "A heavy hammer whose head is a solid chunk of liquid gold, still warm to the touch.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "smoldering_crossbow_tile",
+                    "description": "A crossbow with a barrel of dripping molten gold, its bolts sear through steel.",
+                    "color": "#B8860B"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "smoldering_crossbow_tile",
+                    "description": "A crossbow with a barrel of dripping molten gold, its bolts sear through steel.",
+                    "color": "#B8860B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 6
+                        },
+                        "tileset_description": "Highly rare iron dagger."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "copper_staff_tile",
+                    "description": "A short staff of tarnished copper, etched with runes that glow faintly.",
+                    "color": "#B87333"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 4,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "copper_staff_tile",
+                    "description": "A short staff of tarnished copper, etched with runes that glow faintly.",
+                    "color": "#B87333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 4
+                        },
+                        "tileset_description": "Simple wooden staff. Noah's staff."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "obsidian_sword_tile",
+                    "description": "A blade forged from obsidian, its surface shimmering with embedded gold veins.",
+                    "color": "#0D0D0D"
+                },
+                "rarity": 5,
+                "weight": 4,
+                "mana_cost": 5,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "obsidian_sword_tile",
+                    "description": "A blade forged from obsidian, its surface shimmering with embedded gold veins.",
+                    "color": "#0D0D0D",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 9
+                        },
+                        "tileset_description": "Iron sword with a detail at the base of the blade. Appears to be very rare."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "auric_gun_tile",
+                    "description": "A brass gun that fires bullets of pure liquid gold, leaving a trail of glitter.",
+                    "color": "#DAA520"
+                },
+                "rarity": 6,
+                "weight": 3,
+                "mana_cost": 6,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "auric_gun_tile",
+                    "description": "A brass gun that fires bullets of pure liquid gold, leaving a trail of glitter.",
+                    "color": "#DAA520",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 11
+                        },
+                        "tileset_description": "Golden key."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gemstone_golem_blade_tile",
+                    "description": "A massive blade carved from a single crystal, its edges humming with elemental energy.",
+                    "color": "#4B0082"
+                },
+                "rarity": 9,
+                "weight": 7,
+                "mana_cost": 8,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "gemstone_golem_blade_tile",
+                    "description": "A massive blade carved from a single crystal, its edges humming with elemental energy.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with only one blade at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "liquid_gold_staff_tile",
+                    "description": "A staff that channels the sentient liquid gold, its core pulsing like a living heart.",
+                    "color": "#FFD700"
+                },
+                "rarity": 10,
+                "weight": 5,
+                "mana_cost": 10,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "liquid_gold_staff_tile",
+                    "description": "A staff that channels the sentient liquid gold, its core pulsing like a living heart.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff detailed with a heart or arrow symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "greed_spirit_bow_tile",
+                    "description": "A bow made from the twisted remnants of a greed spirit, its string humming with whispers of wealth.",
+                    "color": "#FF8C00"
+                },
+                "rarity": 7,
+                "weight": 2,
+                "mana_cost": 7,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "greed_spirit_bow_tile",
+                    "description": "A bow made from the twisted remnants of a greed spirit, its string humming with whispers of wealth.",
+                    "color": "#FF8C00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 6
+                        },
+                        "tileset_description": "Simple bow of medium rarity."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "aurum_core",
+            "description": "A pulsating crystal of molten gold, encased in a lattice of ancient dwarven runes, humming with the greed of the Maw.",
+            "color": "#FFD700"
+        },
+        "back_history": "The Heart of the Maw is a crystalized core of liquid gold, the original fusion of the rogue alchemist’s experiment. It pulses with the greed of the dwarves and feeds the liquid gold, greed‑spirits, and gemstone golems. Removing it will sever the Maw’s lifeblood, but the crystal’s power also threatens to corrupt the surface if left unchecked. The only way to end the Maw’s hunger is to carry the Heart back to the entrance, where it can be shattered or sealed.",
+        "tile_with_texture": {
+            "name": "aurum_core",
+            "description": "A pulsating crystal of molten gold, encased in a lattice of ancient dwarven runes, humming with the greed of the Maw.",
+            "color": "#FFD700",
+            "texture": {
+                "tileset_position": {
+                    "x": 35,
+                    "y": 6
+                },
+                "tileset_description": "Highly rare iron dagger."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "output_token_details": {
+                "reasoning": 8639
+            },
+            "output_tokens": 12480,
+            "input_tokens": 15386,
+            "total_tokens": 27866
+        }
+    }
+}

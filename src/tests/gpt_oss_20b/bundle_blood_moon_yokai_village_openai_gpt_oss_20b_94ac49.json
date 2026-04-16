@@ -1,0 +1,467 @@
+{
+    "name": "Crimson Eclipse: Yokai Labyrinth",
+    "raw_description": "A cursed feudal Japanese village trapped in an eternal blood-moon night, stalked by vengeful yokai and undead samurai.",
+    "description": "**1. Setting Name**  \n*The Crimson Eclipse of Hōjō‑Kōji*\n\n**2. Visual Style & Atmosphere**  \nThe world is rendered in a hyper‑realistic, hand‑painted style reminiscent of traditional Japanese woodblock prints, but with a night‑marble twist. The color palette is dominated by deep indigo, charcoal, and blood‑red, punctuated by the phosphorescent glow of the blood‑moon. Architecture is a blend of Edo‑period timber houses, stone torii gates, and crumbling samurai barracks, all slick with rain and dripping with the sheen of a perpetual twilight.  \n\nLighting is low and chiaroscuro, with the moon’s crimson light slicing through the mist, casting long, distorted shadows. The ambient soundscape is a constant, low hum of wind through bamboo, interspersed with distant, mournful koto strings, the clatter of armor, and the occasional guttural hiss of yokai. Occasional thunderclaps echo off stone walls, and the air is thick with the metallic tang of blood and the sweet, sickly scent of night-blooming flowers.  \n\nThe atmosphere feels claustrophobic yet expansive: the village stretches into a labyrinth of alleys, abandoned shrine halls, and underground burial chambers, all shrouded in a perpetual, blood‑red twilight that never fades.\n\n**3. The Lore**  \nHōjō‑Kōji was once a thriving fishing and farming village perched on the edge of the Sea of Sorrow. In the year 1582, the village’s shaman, a woman named Kiyomi, performed a forbidden rite to summon the protective spirit of the moon, hoping to ward off a looming war. Instead, she bound the moon’s essence to the village, sealing it in a blood‑red eclipse that never ends.  \n\nThe curse was a bargain: the village would be spared from war, but its inhabitants would be trapped in an eternal night, forever hunted by the very spirits she sought to protect them with. The blood‑moon’s light turned the village into a nexus for yokai—vengeful spirits of those wronged in life—and the restless dead of samurai who died in the village’s last battle. Over centuries, the village’s architecture decayed, its people turned to cultists or were driven mad, and the once‑bustling streets became a maze of death.\n\n**4. The Core Conflict**  \nThe curse is a living, sentient darkness that feeds on the village’s fear and blood. It manifests as a swarm of vengeful yokai—kitsune with poisoned tails, oni with razor‑sharp claws, and shikigami that mimic the dead samurai’s armor. The undead samurai, bound to the moon’s crimson light, patrol the streets in spectral armor, their eyes glowing with a pale, otherworldly fire.  \n\nThe core conflict is a battle between the village’s desperate survivors and the curse’s relentless forces. The curse is not merely a backdrop; it actively manipulates the environment—shifting walls, turning familiar paths into labyrinths, and summoning new yokai from the shadows. The player must navigate this ever‑changing maze, uncover the truth behind Kiyomi’s failed rite, and either break the curse or become one of the village’s eternal guardians.  \n\nThe stakes are existential: the village’s soul is tied to the moon’s blood‑red light, and every act of violence or mercy reverberates through the curse, altering the balance between life, death, and the restless spirits that haunt the Crimson Eclipse.",
+    "generation_time_seconds": 230,
+    "player": {
+        "tile": {
+            "name": "disgraced_ronin",
+            "description": "A spectral ronin draped in tattered kimono, eyes burning crimson like moonlit blood.",
+            "color": "#8B0000"
+        },
+        "back_history": "Sōta, a former Hōjō ronin exiled after a fatal duel, now wanders the seas in search of redemption. He hears rumors of a village trapped in a crimson eclipse, where the moon's curse feeds on fear. Driven by guilt over his past failures and a desire to free the souls of his fallen comrades, he enters Hōjō‑Kōji. Armed with a tarnished katana and a resolve forged in blood, he seeks to unravel Kiyomi's forbidden rite and break the eternal night, hoping to restore light to the village and find peace for himself.",
+        "tile_with_texture": {
+            "name": "disgraced_ronin",
+            "description": "A spectral ronin draped in tattered kimono, eyes burning crimson like moonlit blood.",
+            "color": "#8B0000",
+            "texture": {
+                "tileset_position": {
+                    "x": 26,
+                    "y": 6
+                },
+                "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The first level is the village square, where the rain-soaked cobblestones glisten under the crimson moon. Low, flickering lanterns cast trembling shadows, and the distant hum of wind through bamboo mingles with the clatter of armor. The air smells of wet earth and night-blooming flowers.",
+                "name": "The Crimson Square",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "timber_wall",
+                    "description": "Cracked wooden walls of abandoned houses, dripping with rain.",
+                    "color": "#333333"
+                },
+                "floor_tile": {
+                    "name": "rain_soaked_cobblestone",
+                    "description": "Wet, slick stone paving that reflects the blood‑red moonlight.",
+                    "color": "#1A1A40"
+                },
+                "wall_tile_with_texture": {
+                    "name": "timber_wall",
+                    "description": "Cracked wooden walls of abandoned houses, dripping with rain.",
+                    "color": "#333333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "rain_soaked_cobblestone",
+                    "description": "Wet, slick stone paving that reflects the blood‑red moonlight.",
+                    "color": "#1A1A40",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The second level descends into the abandoned shrine halls. Torii gates stand half‑collapsed, their vermilion paint faded to ash. The flicker of phosphorescent moss illuminates corridors, while the scent of incense mingles with metallic tang of blood. Yokai hiss from shadows, and thunderclaps echo off stone.",
+                "name": "The Fallen Shrine",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "stone_wall",
+                    "description": "Cold stone walls that pulse faintly with crimson light.",
+                    "color": "#8B0000"
+                },
+                "floor_tile": {
+                    "name": "cracked_pavement",
+                    "description": "Stone tiles cracked by centuries of neglect, slick with rain.",
+                    "color": "#2A2A2A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "stone_wall",
+                    "description": "Cold stone walls that pulse faintly with crimson light.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "cracked_pavement",
+                    "description": "Stone tiles cracked by centuries of neglect, slick with rain.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            },
+            {
+                "description": "The deepest level is the underground burial chamber, a labyrinth of shifting walls and spectral samurai. The floor is a mosaic of bone‑white tiles, each etched with runes that glow faintly. The air is thick with the metallic scent of blood and the mournful koto strings, and the darkness seems to pulse with the curse’s hunger.",
+                "name": "The Blood‑Moon Crypt",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "blood_wall",
+                    "description": "Walls of darkened stone, stained with dried blood, throbbing with the curse.",
+                    "color": "#8B0000"
+                },
+                "floor_tile": {
+                    "name": "bone_tile",
+                    "description": "White bone‑like tiles that shimmer with a faint crimson glow.",
+                    "color": "#FFFFFF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "blood_wall",
+                    "description": "Walls of darkened stone, stained with dried blood, throbbing with the curse.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "bone_tile",
+                    "description": "White bone‑like tiles that shimmer with a faint crimson glow.",
+                    "color": "#FFFFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "bloodlit_kitsune",
+                    "description": "A translucent fox with a tail dripping crimson poison, eyes like embers.",
+                    "color": "#8B0000"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "bloodlit_kitsune",
+                    "description": "A translucent fox with a tail dripping crimson poison, eyes like embers.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crimson_oni",
+                    "description": "A hulking oni with obsidian armor, blood-red eyes, wielding a jagged blade.",
+                    "color": "#800000"
+                },
+                "weight": 8,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "crimson_oni",
+                    "description": "A hulking oni with obsidian armor, blood-red eyes, wielding a jagged blade.",
+                    "color": "#800000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "spectral_samurai",
+                    "description": "A translucent samurai in rusted armor, glowing pale fire in eyes, moves silently.",
+                    "color": "#2F4F4F"
+                },
+                "weight": 9,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "spectral_samurai",
+                    "description": "A translucent samurai in rusted armor, glowing pale fire in eyes, moves silently.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "shadow_shikigami",
+                    "description": "A shadowy figure mimicking a dead samurai, barely visible, strikes with swift blades.",
+                    "color": "#000000"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "shadow_shikigami",
+                    "description": "A shadowy figure mimicking a dead samurai, barely visible, strikes with swift blades.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 30,
+                            "y": 2
+                        },
+                        "tileset_description": "A human swordswoman wielding two swords."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_moon_wraith",
+                    "description": "A wraith swirling with blood moon energy, heavy armor of ash, slow but crushing.",
+                    "color": "#4B0000"
+                },
+                "weight": 7,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "blood_moon_wraith",
+                    "description": "A wraith swirling with blood moon energy, heavy armor of ash, slow but crushing.",
+                    "color": "#4B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "eclipse_kitsune",
+                    "description": "A fox with fur as dark as midnight, eyes glowing crimson, quick as wind.",
+                    "color": "#1A1A1A"
+                },
+                "weight": 4,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "eclipse_kitsune",
+                    "description": "A fox with fur as dark as midnight, eyes glowing crimson, quick as wind.",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 7
+                        },
+                        "tileset_description": "A dog. A fox. A canine."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "nightmare_oni",
+                    "description": "A massive oni with jagged spikes, dripping blood, moves with deliberate menace.",
+                    "color": "#660000"
+                },
+                "weight": 10,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "nightmare_oni",
+                    "description": "A massive oni with jagged spikes, dripping blood, moves with deliberate menace.",
+                    "color": "#660000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "phantom_shikigami",
+                    "description": "A translucent shikigami that mimics a fallen samurai, swift and elusive.",
+                    "color": "#333333"
+                },
+                "weight": 3,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "phantom_shikigami",
+                    "description": "A translucent shikigami that mimics a fallen samurai, swift and elusive.",
+                    "color": "#333333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bloodbound_yokai",
+                    "description": "A small, pale yokai that feeds on fear, quick and unpredictable.",
+                    "color": "#5C0000"
+                },
+                "weight": 2,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "bloodbound_yokai",
+                    "description": "A small, pale yokai that feeds on fear, quick and unpredictable.",
+                    "color": "#5C0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 8
+                        },
+                        "tileset_description": "A bat or a little demon. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bloodlit_guardian",
+                    "description": "A towering guardian of the village, armored in blood-red steel, slow but relentless.",
+                    "color": "#8B0000"
+                },
+                "weight": 8,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "bloodlit_guardian",
+                    "description": "A towering guardian of the village, armored in blood-red steel, slow but relentless.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_iron_dagger",
+                    "description": "A dull, rusted dagger with a chipped handle, its blade barely reflecting the crimson moon.",
+                    "color": "#333333"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 1,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_iron_dagger",
+                    "description": "A dull, rusted dagger with a chipped handle, its blade barely reflecting the crimson moon.",
+                    "color": "#333333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "broken_bamboo_bow",
+                    "description": "A makeshift bow from splintered bamboo, its string frayed, yet it still sings a faint echo of the wind.",
+                    "color": "#1A1A2E"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "broken_bamboo_bow",
+                    "description": "A makeshift bow from splintered bamboo, its string frayed, yet it still sings a faint echo of the wind.",
+                    "color": "#1A1A2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 6
+                        },
+                        "tileset_description": "Simple bow of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "cracked_steel_sword",
+                    "description": "A once proud steel blade now marred by a deep crack, its edge dull.",
+                    "color": "#333333"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 2,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "cracked_steel_sword",
+                    "description": "A once proud steel blade now marred by a deep crack, its edge dull.",
+                    "color": "#333333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "moonlit_scepter_of_kiyomi",
+            "description": "A polished obsidian scepter, its shaft carved with swirling crimson runes that pulse with the moon’s eternal light. The tip holds a crystal of blood‑red glass, humming with the captured essence of the moon’s spirit. Legends say it can sever the bond between the village and the eclipse, but only when wielded by a mortal who has faced the darkness.",
+            "color": "#8B0000"
+        },
+        "back_history": "Kiyomi’s forbidden rite bound the moon’s spirit to Hōjō‑Kōji, sealing the village in a crimson eclipse that feeds on fear and blood. The Moonlit Scepter of Kiyomi is the vessel of that binding—a conduit of the moon’s essence. Only by retrieving the scepter and carrying it back to the village’s entrance can the player sever the curse’s tether, releasing the trapped spirits and ending the eternal night. The scepter’s power is too great for the darkness to allow it to remain buried; it must be reclaimed and brought to the surface to break the pact and restore the village’s soul.",
+        "tile_with_texture": {
+            "name": "moonlit_scepter_of_kiyomi",
+            "description": "A polished obsidian scepter, its shaft carved with swirling crimson runes that pulse with the moon’s eternal light. The tip holds a crystal of blood‑red glass, humming with the captured essence of the moon’s spirit. Legends say it can sever the bond between the village and the eclipse, but only when wielded by a mortal who has faced the darkness.",
+            "color": "#8B0000",
+            "texture": {
+                "tileset_position": {
+                    "x": 41,
+                    "y": 7
+                },
+                "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-20b": {
+            "output_tokens": 15606,
+            "input_token_details": {
+                "cache_read": 1536
+            },
+            "output_token_details": {
+                "reasoning": 10623
+            },
+            "input_tokens": 15924,
+            "total_tokens": 31530
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-20b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 90,
+    "semantic_reconstruction_metric": 0.7772260634272145,
+    "prompt": "A cursed feudal Japanese village trapped in an eternal blood-moon night, stalked by vengeful yokai and undead samurai.",
+    "prompt_name": "blood_moon_yokai_village",
+    "prompt_index": 13,
+    "asset_bundle_file": "bundle_blood_moon_yokai_village_openai_gpt_oss_20b_94ac49.json"
+}
