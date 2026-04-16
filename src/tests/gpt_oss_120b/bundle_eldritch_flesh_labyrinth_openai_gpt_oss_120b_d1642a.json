@@ -1,0 +1,625 @@
+{
+    "name": "Gulthara's Gullet: Maw Of The Eidolon",
+    "raw_description": "A twisted, flesh-and-bone labyrinth inside the stomach of a sleeping eldritch god, swarming with parasitic worms and twisted digestive demons.",
+    "description": "**1. Setting Name**  \n**Gulthara’s Gullet – The Maw of the Slumbering Eidolon**  \n\n---\n\n**2. Visual Style & Atmosphere**  \n\n*Art Direction – Organic Gothic Horror*  \nThe labyrinth is rendered as a nightmarish fusion of fleshy anatomy and ancient, rune‑etched bone. Walls pulse with slow, phosphorescent veins that glow a sickly amber, while massive rib‑like arches loom like cathedral buttresses, their surfaces etched with eldritch sigils that writhe when observed from the corner of the eye. The floor is a constantly shifting carpet of slick gastric mucus, interspersed with hardened, calcified plaques that resemble cracked stone. \n\n*Lighting*  \nA dim, bioluminescent glow emanates from the stomach’s own peristaltic fire—flames of corrosive acid that flicker like lanterns, casting wavering shadows that seem to breathe. Occasionally, a sudden surge of gastric fire erupts, bathing corridors in a harsh, orange‑red light before receding into a low, throbbing luminescence.\n\n*Ambient Noise*  \nThe soundscape is a cacophony of low, resonant gurgles, the distant rumble of the god’s heartbeat, and the incessant, wet squelch of slime sliding over bone. Whisper‑thin hisses echo from unseen parasites, while the occasional, bone‑cracking chime of a digestive demon’s armor reverberates through the tunnels. A faint, mournful chant—perhaps the god’s subconscious dreaming—drifts on the air, warping into dissonant tones as you move deeper.\n\n*Atmospheric Effects*  \n- **Acidic Mists**: Thin clouds of volatile vapor drift from open chambers, causing the screen to ripple with a greenish hue and occasionally corrode temporary UI elements (for future implementation).  \n- **Peristaltic Pulse**: The entire environment subtly contracts and expands in a slow, rhythmic motion, giving a sense of being alive and constantly reshaping.  \n- **Parasitic Swarm**: Small, translucent worm‑like entities drift in the air like schools of fish, their bodies pulsing with bioluminescent spots that flash warning colors when they sense intruders.\n\n---\n\n**3. Lore**  \n\nEons ago, the ancient titan‑god **Gulthara** was sealed beneath the world by a coalition of forgotten sorcerers. To imprison such a being, the seers bound its very essence—its boundless hunger—to a pocket dimension, turning the god’s dormant stomach into a self‑contained realm. The intention was to create a “living prison” that would starve the deity of sustenance, keeping it asleep forever.\n\nInstead, the god’s digestive system became a crucible of twisted life. The god’s own microbiome, a mixture of primordial parasites and demonic entities forged from the sorcerers’ failed rituals, mutated into sentient, hostile fauna. Over millennia, the stomach walls thickened with bone and cartilage, forming a labyrinthine citadel of flesh and stone. The god’s occasional, subconscious dreams seeped into the realm, manifesting as shifting corridors and hallucinogenic hallucinations that trap wanderers in endless loops.\n\nThe realm is dangerous because it is both a living organ and a battlefield of competing parasitic intelligences. The digestive acids are corrosive, the peristaltic motions can crush the unwary, and the demonic denizens—**Gastric Revenants**, **Acidic Maw‑Wyrms**, and **Bile‑Spawned Harbingers**—protect the core of the stomach where the god’s heart still beats faintly. Those who venture inside are often consumed, their bodies repurposed as nourishment for the ever‑growing mass of parasites.\n\n---\n\n**4. Core Conflict**  \n\nThe **Corruption of the Void‑Bile** is the central antagonistic force. As Gulthara slumbers, a malignant bile‑infused parasite known as the **Abyssal Pyloric Maw** has begun to fuse the god’s digestive processes with the lingering remnants of the sealing sorcery. This hybrid entity spreads a corrosive, mind‑warping toxin that:\n\n* **Mutates** the existing fauna, turning benign parasites into aggressive “Digestive Demons” that guard the deeper chambers.  \n* **Distorts Reality**, causing the labyrinth to reconfigure itself, sealing exits and opening new, more treacherous passages.  \n* **Feeds on Hope**, sapping the will of intruders and turning their lingering life force into additional acid for the god’s stomach.\n\nThe player’s objective, whether as a desperate explorer, a rogue scholar seeking the god’s forgotten knowledge, or a cursed soul bound to the labyrinth, is to navigate the ever‑shifting flesh‑bone corridors, confront the growing influence of the Void‑Bile, and either **seal the Abyssal Pyloric Maw** to prevent the god’s eventual awakening or **harness its power** to claim a fragment of the eldritch deity’s dormant might. The conflict is both physical—battling mutated demons and surviving the environment—and existential, as each step deeper threatens to merge the adventurer’s own essence with the grotesque ecosystem of Gulthara’s Gullet.",
+    "generation_time_seconds": 120,
+    "player": {
+        "tile": {
+            "name": "cursed_scholar",
+            "description": "A gaunt figure cloaked in acid‑stained robes, eyes glowing with a faint bioluminescent hue, clutching a cracked obsidian staff etched with sealing sigils.",
+            "color": "#4B0082"
+        },
+        "back_history": "A cursed scholar once devoted to the forbidden rites of the Sealed Eidolon, now seeking redemption by sealing the Abyssal Pyloric Maw. Banished from the Arcane Conclave after his experiments awakened dormant parasites, he entered Gulthara’s Gullet to atone and reclaim lost knowledge.",
+        "tile_with_texture": {
+            "name": "cursed_scholar",
+            "description": "A gaunt figure cloaked in acid‑stained robes, eyes glowing with a faint bioluminescent hue, clutching a cracked obsidian staff etched with sealing sigils.",
+            "color": "#4B0082",
+            "texture": {
+                "tileset_position": {
+                    "x": 24,
+                    "y": 1
+                },
+                "tileset_description": "A wizard wearing a hood, carrying a staff in his hand."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The outermost chamber of Gulthara’s Gullet, where the walls are rib‑like bone arches faintly etched with dormant sigils. A thin layer of slick gastric mucus coats the floor, broken by occasional hardened plaques that feel like cold stone.",
+                "name": "The Gullet Entrance",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "rib_bone",
+                    "description": "Pale bone ribs etched with faint sigils, pulsing faintly with phosphorescent veins",
+                    "color": "#C2B280"
+                },
+                "floor_tile": {
+                    "name": "mucus_slime",
+                    "description": "Viscous gastric mucus that clings to boots, shimmering with a sickly amber sheen",
+                    "color": "#8B4513"
+                },
+                "wall_tile_with_texture": {
+                    "name": "rib_bone",
+                    "description": "Pale bone ribs etched with faint sigils, pulsing faintly with phosphorescent veins",
+                    "color": "#C2B280",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "mucus_slime",
+                    "description": "Viscous gastric mucus that clings to boots, shimmering with a sickly amber sheen",
+                    "color": "#8B4513",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Deeper within, the corridors narrow into tunnels lined with throbbing veins that pulse amber light. The air is thick with acidic mist, and the floor alternates between slick slime and cracked calcified plaques that crack underfoot.",
+                "name": "The Acidic Veins",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "vein_wall",
+                    "description": "Pulsing veins of flesh and bone, glowing a sickly amber and exuding a faint acidic tang",
+                    "color": "#FFBF00"
+                },
+                "floor_tile": {
+                    "name": "calcified_plaque",
+                    "description": "Hard, cracked stone‑like plaques embedded in the mucus, cold to the touch",
+                    "color": "#A9A9A9"
+                },
+                "wall_tile_with_texture": {
+                    "name": "vein_wall",
+                    "description": "Pulsing veins of flesh and bone, glowing a sickly amber and exuding a faint acidic tang",
+                    "color": "#FFBF00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "calcified_plaque",
+                    "description": "Hard, cracked stone‑like plaques embedded in the mucus, cold to the touch",
+                    "color": "#A9A9A9",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The heart of the stomach, where the Void‑Bile seeps into bone. Corroded bone fused with black bile drips onto a surface roiling with corrosive acid and swirling parasitic swarms. The oppressive glow of the god’s dormant heart beats in the distance.",
+                "name": "The Abyssal Pyloric Core",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "void_bile_bone",
+                    "description": "Corroded bone fused with viscous black bile, oozing a noxious vapor",
+                    "color": "#2F4F4F"
+                },
+                "floor_tile": {
+                    "name": "corrosive_gas",
+                    "description": "Slick floor seething with acidic mist that hisses and burns any contact",
+                    "color": "#4B0082"
+                },
+                "wall_tile_with_texture": {
+                    "name": "void_bile_bone",
+                    "description": "Corroded bone fused with viscous black bile, oozing a noxious vapor",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "corrosive_gas",
+                    "description": "Slick floor seething with acidic mist that hisses and burns any contact",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "gastro_fly",
+                    "description": "A tiny, translucent worm-like parasite with pulsing bioluminescent spots, darting through the gastric mist like a frantic firefly.",
+                    "color": "#6B8E23"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "gastro_fly",
+                    "description": "A tiny, translucent worm-like parasite with pulsing bioluminescent spots, darting through the gastric mist like a frantic firefly.",
+                    "color": "#6B8E23",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rib_crusher",
+                    "description": "A hulking demon forged from rib‑bone shards, its massive armored plates clank with each slow step, exuding a faint acidic aura.",
+                    "color": "#8B4513"
+                },
+                "weight": 8,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "rib_crusher",
+                    "description": "A hulking demon forged from rib‑bone shards, its massive armored plates clank with each slow step, exuding a faint acidic aura.",
+                    "color": "#8B4513",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "acidic_spitter",
+                    "description": "A squat, bubbling slime that erupts jets of corrosive acid, its surface rippling with angry green veins.",
+                    "color": "#556B2F"
+                },
+                "weight": 3,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "acidic_spitter",
+                    "description": "A squat, bubbling slime that erupts jets of corrosive acid, its surface rippling with angry green veins.",
+                    "color": "#556B2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "vein_hopper",
+                    "description": "A slender, fast‑moving parasite that skitters along the pulsing veins, its skin slick and reflective like wet steel.",
+                    "color": "#B22222"
+                },
+                "weight": 2,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "vein_hopper",
+                    "description": "A slender, fast‑moving parasite that skitters along the pulsing veins, its skin slick and reflective like wet steel.",
+                    "color": "#B22222",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_wraith",
+                    "description": "A ghostly skeletal figure that drifts above the floor, its hollow eye sockets glowing amber, rattling bone fragments as it moves.",
+                    "color": "#2F4F4F"
+                },
+                "weight": 7,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "bone_wraith",
+                    "description": "A ghostly skeletal figure that drifts above the floor, its hollow eye sockets glowing amber, rattling bone fragments as it moves.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "maw_wyrm",
+                    "description": "An elongated, serpentine creature covered in acid‑resistant scales, its mouth lined with rows of razor‑sharp teeth that drip corrosive saliva.",
+                    "color": "#8FBC8F"
+                },
+                "weight": 5,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "maw_wyrm",
+                    "description": "An elongated, serpentine creature covered in acid‑resistant scales, its mouth lined with rows of razor‑sharp teeth that drip corrosive saliva.",
+                    "color": "#8FBC8F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bile_harvester",
+                    "description": "A massive, hulking beast oozing thick bile, its body a grotesque amalgam of cartilage and hardened plaque, crushing anything in its path.",
+                    "color": "#A0522D"
+                },
+                "weight": 8,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "bile_harvester",
+                    "description": "A massive, hulking beast oozing thick bile, its body a grotesque amalgam of cartilage and hardened plaque, crushing anything in its path.",
+                    "color": "#A0522D",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_pyloric",
+                    "description": "A nightmarish amalgam of void‑infused tissue, its form constantly shifting, eyes like void‑filled pits that warp reality around it.",
+                    "color": "#4B0082"
+                },
+                "weight": 6,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "void_pyloric",
+                    "description": "A nightmarish amalgam of void‑infused tissue, its form constantly shifting, eyes like void‑filled pits that warp reality around it.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 18,
+                            "y": 9
+                        },
+                        "tileset_description": "A strange creature with ears, it looks like an alien."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "eldritch_revenant",
+                    "description": "A towering revenant wrapped in cracked bone armor, its presence warps the air, and its fists crackle with eldritch energy.",
+                    "color": "#191970"
+                },
+                "weight": 9,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "eldritch_revenant",
+                    "description": "A towering revenant wrapped in cracked bone armor, its presence warps the air, and its fists crackle with eldritch energy.",
+                    "color": "#191970",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupt_phantom",
+                    "description": "An ethereal phantom of corrupted bile, its translucent form flickers with sickly green light, slipping through walls with a haunting wail.",
+                    "color": "#228B22"
+                },
+                "weight": 4,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "corrupt_phantom",
+                    "description": "An ethereal phantom of corrupted bile, its translucent form flickers with sickly green light, slipping through walls with a haunting wail.",
+                    "color": "#228B22",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusted_gut_dagger_tile",
+                    "description": "A dull iron blade stained with thick, congealed bile, its edge chipped from countless scrapes against bone.",
+                    "color": "#4B3A2F"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusted_gut_dagger_tile",
+                    "description": "A dull iron blade stained with thick, congealed bile, its edge chipped from countless scrapes against bone.",
+                    "color": "#4B3A2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_spine_spear_tile",
+                    "description": "A long spear fashioned from a rib bone, its tip sharpened to a point that pierces flesh and stone alike.",
+                    "color": "#7A5C3E"
+                },
+                "rarity": 3,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "bone_spine_spear_tile",
+                    "description": "A long spear fashioned from a rib bone, its tip sharpened to a point that pierces flesh and stone alike.",
+                    "color": "#7A5C3E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "acidic_blowgun_tile",
+                    "description": "A slender blowgun carved from petrified cartilage, its barrel slick with corrosive acid that sizzles on contact.",
+                    "color": "#6B8E23"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "acidic_blowgun_tile",
+                    "description": "A slender blowgun carved from petrified cartilage, its barrel slick with corrosive acid that sizzles on contact.",
+                    "color": "#6B8E23",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gastro_crossbow_tile",
+                    "description": "A compact crossbow reinforced with calcified plates, its bolts coated in a viscous, glowing slime.",
+                    "color": "#8B4513"
+                },
+                "rarity": 3,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "gastro_crossbow_tile",
+                    "description": "A compact crossbow reinforced with calcified plates, its bolts coated in a viscous, glowing slime.",
+                    "color": "#8B4513",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bloodied_hammer_tile",
+                    "description": "A heavy hammer whose head is embedded with a pulsating organ fragment, dripping dark crimson ichor.",
+                    "color": "#8B0000"
+                },
+                "rarity": 2,
+                "weight": 7,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "bloodied_hammer_tile",
+                    "description": "A heavy hammer whose head is embedded with a pulsating organ fragment, dripping dark crimson ichor.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "veinfire_longbow_tile",
+                    "description": "A longbow woven from living vein fibers, its string humming with a faint, amber glow that ignites arrows.",
+                    "color": "#B8860B"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "veinfire_longbow_tile",
+                    "description": "A longbow woven from living vein fibers, its string humming with a faint, amber glow that ignites arrows.",
+                    "color": "#B8860B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "etched_bone_glaive_tile",
+                    "description": "A glaive of polished bone etched with shifting sigils that pulse when swung, leaving a trail of spectral light.",
+                    "color": "#2F4F4F"
+                },
+                "rarity": 7,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "etched_bone_glaive_tile",
+                    "description": "A glaive of polished bone etched with shifting sigils that pulse when swung, leaving a trail of spectral light.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium-rarity greatsword. With detailed blade."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_bile_wand_tile",
+                    "description": "A slender wand of obsidian glass, its core filled with swirling void‑bile that crackles with forbidden power.",
+                    "color": "#191970"
+                },
+                "rarity": 7,
+                "weight": 2,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "void_bile_wand_tile",
+                    "description": "A slender wand of obsidian glass, its core filled with swirling void‑bile that crackles with forbidden power.",
+                    "color": "#191970",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "abyssal_pyloric_scythe_tile",
+                    "description": "A massive scythe forged from the maw of the Abyssal Pyloric Maw, its blade drips ever‑flowing toxin that burns reality itself.",
+                    "color": "#4B0082"
+                },
+                "rarity": 9,
+                "weight": 5,
+                "mana_cost": 3,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "abyssal_pyloric_scythe_tile",
+                    "description": "A massive scythe forged from the maw of the Abyssal Pyloric Maw, its blade drips ever‑flowing toxin that burns reality itself.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gullet_core_cannon_tile",
+                    "description": "An experimental cannon built around a living stomach core, firing bursts of corrosive fire that roar like a deity's heartbeat.",
+                    "color": "#FF4500"
+                },
+                "rarity": 10,
+                "weight": 8,
+                "mana_cost": 7,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "gullet_core_cannon_tile",
+                    "description": "An experimental cannon built around a living stomach core, firing bursts of corrosive fire that roar like a deity's heartbeat.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium rarity Greatsword."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "abyssal_pyloric_core",
+            "description": "A pulsating, obsidian crystal heart forged from the sealed essence of Gulthara's stomach, its surface rippling with veins of liquid void‑bile that glow with an inner violet fire. The core hums with the trapped will of the ancient titan‑god, its weight both physical and metaphysical, and it radiates a corrupting aura that warps reality around it.",
+            "color": "#2B004F"
+        },
+        "back_history": "The Abyssal Pyloric Core is the crystallized heart of the Abyssal Pyloric Maw, the malignant parasite that fused the Void‑Bile with Gulthara's sealing sorcery. When the sealing sorcerers bound the titan‑god, they sealed a fragment of its digestive essence within a crystal to prevent the god's hunger from ever awakening. Over ages the Void‑Bile corrupted this fragment, turning it into a self‑sustaining engine of corruption that spreads the toxin through the stomach's labyrinth, mutating fauna and reshaping corridors. Only by extracting the Core and carrying it back to the surface can the player either reseal the corruption, using the ancient binding rites to lock the Void‑Bile forever, or harness its power to command the dormant deity. Leaving it in the depths would allow the Abyssal Pyloric Maw to fully merge with Gulthara, awakening the slumbering god and unleashing a cataclysmic flood of acid and despair upon the world.",
+        "tile_with_texture": {
+            "name": "abyssal_pyloric_core",
+            "description": "A pulsating, obsidian crystal heart forged from the sealed essence of Gulthara's stomach, its surface rippling with veins of liquid void‑bile that glow with an inner violet fire. The core hums with the trapped will of the ancient titan‑god, its weight both physical and metaphysical, and it radiates a corrupting aura that warps reality around it.",
+            "color": "#2B004F",
+            "texture": {
+                "tileset_position": {
+                    "x": 42,
+                    "y": 8
+                },
+                "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "output_token_details": {
+                "reasoning": 3800
+            },
+            "total_tokens": 18001,
+            "output_tokens": 7098,
+            "input_tokens": 10903
+        }
+    }
+}

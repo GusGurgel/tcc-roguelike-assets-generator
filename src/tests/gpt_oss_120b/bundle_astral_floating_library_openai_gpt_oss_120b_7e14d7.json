@@ -1,0 +1,628 @@
+{
+    "name": "Luminous Void Archive",
+    "raw_description": "An ethereal floating library in the astral plane, slowly crumbling into the void, haunted by ink-elementals and corrupted scholars.",
+    "description": "**1. Setting Name**  \n**The Lumen Archive – The Astral Bibliotheca**\n\n---\n\n**2. Visual Style & Atmosphere**  \n\n- **Art Direction:** *Ethereal Gothic‑Baroque* blended with *Surrealist Dream‑Scape*. Think towering, filigreed bookshelves carved from translucent crystal, stained‑glass windows that bleed constellations, and floating ink‑wells that pulse like slow‑beat hearts. The architecture is ornate yet weightless, with arches that bend into spirals of light and shadow.  \n\n- **Color Palette:** Deep indigo and midnight violet dominate the background, punctuated by phosphorescent teal, amber‑gold script, and the sickly, rust‑red of corrupted ink.  \n\n- **Lighting:** A perpetual twilight suffuses the library; soft, ambient luminescence emanates from floating orbs of “star‑dust” that drift lazily between aisles. When a player steps into a new chamber, the light flickers, casting long, wavering shadows that seem to breathe. In the deepest vaults, darkness gathers like a thick fog, broken only by the occasional flare of a cursed quill igniting the air.  \n\n- **Weather & Ambient Noise:** The astral plane has no weather in the conventional sense, but the Archive is perpetually bathed in a low, resonant hum—like the distant echo of turning pages and the faint sigh of distant quills scratching on parchment. Occasionally, a soft “ink‑drip” sound reverberates, as if unseen reservoirs are leaking their darkness onto the floor. In the farther reaches, a mournful choir of whispered verses drifts through the corridors, growing louder the closer one gets to the heart of the corruption.  \n\n- **Atmospheric Effects:** Ink‑elementals leave trailing ribbons of black vapor that swirl and settle into puddles of liquid darkness. Corrupted scholars appear as semi‑transparent silhouettes, their eyes glowing with a pale, sickly light, and their robes flutter as if caught in an unseen wind. The very air feels slightly viscous, as if saturated with the weight of countless unwritten stories.\n\n---\n\n**3. Lore**  \n\nCenturies ago, the Lumen Archive was forged by the **Celestial Scribes**, an order of astral scholars who bound the collective knowledge of all worlds into a single, ever‑expanding library that floated between the stars. The Archive was a sanctuary of pure thought, its shelves fed by the **Ink of Creation**—a living, luminous substance that could transcribe any truth, myth, or possibility the mind could conceive.\n\nDuring the **Eclipsed Convergence**, a rare alignment of nine astral constellations, a rogue fragment of the **Void Maw** slipped through the veil and seeped into the Archive’s foundation. The Void Maw is a primordial hunger that devours existence, feeding on the very essence of stories. Its presence corrupted the Ink of Creation, turning it into **Ink of Decay**—a black, tar‑like fluid that erodes both parchment and reality.\n\nThe corrupted ink birthed **Ink‑Elementals**, sentient manifestations of the tainted script. They began to rewrite the very architecture of the Library, turning orderly aisles into labyrinthine mazes and sealing off chambers that once housed the most potent tomes. The Celestial Scribes, now twisted by the same ink, became **Corrupted Scholars**—once‑wise custodians turned into maddened wraiths, forever scribbling frenzied marginalia that spreads the corruption further.\n\nAs the Ink of Decay spreads, the Archive is slowly **crumbling into the Void**: shelves disintegrate into shards of obsidian, floating islands of knowledge collapse, and the very foundations of the Astral Plane begin to fray. Those who venture inside risk becoming part of the ever‑growing footnotes of a dying chronicle.\n\n---\n\n**4. Core Conflict**  \n\nThe heart of the conflict is the **Rift of the Void Maw**—a pulsating, black vortex hidden deep within the Archive’s Core Chamber. It continuously exudes Ink of Decay, corrupting everything it touches. The **Ink‑Elementals** act as its minions, seeking to expand the rift’s influence by rewriting the library’s layout and turning knowledge into oblivion.  \n\nOpposing them are the **Echoes of the Celestial Scribes**—remnants of the original order that survive as faint, luminous glyphs and protective wards. They strive to seal the rift, but their power wanes with each passing moment.  \n\nThe player’s role is to navigate the ever‑shifting stacks, confront Ink‑Elementals and Corrupted Scholars, recover fragments of **Pure Ink** (the antidote to decay), and ultimately confront the Rift itself. Success means restoring the Library’s balance, preserving the multiverse’s stories, and preventing the Void Maw from spilling into the wider Astral Plane. Failure condemns the Archive—and perhaps all worlds that depend on its recorded truths—to be erased from existence.",
+    "generation_time_seconds": 142,
+    "player": {
+        "tile": {
+            "name": "lumen_seeker",
+            "description": "A spectral scholar draped in ink-stained robes, wielding a quill of pure light.",
+            "color": "#2A2A2A"
+        },
+        "back_history": "Archetype: Inkbound Archivist, a former Celestial Scribe turned wanderer. Backstory: Once a guardian of the Lumen Archive, they were exiled when a fragment of the Void Maw corrupted their own ink, binding their soul to the library's fading light. Driven by redemption, they return to reclaim the Pure Ink and seal the Rift, hoping to restore the Archive and free the countless stories trapped within. Visuals: Pale, translucent skin etched with faint glyphs, eyes glowing amber‑gold, wearing a tattered, iridescent robe of midnight violet threaded with phosphorescent teal runes. Their gear includes a floating, crystal‑bound quill that pulses with teal light and a sigil‑etched shield that shimmers with indigo and rust‑red veins. The character moves with a weightless glide, leaving a faint trail of luminous ink in their wake.",
+        "tile_with_texture": {
+            "name": "lumen_seeker",
+            "description": "A spectral scholar draped in ink-stained robes, wielding a quill of pure light.",
+            "color": "#2A2A2A",
+            "texture": {
+                "tileset_position": {
+                    "x": 24,
+                    "y": 1
+                },
+                "tileset_description": "A wizard wearing a hood, carrying a staff in his hand."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The entrance aisles of the Lumen Archive, bathed in perpetual twilight. Star‑dust orbs drift lazily, casting wavering indigo shadows. The air smells of fresh, phosphorescent ink and the distant hum of turning pages. Soft whispers echo as the player steps among towering crystal bookshelves.",
+                "name": "The Luminous Stacks",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "crystalline_shelf",
+                    "description": "Translucent crystal bookshelves etched with faint glyphs, reflecting the ambient teal glow.",
+                    "color": "#4B0082"
+                },
+                "floor_tile": {
+                    "name": "inked_mosaic",
+                    "description": "Polished stone inlaid with veins of phosphorescent teal ink, smooth underfoot.",
+                    "color": "#00FFAA"
+                },
+                "wall_tile_with_texture": {
+                    "name": "crystalline_shelf",
+                    "description": "Translucent crystal bookshelves etched with faint glyphs, reflecting the ambient teal glow.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "inked_mosaic",
+                    "description": "Polished stone inlaid with veins of phosphorescent teal ink, smooth underfoot.",
+                    "color": "#00FFAA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Deeper corridors warp into the Veiled Atrium, where arches bend into spirals of corrupted light. Amber‑gold script flickers on walls, while ink‑elemental vapors curl like black ribbons. A sour, metallic scent of decay mixes with ozone, and a choir of whispered verses grows louder.",
+                "name": "The Veiled Atrium",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "corrupted_shelf",
+                    "description": "Crystal shelves blackened by Ink of Decay, dripping dark vapor that stains the surrounding air.",
+                    "color": "#2A2A2A"
+                },
+                "floor_tile": {
+                    "name": "decay_pavement",
+                    "description": "Cracked marble floor slick with tar‑like black ink, each step echoing with a hollow thud.",
+                    "color": "#1C1C1C"
+                },
+                "wall_tile_with_texture": {
+                    "name": "corrupted_shelf",
+                    "description": "Crystal shelves blackened by Ink of Decay, dripping dark vapor that stains the surrounding air.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "decay_pavement",
+                    "description": "Cracked marble floor slick with tar‑like black ink, each step echoing with a hollow thud.",
+                    "color": "#1C1C1C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The Rift Sanctum, the heart of the Archive's corruption. A pulsating void vortex dominates the chamber, exhaling Ink of Decay that forms a thick, viscous fog. The oppressive darkness is broken by occasional flares of cursed quills. The air is heavy, warm, and carries the mournful choir of dying verses.",
+                "name": "The Rift Sanctum",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "void_wall",
+                    "description": "Obsidian shards fused with swirling void energy, pulsing with rust‑red veins of corrupted ink.",
+                    "color": "#8B0000"
+                },
+                "floor_tile": {
+                    "name": "void_floor",
+                    "description": "Rough basalt floor soaked in swirling Ink of Decay, faintly glowing with an eerie crimson hue.",
+                    "color": "#3B0000"
+                },
+                "wall_tile_with_texture": {
+                    "name": "void_wall",
+                    "description": "Obsidian shards fused with swirling void energy, pulsing with rust‑red veins of corrupted ink.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "void_floor",
+                    "description": "Rough basalt floor soaked in swirling Ink of Decay, faintly glowing with an eerie crimson hue.",
+                    "color": "#3B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "ink_spirit_wisp",
+                    "description": "A fleeting wisp of black vapor, trailing ink, darts through the aisles of the Lumen Archive.",
+                    "color": "#0A0A0A"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "ink_spirit_wisp",
+                    "description": "A fleeting wisp of black vapor, trailing ink, darts through the aisles of the Lumen Archive.",
+                    "color": "#0A0A0A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_scribe_titan",
+                    "description": "A hulking, robed scholar whose quill is a massive obsidian blade, moving slowly but crushing anything in its path.",
+                    "color": "#4B0000"
+                },
+                "weight": 9,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "corrupted_scribe_titan",
+                    "description": "A hulking, robed scholar whose quill is a massive obsidian blade, moving slowly but crushing anything in its path.",
+                    "color": "#4B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_maw_inkling",
+                    "description": "Small blob of tar-like Ink of Decay that slides quickly along the floor, leaving a trail of darkness.",
+                    "color": "#1B1B1B"
+                },
+                "weight": 1,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "void_maw_inkling",
+                    "description": "Small blob of tar-like Ink of Decay that slides quickly along the floor, leaving a trail of darkness.",
+                    "color": "#1B1B1B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "lumen_guardian",
+                    "description": "A towering crystal sentinel etched with glowing glyphs, its massive form blocks passages.",
+                    "color": "#2E2B5F"
+                },
+                "weight": 8,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "lumen_guardian",
+                    "description": "A towering crystal sentinel etched with glowing glyphs, its massive form blocks passages.",
+                    "color": "#2E2B5F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 30,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem with a square on its belly."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scribal_shade",
+                    "description": "A semi‑transparent silhouette of a corrupted scholar, swift and eerie.",
+                    "color": "#3A3A3A"
+                },
+                "weight": 3,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "scribal_shade",
+                    "description": "A semi‑transparent silhouette of a corrupted scholar, swift and eerie.",
+                    "color": "#3A3A3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_elemental_brute",
+                    "description": "Massive elemental formed of swirling black ink, slow but devastating blows.",
+                    "color": "#000000"
+                },
+                "weight": 9,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "ink_elemental_brute",
+                    "description": "Massive elemental formed of swirling black ink, slow but devastating blows.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 30,
+                            "y": 0
+                        },
+                        "tileset_description": "A large, very strong tank warrior wearing armor. He is not carrying anything."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gilded_quill_hopper",
+                    "description": "A small, fast‑moving quill that hops, leaving trails of amber‑gold script.",
+                    "color": "#FFBF00"
+                },
+                "weight": 2,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "gilded_quill_hopper",
+                    "description": "A small, fast‑moving quill that hops, leaving trails of amber‑gold script.",
+                    "color": "#FFBF00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_wraith",
+                    "description": "A towering wraith of void, its presence warps reality and drains light.",
+                    "color": "#1C0D3F"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "void_wraith",
+                    "description": "A towering wraith of void, its presence warps reality and drains light.",
+                    "color": "#1C0D3F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 8
+                        },
+                        "tileset_description": "The specter of a person. A person without a face. A transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "celestial_ink_sprite",
+                    "description": "A luminous sprite of pure ink, flickering teal and violet, darting through corridors.",
+                    "color": "#00FFAA"
+                },
+                "weight": 2,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "celestial_ink_sprite",
+                    "description": "A luminous sprite of pure ink, flickering teal and violet, darting through corridors.",
+                    "color": "#00FFAA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_archivist",
+                    "description": "An enormous archivist, a mass of cracked tomes and Ink of Decay, lumbering with crushing force.",
+                    "color": "#550000"
+                },
+                "weight": 10,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "corrupted_archivist",
+                    "description": "An enormous archivist, a mass of cracked tomes and Ink of Decay, lumbering with crushing force.",
+                    "color": "#550000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusted_quill_dagger",
+                    "description": "A short blade forged from a broken quill of the Archive, its tip drips with stale ink and whispers of forgotten verses.",
+                    "color": "#4B4B4B"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusted_quill_dagger",
+                    "description": "A short blade forged from a broken quill of the Archive, its tip drips with stale ink and whispers of forgotten verses.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "inkspattered_shortbow",
+                    "description": "A compact bow strung with fibers of corrupted ink, each draw releases a soft hiss like a page turning in darkness.",
+                    "color": "#2A2A2A"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "inkspattered_shortbow",
+                    "description": "A compact bow strung with fibers of corrupted ink, each draw releases a soft hiss like a page turning in darkness.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 6
+                        },
+                        "tileset_description": "Simple bow of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "cracked_ink_hammer",
+                    "description": "A heavy hammer whose head is a slab of obsidian ink, resonating with a low, mournful thud when it strikes.",
+                    "color": "#5A2E2E"
+                },
+                "rarity": 2,
+                "weight": 7,
+                "mana_cost": 1,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "cracked_ink_hammer",
+                    "description": "A heavy hammer whose head is a slab of obsidian ink, resonating with a low, mournful thud when it strikes.",
+                    "color": "#5A2E2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_shard_shuriken",
+                    "description": "Sharp shards of void‑tainted crystal that spin like ink droplets, returning to the thrower with a faint echo.",
+                    "color": "#1B1B1B"
+                },
+                "rarity": 2,
+                "weight": 1,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "void_shard_shuriken",
+                    "description": "Sharp shards of void‑tainted crystal that spin like ink droplets, returning to the thrower with a faint echo.",
+                    "color": "#1B1B1B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 46,
+                            "y": 8
+                        },
+                        "tileset_description": "Diamond necklace with a strange figure in the middle, it looks like a spider, an insect."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ashen_staff_of_pages",
+                    "description": "A staff of brittle parchment bound with ash, its tip glows faintly as it channels lingering verses.",
+                    "color": "#3B3B3B"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "ashen_staff_of_pages",
+                    "description": "A staff of brittle parchment bound with ash, its tip glows faintly as it channels lingering verses.",
+                    "color": "#3B3B3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 4
+                        },
+                        "tileset_description": "Simple wooden staff. Noah's staff."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "luminous_script_sabre",
+                    "description": "A slender sabre etched with living script that pulses with teal light, each swing feels like cutting through pure thought.",
+                    "color": "#0A0A5A"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 4,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "luminous_script_sabre",
+                    "description": "A slender sabre etched with living script that pulses with teal light, each swing feels like cutting through pure thought.",
+                    "color": "#0A0A5A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "celestial_crossbow_of_echoes",
+                    "description": "An ornate crossbow of crystal and brass, its bolts sing with the echo of distant verses as they fly.",
+                    "color": "#1E1E8A"
+                },
+                "rarity": 6,
+                "weight": 6,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "celestial_crossbow_of_echoes",
+                    "description": "An ornate crossbow of crystal and brass, its bolts sing with the echo of distant verses as they fly.",
+                    "color": "#1E1E8A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 5
+                        },
+                        "tileset_description": "Large wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "wand_of_pure_ink",
+                    "description": "A slender wand of crystal ink, humming with bright teal energy that restores clarity to corrupted pages.",
+                    "color": "#00FFAA"
+                },
+                "rarity": 6,
+                "weight": 2,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "wand_of_pure_ink",
+                    "description": "A slender wand of crystal ink, humming with bright teal energy that restores clarity to corrupted pages.",
+                    "color": "#00FFAA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "voidreaver_greatspear",
+                    "description": "A towering spear forged from the heart of the Void Maw, its shaft is blackened steel wrapped in swirling ink‑vapor.",
+                    "color": "#000000"
+                },
+                "rarity": 9,
+                "weight": 8,
+                "mana_cost": 7,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "voidreaver_greatspear",
+                    "description": "A towering spear forged from the heart of the Void Maw, its shaft is blackened steel wrapped in swirling ink‑vapor.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "chronicle_cannon",
+                    "description": "An experimental cannon that fires condensed bursts of pure narrative, each shot reshapes reality for a heartbeat.",
+                    "color": "#FF4500"
+                },
+                "rarity": 9,
+                "weight": 9,
+                "mana_cost": 10,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "chronicle_cannon",
+                    "description": "An experimental cannon that fires condensed bursts of pure narrative, each shot reshapes reality for a heartbeat.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff detailed with a heart or arrow symbol at the tip."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "voidheart_core",
+            "description": "A pulsating crystal orb of pure creation, its surface swirling with living ink that glows like a captured sunrise; the very essence of the Celestial Scribes' original Ink of Creation, bound within a flawless obsidian sphere.",
+            "color": "#1A0D3F"
+        },
+        "back_history": "The Voidheart Core is the sealed heart of the original Ink of Creation, the primordial wellspring that the Celestial Scribes bound into the Archive to give birth to every story. When the Void Maw's fragment pierced the foundation, the core was ripped from its sanctum and shattered, its pure essence spilling into the Rift and turning the life‑giving ink into Ink of Decay. The resulting void‑corruption spreads like a malignant footnote, rewriting reality itself. By retrieving the re‑forged Voidheart Core—now a single, intact crystal orb that still pulses with untainted creative energy—the adventurer can restore the lost wellspring, seal the Rift, and reverse the decay that threatens to erase the multiverse's chronicles. It cannot be left behind; without the Core the rift will continue to devour the Archive, and the player would be forced to watch worlds vanish as the ink of oblivion rewrites existence.",
+        "tile_with_texture": {
+            "name": "voidheart_core",
+            "description": "A pulsating crystal orb of pure creation, its surface swirling with living ink that glows like a captured sunrise; the very essence of the Celestial Scribes' original Ink of Creation, bound within a flawless obsidian sphere.",
+            "color": "#1A0D3F",
+            "texture": {
+                "tileset_position": {
+                    "x": 35,
+                    "y": 8
+                },
+                "tileset_description": "A very rare greatsword."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "output_token_details": {
+                "reasoning": 4956
+            },
+            "total_tokens": 21060,
+            "input_token_details": {
+                "cache_read": 1536
+            },
+            "output_tokens": 8781,
+            "input_tokens": 12279
+        }
+    }
+}

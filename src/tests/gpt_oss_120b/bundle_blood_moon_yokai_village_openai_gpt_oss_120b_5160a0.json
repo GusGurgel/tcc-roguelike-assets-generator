@@ -1,0 +1,625 @@
+{
+    "name": "Blood Moon Shadows",
+    "raw_description": "A cursed feudal Japanese village trapped in an eternal blood-moon night, stalked by vengeful yokai and undead samurai.",
+    "description": "**Setting Name**  \n**Yamiyoru No Kage** – “Shadows of the Blood‑Moon Night”\n\n---\n\n### Visual Style & Atmosphere  \n\n- **Art Direction:** A hybrid of *Ink‑Wash Ukiyo‑e* and *Gothic Horror*. Hand‑drawn brush strokes give the world a timeless, lacquered feel, while deep chiaroscuro and ragged, splintered textures add a visceral, night‑marish edge. Silhouetted torii gates, cracked shoji screens, and rust‑stained katana blades are rendered in stark black ink against a blood‑red sky, punctuated by occasional glimmers of phosphorescent moss and ghost‑light.  \n\n- **Lighting:** Perpetual twilight under a swollen, crimson moon. The moon’s light is thin, casting long, wavering shadows that seem to breathe. Lanterns flicker with a sickly amber flame, their smoke forming fleeting kanji that dissolve before they can be read. Pools of stagnant water reflect the moon like dark mirrors, occasionally rippling with unseen movement.  \n\n- **Weather & Ambient Noise:** A cold, damp mist rolls through the narrow, winding streets, clinging to bamboo groves and the thatched roofs of the village. Occasional gusts carry the metallic scent of rust and the faint metallic tang of spilled blood. Ambient sound is a layered tapestry: distant, mournful shakuhachi flutes, the soft rustle of paper lanterns, the creak of warped wooden beams, and the low, resonant growl of unseen yokai prowling the darkness. The occasional clink of armor and the echo of a distant war‑cry punctuate the silence, reminding the player that the night is alive and hostile.\n\n---\n\n### Lore  \n\nCenturies ago, **Kagehara**, a modest fishing hamlet perched on the edge of a mist‑shrouded estuary, thrived under the protection of the **Shinobi‑Kami**, a benevolent mountain spirit. The village’s prosperity attracted the attention of **Lord Takamori**, a ruthless daimyo who coveted the fertile lands for his own war‑lords.  \n\nIn a desperate bid to defend his people, the village’s onmyōji, **Miyako**, performed a forbidden rite to bind the Shinobi‑Kami’s power to the moon, hoping to create an impenetrable shield. The ritual required a blood‑sacrifice: the blood of the village’s strongest warrior, **Samurai Ryo**, offered to the moon’s crimson phase. The moon turned blood‑red, and for a single night the village was cloaked in an impenetrable veil of darkness that repelled Takamori’s army.\n\nBut the pact was twisted. The moon’s blood‑lust awakened **Yūrei no Kage**, a legion of vengeful yokai—tengu, onryō, and nure-onna—who had long been bound beneath the earth. The spirit’s power, now corrupted, turned against its own worshippers. The moon never set, and the night stretched into eternity. The villagers, unable to leave, fell to the relentless onslaught of the yokai and the cursed **Undead Samurai**, the restless spirits of those who died defending the village. Their souls were bound to the moon’s curse, forever marching in tattered armor, their katana blades dripping with phantom blood.\n\nOver generations, the village became a ghostly echo of its former self: a labyrinth of collapsed houses, overgrown gardens, and shattered shrines, all bathed in the unending blood‑moon. The curse has become a self‑sustaining cycle—each death fuels the moon’s darkness, each darkness spawns more yokai, and the blood‑moon never wanes.\n\n---\n\n### Core Conflict  \n\nThe heart of the corruption is **the Cursed Moon Mirror (Tsuki Kagami)**—a shattered obsidian shard embedded in the village’s central shrine. It was the focal point of Miyako’s forbidden rite and now acts as a conduit for the moon’s malevolent energy. The mirror constantly draws the lingering spirits of the fallen samurai and the wrathful yokai, binding them to the night and amplifying their ferocity.\n\n**Primary antagonistic force:** *The Moon‑Bound Yokai Covenant*—a coalition of yokai led by **Kurotengu**, a crow‑winged tengu whose eyes glow with lunar fire, and **Onryō no Kage**, a vengeful spirit of a noblewoman betrayed by her clan. They seek to keep the moon sealed in its blood‑red state, feeding on the fear and blood of any intruder.\n\n**Secondary antagonistic force:** *The Undead Samurai Legion*—the cursed remnants of the village’s defenders, now mindless, their honor twisted into a relentless drive to protect the cursed shrine and prevent any attempt to shatter the Moon Mirror.\n\nThe player’s ultimate goal is to navigate the night‑marred streets, uncover the fragmented history of Kagehara, and either **break the Moon Mirror**—releasing the trapped spirits and restoring the natural lunar cycle—or **harness its power**, becoming the new master of the blood‑moon and reshaping the fate of the cursed village. The conflict is both external (battling yokai and undead) and internal (the moral weight of ending a curse that also keeps the villagers from a worse fate).",
+    "generation_time_seconds": 119,
+    "player": {
+        "tile": {
+            "name": "moon_bound_ronin",
+            "description": "A lone ronin cloaked in a tattered midnight kimono, wielding a blackened katana that drinks the moonlight, his eyes reflecting the blood‑moon's glow.",
+            "color": "#2A2A2A"
+        },
+        "back_history": "Archetype: The Moon‑Bound Ronin – a disgraced samurai who survived the original blood‑moon siege but was cursed with lingering lunar taint. After years wandering the mist‑shrouded coasts, he hears whispers that the Cursed Moon Mirror can either lift his curse or grant him unrivaled power. Motivation: driven by a desperate need for redemption and a burning desire to free his soul from the endless night, he ventures back to Kagehara to either shatter the mirror and end the curse or seize its dark energy to become the master of the blood‑moon. Visuals: He wears a tattered midnight kimono stained with ash and phantom blood, its hem frayed like torn shadows. A cracked lacquered kabuto sits atop his hair, and his eyes glow faintly with a pale lunar hue. His katana, “Kage no Hō”, bears a blackened blade that seems to absorb light, its hilt wrapped in faded indigo silk. The lantern he carries flickers with a sickly amber flame that casts shifting kanji silhouettes, marking his path through the cursed streets.",
+        "tile_with_texture": {
+            "name": "moon_bound_ronin",
+            "description": "A lone ronin cloaked in a tattered midnight kimono, wielding a blackened katana that drinks the moonlight, his eyes reflecting the blood‑moon's glow.",
+            "color": "#2A2A2A",
+            "texture": {
+                "tileset_position": {
+                    "x": 31,
+                    "y": 0
+                },
+                "tileset_description": "A warrior in armor carrying a sword and a shield. His helmet has horns."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "Narrow alleys of Kagehara lie in perpetual twilight, mist curling around cracked shoji walls. The blood‑red moon casts thin, wavering light, illuminating puddles that mirror the crimson sky. The air is cold and damp, scented with wet bamboo and faint rust. Distant shakuhachi flutes echo, mingling with the soft creak of warped beams and the occasional rustle of paper lanterns.",
+                "name": "Twilight Alley",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "weathered_shoji",
+                    "description": "Cracked shoji screens stained by centuries of rain, their paper thin and translucent, allowing the moon's glow to bleed through.",
+                    "color": "#2A2A2A"
+                },
+                "floor_tile": {
+                    "name": "misty_stone",
+                    "description": "Smooth river stones slick with mist, their surface reflecting the blood‑moon in a ghostly sheen.",
+                    "color": "#4B0000"
+                },
+                "wall_tile_with_texture": {
+                    "name": "weathered_shoji",
+                    "description": "Cracked shoji screens stained by centuries of rain, their paper thin and translucent, allowing the moon's glow to bleed through.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "misty_stone",
+                    "description": "Smooth river stones slick with mist, their surface reflecting the blood‑moon in a ghostly sheen.",
+                    "color": "#4B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The shattered shrine courtyard opens into a wider space where broken torii gates loom like skeletal sentinels. Flickering amber lanterns cast trembling shadows on rotting wooden planks. The scent of charred incense mixes with the metallic tang of dried blood. Low growls of unseen yokai reverberate, punctuated by the clink of rusted armor and the occasional howl of a distant tengu.",
+                "name": "Shattered Shrine Courtyard",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "tattered_bamboo",
+                    "description": "Bamboo stalks split and blackened, their surfaces etched with ghostly kanji that fade before they are read.",
+                    "color": "#1C1C1C"
+                },
+                "floor_tile": {
+                    "name": "rotting_wood",
+                    "description": "Decayed wooden floorboards, splintered and soaked, exuding a sour, damp odor of rot and old blood.",
+                    "color": "#3B0A0A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "tattered_bamboo",
+                    "description": "Bamboo stalks split and blackened, their surfaces etched with ghostly kanji that fade before they are read.",
+                    "color": "#1C1C1C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "rotting_wood",
+                    "description": "Decayed wooden floorboards, splintered and soaked, exuding a sour, damp odor of rot and old blood.",
+                    "color": "#3B0A0A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            },
+            {
+                "description": "At the heart lies the Moon Mirror Sanctum, a cavernous chamber where the shattered obsidian mirror hangs above an altar of ash. The moonlight is concentrated, turning the floor to a black glass that shivers with each whisper. The air burns with ozone and the iron scent of fresh blood. The relentless clamor of undead samurai marching, the fierce caw of Kurotengu, and the mournful wail of Onryō no Kage fill the space, creating a cacophony of dread.",
+                "name": "Moon Mirror Sanctum",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "obsidian_shard",
+                    "description": "Jagged obsidian fragments embedded in the walls, reflecting the blood‑moon in sharp, painful glints.",
+                    "color": "#0B0B0B"
+                },
+                "floor_tile": {
+                    "name": "ashen_ash",
+                    "description": "A layer of fine ash covering the ground, warm where spirits have passed, cold where the mirror's power lingers.",
+                    "color": "#2F0F0F"
+                },
+                "wall_tile_with_texture": {
+                    "name": "obsidian_shard",
+                    "description": "Jagged obsidian fragments embedded in the walls, reflecting the blood‑moon in sharp, painful glints.",
+                    "color": "#0B0B0B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "ashen_ash",
+                    "description": "A layer of fine ash covering the ground, warm where spirits have passed, cold where the mirror's power lingers.",
+                    "color": "#2F0F0F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "whispering_kage",
+                    "description": "A gaunt, shadowy yokai with elongated limbs, its ink‑black form flickers like a wisp, darting through the mist‑laden alleys.",
+                    "color": "#0a0a0a"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "whispering_kage",
+                    "description": "A gaunt, shadowy yokai with elongated limbs, its ink‑black form flickers like a wisp, darting through the mist‑laden alleys.",
+                    "color": "#0a0a0a",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_drenched_nure",
+                    "description": "A nure-onna whose translucent skin drips phantom blood, her hair tangled with seaweed, moving with eerie grace along the flooded streets.",
+                    "color": "#4b0000"
+                },
+                "weight": 3,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "blood_drenched_nure",
+                    "description": "A nure-onna whose translucent skin drips phantom blood, her hair tangled with seaweed, moving with eerie grace along the flooded streets.",
+                    "color": "#4b0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ashen_tengu",
+                    "description": "A crow‑winged tengu with ash‑colored feathers, its eyes glow lunar fire as it swoops low, talons scraping the cracked rooftops.",
+                    "color": "#2c2c2c"
+                },
+                "weight": 4,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "ashen_tengu",
+                    "description": "A crow‑winged tengu with ash‑colored feathers, its eyes glow lunar fire as it swoops low, talons scraping the cracked rooftops.",
+                    "color": "#2c2c2c",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "cursed_undead_samurai",
+                    "description": "An undead samurai in tattered armor, phantom katana dripping spectral blood, moving slowly yet inexorably forward.",
+                    "color": "#3b3b3b"
+                },
+                "weight": 7,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "cursed_undead_samurai",
+                    "description": "An undead samurai in tattered armor, phantom katana dripping spectral blood, moving slowly yet inexorably forward.",
+                    "color": "#3b3b3b",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "moonlit_onryo",
+                    "description": "A vengeful spirit lady in a torn kimono, her pale face illuminated by moonlight, emitting a chilling sigh that freezes the air.",
+                    "color": "#5a2a2a"
+                },
+                "weight": 5,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "moonlit_onryo",
+                    "description": "A vengeful spirit lady in a torn kimono, her pale face illuminated by moonlight, emitting a chilling sigh that freezes the air.",
+                    "color": "#5a2a2a",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "obsidian_golem",
+                    "description": "A hulking construct of cracked obsidian stone, veins of crimson light pulse through its body, crushing anything in its path.",
+                    "color": "#111111"
+                },
+                "weight": 9,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "obsidian_golem",
+                    "description": "A hulking construct of cracked obsidian stone, veins of crimson light pulse through its body, crushing anything in its path.",
+                    "color": "#111111",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "mist_wraith",
+                    "description": "A thin, translucent wraith that drifts silently through the fog, its form barely visible against the night sky.",
+                    "color": "#1e1e1e"
+                },
+                "weight": 1,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "mist_wraith",
+                    "description": "A thin, translucent wraith that drifts silently through the fog, its form barely visible against the night sky.",
+                    "color": "#1e1e1e",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "iron_armor_yokai",
+                    "description": "A yokai clad in rusted iron plates, its joints creak, and blood‑red eyes burn with relentless fury.",
+                    "color": "#2f2f2f"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "iron_armor_yokai",
+                    "description": "A yokai clad in rusted iron plates, its joints creak, and blood‑red eyes burn with relentless fury.",
+                    "color": "#2f2f2f",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scarlet_hag",
+                    "description": "A hag draped in scarlet robes, her hair a tangle of vines, wielding a cursed lantern that spews embered curses.",
+                    "color": "#660000"
+                },
+                "weight": 8,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "scarlet_hag",
+                    "description": "A hag draped in scarlet robes, her hair a tangle of vines, wielding a cursed lantern that spews embered curses.",
+                    "color": "#660000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 1
+                        },
+                        "tileset_description": "A wizard wearing a hood, carrying a staff in his hand."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sable_spider",
+                    "description": "A massive spider with sable‑black exoskeleton, its legs moving in a blur as it scuttles across the ruined shrine.",
+                    "color": "#2b2b2b"
+                },
+                "weight": 2,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "sable_spider",
+                    "description": "A massive spider with sable‑black exoskeleton, its legs moving in a blur as it scuttles across the ruined shrine.",
+                    "color": "#2b2b2b",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 30,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with multiple legs. It resembles a spider."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusted_katana_dagger_tile",
+                    "description": "A short, corroded katana blade with a cracked hilt, stained with dried blood.",
+                    "color": "#4B2E2E"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 1,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusted_katana_dagger_tile",
+                    "description": "A short, corroded katana blade with a cracked hilt, stained with dried blood.",
+                    "color": "#4B2E2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tattered_bamboo_bow_tile",
+                    "description": "A bow made from warped bamboo, its string frayed, echoing the village's decay.",
+                    "color": "#3A3A3A"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "tattered_bamboo_bow_tile",
+                    "description": "A bow made from warped bamboo, its string frayed, echoing the village's decay.",
+                    "color": "#3A3A3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "iron_kusarigama_tile",
+                    "description": "A rusted chain and sickle, the chain clinks with each swing.",
+                    "color": "#5C5C5C"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 1,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "iron_kusarigama_tile",
+                    "description": "A rusted chain and sickle, the chain clinks with each swing.",
+                    "color": "#5C5C5C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "shuriken_shadows_tile",
+                    "description": "Four black iron stars, edges dulled by centuries.",
+                    "color": "#2F2F2F"
+                },
+                "rarity": 2,
+                "weight": 1,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "shuriken_shadows_tile",
+                    "description": "Four black iron stars, edges dulled by centuries.",
+                    "color": "#2F2F2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 4
+                        },
+                        "tileset_description": "Iron grid shield with a square hole in the center."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "stone_ritual_mallet_tile",
+                    "description": "A heavy stone-headed mallet, used in shrine rites.",
+                    "color": "#6E4B3C"
+                },
+                "rarity": 2,
+                "weight": 6,
+                "mana_cost": 1,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "stone_ritual_mallet_tile",
+                    "description": "A heavy stone-headed mallet, used in shrine rites.",
+                    "color": "#6E4B3C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "moonlit_katana_tile",
+                    "description": "A katana forged with moonsteel, its blade glows faint crimson.",
+                    "color": "#8B0000"
+                },
+                "rarity": 6,
+                "weight": 3,
+                "mana_cost": 2,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "moonlit_katana_tile",
+                    "description": "A katana forged with moonsteel, its blade glows faint crimson.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium-rarity greatsword. With detailed blade."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_etched_crossbow_tile",
+                    "description": "Crossbow with obsidian limbs, etched with blood sigils.",
+                    "color": "#3D0000"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "blood_etched_crossbow_tile",
+                    "description": "Crossbow with obsidian limbs, etched with blood sigils.",
+                    "color": "#3D0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "yurei_wraith_staff_tile",
+                    "description": "A twisted ash staff crowned with a floating lantern spirit.",
+                    "color": "#1A1A1A"
+                },
+                "rarity": 6,
+                "weight": 2,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "yurei_wraith_staff_tile",
+                    "description": "A twisted ash staff crowned with a floating lantern spirit.",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 4
+                        },
+                        "tileset_description": "Simple wooden staff. Noah's staff."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "kurotengu_skyblade_tile",
+                    "description": "A black feathered blade that whistles like wind, forged from Kurotengu's wing.",
+                    "color": "#0D0D0D"
+                },
+                "rarity": 9,
+                "weight": 2,
+                "mana_cost": 4,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "kurotengu_skyblade_tile",
+                    "description": "A black feathered blade that whistles like wind, forged from Kurotengu's wing.",
+                    "color": "#0D0D0D",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tsuki_kagami_shard_tile",
+                    "description": "A shard of the cursed moon mirror, radiating dark lunar energy, can fire moonlight bolts.",
+                    "color": "#2B0015"
+                },
+                "rarity": 9,
+                "weight": 5,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "tsuki_kagami_shard_tile",
+                    "description": "A shard of the cursed moon mirror, radiating dark lunar energy, can fire moonlight bolts.",
+                    "color": "#2B0015",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium rarity Greatsword."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "moonheart_shard",
+            "description": "A pulsating obsidian fragment the size of a clenched fist, veins of crimson light coursing through its surface like living blood. Legends say it is the sealed heart of the Cursed Moon Mirror, the very source of the endless blood‑moon. Its surface shimmers with faint moonlit runes that glow when darkness gathers, marking it as both a curse and a key to salvation.",
+            "color": "#2B001F"
+        },
+        "back_history": "The Moonheart Shard is the sealed heart of the Cursed Moon Mirror (Tsuki Kagami). When Miyako bound the Shinobi‑Kami to the moon, the mirror's core was ripped from the spirit and forged into this obsidian fragment. It now pumps the moon's corrupt lunar energy into the shrine, sustaining the Moon‑Bound Yokai Covenant and the Undead Samurai Legion. Removing the shard from the deepest altar severs the conduit, allowing the trapped spirits to be released and the blood‑moon to fade, or, if taken by a wielder, grants dominion over the night. The shard cannot remain; its presence fuels endless death, and the only way to end the curse is to carry it back to the surface and either shatter it at sunrise or bind it anew.",
+        "tile_with_texture": {
+            "name": "moonheart_shard",
+            "description": "A pulsating obsidian fragment the size of a clenched fist, veins of crimson light coursing through its surface like living blood. Legends say it is the sealed heart of the Cursed Moon Mirror, the very source of the endless blood‑moon. Its surface shimmers with faint moonlit runes that glow when darkness gathers, marking it as both a curse and a key to salvation.",
+            "color": "#2B001F",
+            "texture": {
+                "tileset_position": {
+                    "x": 33,
+                    "y": 8
+                },
+                "tileset_description": "Medium rarity Greatsword."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "total_tokens": 17657,
+            "output_token_details": {
+                "reasoning": 3139
+            },
+            "input_tokens": 11009,
+            "output_tokens": 6648
+        }
+    }
+}

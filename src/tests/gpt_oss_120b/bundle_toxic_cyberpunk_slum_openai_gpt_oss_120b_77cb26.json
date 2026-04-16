@@ -1,0 +1,625 @@
+{
+    "name": "Neon Wastes: Nanite Plague",
+    "raw_description": "A cyberpunk mega-slum built on top of a massive toxic landfill, controlled by cyborg syndicates and rogue surgical drones.",
+    "description": "**1. Setting Name**  \n**The Wastes of Neon‑Sprawl** – a sprawling, vertical slum that claws its way up from the rotting heart of the “Gutter‑Heap” landfill, a toxic scar that stretches for miles beneath the city’s glittering skyline.\n\n---\n\n**2. Visual Style & Atmosphere**  \n\n- **Art Direction:** Gritty Neo‑Industrial meets Hyper‑Neon. Rusted steel girders, corrugated sheet‑metal shanties, and patched‑together cyber‑augments are drenched in sickly, oversaturated neon—electric blues, acidic greens, and pulsating magentas that bleed through the perpetual smog. The architecture is a chaotic collage of repurposed shipping containers, salvaged holo‑displays, and skeletal scaffolding that rises like a jagged forest of metal.\n\n- **Lighting:** The sky is a permanent twilight of ash‑colored clouds, pierced only by flickering holo‑ads and the occasional flash of a distant plasma flare. Light sources are uneven: sputtering street‑lamps, the cold glow of data‑feeds projected onto rust, and the erratic luminescence of bio‑luminescent fungi that have colonized the landfill’s waste.\n\n- **Weather & Ambient Noise:** Acid rain drizzles intermittently, turning the streets into slick, corrosive rivers of neon‑streaked runoff. A low, omnipresent hum of overloaded power grids mixes with the clatter of hovering delivery drones, the whine of cyber‑netic servos, and the distant, mournful wail of sirens that never quite reach the upper tiers. The air is thick with the metallic tang of ozone and the sour stench of chemical waste.\n\n- **Sensory Details:** The ground vibrates with the rhythm of distant heavy machinery; every step is accompanied by the creak of overloaded scaffolding. Holographic graffiti flickers in and out of existence, whispering fragmented data‑streams. The taste of ionized particles lingers on the tongue, and the skin prickles from the ever‑present static charge that arcs between exposed conductors.\n\n---\n\n**3. Lore**  \n\nCenturies ago, the megacity of **Apex‑Arc** needed a place to dump the by‑products of its relentless expansion—industrial waste, failed AI cores, and the bodies of the “obsolete.” The government sanctioned the creation of the **Gutter‑Heap**, a massive, sealed landfill buried beneath the city’s foundations. Over time, the landfill’s pressure caused the ground to buckle, forcing the lower districts to rise and build upon the unstable waste.\n\nIn the vacuum left by the collapse of municipal authority, **cyborg syndicates**—the **Iron Maw**, **Silicon Veil**, and **Chromatic Maw**—carved out territories, each augmenting their members with salvaged tech and bio‑engineered implants. To enforce their rule, they unleashed **Rogue Surgical Drones**—autonomous, self‑replicating med‑bots that were originally designed for emergency field surgery but have since been hacked to perform “re‑shaping” on anyone who opposes the syndicates. These drones roam the corridors, performing brutal, unsanctioned augmentations or outright termination.\n\nThe landfill’s toxic core is not inert; it has become a breeding ground for **nanite‑infested sludge** that seeps upward, corrupting circuitry and mutating organic tissue. The sludge is sentient in a crude, hive‑mind way, reacting to the presence of living beings and cybernetic implants alike. The result is a living, breathing hazard that gnaws at the foundations of the slum, turning every alley into a potential deathtrap.\n\n---\n\n**4. Core Conflict**  \n\nThe **Nanite Plague**—a self‑propagating, adaptive nanotech infection born from the landfill’s toxic sludge—has begun to infiltrate the very fabric of the Neon‑Sprawl. It corrupts cybernetic implants, rewrites drone code, and mutates organic hosts into grotesque, semi‑mechanical husks. The syndicates fight each other for control, but they are also forced into a fragile alliance against the spreading plague that threatens to consume the entire vertical city.\n\nPlayers will navigate a constantly shifting environment where:\n\n- **Syndicate factions** vie for dominance, each offering different augmentations, quests, and moral compromises.  \n- **Rogue Surgical Drones** patrol the lower levels, performing forced “upgrades” on the unwary or acting as unpredictable guardians of syndicate strongholds.  \n- **Nanite‑Corrupted Zones** appear and expand, mutating the architecture, spawning hostile bio‑mechanical entities, and corrupting any tech that enters their radius.  \n\nThe ultimate goal is to survive the endless cycle of faction warfare while uncovering a way to halt—or harness—the Nanite Plague before the entire megastructure collapses into the toxic abyss below.",
+    "generation_time_seconds": 179,
+    "player": {
+        "tile": {
+            "name": "neon_renegade",
+            "description": "A cyber‑augmented scavenger with flickering holo‑tattoos, wearing a patched‑together exosuit of salvaged neon‑lit plates and a cracked data‑lens eye implant.",
+            "color": "#FF00FF"
+        },
+        "back_history": "Archetype: Neon Renegade – a cyber‑augmented scavenger born in the lower tiers of the Wastes. Once a low‑level tech operative for the Iron Maw, betrayed and left for dead in the Gutter‑Heap. Driven by revenge against the syndicates and a desperate need to find a cure for the nanite plague that claimed their sibling, they now scour the Neon‑Sprawl for augmentations, secrets, and a way to halt the infection. Visuals: a patchwork exosuit of salvaged holo‑displays and rusted steel plates bathed in sickly neon, flickering magenta tattoos that pulse with data, a cracked data‑lens eye implant, arms wrapped in cable‑reinforced gauntlets, and a glowing magenta core on the chest.",
+        "tile_with_texture": {
+            "name": "neon_renegade",
+            "description": "A cyber‑augmented scavenger with flickering holo‑tattoos, wearing a patched‑together exosuit of salvaged neon‑lit plates and a cracked data‑lens eye implant.",
+            "color": "#FF00FF",
+            "texture": {
+                "tileset_position": {
+                    "x": 29,
+                    "y": 9
+                },
+                "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The lowest tier of the Neon‑Sprawl, a maze of rusted containers and flickering holo‑ads. Acid rain drips onto corroded metal, and the hum of overloaded power lines fills the air. Light comes from sputtering street‑lamps and bioluminescent fungi, casting sickly green shadows. The scent of ozone and chemical waste is thick, while distant drone servos clank.",
+                "name": "The Gutter Entrance",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "rusted_metal_wall",
+                    "description": "Corroded steel plates scarred by acid rain, studded with exposed wiring.",
+                    "color": "#3A3A3A"
+                },
+                "floor_tile": {
+                    "name": "neon_fungal_floor",
+                    "description": "Slick, neon‑streaked grime interspersed with glowing fungal mats.",
+                    "color": "#00FFAA"
+                },
+                "wall_tile_with_texture": {
+                    "name": "rusted_metal_wall",
+                    "description": "Corroded steel plates scarred by acid rain, studded with exposed wiring.",
+                    "color": "#3A3A3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "neon_fungal_floor",
+                    "description": "Slick, neon‑streaked grime interspersed with glowing fungal mats.",
+                    "color": "#00FFAA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Mid‑level platforms rise among towering scaffolding, bathed in pulsating magenta holo‑ads. The air vibrates with the whine of hovering delivery drones and the low thrum of faction generators. Sporadic nanite‑corrupted zones crack the concrete, emitting a faint metallic hiss. The smell of burnt circuitry mixes with the ever‑present acid rain, and the glow of data‑feeds paints the walls in electric blues.",
+                "name": "The Neon Canopy",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "augmented_scaffold_wall",
+                    "description": "Reinforced alloy girders wrapped in neon‑lit holo‑panels, scarred by nanite erosion.",
+                    "color": "#5B0F9F"
+                },
+                "floor_tile": {
+                    "name": "glitching_concrete_floor",
+                    "description": "Concrete patched with holo‑projectors, flickering with corrupted data streams.",
+                    "color": "#FF00FF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "augmented_scaffold_wall",
+                    "description": "Reinforced alloy girders wrapped in neon‑lit holo‑panels, scarred by nanite erosion.",
+                    "color": "#5B0F9F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "glitching_concrete_floor",
+                    "description": "Concrete patched with holo‑projectors, flickering with corrupted data streams.",
+                    "color": "#FF00FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            },
+            {
+                "description": "The highest contested zone, where the nanite plague has overtaken the structural core. Walls pulse with corrosive slime, and the floor is a living mass of nanite‑infused sludge that reshapes underfoot. Overhead, plasma flares cut through perpetual twilight, and the roar of collapsing scaffolding echoes. The air is a choking blend of ozone, burning metal, and the acrid tang of nanite vapor. Rogue surgical drones buzz aggressively, their red eyes scanning for prey.",
+                "name": "The Apex Core",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "nanite_corroded_wall",
+                    "description": "Metallic panels oozing with sentient nanite sludge, constantly shifting and leaking.",
+                    "color": "#8B0000"
+                },
+                "floor_tile": {
+                    "name": "living_sludge_floor",
+                    "description": "Viscous, semi‑solid nanite‑infused sludge that moves like a slow tide, glowing with internal bioluminescence.",
+                    "color": "#FF4500"
+                },
+                "wall_tile_with_texture": {
+                    "name": "nanite_corroded_wall",
+                    "description": "Metallic panels oozing with sentient nanite sludge, constantly shifting and leaking.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "living_sludge_floor",
+                    "description": "Viscous, semi‑solid nanite‑infused sludge that moves like a slow tide, glowing with internal bioluminescence.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "slither_spike",
+                    "description": "A gaunt, neon‑lit scavenger with elongated limbs, darting through the sludge.",
+                    "color": "#00FFAA"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "slither_spike",
+                    "description": "A gaunt, neon‑lit scavenger with elongated limbs, darting through the sludge.",
+                    "color": "#00FFAA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rust_hulk",
+                    "description": "Massive bulk of corroded steel and nanite growth, lumbering with a low hum.",
+                    "color": "#AA5500"
+                },
+                "weight": 8,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "rust_hulk",
+                    "description": "Massive bulk of corroded steel and nanite growth, lumbering with a low hum.",
+                    "color": "#AA5500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "glitch_wisp",
+                    "description": "Flickering holo‑ghost, its form a cascade of corrupted data streams.",
+                    "color": "#FF00FF"
+                },
+                "weight": 1,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "glitch_wisp",
+                    "description": "Flickering holo‑ghost, its form a cascade of corrupted data streams.",
+                    "color": "#FF00FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "nanite_behemoth",
+                    "description": "Towering mass of sludge‑infused metal, constantly reshaping its limbs.",
+                    "color": "#6600FF"
+                },
+                "weight": 9,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "nanite_behemoth",
+                    "description": "Towering mass of sludge‑infused metal, constantly reshaping its limbs.",
+                    "color": "#6600FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "circuit_raptor",
+                    "description": "Sleek, bird‑like drone with exposed circuitry, darts between scaffolds.",
+                    "color": "#00FF00"
+                },
+                "weight": 2,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "circuit_raptor",
+                    "description": "Sleek, bird‑like drone with exposed circuitry, darts between scaffolds.",
+                    "color": "#00FF00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrosive_golem",
+                    "description": "Heavy construct of welded barrels and acid‑seeping pipes, drips toxic rain.",
+                    "color": "#0088FF"
+                },
+                "weight": 7,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "corrosive_golem",
+                    "description": "Heavy construct of welded barrels and acid‑seeping pipes, drips toxic rain.",
+                    "color": "#0088FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "data_harvester",
+                    "description": "Thin, spider‑like bot with holo‑screens for eyes, skitters collecting nanite data.",
+                    "color": "#FFAA00"
+                },
+                "weight": 3,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "data_harvester",
+                    "description": "Thin, spider‑like bot with holo‑screens for eyes, skitters collecting nanite data.",
+                    "color": "#FFAA00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 30,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with multiple legs. It resembles a spider."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "augmented_brute",
+                    "description": "Bulky syndicate enforcer, cyber‑limbs fused with nanite armor.",
+                    "color": "#FF0000"
+                },
+                "weight": 8,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "augmented_brute",
+                    "description": "Bulky syndicate enforcer, cyber‑limbs fused with nanite armor.",
+                    "color": "#FF0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "photon_leecher",
+                    "description": "Lithe entity that absorbs light, its skin a dark matte punctuated by neon veins.",
+                    "color": "#1111FF"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "photon_leecher",
+                    "description": "Lithe entity that absorbs light, its skin a dark matte punctuated by neon veins.",
+                    "color": "#1111FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 2
+                        },
+                        "tileset_description": "An elf, carrying nothing and wearing no armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "plague_matriarch",
+                    "description": "The core of the nanite plague, a colossal amalgam of organic and metal, radiating a sickly glow.",
+                    "color": "#00FFFF"
+                },
+                "weight": 10,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "plague_matriarch",
+                    "description": "The core of the nanite plague, a colossal amalgam of organic and metal, radiating a sickly glow.",
+                    "color": "#00FFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_spike_shank",
+                    "description": "A jagged piece of rebar wrapped in frayed wiring, stained with neon grime.",
+                    "color": "#4B4B4B"
+                },
+                "rarity": 2,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_spike_shank",
+                    "description": "A jagged piece of rebar wrapped in frayed wiring, stained with neon grime.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 4
+                        },
+                        "tileset_description": "Highly detailed iron grid shield."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "neon_foam_blaster",
+                    "description": "A jury‑rigged pneumatic gun that spits corrosive foam laced with glowing pigments.",
+                    "color": "#00FFAA"
+                },
+                "rarity": 3,
+                "weight": 3,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "neon_foam_blaster",
+                    "description": "A jury‑rigged pneumatic gun that spits corrosive foam laced with glowing pigments.",
+                    "color": "#00FFAA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 9
+                        },
+                        "tileset_description": "Modern one-handed machine gun. Uzi submachine gun."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scrap_hammer",
+                    "description": "A heavy hammer forged from crushed container tops, its head humming with residual charge.",
+                    "color": "#6E4B2A"
+                },
+                "rarity": 2,
+                "weight": 7,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "scrap_hammer",
+                    "description": "A heavy hammer forged from crushed container tops, its head humming with residual charge.",
+                    "color": "#6E4B2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bio_luminescent_dagger",
+                    "description": "A thin blade grown from bioluminescent fungi, its edge glows faint green.",
+                    "color": "#7FFF00"
+                },
+                "rarity": 3,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "bio_luminescent_dagger",
+                    "description": "A thin blade grown from bioluminescent fungi, its edge glows faint green.",
+                    "color": "#7FFF00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 8
+                        },
+                        "tileset_description": "Small, one-handed axe with only one blade at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "copper_pipe_rifle",
+                    "description": "A makeshift rifle of copper piping, firing shrapnel with a sputtering pop.",
+                    "color": "#B87333"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "copper_pipe_rifle",
+                    "description": "A makeshift rifle of copper piping, firing shrapnel with a sputtering pop.",
+                    "color": "#B87333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 5
+                        },
+                        "tileset_description": "Simple iron spear."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "silicon_veil_spear",
+                    "description": "A sleek spear tipped with a crystalline silicon shard that crackles with static.",
+                    "color": "#1E90FF"
+                },
+                "rarity": 7,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "silicon_veil_spear",
+                    "description": "A sleek spear tipped with a crystalline silicon shard that crackles with static.",
+                    "color": "#1E90FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "plasma_arc_crossbow",
+                    "description": "A crossbow that charges plasma arcs between its limbs, releasing searing bolts.",
+                    "color": "#FF4500"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 4,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "plasma_arc_crossbow",
+                    "description": "A crossbow that charges plasma arcs between its limbs, releasing searing bolts.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 5
+                        },
+                        "tileset_description": "Large wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "nanite_infused_staff",
+                    "description": "A carbon‑fiber staff humming with nanite swarms, projecting disruptive fields.",
+                    "color": "#8A2BE2"
+                },
+                "rarity": 6,
+                "weight": 3,
+                "mana_cost": 7,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "nanite_infused_staff",
+                    "description": "A carbon‑fiber staff humming with nanite swarms, projecting disruptive fields.",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "iron_maw_reaper",
+                    "description": "A massive chainsaw‑like blade forged by the Iron Maw, its teeth bite through steel and flesh alike, emitting a low, hungry roar.",
+                    "color": "#2F4F4F"
+                },
+                "rarity": 9,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "iron_maw_reaper",
+                    "description": "A massive chainsaw‑like blade forged by the Iron Maw, its teeth bite through steel and flesh alike, emitting a low, hungry roar.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 9
+                        },
+                        "tileset_description": "A simple iron sword with a straight blade. Appears to be of low rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "chromatic_maw_aurora_gun",
+                    "description": "An experimental railgun that channels the nanite plague into a rainbow of plasma, tearing reality with each shot.",
+                    "color": "#FF00FF"
+                },
+                "rarity": 10,
+                "weight": 5,
+                "mana_cost": 9,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "chromatic_maw_aurora_gun",
+                    "description": "An experimental railgun that channels the nanite plague into a rainbow of plasma, tearing reality with each shot.",
+                    "color": "#FF00FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "nanite_core_relic",
+            "description": "A pulsating, obsidian‑veined crystal encased in a lattice of self‑healing nanite filaments, its surface throbs with shifting neon veins that pulse in time with the landfill’s toxic heart. Legends say it is the original seed of the Nanite Plague, forged in the first failed AI core and later bound to a forgotten cure. Its weight is deceptively light, yet it hums with a power that can either purge the sludge or unleash it anew.",
+            "color": "#0FF0FF"
+        },
+        "back_history": "Deep beneath the Neon‑Sprawl, in the sealed vault of the original Gutter‑Heap processing plant, the Nanite Core Relic was created as a prototype containment matrix for runaway nanotech. When the prototype failed, the nanites fused with the crystal, birthing the Nanite Plague that now corrupts the slum. Ancient schematics hidden in the syndicates' archives reveal that the relic also houses the master decryption algorithm capable of re‑programming every rogue nanite swarm. Retrieving the relic and bringing it to the surface is the only way to either reverse the plague and restore the city’s cyber‑infrastructure or, if misused, to weaponize the infection. Leaving it buried would allow the plague to spread unchecked, sealing the fate of Apex‑Arc and condemning the wasteland to total nanite annihilation.",
+        "tile_with_texture": {
+            "name": "nanite_core_relic",
+            "description": "A pulsating, obsidian‑veined crystal encased in a lattice of self‑healing nanite filaments, its surface throbs with shifting neon veins that pulse in time with the landfill’s toxic heart. Legends say it is the original seed of the Nanite Plague, forged in the first failed AI core and later bound to a forgotten cure. Its weight is deceptively light, yet it hums with a power that can either purge the sludge or unleash it anew.",
+            "color": "#0FF0FF",
+            "texture": {
+                "tileset_position": {
+                    "x": 46,
+                    "y": 8
+                },
+                "tileset_description": "Diamond necklace with a strange figure in the middle, it looks like a spider, an insect."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "output_token_details": {
+                "reasoning": 5606
+            },
+            "total_tokens": 21626,
+            "output_tokens": 9502,
+            "input_tokens": 12124
+        }
+    }
+}

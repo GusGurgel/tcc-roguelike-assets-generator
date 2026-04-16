@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-120b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 88,
+    "semantic_reconstruction_metric": 0.8216586775173237,
+    "prompt": "A Victorian-era train hurtling infinitely through a realm of thick fog, infested with shapeshifting vampires and spectral passengers.",
+    "prompt_name": "victorian_ghost_train",
+    "prompt_index": 9,
+    "asset_bundle_file": "bundle_victorian_ghost_train_openai_gpt_oss_120b_24cdac.json"
+}

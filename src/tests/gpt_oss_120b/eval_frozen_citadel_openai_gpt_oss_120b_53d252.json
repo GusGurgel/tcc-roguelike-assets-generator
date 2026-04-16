@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-120b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 90,
+    "semantic_reconstruction_metric": 0.7321585974077983,
+    "prompt": "A frozen medieval citadel trapped in eternal blizzard, where cursed frost-knights and ice-gargoyles protect a shattered frozen throne.",
+    "prompt_name": "frozen_citadel",
+    "prompt_index": 5,
+    "asset_bundle_file": "bundle_frozen_citadel_openai_gpt_oss_120b_53d252.json"
+}

@@ -1,0 +1,625 @@
+{
+    "name": "Chrono Abyss Gearbound Sanctum",
+    "raw_description": "A clockwork purgatory inside a colossal ticking pocket watch, guarded by rusted brass automatons and ticking gear-wraiths.",
+    "description": "**1. Setting Name**  \n**The Chrono‑Abyss of the Ever‑Ticking Vault**\n\n---\n\n**2. Visual Style & Atmosphere**  \n\n*Art Direction – Brass‑Gothic Steampunk*  \nThe entire dungeon is a massive, hollow pocket‑watch the size of a mountain, its crystal face a warped pane of obsidian glass that flickers with the reflected glow of countless gears. Every surface is forged from darkened iron, polished copper, and rust‑stained brass, their edges softened by a perpetual fine mist of oil‑vapour. The architecture is a blend of gothic arches and industrial machinery: vaulted chambers supported by towering gear‑spines, staircases that are actually spiraling ratchet‑rungs, and corridors lined with massive, interlocking cogs that turn in slow, inexorable motion.\n\n*Lighting* – A dim, amber luminescence seeps from the inner workings of the watch: phosphorescent oil lamps, the occasional flash of a sparking spring, and the soft, pulsing glow of the watch’s mainspring core. Shadows stretch long and jitter with each tick, giving the space a living, breathing quality.\n\n*Ambient Noise* – The dominant soundtrack is the relentless, metronomic tick‑tock of the watch’s heart, layered with the low groan of turning gears, the hiss of steam escaping cracked seals, and the occasional metallic clang when a gear‑wraith brushes against a wall. In deeper levels, a faint, mournful chime echoes, as if the watch is counting down an unseen deadline.\n\n*Atmospheric Details* – A thin, oily fog drifts through the lower chambers, carrying the scent of hot metal and old oil. Small, floating particles of rust sparkle like dust motes in the amber light. The air feels heavy, as if time itself presses down on the lungs of anyone who enters.\n\n---\n\n**3. Lore**  \n\nEons ago, the Archmage‑Chronomancer **Vyras the Unbound** attempted to imprison the very concept of death within a pocket‑watch he forged from the heart of a dying star. He called the device the *Eternal Vault*, a place where souls could be held in stasis, neither alive nor dead, while the world outside healed from a cataclysmic war. To power this prison, Vyras bound countless souls to the watch’s mainspring, turning their lingering essence into perpetual motion.\n\nThe watch was sealed and hidden in the Void‑Plane, but the binding spell was imperfect. The trapped souls, unable to find peace, coalesced into **gear‑wraiths**—ethereal entities of ticking metal and echoing sighs. Their anguish corrupted the mechanisms, causing the watch to run on a maddening loop of time that never reaches an end. To protect his creation, Vyras forged **rusted brass automatons**, guardians programmed to maintain the watch’s integrity and to repel any intruders.\n\nOver centuries, the watch drifted through the ether, eventually anchoring itself in a pocket of reality that now forms the *Chrono‑Abyss*. The automatons have long since rusted beyond their original precision, moving with jerky, unpredictable motions. The gear‑wraiths have multiplied, feeding off the residual soul‑energy and warping the gears into nightmarish, ever‑shifting labyrinths. The very act of stepping inside the watch pulls a traveler’s personal timeline into its gears, causing memories to fragment and time to loop erratically.\n\n---\n\n**4. Core Conflict**  \n\nThe *Chrono‑Abyss* is held in the grip of a **Temporal Corruption** known as the **Stasis Maw**. It is a sentient, parasitic vortex at the heart of the mainspring that feeds on the flow of time, seeking to freeze the entire multiverse in a single, eternal tick. The Stasis Maw corrupts the automatons, turning their protective protocols into hostile patrols, and it amplifies the gear‑wraiths, making them more aggressive and capable of tearing the fabric of reality.\n\nAdventurers who enter must contend with three intertwined threats:\n\n1. **Rusted Brass Automatons** – Once guardians, now twisted by the Maw’s influence, they enforce impossible, looping patrol routes and attempt to “reset” any intruder by forcing them into temporal loops.\n2. **Gear‑Wraiths** – Manifestations of trapped souls, they siphon the life‑force of those who linger too long, turning their own memories into ticking traps.\n3. **The Stasis Maw** – A pulsating, blackened core of the mainspring that periodically emits a **Chrono‑Silence**—a wave that halts all motion within its radius, leaving everything frozen in a single heartbeat.\n\nThe player’s ultimate goal is to navigate the ever‑shifting gear‑maze, weaken the automatons, free the wraiths’ souls, and either destroy or reseal the Stasis Maw, thereby restoring the watch to a dormant state and preventing the collapse of time itself. The very environment fights back: corridors rearrange with each tick, and the deeper one goes, the more personal the temporal distortions become, as the watch attempts to rewrite the intruder’s own timeline.",
+    "generation_time_seconds": 130,
+    "player": {
+        "tile": {
+            "name": "chrono_outcast",
+            "description": "A lone chronomancer clad in rusted brass armor, his chest housing a cracked pocket‑watch that pulses with amber light.",
+            "color": "#8B4513"
+        },
+        "back_history": "Archetype: Chrono‑Bound Outcast, a former apprentice of Vyras the Unbound who was exiled after daring to siphon a shard of the Eternal Vault.  Backstory & Motivation: Driven by guilt and a desperate need for redemption, the outcast seeks to undo the temporal corruption he helped unleash, hoping to free the trapped souls and seal the Stasis Maw before the multiverse freezes.  Visuals: He wears a patchwork of tarnished brass plates stitched together with oil‑slicked leather, each plate etched with fading runes of time.  A cracked pocket‑watch heart glows amber beneath a cracked visor, and his gauntleted hands constantly emit a faint ticking hum.  Rust‑stained gears protrude from his shoulders, whirring slowly as he moves, while a thin veil of oily mist clings to his coat, giving him a ghost‑like silhouette in the amber light.",
+        "tile_with_texture": {
+            "name": "chrono_outcast",
+            "description": "A lone chronomancer clad in rusted brass armor, his chest housing a cracked pocket‑watch that pulses with amber light.",
+            "color": "#8B4513",
+            "texture": {
+                "tileset_position": {
+                    "x": 31,
+                    "y": 6
+                },
+                "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The entrance chamber of the Chrono‑Abyss, a vast vaulted hall where the outer rim of the pocket‑watch glints with polished copper. Flickering amber oil‑lamps cast wavering light on rust‑stained brass walls, while the floor is a mosaic of interlocking gear teeth forged from darkened iron. A thin oily mist carries the scent of hot metal and faint ozone. The steady tick‑tock of the watch’s heart reverberates, accompanied by the soft whir of slowly turning cogs.",
+                "name": "The Gilded Vestibule",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "brass_wall",
+                    "description": "Polished brass panels etched with clockwork motifs, warm to the touch",
+                    "color": "#B08D57"
+                },
+                "floor_tile": {
+                    "name": "iron_gear_floor",
+                    "description": "Interlocking iron gear teeth forming a rugged, metallic floor",
+                    "color": "#0F0F0F"
+                },
+                "wall_tile_with_texture": {
+                    "name": "brass_wall",
+                    "description": "Polished brass panels etched with clockwork motifs, warm to the touch",
+                    "color": "#B08D57",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "iron_gear_floor",
+                    "description": "Interlocking iron gear teeth forming a rugged, metallic floor",
+                    "color": "#0F0F0F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Deeper within, the corridors narrow into the Ratchet Spire. Spiraling staircases of ratchet‑rungs ascend and descend amid towering gear‑spines that grind lazily. The walls are corroded brass plates, pitted and dark, while the floor glows faintly with phosphorescent oil seepage. A denser fog of oil vapor clings, smelling of burnt oil and rust. The ambient sound grows louder: clanging gear‑wraiths echo, and occasional sparks crackle as the mainspring pulses faster.",
+                "name": "The Ratchet Spire",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "rusted_brass_wall",
+                    "description": "Corroded brass plates, mottled with rust and grime",
+                    "color": "#A52A2A"
+                },
+                "floor_tile": {
+                    "name": "copper_gear_floor",
+                    "description": "Copper‑colored gear tiles that emit a soft, amber glow",
+                    "color": "#B87333"
+                },
+                "wall_tile_with_texture": {
+                    "name": "rusted_brass_wall",
+                    "description": "Corroded brass plates, mottled with rust and grime",
+                    "color": "#A52A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "copper_gear_floor",
+                    "description": "Copper‑colored gear tiles that emit a soft, amber glow",
+                    "color": "#B87333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "At the heart of the Abyss lies the Stasis Maw chamber, a cavernous void where the mainspring’s core throbs like a blackened heart. The surrounding walls are obsidian glass, cracked and veined with molten copper veins that pulse with a cold light. The floor is a seamless slab of midnight steel, reflecting the eerie glow. The air is heavy, saturated with the metallic tang of ancient souls, and the silence is punctuated by the occasional Chrono‑Silence wave that freezes motion. The ticking is now a deafening roar, and the gear‑wraiths swirl in frantic, chaotic patterns.",
+                "name": "The Maw of Eternity",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "obsidian_glass_wall",
+                    "description": "Dark obsidian glass veined with glowing copper, cold to the touch",
+                    "color": "#1A1A1A"
+                },
+                "floor_tile": {
+                    "name": "midnight_steel_floor",
+                    "description": "Smooth midnight steel floor that mirrors the surrounding gloom",
+                    "color": "#0A0A0A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "obsidian_glass_wall",
+                    "description": "Dark obsidian glass veined with glowing copper, cold to the touch",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "midnight_steel_floor",
+                    "description": "Smooth midnight steel floor that mirrors the surrounding gloom",
+                    "color": "#0A0A0A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "whispering_gear_wraith",
+                    "description": "A translucent, skeletal gear spirit that darts through the mist, its edges humming with a high‑pitched tick.",
+                    "color": "#6A5ACD"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "whispering_gear_wraith",
+                    "description": "A translucent, skeletal gear spirit that darts through the mist, its edges humming with a high‑pitched tick.",
+                    "color": "#6A5ACD",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rusted_ratchet_sprinter",
+                    "description": "A lean, rust‑caked ratchet that skitters along gear‑cogs, leaving a trail of oily sparks with each rapid movement.",
+                    "color": "#B87333"
+                },
+                "weight": 2,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "rusted_ratchet_sprinter",
+                    "description": "A lean, rust‑caked ratchet that skitters along gear‑cogs, leaving a trail of oily sparks with each rapid movement.",
+                    "color": "#B87333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 8
+                        },
+                        "tileset_description": "A ferret, a rat, an opossum."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "clockwork_needle",
+                    "description": "A slender, needle‑like automaton that pierces the air, its surface etched with shifting time‑runes that flash briefly.",
+                    "color": "#708090"
+                },
+                "weight": 2,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "clockwork_needle",
+                    "description": "A slender, needle‑like automaton that pierces the air, its surface etched with shifting time‑runes that flash briefly.",
+                    "color": "#708090",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 14,
+                            "y": 19
+                        },
+                        "tileset_description": "An alien spaceship."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "temporal_slicer",
+                    "description": "A gaunt, blade‑shaped wraith that slices through moments, its metallic veil shimmering with fragmented memories.",
+                    "color": "#8B0000"
+                },
+                "weight": 3,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "temporal_slicer",
+                    "description": "A gaunt, blade‑shaped wraith that slices through moments, its metallic veil shimmering with fragmented memories.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 0
+                        },
+                        "tileset_description": "A warrior in armor, carrying a shield and a sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "brass_gleam_harbinger",
+                    "description": "A tiny brass orb that hovers, emitting a soft amber glow and a rapid ticking that disorients nearby foes.",
+                    "color": "#DAA520"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "brass_gleam_harbinger",
+                    "description": "A tiny brass orb that hovers, emitting a soft amber glow and a rapid ticking that disorients nearby foes.",
+                    "color": "#DAA520",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ironclad_automaton",
+                    "description": "A hulking rusted brass guardian, its joints creaking under weight as it lumbers slowly, gears grinding with each step.",
+                    "color": "#555555"
+                },
+                "weight": 9,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "ironclad_automaton",
+                    "description": "A hulking rusted brass guardian, its joints creaking under weight as it lumbers slowly, gears grinding with each step.",
+                    "color": "#555555",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gear_maw_sentinel",
+                    "description": "A massive, jaw‑like construct of interlocking gears, its interior filled with whirring cogs that pulse like a heartbeat.",
+                    "color": "#2F4F4F"
+                },
+                "weight": 10,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "gear_maw_sentinel",
+                    "description": "A massive, jaw‑like construct of interlocking gears, its interior filled with whirring cogs that pulse like a heartbeat.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "stasis_juggernaut",
+                    "description": "An enormous, armored colossus covered in oil‑slicked plates, emitting a low hum that freezes the air around it.",
+                    "color": "#8B4513"
+                },
+                "weight": 9,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "stasis_juggernaut",
+                    "description": "An enormous, armored colossus covered in oil‑slicked plates, emitting a low hum that freezes the air around it.",
+                    "color": "#8B4513",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "chrono_maw_core",
+                    "description": "The blackened heart of the mainspring, a swirling vortex of void‑energy surrounded by crackling temporal arcs.",
+                    "color": "#000000"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "chrono_maw_core",
+                    "description": "The blackened heart of the mainspring, a swirling vortex of void‑energy surrounded by crackling temporal arcs.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 2
+                        },
+                        "tileset_description": "A demon wielding a trident. He is not wearing armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "eternal_tick_titan",
+                    "description": "A towering titan of brass and iron, its surface etched with endless clockwork patterns that pulse with each tick of eternity.",
+                    "color": "#4B0082"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "eternal_tick_titan",
+                    "description": "A towering titan of brass and iron, its surface etched with endless clockwork patterns that pulse with each tick of eternity.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_gear_dagger",
+                    "description": "A short, jagged blade forged from corroded brass gears, its hilt wrapped in oil‑slicked leather. The blade hums faintly with each tick of the watch, feeling like a cold whisper of time against the skin.",
+                    "color": "#6B4423"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_gear_dagger",
+                    "description": "A short, jagged blade forged from corroded brass gears, its hilt wrapped in oil‑slicked leather. The blade hums faintly with each tick of the watch, feeling like a cold whisper of time against the skin.",
+                    "color": "#6B4423",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "copper_cog_crossbow",
+                    "description": "A compact crossbow of polished copper cogs, the string a taut strand of spun steel. When fired, each bolt whistles through the oily mist, echoing the watch's relentless ticking.",
+                    "color": "#B87333"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "copper_cog_crossbow",
+                    "description": "A compact crossbow of polished copper cogs, the string a taut strand of spun steel. When fired, each bolt whistles through the oily mist, echoing the watch's relentless ticking.",
+                    "color": "#B87333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 5
+                        },
+                        "tileset_description": "Small wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "oil_slick_hammer",
+                    "description": "A heavy hammer with a head of dark iron encrusted in rusted brass teeth, its handle slick with perpetual oil. Each swing releases a soft hiss, as if grinding gears beneath the skin.",
+                    "color": "#3C2F2F"
+                },
+                "rarity": 2,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "oil_slick_hammer",
+                    "description": "A heavy hammer with a head of dark iron encrusted in rusted brass teeth, its handle slick with perpetual oil. Each swing releases a soft hiss, as if grinding gears beneath the skin.",
+                    "color": "#3C2F2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "steam_pistol",
+                    "description": "A brass‑capped pistol that puffs intermittent bursts of scalding steam. The barrel is etched with tiny clockwork motifs that pulse with each shot.",
+                    "color": "#4B4B4B"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "steam_pistol",
+                    "description": "A brass‑capped pistol that puffs intermittent bursts of scalding steam. The barrel is etched with tiny clockwork motifs that pulse with each shot.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 9
+                        },
+                        "tileset_description": "Old pistol. Alien pistol. Different pistol."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "brass_spike_thrower",
+                    "description": "A handheld launcher of spiked brass shards, each shard forged from a single gear tooth. It crackles with residual chrono‑energy when primed.",
+                    "color": "#C28840"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "brass_spike_thrower",
+                    "description": "A handheld launcher of spiked brass shards, each shard forged from a single gear tooth. It crackles with residual chrono‑energy when primed.",
+                    "color": "#C28840",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "chronal_sabre",
+                    "description": "A sleek sabre of silvered steel and violet quartz, its edge shimmering with captured moments. Wielding it feels like slicing through the very flow of time.",
+                    "color": "#8A2BE2"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 3,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "chronal_sabre",
+                    "description": "A sleek sabre of silvered steel and violet quartz, its edge shimmering with captured moments. Wielding it feels like slicing through the very flow of time.",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "etheric_bow",
+                    "description": "A longbow of darkened oak inlaid with glowing blue runes, the string woven from condensed ether. Arrows fired burst into fleeting silhouettes of past seconds.",
+                    "color": "#1E90FF"
+                },
+                "rarity": 6,
+                "weight": 3,
+                "mana_cost": 4,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "etheric_bow",
+                    "description": "A longbow of darkened oak inlaid with glowing blue runes, the string woven from condensed ether. Arrows fired burst into fleeting silhouettes of past seconds.",
+                    "color": "#1E90FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "arcane_gas_gun",
+                    "description": "A barrel of hammered iron that spews a swirling green gas infused with chrono‑magic. Each shot distorts the air, momentarily freezing nearby gears.",
+                    "color": "#228B22"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "arcane_gas_gun",
+                    "description": "A barrel of hammered iron that spews a swirling green gas infused with chrono‑magic. Each shot distorts the air, momentarily freezing nearby gears.",
+                    "color": "#228B22",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "vyras_timeblade",
+                    "description": "The legendary blade of Vyras the Unbound, forged from star‑iron and humming with golden chronal runes. Its presence warps nearby clocks, making every strike feel like a heartbeat stretched across ages.",
+                    "color": "#FFD700"
+                },
+                "rarity": 9,
+                "weight": 5,
+                "mana_cost": 7,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "vyras_timeblade",
+                    "description": "The legendary blade of Vyras the Unbound, forged from star‑iron and humming with golden chronal runes. Its presence warps nearby clocks, making every strike feel like a heartbeat stretched across ages.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "stasis_maw_cannon",
+                    "description": "An enormous cannon of obsidian steel, its bore lined with blackened crystal that absorbs light. When fired, it releases a pulse of Chrono‑Silence that can freeze motion itself.",
+                    "color": "#000000"
+                },
+                "rarity": 10,
+                "weight": 8,
+                "mana_cost": 9,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "stasis_maw_cannon",
+                    "description": "An enormous cannon of obsidian steel, its bore lined with blackened crystal that absorbs light. When fired, it releases a pulse of Chrono‑Silence that can freeze motion itself.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium rarity Greatsword."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "chronohand_core",
+            "description": "A pulsating, amber-glowing crystal heart forged from the original mainspring of Vyras's Eternal Vault. Its facets swirl with trapped temporal currents, casting rippling shadows that seem to count down an unseen destiny. Legends say it contains the very essence that can either bind the Stasis Maw forever or shatter the Chrono‑Abyss into timeless ruin.",
+            "color": "#FFAA33"
+        },
+        "back_history": "The Chrono‑Heart Core was the beating nucleus of Vyras the Unbound's pocket‑watch, the source of the perpetual motion that held countless souls in stasis. When the Stasis Maw emerged, it corrupted the Core, turning its steady rhythm into a devouring pulse that feeds on all time. The Maw's power is anchored to the Core; as long as the crystal remains at the abyss's depth, the vortex can regenerate and the temporal corruption spreads beyond the vault, threatening to freeze the entire multiverse. Only by extracting the Core and carrying it to the surface can the adventurer sever the Maw's lifeline, re‑seal the corrupted mainspring, and restore the watch to dormant peace. Leaving it behind would allow the Maw to re‑ignite, dooming reality to an eternal tick.",
+        "tile_with_texture": {
+            "name": "chronohand_core",
+            "description": "A pulsating, amber-glowing crystal heart forged from the original mainspring of Vyras's Eternal Vault. Its facets swirl with trapped temporal currents, casting rippling shadows that seem to count down an unseen destiny. Legends say it contains the very essence that can either bind the Stasis Maw forever or shatter the Chrono‑Abyss into timeless ruin.",
+            "color": "#FFAA33",
+            "texture": {
+                "tileset_position": {
+                    "x": 33,
+                    "y": 8
+                },
+                "tileset_description": "Medium rarity Greatsword."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "output_token_details": {
+                "reasoning": 2699
+            },
+            "total_tokens": 17122,
+            "output_tokens": 6288,
+            "input_tokens": 10834
+        }
+    }
+}

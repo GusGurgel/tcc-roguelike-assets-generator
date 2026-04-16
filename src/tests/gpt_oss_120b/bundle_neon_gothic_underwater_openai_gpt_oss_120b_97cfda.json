@@ -1,0 +1,625 @@
+{
+    "name": "Neon Abyssal Covenant",
+    "raw_description": "A submerged neon-gothic underwater city filled with mutated fish-people cultists.",
+    "description": "**1. Setting Name**  \n**Nerathal Abyss – The Neon‑Gothic Deep**\n\n---\n\n**2. Visual Style & Atmosphere**  \n\n*Art Direction* – A clash of **Neon‑Gothic** and **Baroque Decay**. Towering spires of black basalt are sheathed in phosphorescent algae that pulse in electric blues, violets, and sickly greens. Ornate, cathedral‑like arches are etched with rust‑stained sigils, while massive, rust‑capped lanterns flicker with a cold, bioluminescent glow. The architecture is a twisted mix of Victorian ironwork, Art‑Deco geometry, and the organic curvature of coral reefs, giving the city a feeling of a once‑grand metropolis that has been reclaimed and reshaped by the sea.\n\n*Lighting* – The abyss is perpetually dim, illuminated only by the city’s own neon veins and the occasional flash of distant bioluminescent schools. Light is filtered through thick, silt‑laden water, creating shafts of eerie, colored illumination that dance across cracked marble floors and shattered stained‑glass windows. In the deepest chambers, darkness is absolute, broken only by the faint, rhythmic throbbing of the city’s heart‑pump—an ancient, humming engine that powers the neon lattice.\n\n*Weather & Ambient Noise* – The water is heavy, cold, and carries a constant low‑frequency hum from the city’s power conduits. The soundscape is a symphony of distant whale songs, the creak of pressure‑strained metal, the soft clatter of dripping condensation, and the whispered chants of the cultist denizens. Occasional violent currents sweep through the streets, rattling lanterns and sending schools of mutated fish scattering like living confetti.\n\n*Overall Mood* – A haunting, oppressive grandeur. The city feels both awe‑inspiring and claustrophobic, a place where beauty is laced with decay and every glowing corridor hints at hidden danger. The neon glow offers a false sense of safety, while the ever‑present pressure of the deep reminds the player that the abyss is unforgiving.\n\n---\n\n**3. Lore**  \n\nCenturies ago, the coastal nation of **Eldraeth** built a marvel of engineering: **Nerathal**, a citadel sunk deliberately beneath the waves to harness the raw power of the ocean’s geothermal vents. The city’s purpose was twofold—serve as a hub for arcane research into “Aqua‑Aether” (the magical essence of water) and act as a sanctuary for the elite, who believed the surface world was doomed by climate collapse.\n\nThe project succeeded beyond imagination. The geothermal cores lit the city with a perpetual neon blaze, and the Aqua‑Aether infused the water with a subtle, mind‑altering resonance. However, the same resonance attracted a strange mutation: native fish and deep‑sea cephalopods began to evolve rapidly, developing sentient, humanoid forms and a collective psychic link.\n\nThese **Piscine Ascendants**—once simple sea life—were drawn to the city’s power and, over generations, formed a **Cult of the Luminous Tide**. They worshipped the glowing heart of Nerathal as a deity, believing the city to be a divine womb that would birth a new era of aquatic supremacy.\n\nWhen the surface world finally fell to environmental cataclysm, the cult seized control. They rewrote the city’s purpose, turning its technology into ritualistic devices. The Aqua‑Aether was corrupted, becoming a volatile, mutagenic force that warps flesh and mind. The once‑ordered streets now pulse with the cult’s dark ceremonies, and the neon veins have become conduits for a spreading, sentient plague known as **The Veil**.\n\n---\n\n**4. Core Conflict**  \n\nThe **Veil** is a living, parasitic corruption born from the twisted Aqua‑Aether. It spreads through the neon conduits, infecting both metal and flesh, turning machinery into grotesque, animated extensions of the cult and mutating any creature it touches into nightmarish hybrids. The Veil is driven by a collective consciousness—the **Luminous Maw**—the emergent deity of the Cult of the Luminous Tide.\n\nThe Luminous Maw seeks to break the surface world’s barrier, flooding the continents with the abyssal depths and reshaping all life into its own bioluminescent vision. To achieve this, it requires the **Heartforge**, a massive geothermal engine at the city’s core that can amplify the Veil’s influence beyond the ocean.\n\nPlayers entering Nerathal Abyss must navigate the neon‑lit catacombs, confront the fanatical fish‑people cultists, and uncover the truth behind the Veil. The core conflict is a race against time: either destroy the Heartforge and halt the Veil’s expansion, or succumb to the seductive promise of power offered by the Luminous Maw. The environment itself fights back—corridors collapse, water pressure spikes, and the very walls pulse with hostile energy—making every step a test of will, wit, and survival.",
+    "generation_time_seconds": 156,
+    "player": {
+        "tile": {
+            "name": "neon_sentinel",
+            "description": "A lone diver in phosphorescent armor, bearing the sigils of the fallen surface order, wielding a corrupted harpoon that channels Aqua‑Aether to fight the Veil.",
+            "color": "#00FFAA"
+        },
+        "back_history": "Archetype: The Neon Sentinel – a former surface‑world marine engineer turned rogue salvager, now equipped with arcane‑tech diving gear.\\nBackstory & Motivation: Once part of the elite crew that helped build Nerathal, the Sentinel was exiled after a catastrophic breach that claimed many lives. Haunted by guilt and driven by a promise to the lost crew, they return to the Abyss to shut down the Heartforge, stop the Veil, and redeem their name.\\nVisuals: Clad in a battered pressure‑hull suit of dark basalt plates overlaid with flickering neon circuitry, the helmet’s visor glows a sickly teal, casting a thin light on a scarred face marked by bioluminescent tattoos of the old Eldraeth sigil. The Sentinel wields a salvaged harpoon‑cannon that emits a pulsing violet‑blue aura, and their gauntlets are fitted with retractable grappling hooks and a wrist‑mounted Aqua‑Aether conduit that can siphon or disrupt the Veil’s energy.",
+        "tile_with_texture": {
+            "name": "neon_sentinel",
+            "description": "A lone diver in phosphorescent armor, bearing the sigils of the fallen surface order, wielding a corrupted harpoon that channels Aqua‑Aether to fight the Veil.",
+            "color": "#00FFAA",
+            "texture": {
+                "tileset_position": {
+                    "x": 29,
+                    "y": 0
+                },
+                "tileset_description": "A warrior in armor, carrying a shield and a spear."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The outermost precinct of Nerathal Abyss, flooded with dim, pulsing neon veins that outline cracked basalt arches. Cold water carries a faint metallic tang, while distant whale songs echo through the corridors. Ambient hum of power conduits mixes with the soft drip of condensation, creating a uneasy sense of safety.",
+                "name": "Neon Gate",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "corroded_basalt_wall",
+                    "description": "Dark basalt blocks etched with rust‑stained sigils, slick with algae‑green slime.",
+                    "color": "#2A2A2A"
+                },
+                "floor_tile": {
+                    "name": "bioluminescent_silt_floor",
+                    "description": "Fine silt that glows faintly in electric blue, shifting with each current.",
+                    "color": "#0F8FFF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "corroded_basalt_wall",
+                    "description": "Dark basalt blocks etched with rust‑stained sigils, slick with algae‑green slime.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "bioluminescent_silt_floor",
+                    "description": "Fine silt that glows faintly in electric blue, shifting with each current.",
+                    "color": "#0F8FFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Deeper chambers where Victorian ironwork intertwines with baroque marble, illuminated by flickering lanterns of bioluminescent algae. The air smells of brine and rust, and the pressure hum grows louder. Echoes of chanting cultists reverberate, and the Veil’s tendrils begin to pulse along the walls.",
+                "name": "Baroque Catacombs",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "rusted_iron_arch",
+                    "description": "Ornate iron arches corroded to deep rust, veins of neon coursing through cracks.",
+                    "color": "#4B2E2E"
+                },
+                "floor_tile": {
+                    "name": "glowing_moss",
+                    "description": "Soft moss that emits a sickly green glow, thriving on Aqua‑Aether residue.",
+                    "color": "#3A9AD9"
+                },
+                "wall_tile_with_texture": {
+                    "name": "rusted_iron_arch",
+                    "description": "Ornate iron arches corroded to deep rust, veins of neon coursing through cracks.",
+                    "color": "#4B2E2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "glowing_moss",
+                    "description": "Soft moss that emits a sickly green glow, thriving on Aqua‑Aether residue.",
+                    "color": "#3A9AD9",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The innermost vault surrounding the geothermal Heartforge, where the Veil converges. Neon conduits flare violently, casting harsh violet light on jagged steel. The water is hot, thick with the scent of ozone and mutagenic fumes. The Luminous Maw’s chorus roars, and every step threatens collapse as the engine thrums with destructive power.",
+                "name": "Heartforge Sanctum",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "veiled_steel",
+                    "description": "Cold steel plates fused with living Veil tendrils, pulsing with violet energy.",
+                    "color": "#1B1B1B"
+                },
+                "floor_tile": {
+                    "name": "vein_cracked_marb",
+                    "description": "Cracked marble floor laced with glowing veins of corrupted Aqua‑Aether.",
+                    "color": "#7D00FF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "veiled_steel",
+                    "description": "Cold steel plates fused with living Veil tendrils, pulsing with violet energy.",
+                    "color": "#1B1B1B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "vein_cracked_marb",
+                    "description": "Cracked marble floor laced with glowing veins of corrupted Aqua‑Aether.",
+                    "color": "#7D00FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "gleaming_shimmerfin",
+                    "description": "A slender fish‑like creature with razor‑thin bioluminescent fins that flash like neon ribbons, darting through the water with uncanny speed.",
+                    "color": "#00FFAA"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "gleaming_shimmerfin",
+                    "description": "A slender fish‑like creature with razor‑thin bioluminescent fins that flash like neon ribbons, darting through the water with uncanny speed.",
+                    "color": "#00FFAA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corroded_ironclad",
+                    "description": "A massive crab‑like behemoth encased in rust‑capped iron plates, its shell pulsing with sickly green veins of corrupted Aqua‑Aether.",
+                    "color": "#8B0000"
+                },
+                "weight": 8,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "corroded_ironclad",
+                    "description": "A massive crab‑like behemoth encased in rust‑capped iron plates, its shell pulsing with sickly green veins of corrupted Aqua‑Aether.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "veiled_specter",
+                    "description": "Ethereal, translucent humanoid formed of swirling water and faint violet light, slipping through cracks like a living shadow.",
+                    "color": "#7F00FF"
+                },
+                "weight": 1,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "veiled_specter",
+                    "description": "Ethereal, translucent humanoid formed of swirling water and faint violet light, slipping through cracks like a living shadow.",
+                    "color": "#7F00FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "luminous_tideguard",
+                    "description": "Towering armored sentinel of coral and steel, its back adorned with glowing sigils that blaze in electric blue.",
+                    "color": "#FFD700"
+                },
+                "weight": 9,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "luminous_tideguard",
+                    "description": "Towering armored sentinel of coral and steel, its back adorned with glowing sigils that blaze in electric blue.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "neon_razor_eel",
+                    "description": "A sleek eel whose skin crackles with neon veins, its barbed tail leaving trails of phosphorescent sparks.",
+                    "color": "#00FFFF"
+                },
+                "weight": 2,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "neon_razor_eel",
+                    "description": "A sleek eel whose skin crackles with neon veins, its barbed tail leaving trails of phosphorescent sparks.",
+                    "color": "#00FFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "abyssal_warden",
+                    "description": "Colossal octopus‑like entity wrapped in kelp‑grown armor, each tentacle ending in a glowing, rune‑etched claw.",
+                    "color": "#4B0082"
+                },
+                "weight": 10,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "abyssal_warden",
+                    "description": "Colossal octopus‑like entity wrapped in kelp‑grown armor, each tentacle ending in a glowing, rune‑etched claw.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 8
+                        },
+                        "tileset_description": "An octopus, an alien, a creature from another universe."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "phosphor_swarm",
+                    "description": "A cloud of tiny, bioluminescent fish that move as a single mind, flashing bright bursts to disorient foes.",
+                    "color": "#FF00FF"
+                },
+                "weight": 3,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "phosphor_swarm",
+                    "description": "A cloud of tiny, bioluminescent fish that move as a single mind, flashing bright bursts to disorient foes.",
+                    "color": "#FF00FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystalline_hull",
+                    "description": "A hulking turtle with a shell of glass‑like crystal that refracts the neon light into dazzling, blinding shards.",
+                    "color": "#00FF00"
+                },
+                "weight": 7,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "crystalline_hull",
+                    "description": "A hulking turtle with a shell of glass‑like crystal that refracts the neon light into dazzling, blinding shards.",
+                    "color": "#00FF00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 5
+                        },
+                        "tileset_description": "A turtle"
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_leviathan",
+                    "description": "An enormous, shadow‑shrouded leviathan whose body is a void of darkness punctuated by throbbing red cores.",
+                    "color": "#000000"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "void_leviathan",
+                    "description": "An enormous, shadow‑shrouded leviathan whose body is a void of darkness punctuated by throbbing red cores.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "luminescent_spike",
+                    "description": "A spiky, fish‑like horror covered in jagged, glowing spines that emit a harsh orange flare when it strikes.",
+                    "color": "#FF4500"
+                },
+                "weight": 4,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "luminescent_spike",
+                    "description": "A spiky, fish‑like horror covered in jagged, glowing spines that emit a harsh orange flare when it strikes.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 5
+                        },
+                        "tileset_description": "A warrior spider."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_dagger",
+                    "description": "A short, corroded blade with a chipped iron tip, its hilt wrapped in frayed leather soaked in brine. The blade glints faintly as water catches the occasional neon flicker, feeling cold and unbalanced in the hand.",
+                    "color": "#4B4B4B"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_dagger",
+                    "description": "A short, corroded blade with a chipped iron tip, its hilt wrapped in frayed leather soaked in brine. The blade glints faintly as water catches the occasional neon flicker, feeling cold and unbalanced in the hand.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rusted_short_sword",
+                    "description": "A battered short sword forged from salvaged basalt steel, its edge dulled by years of seawater. The hilt bears a cracked neon sigil that pulses weakly, giving a sense of grim determination when swung.",
+                    "color": "#5A2A2A"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusted_short_sword",
+                    "description": "A battered short sword forged from salvaged basalt steel, its edge dulled by years of seawater. The hilt bears a cracked neon sigil that pulses weakly, giving a sense of grim determination when swung.",
+                    "color": "#5A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium-rarity greatsword. With detailed blade."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "improvised_spear_gun",
+                    "description": "A makeshift spear gun cobbled from a broken pipe and a rusted harpoon. The barrel is lined with phosphorescent algae, emitting a soft blue glow as you load and fire, the recoil feeling like a sudden tide surge.",
+                    "color": "#1E3A5F"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "improvised_spear_gun",
+                    "description": "A makeshift spear gun cobbled from a broken pipe and a rusted harpoon. The barrel is lined with phosphorescent algae, emitting a soft blue glow as you load and fire, the recoil feeling like a sudden tide surge.",
+                    "color": "#1E3A5F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corroded_crossbow",
+                    "description": "An ancient crossbow whose wooden limbs are warped by pressure, its string a tangled filament of bioluminescent fibers. Each bolt whistles through the water with a faint electric hiss.",
+                    "color": "#3B2F2F"
+                },
+                "rarity": 2,
+                "weight": 5,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "corroded_crossbow",
+                    "description": "An ancient crossbow whose wooden limbs are warped by pressure, its string a tangled filament of bioluminescent fibers. Each bolt whistles through the water with a faint electric hiss.",
+                    "color": "#3B2F2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 5
+                        },
+                        "tileset_description": "Large wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "brine_wand",
+                    "description": "A slender wand fashioned from a hollowed coral spine, etched with rust‑stained runes that glow violet when channeling mana. It feels surprisingly light, humming with latent Aqua‑Aether.",
+                    "color": "#7B00FF"
+                },
+                "rarity": 2,
+                "weight": 1,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "brine_wand",
+                    "description": "A slender wand fashioned from a hollowed coral spine, etched with rust‑stained runes that glow violet when channeling mana. It feels surprisingly light, humming with latent Aqua‑Aether.",
+                    "color": "#7B00FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium-rarity greatsword. With detailed blade."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "baroque_hammer",
+                    "description": "A heavy hammer forged of obsidian‑coated basalt, its head adorned with gilded baroque motifs that catch the neon light. Each swing reverberates like a cathedral bell, crushing foes with oppressive weight.",
+                    "color": "#2C1B1B"
+                },
+                "rarity": 6,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "baroque_hammer",
+                    "description": "A heavy hammer forged of obsidian‑coated basalt, its head adorned with gilded baroque motifs that catch the neon light. Each swing reverberates like a cathedral bell, crushing foes with oppressive weight.",
+                    "color": "#2C1B1B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bioluminescent_bow",
+                    "description": "A sleek bow of flexible kelp‑reinforced steel, its limbs glowing with shifting cyan veins. Arrows fired from it leave trails of luminous algae, striking with a soft, electric sting.",
+                    "color": "#00FFC2"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 4,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "bioluminescent_bow",
+                    "description": "A sleek bow of flexible kelp‑reinforced steel, its limbs glowing with shifting cyan veins. Arrows fired from it leave trails of luminous algae, striking with a soft, electric sting.",
+                    "color": "#00FFC2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 6
+                        },
+                        "tileset_description": "Simple bow of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "aqua_aether_staff",
+                    "description": "A tall staff of polished sea‑glass, its core pulsing with a steady teal light. Runes spiral down its length, and wielding it feels like conducting the very heartbeat of the abyss.",
+                    "color": "#008080"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 6,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "aqua_aether_staff",
+                    "description": "A tall staff of polished sea‑glass, its core pulsing with a steady teal light. Runes spiral down its length, and wielding it feels like conducting the very heartbeat of the abyss.",
+                    "color": "#008080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff detailed with a heart or arrow symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "heartforge_edge",
+                    "description": "The legendary sword forged in the geothermal core, its blade a ribbon of molten metal encased in crystal. Neon runes flare along its edge, and each cut sings with the roar of the Heartforge itself.",
+                    "color": "#FF4500"
+                },
+                "rarity": 9,
+                "weight": 7,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "heartforge_edge",
+                    "description": "The legendary sword forged in the geothermal core, its blade a ribbon of molten metal encased in crystal. Neon runes flare along its edge, and each cut sings with the roar of the Heartforge itself.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 8
+                        },
+                        "tileset_description": "A very rare greatsword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "luminous_maw_cannon",
+                    "description": "An experimental cannon mounted on a rusted carriage, its barrel lined with living bioluminescent tissue. When fired, it releases a concentrated pulse of Veil‑tainted energy that erupts in a blinding, mutagenic burst.",
+                    "color": "#FF00FF"
+                },
+                "rarity": 9,
+                "weight": 9,
+                "mana_cost": 9,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "luminous_maw_cannon",
+                    "description": "An experimental cannon mounted on a rusted carriage, its barrel lined with living bioluminescent tissue. When fired, it releases a concentrated pulse of Veil‑tainted energy that erupts in a blinding, mutagenic burst.",
+                    "color": "#FF00FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "luminal_heartcore",
+            "description": "A pulsating, crystalized core of the Heartforge, its surface a lattice of frozen neon veins and swirling Aqua‑Aether, emitting a low hum that resonates with every living breath. The core's inner glow shifts between sapphire and blood‑red, casting eerie shadows, and it feels both unbearably heavy and oddly warm to the touch.",
+            "color": "#0F0F8F"
+        },
+        "back_history": "The Luminal Heartcore is the sealed nucleus of the Heartforge, the very engine that amplifies the Veil's parasitic power. Millennia ago the engineers of Nerathal bound the raw geothermal fury into this crystal, intending it as a controlled source of Aqua‑Aether. When the Cult of the Luminous Tide corrupted the city, they twisted the Heartforge, but the Heartcore remained the only pure conduit capable of either unleashing the Luminous Maw's flood or, if removed, collapsing the engine and starving the Veil. Without the Heartcore the Veil's network collapses, halting the tide that would drown the surface. Carrying it back to the surface allows the ancient seals of Eldraeth to be reforged, sealing the Veil forever; leaving it would let the Luminous Maw complete its apocalyptic rite.",
+        "tile_with_texture": {
+            "name": "luminal_heartcore",
+            "description": "A pulsating, crystalized core of the Heartforge, its surface a lattice of frozen neon veins and swirling Aqua‑Aether, emitting a low hum that resonates with every living breath. The core's inner glow shifts between sapphire and blood‑red, casting eerie shadows, and it feels both unbearably heavy and oddly warm to the touch.",
+            "color": "#0F0F8F",
+            "texture": {
+                "tileset_position": {
+                    "x": 35,
+                    "y": 3
+                },
+                "tileset_description": "A staff detailed with a heart or arrow symbol at the tip."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "output_token_details": {
+                "reasoning": 5457
+            },
+            "total_tokens": 24393,
+            "output_tokens": 10245,
+            "input_tokens": 14148
+        }
+    }
+}

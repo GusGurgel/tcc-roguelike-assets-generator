@@ -1,0 +1,628 @@
+{
+    "name": "Chronicle of the Liminal Atrium",
+    "raw_description": "A dreamscape realm made of floating staircases and melting clocks, populated by faceless manifestations of forgotten memories and nightmare weavers.",
+    "description": "**Setting Name**  \n**The Liminal Atrium** – a boundless dream‑realm of shifting stairways, liquid time, and echoing silhouettes.\n\n---\n\n### Visual Style & Atmosphere  \n\n**Art Direction:** Surrealist‑Gothic with a touch of Art‑Deco abstraction. Think Escher‑like geometry rendered in soft, pastel‑washed textures, punctuated by the stark, metallic gleam of fractured clockwork. The architecture is a blend of impossible staircases that spiral into themselves, floating platforms of glass‑like crystal, and vast, open voids where the sky is a perpetual twilight of bruised purples and deep indigo.  \n\n**Lighting:** Ambient light is diffuse and ever‑changing, as if the sun and moon are a single, slow‑pulsing heart. Pools of phosphorescent vapor rise from melted clocks, casting a gentle, amber glow that flickers like candlelight. Shadows are elongated and sometimes “solid” – they can be walked through, but they whisper the names of things long forgotten.  \n\n**Weather & Ambient Noise:** The Atrium has no weather in the conventional sense; instead, time itself drips like rain. Viscous streams of melted hourglass sand cascade from the edges of floating platforms, forming slow, shimmering rivers that flow upward and then dissolve. The soundscape is a layered tapestry of ticking, soft chimes, distant lullabies, and the faint rustle of pages turning that never finish. Occasionally a low, resonant hum rises when a “memory” awakens, reverberating through the stone and glass.  \n\n**Overall Mood:** A beautiful melancholy, where wonder is tinged with unease. The player feels both drawn toward the hypnotic beauty of the dreamscape and constantly reminded that something is out of sync – a world that exists on the edge of recollection and nightmare.\n\n---\n\n### Lore  \n\n**Origin:** The Liminal Atrium was forged by the collective unconscious of a long‑lost civilization known as the **Eidolon Accord**. When their empire collapsed under a cataclysm of forgotten wars, the collective trauma of its people seeped into the ether, coalescing into a pocket of reality where memories could take form. The Accord’s greatest scholars attempted to preserve their heritage by binding their memories to a “Chronicle Engine,” a massive clockwork heart that regulated the flow of time within the realm.  \n\n**Fall:** The engine was sabotaged by a faction of **Nightmare Weavers**—entities born from the darkest, unprocessed memories of the Accord. They corrupted the engine’s gears, causing time to melt and reform erratically. The once‑stable stairways began to float, clocks melted into rivers, and faceless echoes of forgotten citizens—**Faceless Manifestations**—wandered aimlessly, their identities erased.  \n\n**Current State:** The Atrium now exists as a liminal pocket between waking and sleeping, a place where any traveler who dies in the material world may find themselves trapped. The realm is a crucible for lost recollections; each step taken can either restore a fragment of the Accord’s history or plunge the explorer deeper into the abyss of forgotten nightmares.\n\n---\n\n### Core Conflict  \n\n**The Corruption:** At the heart of the Atrium lies the **Chronicle Engine**, now a twisted amalgam of brass, cracked glass, and ever‑dripping clock‑sand. Its core pulse is irregular, sending out “Temporal Fractures” that warp reality—staircases shift, platforms disappear, and time loops on itself. These fractures feed the **Nightmare Weavers**, who use the instability to weave new horrors from the raw material of unremembered fears.  \n\n**The Enemy Force:** The Nightmare Weavers are not merely monsters; they are sentient constructs of suppressed trauma. They can infiltrate the player’s mind, manifesting as whispered doubts, hallucinations, or even temporary loss of control over the character’s actions. Their ultimate goal is to fully shatter the Chronicle Engine, causing the Atrium to collapse into a void that would consume all memories tied to it—including the player’s own past.  \n\n**Player’s Struggle:** To survive, the player must navigate the ever‑shifting architecture, restore fragments of the Accord’s forgotten history (thereby stabilizing portions of the engine), and confront the Weavers in both physical and psychological combat. Each restored memory re‑locks a segment of the stairways, slows the melting of clocks, and weakens the Weavers’ influence—creating a race against time that is literally melting away.  \n\nIn short, the Liminal Atrium is a dream‑torn labyrinth where the battle is as much about reclaiming lost identity as it is about slashing through nightmarish foes. The world itself is a living puzzle, its visual and auditory cues guiding the player toward the heart of the corruption while constantly reminding them that forgetting is the true enemy.",
+    "generation_time_seconds": 119,
+    "player": {
+        "tile": {
+            "name": "dreamwalker_tile",
+            "description": "A faintly glowing silhouette of a wanderer, its outline shifting like liquid time.",
+            "color": "#8B5CF6"
+        },
+        "back_history": "Archetype: Chronicle Seeker – a former scholar‑warrior of the Eidolon Accord, now a Dreamwalker cursed to wander the Liminal Atrium. Backstory & Motivation: In life the character perished during the final siege of the Chronicle Engine, their soul caught in the residual echo of the engine’s pulse. Driven by a desperate need to restore the lost memories of the Accord and to earn a chance to return to the waking world, they venture deeper into the shifting stairways, collecting memory fragments to mend the engine and silence the Nightmare Weavers. Visuals: Clad in flowing, pastel‑washed robes that ripple like liquid time, the figure bears a brass gauntlet etched with fading glyphs and a cracked glass visor that reflects the perpetual twilight. Their skin bears faint, luminescent veins of clock‑sand, and their eyes glow with a soft amber hue, echoing the phosphorescent vapor of the Atrium.",
+        "tile_with_texture": {
+            "name": "dreamwalker_tile",
+            "description": "A faintly glowing silhouette of a wanderer, its outline shifting like liquid time.",
+            "color": "#8B5CF6",
+            "texture": {
+                "tileset_position": {
+                    "x": 24,
+                    "y": 7
+                },
+                "tileset_description": "The specter of a person. It looks like a transparent person."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A shallow dream‑realm of spiraling staircases that shift with each step. Ambient light is a soft amber haze from phosphorescent vapor, while the air smells of warm metal and faint ozone. The ticking of distant clocks mixes with a low, echoing whisper of forgotten names.",
+                "name": "The Whispering Stairwell",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "fractured_brass_wall",
+                    "description": "Walls of tarnished brass and cracked glass, faintly humming with residual chrono‑energy.",
+                    "color": "#8B7D7D"
+                },
+                "floor_tile": {
+                    "name": "liquid_sand_floor",
+                    "description": "A slow‑dripping layer of amber‑glowing hour‑sand that solidifies underfoot before melting again.",
+                    "color": "#C19A6B"
+                },
+                "wall_tile_with_texture": {
+                    "name": "fractured_brass_wall",
+                    "description": "Walls of tarnished brass and cracked glass, faintly humming with residual chrono‑energy.",
+                    "color": "#8B7D7D",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "liquid_sand_floor",
+                    "description": "A slow‑dripping layer of amber‑glowing hour‑sand that solidifies underfoot before melting again.",
+                    "color": "#C19A6B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A wider expanse of floating crystal platforms and impossible stairways. Lighting shifts between bruised purple twilight and flickering silver, casting long, semi‑solid shadows that whisper. The scent of cold stone mingles with sweet incense of melted clocks. Ambient sounds include chimes, ticking, and a distant lullaby that seems to come from nowhere.",
+                "name": "The Echoing Atrium",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "obsidian_clockwork_wall",
+                    "description": "Dark obsidian panels inlaid with brass gears that turn lazily, emitting a faint metallic resonance.",
+                    "color": "#2A2A2A"
+                },
+                "floor_tile": {
+                    "name": "mirrored_crystal_floor",
+                    "description": "Glass‑like crystal tiles that reflect the shifting sky, rippling with each footfall like liquid light.",
+                    "color": "#A0E7E5"
+                },
+                "wall_tile_with_texture": {
+                    "name": "obsidian_clockwork_wall",
+                    "description": "Dark obsidian panels inlaid with brass gears that turn lazily, emitting a faint metallic resonance.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "mirrored_crystal_floor",
+                    "description": "Glass‑like crystal tiles that reflect the shifting sky, rippling with each footfall like liquid light.",
+                    "color": "#A0E7E5",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The heart of the Atrium, a cavernous chamber surrounding the twisted Chronicle Engine. Light is a pulsing heart‑beat of amber and indigo, casting erratic shadows that warp reality. The air is thick with the metallic scent of oil and the sweet decay of melted time. The soundscape is a cacophony of grinding gears, frantic ticking, and a resonant hum that shakes the soul.",
+                "name": "The Chronicle Engine Core",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "engine_gear_wall",
+                    "description": "Massive brass and cracked glass gears embedded in the walls, each gear grinding irregularly as the engine falters.",
+                    "color": "#4B4B4B"
+                },
+                "floor_tile": {
+                    "name": "pulsating_time_floor",
+                    "description": "A floor of shifting sands and glowing sigils that pulse in time with the engine's irregular heartbeat.",
+                    "color": "#FFB347"
+                },
+                "wall_tile_with_texture": {
+                    "name": "engine_gear_wall",
+                    "description": "Massive brass and cracked glass gears embedded in the walls, each gear grinding irregularly as the engine falters.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "pulsating_time_floor",
+                    "description": "A floor of shifting sands and glowing sigils that pulse in time with the engine's irregular heartbeat.",
+                    "color": "#FFB347",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "whispering_wisp",
+                    "description": "A translucent, elongated silhouette that drifts like a sigh, its edges flickering with pale clock-sand.",
+                    "color": "#7A6E8C"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "whispering_wisp",
+                    "description": "A translucent, elongated silhouette that drifts like a sigh, its edges flickering with pale clock-sand.",
+                    "color": "#7A6E8C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "shattered_gear",
+                    "description": "A hulking construct of cracked brass and glass, gears grinding slowly, emitting a low hum.",
+                    "color": "#5C3A21"
+                },
+                "weight": 8,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "shattered_gear",
+                    "description": "A hulking construct of cracked brass and glass, gears grinding slowly, emitting a low hum.",
+                    "color": "#5C3A21",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 30,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem with a square on its belly."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "chronal_spider",
+                    "description": "A spider-like entity with legs of spun time-threads, moving in jittery bursts.",
+                    "color": "#8B5E83"
+                },
+                "weight": 3,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "chronal_spider",
+                    "description": "A spider-like entity with legs of spun time-threads, moving in jittery bursts.",
+                    "color": "#8B5E83",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 30,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with multiple legs. It resembles a spider."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "echoing_sentinel",
+                    "description": "A stone statue with hollow eyes, its surface etched with fading runes, slowly pulsing.",
+                    "color": "#4B4B4B"
+                },
+                "weight": 7,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "echoing_sentinel",
+                    "description": "A stone statue with hollow eyes, its surface etched with fading runes, slowly pulsing.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 2
+                        },
+                        "tileset_description": "A horned creature wielding a staff. Simple armor with some details."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "luminous_flicker",
+                    "description": "A small, glowing mote that darts across the floor, leaving a trail of amber light.",
+                    "color": "#E3A857"
+                },
+                "weight": 1,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "luminous_flicker",
+                    "description": "A small, glowing mote that darts across the floor, leaving a trail of amber light.",
+                    "color": "#E3A857",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "nightmare_weaver",
+                    "description": "A towering silhouette of tangled memories, its limbs are frayed ribbons of night-shade, exuding dread.",
+                    "color": "#2B1B3A"
+                },
+                "weight": 9,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "nightmare_weaver",
+                    "description": "A towering silhouette of tangled memories, its limbs are frayed ribbons of night-shade, exuding dread.",
+                    "color": "#2B1B3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "temporal_harvester",
+                    "description": "A floating scythe-like construct made of cracked hourglass glass, slicing through moments.",
+                    "color": "#A67C52"
+                },
+                "weight": 4,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "temporal_harvester",
+                    "description": "A floating scythe-like construct made of cracked hourglass glass, slicing through moments.",
+                    "color": "#A67C52",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "voidling",
+                    "description": "A small, amorphous blob of blackened mist, eyes like voids, moving erratically.",
+                    "color": "#1F1F1F"
+                },
+                "weight": 5,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "voidling",
+                    "description": "A small, amorphous blob of blackened mist, eyes like voids, moving erratically.",
+                    "color": "#1F1F1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "chronicle_behemoth",
+                    "description": "An immense, multi-headed beast of brass and clock-sand, each head a ticking maw.",
+                    "color": "#3D2B1F"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "chronicle_behemoth",
+                    "description": "An immense, multi-headed beast of brass and clock-sand, each head a ticking maw.",
+                    "color": "#3D2B1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "fracture_phantom",
+                    "description": "A ghostly figure composed of shattered time shards, flickering in and out of existence.",
+                    "color": "#9A8FB5"
+                },
+                "weight": 2,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "fracture_phantom",
+                    "description": "A ghostly figure composed of shattered time shards, flickering in and out of existence.",
+                    "color": "#9A8FB5",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_dagger",
+                    "description": "A short blade forged from the melted brass of a broken clock gear, its edge dull but humming faintly.",
+                    "color": "#7A5230"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_dagger",
+                    "description": "A short blade forged from the melted brass of a broken clock gear, its edge dull but humming faintly.",
+                    "color": "#7A5230",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 9
+                        },
+                        "tileset_description": "A simple iron sword with a straight blade. Appears to be of low rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "cracked_bow",
+                    "description": "A wooden bow with strings of silvery thread, etched with fading hour markings.",
+                    "color": "#8B7D8B"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "cracked_bow",
+                    "description": "A wooden bow with strings of silvery thread, etched with fading hour markings.",
+                    "color": "#8B7D8B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tinkers_mallet",
+                    "description": "A small hammer made of brass and glass shards, its head clinks with each strike, echoing distant chimes.",
+                    "color": "#C0A080"
+                },
+                "rarity": 2,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "tinkers_mallet",
+                    "description": "A small hammer made of brass and glass shards, its head clinks with each strike, echoing distant chimes.",
+                    "color": "#C0A080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 8
+                        },
+                        "tileset_description": "Small, one-handed axe with only one blade at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sand_crossbow",
+                    "description": "A crossbow whose limbs are carved from obsidian, with a reservoir that drips slow sand into each bolt.",
+                    "color": "#5A4D6E"
+                },
+                "rarity": 2,
+                "weight": 5,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "sand_crossbow",
+                    "description": "A crossbow whose limbs are carved from obsidian, with a reservoir that drips slow sand into each bolt.",
+                    "color": "#5A4D6E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "stair_glaive",
+                    "description": "A long pole with a blade shaped like a miniature staircase, its edges catch the ambient glow.",
+                    "color": "#6B8E23"
+                },
+                "rarity": 2,
+                "weight": 7,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "stair_glaive",
+                    "description": "A long pole with a blade shaped like a miniature staircase, its edges catch the ambient glow.",
+                    "color": "#6B8E23",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 8
+                        },
+                        "tileset_description": "Small, one-handed axe with only one blade at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "eidolon_edge",
+                    "description": "A slender sword forged from the polished crystal of the Atrium's floating platforms, humming with latent memory.",
+                    "color": "#A0D8EF"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "eidolon_edge",
+                    "description": "A slender sword forged from the polished crystal of the Atrium's floating platforms, humming with latent memory.",
+                    "color": "#A0D8EF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "luminous_arc",
+                    "description": "A bow of translucent glass that refracts the twilight, arrows leave trails of phosphorescent vapor.",
+                    "color": "#7F5FBF"
+                },
+                "rarity": 6,
+                "weight": 3,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "luminous_arc",
+                    "description": "A bow of translucent glass that refracts the twilight, arrows leave trails of phosphorescent vapor.",
+                    "color": "#7F5FBF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 2
+                        },
+                        "tileset_description": "Quiver of arrows."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "warden_scepter",
+                    "description": "A scepter topped with a rotating miniature clock, each tick releases a pulse of stabilizing mana.",
+                    "color": "#FFD700"
+                },
+                "rarity": 6,
+                "weight": 2,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "warden_scepter",
+                    "description": "A scepter topped with a rotating miniature clock, each tick releases a pulse of stabilizing mana.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a circle symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "engine_heart",
+                    "description": "A massive hammer whose head is a beating brass heart, each swing syncs with the Atrium's pulse, warping time around the strike.",
+                    "color": "#FF4500"
+                },
+                "rarity": 9,
+                "weight": 9,
+                "mana_cost": 2,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "engine_heart",
+                    "description": "A massive hammer whose head is a beating brass heart, each swing syncs with the Atrium's pulse, warping time around the strike.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "dream_weaver",
+                    "description": "A bow crafted from the nightmares themselves, its string is woven from forgotten whispers; arrows tear at the fabric of memory, restoring or erasing.",
+                    "color": "#4B0082"
+                },
+                "rarity": 9,
+                "weight": 4,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "dream_weaver",
+                    "description": "A bow crafted from the nightmares themselves, its string is woven from forgotten whispers; arrows tear at the fabric of memory, restoring or erasing.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "chronicle_heart_core",
+            "description": "A pulsating, crystalline engine core forged from the original Chrono‑Heart of the Eidolon Accord, its facets swirl with liquid amber time‑sand and a faint inner clockwork glow, humming with the rhythm of forgotten memories.",
+            "color": "#8B00FF"
+        },
+        "back_history": "The Chronicle Engine's heart was ripped from the Accord's original Chrono‑Heart and shattered, its pieces scattered across the Atrium. The Nightmare Weavers bound the broken shards into a corrupted core that now drives the temporal fractures. Recovering the intact Chrono‑Heart—known as the Chronicle Heart Core—allows the player to re‑seal the engine, reversing the melting time, restoring the stairways, and banishing the Weavers. Leaving it in the abyss would let the engine continue to destabilize, dooming all memories and the player's own past to oblivion; only by carrying the heart back to the Atrium's entrance can the fractured timeline be mended and the world saved.",
+        "tile_with_texture": {
+            "name": "chronicle_heart_core",
+            "description": "A pulsating, crystalline engine core forged from the original Chrono‑Heart of the Eidolon Accord, its facets swirl with liquid amber time‑sand and a faint inner clockwork glow, humming with the rhythm of forgotten memories.",
+            "color": "#8B00FF",
+            "texture": {
+                "tileset_position": {
+                    "x": 33,
+                    "y": 8
+                },
+                "tileset_description": "Medium rarity Greatsword."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "total_tokens": 17392,
+            "output_token_details": {
+                "reasoning": 3875
+            },
+            "input_tokens": 10353,
+            "input_token_details": {
+                "cache_read": 768
+            },
+            "output_tokens": 7039
+        }
+    }
+}

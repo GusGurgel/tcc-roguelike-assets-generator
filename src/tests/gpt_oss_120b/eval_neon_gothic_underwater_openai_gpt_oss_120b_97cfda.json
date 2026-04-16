@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-120b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 88,
+    "semantic_reconstruction_metric": 0.7639929147821727,
+    "prompt": "A submerged neon-gothic underwater city filled with mutated fish-people cultists.",
+    "prompt_name": "neon_gothic_underwater",
+    "prompt_index": 1,
+    "asset_bundle_file": "bundle_neon_gothic_underwater_openai_gpt_oss_120b_97cfda.json"
+}

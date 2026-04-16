@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-120b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 92,
+    "semantic_reconstruction_metric": 0.720207317141206,
+    "prompt": "A clockwork purgatory inside a colossal ticking pocket watch, guarded by rusted brass automatons and ticking gear-wraiths.",
+    "prompt_name": "clockwork_purgatory",
+    "prompt_index": 3,
+    "asset_bundle_file": "bundle_clockwork_purgatory_openai_gpt_oss_120b_747ba4.json"
+}

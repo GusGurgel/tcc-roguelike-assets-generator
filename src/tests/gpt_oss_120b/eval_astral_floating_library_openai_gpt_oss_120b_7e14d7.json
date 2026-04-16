@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-120b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 88,
+    "semantic_reconstruction_metric": 0.7570334185780063,
+    "prompt": "An ethereal floating library in the astral plane, slowly crumbling into the void, haunted by ink-elementals and corrupted scholars.",
+    "prompt_name": "astral_floating_library",
+    "prompt_index": 8,
+    "asset_bundle_file": "bundle_astral_floating_library_openai_gpt_oss_120b_7e14d7.json"
+}

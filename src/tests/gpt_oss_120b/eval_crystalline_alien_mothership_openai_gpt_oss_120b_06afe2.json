@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-120b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 85,
+    "semantic_reconstruction_metric": 0.7972475399962938,
+    "prompt": "A hyper-advanced alien mothership made of living crystalline structures, defended by light-bending templars and prismatic sentinels.",
+    "prompt_name": "crystalline_alien_mothership",
+    "prompt_index": 12,
+    "asset_bundle_file": "bundle_crystalline_alien_mothership_openai_gpt_oss_120b_06afe2.json"
+}

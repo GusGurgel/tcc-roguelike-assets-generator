@@ -1,0 +1,625 @@
+{
+    "name": "Verdant Spire Ascendant",
+    "raw_description": "An abandoned orbital space station overgrown by aggressive, bioluminescent plant life and hive-mind fungi.",
+    "description": "**1. Setting Name**  \n**The Verdant Spire of Asterion**  \n\n---\n\n**2. Visual Style & Atmosphere**  \n\n- **Art Direction:** A hybrid of **Gritty Industrial** and **Bioluminescent Gothic**. The skeletal steel ribs of the orbital station are pitted, rust‑streaked, and scarred by micrometeorite impacts, while veins of phosphorescent vines and fungal mycelium pulse with eerie, ever‑shifting colours. Think rusted bulkheads juxtaposed with glowing tendrils that cast soft, multicolored glows across cracked glass and exposed circuitry.  \n\n- **Lighting:** The station drifts in perpetual twilight—no sun, only the distant glow of a dying star and the cold, sterile emergency lights that flicker intermittently. Bioluminescence supplies most illumination: deep‑blue fungal caps, pulsing amber spores, and occasional flashes of neon‑green lichen that react to movement. Shadows are deep and layered, giving every corridor a sense of hidden depth.  \n\n- **Weather/Environmental Effects:** Inside the hull, the air is thin and stale, laced with spores that drift like fog. Occasional “spore storms” sweep through larger chambers, temporarily blinding and choking the unwary. The station’s artificial gravity is spotty; some decks spin slowly, creating a gentle, disorienting drift that makes footing uncertain.  \n\n- **Ambient Noise:** A constant low‑hum of failing life‑support pumps, the distant clang of metal contracting in the cold, and the soft, almost musical rustle of leaves and fungal growths. When the player steps on a spore‑laden floor, a faint crackle of bioluminescent discharge can be heard, like a chorus of tiny fireflies. In the deeper chambers, the hive‑mind fungi emit a low, resonant thrum that can be felt as much as heard, hinting at a collective consciousness watching from the walls.  \n\n---\n\n**3. Lore**  \n\nCenturies ago, **Asterion** was the crown jewel of the United Terran Coalition’s orbital research fleet—a massive, self‑sustaining habitat designed to study exoplanetary ecosystems in zero‑gravity. Its purpose: to cultivate alien flora and fauna in a controlled environment, then ship viable specimens back to Earth for terraforming projects.  \n\nDuring **Project Verdant**, scientists introduced a suite of genetically engineered, fast‑growing plants and a symbiotic fungal strain meant to recycle waste and generate oxygen. The experiment was a triumph—until a solar flare struck the station’s shielding array, causing a cascade of power failures. The emergency protocols isolated the biosphere, but the loss of precise environmental controls turned the engineered organisms into a runaway, adaptive ecosystem.  \n\nThe plants mutated, developing aggressive tendrils that could pierce hull plating, while the fungi evolved a hive‑mind intelligence, capable of communicating through mycelial networks and manipulating the station’s remaining systems. Over the following decades, the station’s crew either perished, were assimilated, or fled in panic. The orbital platform was abandoned, left to drift in the void, its once‑pristine corridors now a tangled, luminous jungle of hostile growth.  \n\n---\n\n**4. Core Conflict**  \n\nThe **Hive‑Mind Fungus**, now known as **The Mycelial Sovereign**, has fully integrated with Asterion’s infrastructure. It uses the station’s remaining power to broadcast a psychic pheromone field that compels any organic life that enters to become part of its collective. The fungal network can hijack life‑support systems, redirecting oxygen to feed its own spore production and sealing off sections with rapidly expanding mycelial walls.  \n\nSimultaneously, the aggressive, bioluminescent plants have become **Sentient Vines**, capable of movement, entanglement, and delivering toxic spores that degrade both flesh and circuitry. They act as the Sovereign’s enforcers, defending the core mycelial chambers and attacking intruders with coordinated, whip‑like strikes.  \n\nTogether, the **Mycelial Sovereign** and **Sentient Vines** form a living, adaptive defense system that constantly reshapes the station’s layout, turning every run through the Verdant Spire into an ever‑changing labyrinth. The player must navigate this hostile, ever‑mutating environment, uncover the remnants of the original research, and decide whether to destroy the fungal hive, attempt to reclaim the station for humanity, or perhaps find a way to coexist with the new, alien ecology.",
+    "generation_time_seconds": 121,
+    "player": {
+        "tile": {
+            "name": "verdant_explorer",
+            "description": "A lone bio‑engineer in a patched exo‑suit, bearing bioluminescent glyphs and wielding a spore‑cutter and plasma torch, representing the player in the Verdant Spire.",
+            "color": "#2A7F3B"
+        },
+        "back_history": "Archetype: Bio‑engineer turned rogue salvager, once a lead researcher on Project Verdant. Backstory & Motivation: After the solar flare disaster, the engineer was blamed for the runaway ecosystem and exiled from the Terran Coalition. Driven by redemption and a desperate need to retrieve the lost research data that could save dying colonies, they infiltrate the Verdant Spire seeking to either shut down the Mycelial Sovereign or harness its bio‑tech for humanity’s survival. Visuals: Clad in a battered exo‑suit patched with rust‑streaked steel plates and luminescent fungal grafts that pulse faintly, a visor cracked with a greenish tint, and a utility belt holding a spore‑cutter, a makeshift plasma torch, and vials of anti‑fungal serum. The suit’s shoulders bear bioluminescent glyphs that flicker with each heartbeat, casting an eerie glow in the station’s twilight.",
+        "tile_with_texture": {
+            "name": "verdant_explorer",
+            "description": "A lone bio‑engineer in a patched exo‑suit, bearing bioluminescent glyphs and wielding a spore‑cutter and plasma torch, representing the player in the Verdant Spire.",
+            "color": "#2A7F3B",
+            "texture": {
+                "tileset_position": {
+                    "x": 28,
+                    "y": 5
+                },
+                "tileset_description": "A warrior spider."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The outer atrium is choked with drifting spore fog and faint amber glows from bioluminescent moss. Rusted steel ribs creak under weak emergency lights, while gentle vines sway lazily, posing little threat.",
+                "name": "The Rusted Atrium",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "rusted_steel",
+                    "description": "Corroded steel plates, pitted by micrometeorite impacts and occasional rust streaks.",
+                    "color": "#5A3A2A"
+                },
+                "floor_tile": {
+                    "name": "spore_moss",
+                    "description": "A thin layer of bioluminescent fungal moss that emits a soft amber hue.",
+                    "color": "#CFAE5D"
+                },
+                "wall_tile_with_texture": {
+                    "name": "rusted_steel",
+                    "description": "Corroded steel plates, pitted by micrometeorite impacts and occasional rust streaks.",
+                    "color": "#5A3A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "spore_moss",
+                    "description": "A thin layer of bioluminescent fungal moss that emits a soft amber hue.",
+                    "color": "#CFAE5D",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Deeper corridors pulse with neon‑green lichen and aggressive tendrils that lash out at intruders. The lighting flickers between emergency reds and the eerie glow of mycelial veins, while the air grows thicker with choking spores.",
+                "name": "The Veiled Concourse",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "mycelial_steel",
+                    "description": "Steel bulkheads overgrown with pulsing mycelial veins, leaking faint green light.",
+                    "color": "#3B4F2A"
+                },
+                "floor_tile": {
+                    "name": "glow_fiber",
+                    "description": "Fiber‑optic cables interwoven with fungal filaments, casting a soft blue illumination.",
+                    "color": "#1E90FF"
+                },
+                "wall_tile_with_texture": {
+                    "name": "mycelial_steel",
+                    "description": "Steel bulkheads overgrown with pulsing mycelial veins, leaking faint green light.",
+                    "color": "#3B4F2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "glow_fiber",
+                    "description": "Fiber‑optic cables interwoven with fungal filaments, casting a soft blue illumination.",
+                    "color": "#1E90FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            },
+            {
+                "description": "At the heart lies the Sovereign Core: a living hive‑mind fused to alloy, throbbing with neon‑green sap and toxic amber spore pools. The environment is a chaotic storm of bioluminescent blasts, crushing mycelial walls, and relentless sentient vines.",
+                "name": "The Sovereign Core",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "hive_plate",
+                    "description": "Living mycelial armor fused to alloy, pulsating with neon‑green energy.",
+                    "color": "#00FF7F"
+                },
+                "floor_tile": {
+                    "name": "spore_vein",
+                    "description": "Viscous, spore‑laden sap pools that shimmer with toxic amber light.",
+                    "color": "#FF8C00"
+                },
+                "wall_tile_with_texture": {
+                    "name": "hive_plate",
+                    "description": "Living mycelial armor fused to alloy, pulsating with neon‑green energy.",
+                    "color": "#00FF7F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "spore_vein",
+                    "description": "Viscous, spore‑laden sap pools that shimmer with toxic amber light.",
+                    "color": "#FF8C00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "spore_flicker",
+                    "description": "A fleeting mote of bioluminescent spore that darts through the air, leaving a trail of phosphorescent light.",
+                    "color": "#7FFFD4"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "spore_flicker",
+                    "description": "A fleeting mote of bioluminescent spore that darts through the air, leaving a trail of phosphorescent light.",
+                    "color": "#7FFFD4",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rust_vinelet",
+                    "description": "Thin, rust‑streaked vine that whips quickly, its tips glowing amber.",
+                    "color": "#B8860B"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "rust_vinelet",
+                    "description": "Thin, rust‑streaked vine that whips quickly, its tips glowing amber.",
+                    "color": "#B8860B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 2
+                        },
+                        "tileset_description": "An orc, carrying nothing and wearing no armor. Details on the shoulders. Appears to be stronger than a normal orc."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "glimmer_thrill",
+                    "description": "Small bioluminescent fungus ball that hops erratically, emitting soft green flashes.",
+                    "color": "#00FF7F"
+                },
+                "weight": 3,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "glimmer_thrill",
+                    "description": "Small bioluminescent fungus ball that hops erratically, emitting soft green flashes.",
+                    "color": "#00FF7F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "cinder_spiker",
+                    "description": "Fast moving shard of hardened mycelium with ember‑like glow.",
+                    "color": "#FF4500"
+                },
+                "weight": 4,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "cinder_spiker",
+                    "description": "Fast moving shard of hardened mycelium with ember‑like glow.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "vein_sprinter",
+                    "description": "Sleek vine segment with pulsing violet veins, darts along walls.",
+                    "color": "#8A2BE2"
+                },
+                "weight": 4,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "vein_sprinter",
+                    "description": "Sleek vine segment with pulsing violet veins, darts along walls.",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "mycelial_guardian",
+                    "description": "Massive mycelial construct, a hulking mound of intertwined fungal cords, pulsating with deep blue light.",
+                    "color": "#00008B"
+                },
+                "weight": 8,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "mycelial_guardian",
+                    "description": "Massive mycelial construct, a hulking mound of intertwined fungal cords, pulsating with deep blue light.",
+                    "color": "#00008B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ironroot_colossus",
+                    "description": "Towering plant with steel‑like bark, its massive roots crush anything.",
+                    "color": "#556B2F"
+                },
+                "weight": 9,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "ironroot_colossus",
+                    "description": "Towering plant with steel‑like bark, its massive roots crush anything.",
+                    "color": "#556B2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "spore_hulk",
+                    "description": "Bulky spore capsule, slow but releases clouds of toxic spores on impact.",
+                    "color": "#708090"
+                },
+                "weight": 8,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "spore_hulk",
+                    "description": "Bulky spore capsule, slow but releases clouds of toxic spores on impact.",
+                    "color": "#708090",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_tendrils",
+                    "description": "Long, shadowy tendrils that phase in and out, dealing massive psychic damage.",
+                    "color": "#4B0082"
+                },
+                "weight": 6,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "void_tendrils",
+                    "description": "Long, shadowy tendrils that phase in and out, dealing massive psychic damage.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "luminescent_leviathan",
+                    "description": "Enormous bioluminescent vine, moves slowly, its massive body radiates intense light, causing burns.",
+                    "color": "#FF1493"
+                },
+                "weight": 7,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "luminescent_leviathan",
+                    "description": "Enormous bioluminescent vine, moves slowly, its massive body radiates intense light, causing burns.",
+                    "color": "#FF1493",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_spore_dagger",
+                    "description": "A short steel blade coated in a thin film of bioluminescent spores that glow faintly.",
+                    "color": "#6B4423"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_spore_dagger",
+                    "description": "A short steel blade coated in a thin film of bioluminescent spores that glow faintly.",
+                    "color": "#6B4423",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 9
+                        },
+                        "tileset_description": "A simple iron sword with a straight blade. Appears to be of low rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "improvised_pipe_hammer",
+                    "description": "A length of corroded pipe with a weighted end, wrapped in fungal tendrils.",
+                    "color": "#8B5A2B"
+                },
+                "rarity": 1,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "improvised_pipe_hammer",
+                    "description": "A length of corroded pipe with a weighted end, wrapped in fungal tendrils.",
+                    "color": "#8B5A2B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scrap_plasma_pistol",
+                    "description": "A jury‑rigged plasma pistol built from salvaged circuitry, its barrel emits a soft green glow.",
+                    "color": "#2A2A2A"
+                },
+                "rarity": 2,
+                "weight": 4,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "scrap_plasma_pistol",
+                    "description": "A jury‑rigged plasma pistol built from salvaged circuitry, its barrel emits a soft green glow.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 9
+                        },
+                        "tileset_description": "Automatic pistol, glock, modern pistol."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "spore_laced_crossbow",
+                    "description": "A lightweight crossbow with sinewy vines replacing the string, releasing bolts that hiss with spores.",
+                    "color": "#4B5320"
+                },
+                "rarity": 1,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "spore_laced_crossbow",
+                    "description": "A lightweight crossbow with sinewy vines replacing the string, releasing bolts that hiss with spores.",
+                    "color": "#4B5320",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 5
+                        },
+                        "tileset_description": "Small wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bio_metal_machete",
+                    "description": "A broad blade forged from alloy and reinforced with fungal mycelium, humming faintly.",
+                    "color": "#556B2F"
+                },
+                "rarity": 3,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "bio_metal_machete",
+                    "description": "A broad blade forged from alloy and reinforced with fungal mycelium, humming faintly.",
+                    "color": "#556B2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "vine_energy_blade",
+                    "description": "A sleek energy blade whose hilt is entwined with living vines that pulse with electric blue light.",
+                    "color": "#0A3D62"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 3,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "vine_energy_blade",
+                    "description": "A sleek energy blade whose hilt is entwined with living vines that pulse with electric blue light.",
+                    "color": "#0A3D62",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium-rarity greatsword. With detailed blade."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "lumina_railgun",
+                    "description": "A heavy railgun that fires slugs surrounded by a halo of bioluminescent plasma, leaving a trail of violet light.",
+                    "color": "#4B0082"
+                },
+                "rarity": 7,
+                "weight": 7,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "lumina_railgun",
+                    "description": "A heavy railgun that fires slugs surrounded by a halo of bioluminescent plasma, leaving a trail of violet light.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "mycelial_conduit_staff",
+                    "description": "A staff of polished bone fused with a living fungal core that channels psychic spores, granting mind‑piercing attacks.",
+                    "color": "#228B22"
+                },
+                "rarity": 5,
+                "weight": 5,
+                "mana_cost": 8,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "mycelial_conduit_staff",
+                    "description": "A staff of polished bone fused with a living fungal core that channels psychic spores, granting mind‑piercing attacks.",
+                    "color": "#228B22",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "asterion_crownblade",
+                    "description": "An ancient ceremonial sword forged from the station's core alloy, its edge glows with captured starlight and a crown of rotating spores.",
+                    "color": "#FFD700"
+                },
+                "rarity": 10,
+                "weight": 2,
+                "mana_cost": 9,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "asterion_crownblade",
+                    "description": "An ancient ceremonial sword forged from the station's core alloy, its edge glows with captured starlight and a crown of rotating spores.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sovereign_spore_cannon",
+                    "description": "A massive cannon that launches concentrated clouds of sentient spores, each burst reshapes reality around its impact.",
+                    "color": "#8A2BE2"
+                },
+                "rarity": 10,
+                "weight": 9,
+                "mana_cost": 10,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "sovereign_spore_cannon",
+                    "description": "A massive cannon that launches concentrated clouds of sentient spores, each burst reshapes reality around its impact.",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "mycelial_heart_core",
+            "description": "A pulsating, bioluminescent orb the size of a clenched fist, its surface a lattice of living crystal and fungal filaments that glow with shifting violet‑green light. The core throbs like a heart, emitting faint psychic ripples that can be felt in the bones. Legends say it is the original seed of the Mycelial Sovereign, the engine of the station's corruption and the only key to severing its psychic pheromone field.",
+            "color": "#5A0DFF"
+        },
+        "back_history": "The Mycelial Heart Core was the experimental bio‑engineered nucleus created during Project Verdant to accelerate fungal waste‑recycling. When the solar flare shattered Asterion's shielding, the core fused with the station's power matrix, birthing the sentient Mycelial Sovereign. Its psychic pheromone field now compels any organic life that enters the Verdant Spire to join the hive, while its energy feeds the aggressive Sentient Vines. Destroying or removing the Core will collapse the hive‑mind, silence the pheromone broadcast, and halt the spread of the invasive ecosystem beyond the station. Leaving it in the depths would allow the Sovereign to continue its conquest of nearby colonies, threatening humanity's terraforming efforts. The player must brave the ever‑shifting labyrinth, seize the Core, and carry it back to the surface to shatter the fungal network and save the galaxy.",
+        "tile_with_texture": {
+            "name": "mycelial_heart_core",
+            "description": "A pulsating, bioluminescent orb the size of a clenched fist, its surface a lattice of living crystal and fungal filaments that glow with shifting violet‑green light. The core throbs like a heart, emitting faint psychic ripples that can be felt in the bones. Legends say it is the original seed of the Mycelial Sovereign, the engine of the station's corruption and the only key to severing its psychic pheromone field.",
+            "color": "#5A0DFF",
+            "texture": {
+                "tileset_position": {
+                    "x": 46,
+                    "y": 8
+                },
+                "tileset_description": "Diamond necklace with a strange figure in the middle, it looks like a spider, an insect."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "output_token_details": {
+                "reasoning": 3388
+            },
+            "total_tokens": 16481,
+            "output_tokens": 6527,
+            "input_tokens": 9954
+        }
+    }
+}

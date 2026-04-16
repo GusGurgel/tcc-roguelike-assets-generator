@@ -1,0 +1,628 @@
+{
+    "name": "Golden Maw Reckoning",
+    "raw_description": "A subterranean dwarven mining complex entirely corrupted by liquid gold and animated greed-spirits, featuring molten rivers and gemstone golems.",
+    "description": "**1. Setting Name**  \n**The Auric Maw** – a sprawling, half‑sunken dwarven stronghold that has become a glittering, poisonous wound in the earth.\n\n---\n\n**2. Visual Style & Atmosphere**  \n\n- **Art Direction:** *Gilded Gothic Industrial.*  Rough stone and ironwork are overrun by liquid gold that behaves like a viscous, reflective oil.  The architecture retains the stout, angular dwarven aesthetic—massive vaulted halls, ribbed support columns, and intricate runic engravings—but every surface is now tinged with a sickly, metallic sheen.  Gem‑infused golems loom like statues that have been given a pulse, their crystal cores flickering with inner fire.\n\n- **Color Palette:** Dominated by molten amber, burnished copper, and deep obsidian.  Accents of sapphire, emerald, and ruby burst from veins of raw gemstone that pierce the walls, casting prismatic glints across the gold‑slick floors.\n\n- **Lighting:** The only illumination comes from the ever‑flowing rivers of liquid gold, which emit a low, molten glow that pools in puddles and streams, creating long, wavering shadows.  Occasional eruptions of molten rock and the occasional flash of a golem’s crystalline eye provide brief, harsh highlights.\n\n- **Ambient Soundscape:** A constant, low‑rumble of bubbling gold, like distant thunder trapped in metal.  The clink of shifting metal, the soft hiss of gold seeping into cracks, and the occasional, mournful clang of a dwarven hammer echo from forgotten chambers.  Whisper‑thin, metallic sighs— the “greed‑spirits”—drift through the air, sounding like wind through a wind‑chime made of coins.\n\n- **Atmospheric Effects:** A thin, oily mist hangs in the air, making each breath feel heavy and metallic.  The temperature is oppressive near the molten rivers, while deeper tunnels retain a chilling, stone‑cold contrast, creating a disorienting thermal gradient that plays on the player’s senses.\n\n---\n\n**3. Lore**  \n\nCenturies ago, the dwarven kingdom of **Kharaz‑Dur** carved the deepest veins of the world, seeking the legendary *Heart of Aurum*—a fabled vein of pure, liquid gold said to grant everlasting prosperity.  The mining complex, known as **The Auric Forge**, was a marvel of engineering, its halls lined with rune‑etched conduits that safely channeled the precious metal for forging weapons of legend.\n\nDuring the final excavation, the dwarves uncovered a sealed cavern that pulsed with an ancient, sentient pressure.  Ignoring the warnings etched in the oldest runes, they forced the cavern open, releasing a torrent of liquid gold that flooded the lower levels.  The gold was not inert; it was a living conduit for the **Avaric Eidolon**, a primordial spirit of boundless avarice that had been sealed beneath the mountain by the first dwarven ancestors.\n\nThe Eidolon seeped into the veins of the complex, corrupting the metalwork and animating the dormant **Gemstone Golems**—once guardians of the mines—into twisted, gold‑coated behemoths that now guard nothing but the ever‑growing pools of liquid wealth.  The dwarves, unable to escape the collapsing tunnels, were either turned to gold statues or driven mad by the incessant whisper of greed that now permeated every stone.\n\nNow, the Auric Maw is a labyrinth of molten rivers, glittering but lethal, where the very walls tempt any who enter with promises of untold riches while feeding the insatiable hunger of the Avaric Eidolon.\n\n---\n\n**4. Core Conflict**  \n\nThe **Avaric Eidolon**—a sentient embodiment of greed and insatiable accumulation—has taken dominion over the Auric Maw.  It corrupts everything it touches, turning raw metal into a living, poisonous fluid and warping the dwarven constructs into **Greed‑Spirits**—ethereal, metallic wraiths that haunt the tunnels, whispering promises of wealth to lure intruders deeper.\n\nThe Eidolon’s ultimate goal is to break free from its subterranean prison and spread its golden plague across the world, turning continents into veins of liquid avarice.  Its influence manifests as:\n\n- **Liquid Gold Floods:** Rivers that can drown, burn, and corrupt any material they touch, turning armor into heavy, brittle gold and weapons into useless ornaments.  \n- **Animated Greed‑Spirits:** Hostile, incorporeal entities that can possess equipment, turning it against its wielder or draining the player’s resolve.  \n- **Gemstone Golem Corruption:** Once protectors, now hulking guardians that smash anything that threatens the Eidolon’s hoard, their crystal cores now pulsing with the Eidolon’s dark energy.  \n\nThe player’s challenge is to navigate this opulent nightmare, resist the seductive allure of the gold, and find a way to sever the Eidolon’s connection to the world—whether by sealing the original cavern, shattering the Heart of Aurum, or invoking ancient dwarven rites that can bind greed once more.",
+    "generation_time_seconds": 118,
+    "player": {
+        "tile": {
+            "name": "auric_warden",
+            "description": "A dwarven ex‑runecrafter clad in tarnished iron and copper, bearing a cracked rune‑etched helm and a hammer dripping with liquid gold, embodying both resilience and the lingering curse of the Auric Maw.",
+            "color": "#8B4513"
+        },
+        "back_history": "Archetype: Exiled Dwarven Runecrafter, once a master of the Auric Forge now cast out for defying the greed of the Avaric Eidolon. Backstory & Motivation: After witnessing his kin turned to gold statues, he swore to end the Eidolon’s plague, seeking redemption and vengeance while resisting the lure of limitless wealth. Visuals: Short, stocky build with soot‑blackened skin, a scarred face framed by a cracked rune‑etched helm that glints with faint sapphire runes. He wears a battered iron breastplate patched with copper rivets, a cloak of darkened leather soaked in oily mist, and wields a rune‑inscribed hammer whose head drips with a thin line of liquid gold, reflecting molten amber. His eyes burn with a cold ember, contrasting the surrounding glow.",
+        "tile_with_texture": {
+            "name": "auric_warden",
+            "description": "A dwarven ex‑runecrafter clad in tarnished iron and copper, bearing a cracked rune‑etched helm and a hammer dripping with liquid gold, embodying both resilience and the lingering curse of the Auric Maw.",
+            "color": "#8B4513",
+            "texture": {
+                "tileset_position": {
+                    "x": 27,
+                    "y": 3
+                },
+                "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The entrance hall of the Auric Maw, where thin rivulets of liquid gold crawl over rough dwarven stone. The vaulted ceiling drips with molten amber, casting a warm, wavering glow. The air smells of hot metal and faint ozone, while the constant low rumble of bubbling gold echoes. Shadows dance across the slick floor, and the occasional clink of shifting metal warns of hidden traps.",
+                "name": "The Gilded Vestibule",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "auric_stone",
+                    "description": "Rough dwarven stone overrun by a thin sheen of liquid gold, still solid enough to support weight.",
+                    "color": "#B8860B"
+                },
+                "floor_tile": {
+                    "name": "liquid_gold_puddle",
+                    "description": "Viscous gold coating the floor, shimmering with each movement and threatening to harden on contact.",
+                    "color": "#DAA520"
+                },
+                "wall_tile_with_texture": {
+                    "name": "auric_stone",
+                    "description": "Rough dwarven stone overrun by a thin sheen of liquid gold, still solid enough to support weight.",
+                    "color": "#B8860B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "liquid_gold_puddle",
+                    "description": "Viscous gold coating the floor, shimmering with each movement and threatening to harden on contact.",
+                    "color": "#DAA520",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Deeper within the Maw, massive gemstone golems stand corrupted, their crystal cores pulsing with a sickly red light. Rivers of molten gold flow faster, their heat palpable. The scent is a mix of scorched stone and metallic blood. Low hisses accompany the occasional roar of a golem's strike, and the golden glow is punctuated by flashes of ruby veins.",
+                "name": "The Crimson Golem Gallery",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "corroded_auric_wall",
+                    "description": "Stone walls blackened by corrosive gold, veins of ruby and sapphire crack through the surface.",
+                    "color": "#4B3621"
+                },
+                "floor_tile": {
+                    "name": "molten_river",
+                    "description": "A fast‑moving river of liquid gold that burns any footfall, its surface rippling with ember‑like sparks.",
+                    "color": "#FF8C00"
+                },
+                "wall_tile_with_texture": {
+                    "name": "corroded_auric_wall",
+                    "description": "Stone walls blackened by corrosive gold, veins of ruby and sapphire crack through the surface.",
+                    "color": "#4B3621",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "molten_river",
+                    "description": "A fast‑moving river of liquid gold that burns any footfall, its surface rippling with ember‑like sparks.",
+                    "color": "#FF8C00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The heart of the Auric Maw, a cavernous chamber where the Avaric Eidolon swirls within a vortex of liquid gold. The air is thick with poisonous metallic mist, and the temperature swings between scorching heat and bone‑cold stone. Whispering greed‑spirits hiss around you, and the floor glows with a searing gold lake that can corrupt any gear that touches it.",
+                "name": "The Eidolon Sanctum",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "eidolon_vein",
+                    "description": "Walls of obsidian fused with pulsating veins of liquid gold, throbbing with the Eidolon's presence.",
+                    "color": "#2F4F4F"
+                },
+                "floor_tile": {
+                    "name": "searing_gold_lake",
+                    "description": "A vast lake of molten gold that emits a blinding orange‑red light, scorching and corrupting everything it engulfs.",
+                    "color": "#FF4500"
+                },
+                "wall_tile_with_texture": {
+                    "name": "eidolon_vein",
+                    "description": "Walls of obsidian fused with pulsating veins of liquid gold, throbbing with the Eidolon's presence.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "searing_gold_lake",
+                    "description": "A vast lake of molten gold that emits a blinding orange‑red light, scorching and corrupting everything it engulfs.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "golden_vein_racer",
+                    "description": "A slender, shimmering stream of liquid gold that darts along the walls, leaving a trail of scorching heat.",
+                    "color": "#D4AF37"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "golden_vein_racer",
+                    "description": "A slender, shimmering stream of liquid gold that darts along the walls, leaving a trail of scorching heat.",
+                    "color": "#D4AF37",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "slick_greed_spirit",
+                    "description": "An ethereal wraith of liquid metal that flits through the corridors, whispering promises of wealth.",
+                    "color": "#C0C0C0"
+                },
+                "weight": 1,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "slick_greed_spirit",
+                    "description": "An ethereal wraith of liquid metal that flits through the corridors, whispering promises of wealth.",
+                    "color": "#C0C0C0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "runic_golem_sentinel",
+                    "description": "A massive stone golem encrusted with runes, its surface coated in a thick layer of molten gold.",
+                    "color": "#8B0000"
+                },
+                "weight": 8,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "runic_golem_sentinel",
+                    "description": "A massive stone golem encrusted with runes, its surface coated in a thick layer of molten gold.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "molten_amber_hopper",
+                    "description": "A small, quick creature that hops on pools of liquid amber, splashing corrosive gold droplets.",
+                    "color": "#FFBF00"
+                },
+                "weight": 3,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "molten_amber_hopper",
+                    "description": "A small, quick creature that hops on pools of liquid amber, splashing corrosive gold droplets.",
+                    "color": "#FFBF00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "copper_clad_brute",
+                    "description": "A hulking dwarf statue forged of copper and gold, moving slowly but crushing everything in its path.",
+                    "color": "#B87333"
+                },
+                "weight": 9,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "copper_clad_brute",
+                    "description": "A hulking dwarf statue forged of copper and gold, moving slowly but crushing everything in its path.",
+                    "color": "#B87333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "emerald_vein_warden",
+                    "description": "A towering golem with veins of glowing emerald running through its gold‑coated armor, guarding the deeper vaults.",
+                    "color": "#50C878"
+                },
+                "weight": 7,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "emerald_vein_warden",
+                    "description": "A towering golem with veins of glowing emerald running through its gold‑coated armor, guarding the deeper vaults.",
+                    "color": "#50C878",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sapphire_shade",
+                    "description": "A swift, translucent specter that flickers with sapphire light, slipping through cracks and striking with icy precision.",
+                    "color": "#0F52BA"
+                },
+                "weight": 2,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "sapphire_shade",
+                    "description": "A swift, translucent specter that flickers with sapphire light, slipping through cracks and striking with icy precision.",
+                    "color": "#0F52BA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ruby_forge_hulk",
+                    "description": "An enormous golem with a pulsing ruby core, its golden shell cracking under the pressure of molten eruptions.",
+                    "color": "#E0115F"
+                },
+                "weight": 9,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "ruby_forge_hulk",
+                    "description": "An enormous golem with a pulsing ruby core, its golden shell cracking under the pressure of molten eruptions.",
+                    "color": "#E0115F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "auric_eidolon_core",
+                    "description": "The beating heart of the Avaric Eidolon, a massive orb of liquid gold that radiates corrupting power.",
+                    "color": "#FFD700"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "auric_eidolon_core",
+                    "description": "The beating heart of the Avaric Eidolon, a massive orb of liquid gold that radiates corrupting power.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 2
+                        },
+                        "tileset_description": "An orc, carrying nothing and wearing no armor. Details on the shoulders. Appears to be stronger than a normal orc."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "greed_phantom_king",
+                    "description": "A regal, ghostly figure draped in gilded robes, moving with uncanny speed to tempt and ensnare intruders.",
+                    "color": "#DAA520"
+                },
+                "weight": 4,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "greed_phantom_king",
+                    "description": "A regal, ghostly figure draped in gilded robes, moving with uncanny speed to tempt and ensnare intruders.",
+                    "color": "#DAA520",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusted_copper_dagger",
+                    "description": "A short dagger forged from dented copper, its blade dulled by centuries of neglect. The hilt is wrapped in cracked leather, and a thin film of congealed gold clings to the pommel, making each thrust feel like dragging a cold, heavy coin through flesh.",
+                    "color": "#5C4033"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusted_copper_dagger",
+                    "description": "A short dagger forged from dented copper, its blade dulled by centuries of neglect. The hilt is wrapped in cracked leather, and a thin film of congealed gold clings to the pommel, making each thrust feel like dragging a cold, heavy coin through flesh.",
+                    "color": "#5C4033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "golden_golem_hammer",
+                    "description": "A hefty war hammer whose head is a solid block of tarnished gold, etched with dwarven runes that glow faintly. Swinging it sends a resonant clang that reverberates like a dying heartbeat, and the weight settles like molten metal in the wielder's palm.",
+                    "color": "#B8860B"
+                },
+                "rarity": 3,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "golden_golem_hammer",
+                    "description": "A hefty war hammer whose head is a solid block of tarnished gold, etched with dwarven runes that glow faintly. Swinging it sends a resonant clang that reverberates like a dying heartbeat, and the weight settles like molten metal in the wielder's palm.",
+                    "color": "#B8860B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "etched_iron_crossbow",
+                    "description": "A compact crossbow of dark iron, its limbs reinforced with thin strips of gold leaf. The string snaps with a metallic twang, and each bolt carries a whisper of greed as it flies.",
+                    "color": "#4B4B4B"
+                },
+                "rarity": 2,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "etched_iron_crossbow",
+                    "description": "A compact crossbow of dark iron, its limbs reinforced with thin strips of gold leaf. The string snaps with a metallic twang, and each bolt carries a whisper of greed as it flies.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "auric_spear",
+                    "description": "A long spear whose shaft is forged from bronze, tipped with a spearhead of pure liquid gold that constantly drips, leaving a thin, oily trail. Thrusting it feels like piercing the world with a sunbeam.",
+                    "color": "#D4AF37"
+                },
+                "rarity": 6,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "auric_spear",
+                    "description": "A long spear whose shaft is forged from bronze, tipped with a spearhead of pure liquid gold that constantly drips, leaving a thin, oily trail. Thrusting it feels like piercing the world with a sunbeam.",
+                    "color": "#D4AF37",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "liquid_gold_bow",
+                    "description": "A recurved bow of polished obsidian inlaid with veins of flowing gold. Drawing the string pulls a ribbon of molten metal, and each arrow ignites with a brief flare of amber fire.",
+                    "color": "#FFD700"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "liquid_gold_bow",
+                    "description": "A recurved bow of polished obsidian inlaid with veins of flowing gold. Drawing the string pulls a ribbon of molten metal, and each arrow ignites with a brief flare of amber fire.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 6
+                        },
+                        "tileset_description": "Simple bow of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "greed_spirit_staff",
+                    "description": "A slender staff of blackened steel crowned with a floating crystal that pulses with a soft, greedy hum. Channeling mana through it summons fleeting golden wraiths that lash at foes.",
+                    "color": "#8B0000"
+                },
+                "rarity": 7,
+                "weight": 4,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "greed_spirit_staff",
+                    "description": "A slender staff of blackened steel crowned with a floating crystal that pulses with a soft, greedy hum. Channeling mana through it summons fleeting golden wraiths that lash at foes.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff with a dagger symbol on the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystal_core_wand",
+                    "description": "A thin wand of clear quartz wrapped in copper wire, its tip housing a miniature gemstone core that flickers with inner fire. Casting spells feels like drawing power from a trapped star.",
+                    "color": "#00FFFF"
+                },
+                "rarity": 6,
+                "weight": 2,
+                "mana_cost": 4,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "crystal_core_wand",
+                    "description": "A thin wand of clear quartz wrapped in copper wire, its tip housing a miniature gemstone core that flickers with inner fire. Casting spells feels like drawing power from a trapped star.",
+                    "color": "#00FFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a gemstone at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "heart_of_aurum_greatsword",
+                    "description": "A massive greatsword whose blade is a single slab of liquid gold solidified by ancient dwarven enchantments. When swung, it sings with the roar of a thousand vaults, and the air shimmers with wealth.",
+                    "color": "#FFDF00"
+                },
+                "rarity": 9,
+                "weight": 9,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "heart_of_aurum_greatsword",
+                    "description": "A massive greatsword whose blade is a single slab of liquid gold solidified by ancient dwarven enchantments. When swung, it sings with the roar of a thousand vaults, and the air shimmers with wealth.",
+                    "color": "#FFDF00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 8
+                        },
+                        "tileset_description": "A very rare greatsword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "eidolon_shard_gun",
+                    "description": "An ornate firearm crafted from obsidian and fused with shards of the Avaric Eidolon. Each shot erupts in a spray of golden plasma, searing both flesh and greed alike.",
+                    "color": "#800080"
+                },
+                "rarity": 10,
+                "weight": 7,
+                "mana_cost": 7,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "eidolon_shard_gun",
+                    "description": "An ornate firearm crafted from obsidian and fused with shards of the Avaric Eidolon. Each shot erupts in a spray of golden plasma, searing both flesh and greed alike.",
+                    "color": "#800080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sundered_gemstone_golem_fist",
+                    "description": "A massive gauntlet forged from the broken remains of a gemstone golem, its fingers tipped with jagged ruby claws. Wielding it feels like crushing the very heart of the mountain.",
+                    "color": "#FF1493"
+                },
+                "rarity": 9,
+                "weight": 10,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "sundered_gemstone_golem_fist",
+                    "description": "A massive gauntlet forged from the broken remains of a gemstone golem, its fingers tipped with jagged ruby claws. Wielding it feels like crushing the very heart of the mountain.",
+                    "color": "#FF1493",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "auric_heart_shard",
+            "description": "A pulsating fragment of the original Heart of Aurum, its surface a swirling vortex of liquid gold encased in a blackened, rune‑etched crystal that throbs with a faint, desperate heartbeat. The shard emits a cold, silvery light that counters the surrounding greed, and its weight feels both heavy with centuries of avarice and light enough to be carried.",
+            "color": "#1A1A1A"
+        },
+        "back_history": "The Auric Heart Shard is the broken core of the legendary Heart of Aurum, the very conduit the Avaric Eidolon used to bind its greed‑spreading essence to the world. Millennia ago the dwarves sealed the Eidolon by embedding this heart within the deepest vault of the Auric Forge; when the seal was shattered, the heart fractured, releasing the Eidolon’s corrupting flood. The shard still contains the primordial pulse of the Eidolon, and as long as it remains buried the golden plague will continue to seep outward. Only by retrieving the shard, carrying it to the surface, and performing the ancient Binding Rite can the dwarven ancestors reseal the spirit and purge the world of its avaricious curse. Leaving it in the Maw would allow the Eidolon to reform, dooming the surface to a molten, golden wasteland.",
+        "tile_with_texture": {
+            "name": "auric_heart_shard",
+            "description": "A pulsating fragment of the original Heart of Aurum, its surface a swirling vortex of liquid gold encased in a blackened, rune‑etched crystal that throbs with a faint, desperate heartbeat. The shard emits a cold, silvery light that counters the surrounding greed, and its weight feels both heavy with centuries of avarice and light enough to be carried.",
+            "color": "#1A1A1A",
+            "texture": {
+                "tileset_position": {
+                    "x": 35,
+                    "y": 8
+                },
+                "tileset_description": "A very rare greatsword."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "output_token_details": {
+                "reasoning": 3763
+            },
+            "total_tokens": 18165,
+            "input_token_details": {
+                "cache_read": 768
+            },
+            "output_tokens": 7361,
+            "input_tokens": 10804
+        }
+    }
+}

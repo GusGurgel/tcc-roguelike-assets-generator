@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-120b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 92,
+    "semantic_reconstruction_metric": 0.7625002850292363,
+    "prompt": "A cyberpunk mega-slum built on top of a massive toxic landfill, controlled by cyborg syndicates and rogue surgical drones.",
+    "prompt_name": "toxic_cyberpunk_slum",
+    "prompt_index": 7,
+    "asset_bundle_file": "bundle_toxic_cyberpunk_slum_openai_gpt_oss_120b_77cb26.json"
+}

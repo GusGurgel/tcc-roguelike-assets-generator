@@ -1,0 +1,625 @@
+{
+    "name": "Crimson Mist Railway",
+    "raw_description": "A Victorian-era train hurtling infinitely through a realm of thick fog, infested with shapeshifting vampires and spectral passengers.",
+    "description": "**Setting Name**  \n**The Ever‑Fog Railway – The Midnight Line**\n\n---\n\n### Visual Style & Atmosphere  \n\n- **Art Direction:** Dark‑Gothic Steampunk. Brass‑capped pistons, riveted ironwork, and polished mahogany mingle with soot‑blackened glass and flickering gas‑lamps. The train’s interior is a labyrinth of cramped compartments, ornate carriage walls, and rust‑spotted corridors that seem to shift when unobserved.  \n- **Color Palette:** Deep indigos, muted sepias, and blood‑red accents; occasional phosphorescent glows from eldritch runes and the eyes of unseen predators.  \n- **Lighting:** Perpetual twilight; the only illumination comes from sputtering lanterns, the occasional flash of a lightning‑charged storm outside the fog, and the eerie, phosphorescent mist that clings to every surface. Shadows stretch long and often move of their own accord.  \n- **Weather & Ambient Noise:** An endless, dense fog rolls like a living veil, muffling the world beyond the locomotive. The constant hiss of steam, the clatter of wheels on unseen rails, and the distant, mournful wail of a train whistle that never truly fades. Occasionally, a low, resonant hum—like a choir of unseen voices—vibrates through the carriage, hinting at the spectral presence that inhabits the train.  \n\n---\n\n### Lore  \n\nCenturies ago, the **Imperial Rail Company** commissioned a marvel of engineering: the **Midnight Line**, a trans‑dimensional locomotive designed to pierce the veil between the mortal world and the “Ethereal Expanse,” a realm of fog and forgotten souls. The project was led by the visionary—yet hubristic—engineer **Lord Alistair Vane**, who believed that harnessing the raw energy of the Expanse would grant humanity limitless travel and power.\n\nDuring the inaugural run, a catastrophic convergence occurred. The train breached the boundary at the exact moment a celestial eclipse aligned with a surge of **Vampiric Ley**, a dormant, shapeshifting blood‑magic that had lain dormant in the fog for eons. The convergence tore a rift, binding the train to the fog forever and flooding the carriage with the **Crimson Mist**, a sentient vapor that carries the essence of ancient vampire lords and tormented specters.\n\nAll who boarded the Midnight Line vanished, their bodies turned to ash, their souls trapped in the fog. Over time, the train became a wandering mausoleum, its endless journey feeding on the lingering life‑force of those it captures. The fog itself has become a living memory, replaying the tragedies of the past and reshaping the train’s interior into a nightmarish maze that reflects the fears of its passengers.\n\n---\n\n### Core Conflict  \n\nThe **Crimson Mist** is the corrupting heart of the Midnight Line. It is an amalgam of vampiric blood‑magic, spectral echo, and the raw, chaotic energy of the Ethereal Expanse. Its goals are threefold:\n\n1. **Consume** – The mist feeds on the life essence of any living being that steps aboard, converting them into **Shapeshifting Vampiric Echoes**—creatures that can assume the form of any passenger they have observed, using that guise to lure and trap new victims.  \n2. **Corrupt** – It seeps into the train’s mechanisms, warping gears and pistons into grotesque, semi‑organic extensions of itself. Even the once‑reliable steam engines now pulse with a dark, blood‑red glow, turning ordinary locomotion into a ritualistic heartbeat.  \n3. **Propagate** – The mist seeks to break free from the confines of the fog, using the train as a conduit to spread its influence into the mortal world. Each successful harvest of souls strengthens the rift, threatening to bleed the Crimson Mist into any realm the train may eventually intersect.\n\nThe player, a lone **Railwarden**—a cursed soul bound to the locomotive by an ancient pact—must navigate the ever‑shifting carriages, confront the shapeshifting vampires, and unravel the spectral mysteries that hold the train together. The ultimate aim is to locate the **Heart of the Fog**, a pulsating core of pure Crimson Mist hidden deep within the engine room, and either seal the rift or harness its power, deciding the fate of the Midnight Line and the worlds it threatens to engulf.",
+    "generation_time_seconds": 126,
+    "player": {
+        "tile": {
+            "name": "railwarden_tile",
+            "description": "A dark‑gothic steampunk figure, clad in brass armor and a blood‑stained cloak, representing the player character on the Midnight Line.",
+            "color": "#4B001F"
+        },
+        "back_history": "Archetype: The Railwarden, a cursed steward bound to the Midnight Line. Backstory & Motivation: Once a master engineer for the Imperial Rail Company, you were betrayed by Lord Alistair Vane during the inaugural run. Sworn to the Crimson Mist, you now seek redemption by sealing the Heart of the Fog, or harness its power to break the pact and reclaim your soul. Visuals: Clad in tarnished brass‑capped gauntlets, a weathered leather coat threaded with iron rivets, and a gas‑lamp lantern strapped to your belt. A pale, ash‑streaked face is marked by a sigil of blood‑red runes that glows faintly. Your left eye is replaced by a polished amber lens that flickers with steam. The overall silhouette is dark‑gothic steampunk, matching the train’s perpetual twilight.",
+        "tile_with_texture": {
+            "name": "railwarden_tile",
+            "description": "A dark‑gothic steampunk figure, clad in brass armor and a blood‑stained cloak, representing the player character on the Midnight Line.",
+            "color": "#4B001F",
+            "texture": {
+                "tileset_position": {
+                    "x": 27,
+                    "y": 3
+                },
+                "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A cramped carriage bathed in perpetual twilight, where soot‑blackened glass lets in occasional flashes of storm‑lit lightning. The air is thick with the metallic scent of oil and the faint coppery tang of dried blood, while distant wheels clatter on unseen rails. Flickering gas‑lamps cast wavering amber light on riveted iron walls, and the ever‑present phosphorescent mist drifts lazily, whispering with soft, echoing sighs.",
+                "name": "The Fogged Carriage",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "iron_riveted_wall",
+                    "description": "Cold iron panels riveted with brass, stained by crimson mist and soot",
+                    "color": "#2A2A2A"
+                },
+                "floor_tile": {
+                    "name": "mahogany_floor",
+                    "description": "Polished mahogany planks slick with mist and ash, reflecting dim lantern glow",
+                    "color": "#4B2E2E"
+                },
+                "wall_tile_with_texture": {
+                    "name": "iron_riveted_wall",
+                    "description": "Cold iron panels riveted with brass, stained by crimson mist and soot",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "mahogany_floor",
+                    "description": "Polished mahogany planks slick with mist and ash, reflecting dim lantern glow",
+                    "color": "#4B2E2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A wide vestibule where the train's corridors converge, echoing with a low, resonant hum that vibrates through the brass‑capped pistons. The smell of hot steam mingles with a sweet, metallic perfume of blood‑tinged fog. Lanterns sputter, casting deep indigo shadows that shift on gear‑toothed walls, while distant, mournful whistles reverberate through the fog‑filled space.",
+                "name": "The Whispering Vestibule",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "brass_capped_gear_wall",
+                    "description": "Gear‑toothed iron walls capped with tarnished brass, pulsing with a faint red glow",
+                    "color": "#3B3B3B"
+                },
+                "floor_tile": {
+                    "name": "steam_slick_tile",
+                    "description": "Dark stone tiles coated in a thin film of steaming crimson mist",
+                    "color": "#5C1A1A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "brass_capped_gear_wall",
+                    "description": "Gear‑toothed iron walls capped with tarnished brass, pulsing with a faint red glow",
+                    "color": "#3B3B3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "steam_slick_tile",
+                    "description": "Dark stone tiles coated in a thin film of steaming crimson mist",
+                    "color": "#5C1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The engine room, the beating heart of the Midnight Line. Here the Crimson Mist coalesces into a throbbing vortex, its presence felt as a cold, sucking pressure. The scent is overwhelming: burnt coal, iron, and the acrid sting of fresh blood. Massive pistons throb with a blood‑red luminescence, and the roar of the engine is a deafening chorus of gears, steam, and distant, spectral wails.",
+                "name": "The Engine Heart",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "vein_of_mist_wall",
+                    "description": "Walls appear as veins of living mist, darkened by embedded iron ribs",
+                    "color": "#8B0000"
+                },
+                "floor_tile": {
+                    "name": "crimson_gear_floor",
+                    "description": "Heavy steel floor plates etched with blood‑red runes, slick with ever‑flowing mist",
+                    "color": "#7A0A0A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "vein_of_mist_wall",
+                    "description": "Walls appear as veins of living mist, darkened by embedded iron ribs",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "crimson_gear_floor",
+                    "description": "Heavy steel floor plates etched with blood‑red runes, slick with ever‑flowing mist",
+                    "color": "#7A0A0A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rail_ghost_wisp",
+                    "description": "A translucent wisp of crimson mist, darting through the fogged corridors, eyes glowing blood-red.",
+                    "color": "#8B0000"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "rail_ghost_wisp",
+                    "description": "A translucent wisp of crimson mist, darting through the fogged corridors, eyes glowing blood-red.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "steam_hound",
+                    "description": "A gaunt, skeletal hound with pistons for legs, steam hissing from its joints, eyes like ember.",
+                    "color": "#4B2E83"
+                },
+                "weight": 3,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "steam_hound",
+                    "description": "A gaunt, skeletal hound with pistons for legs, steam hissing from its joints, eyes like ember.",
+                    "color": "#4B2E83",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 3
+                        },
+                        "tileset_description": "It's a human being, but instead of legs it has a wheel. It looks like a unicycle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "cogged_spider",
+                    "description": "A lanky spider of rusted gears, its legs clicking against the metal, veins of mist pulsing.",
+                    "color": "#2F2F2F"
+                },
+                "weight": 4,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "cogged_spider",
+                    "description": "A lanky spider of rusted gears, its legs clicking against the metal, veins of mist pulsing.",
+                    "color": "#2F2F2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_gear_titan",
+                    "description": "A massive amalgam of iron and blood-mist, a hulking gear-driven colossus with a heart of crimson.",
+                    "color": "#550000"
+                },
+                "weight": 9,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "blood_gear_titan",
+                    "description": "A massive amalgam of iron and blood-mist, a hulking gear-driven colossus with a heart of crimson.",
+                    "color": "#550000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "vampiric_shade",
+                    "description": "A towering silhouette cloaked in swirling fog, its form shifting between man and machine.",
+                    "color": "#1A1A1A"
+                },
+                "weight": 8,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "vampiric_shade",
+                    "description": "A towering silhouette cloaked in swirling fog, its form shifting between man and machine.",
+                    "color": "#1A1A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rusted_rail_lurker",
+                    "description": "A thin, rust-stained specter that slides along the rails, its elongated limbs flickering.",
+                    "color": "#3B3B3B"
+                },
+                "weight": 2,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "rusted_rail_lurker",
+                    "description": "A thin, rust-stained specter that slides along the rails, its elongated limbs flickering.",
+                    "color": "#3B3B3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "engine_heartling",
+                    "description": "A pulsating core of crimson mist encased in brass, beating like a heart, radiating corrupt energy.",
+                    "color": "#B22222"
+                },
+                "weight": 10,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "engine_heartling",
+                    "description": "A pulsating core of crimson mist encased in brass, beating like a heart, radiating corrupt energy.",
+                    "color": "#B22222",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "fogged_scout",
+                    "description": "A barely visible flicker, moving with the speed of a whisper, its form a mere outline of mist.",
+                    "color": "#2A2A2A"
+                },
+                "weight": 1,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "fogged_scout",
+                    "description": "A barely visible flicker, moving with the speed of a whisper, its form a mere outline of mist.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "iron_vampire",
+                    "description": "A hulking iron armor fused with vampiric veins, its visor a glowing ruby.",
+                    "color": "#800000"
+                },
+                "weight": 8,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "iron_vampire",
+                    "description": "A hulking iron armor fused with vampiric veins, its visor a glowing ruby.",
+                    "color": "#800000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 9
+                        },
+                        "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "screaming_rail",
+                    "description": "A massive, sentient rail segment, its metal teeth gnashing, exuding a scream of cursed steel.",
+                    "color": "#3D0000"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "screaming_rail",
+                    "description": "A massive, sentient rail segment, its metal teeth gnashing, exuding a scream of cursed steel.",
+                    "color": "#3D0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_iron_dagger",
+                    "description": "A short iron blade, its edge dulled by endless fog, the hilt wrapped in frayed leather.",
+                    "color": "#4B4B4B"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_iron_dagger",
+                    "description": "A short iron blade, its edge dulled by endless fog, the hilt wrapped in frayed leather.",
+                    "color": "#4B4B4B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "steam_pistol",
+                    "description": "A brass‑capped pistol that hisses steam with each pull, its barrel stained by crimson mist.",
+                    "color": "#B08D57"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "steam_pistol",
+                    "description": "A brass‑capped pistol that hisses steam with each pull, its barrel stained by crimson mist.",
+                    "color": "#B08D57",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 9
+                        },
+                        "tileset_description": "Old pistol. Alien pistol. Different pistol."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bloodied_rail_spear",
+                    "description": "A long iron spear fitted with a rail‑shaped shaft, its tip dripping with dried blood and fog‑condensed rust.",
+                    "color": "#7A2E2E"
+                },
+                "rarity": 5,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "bloodied_rail_spear",
+                    "description": "A long iron spear fitted with a rail‑shaped shaft, its tip dripping with dried blood and fog‑condensed rust.",
+                    "color": "#7A2E2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "fogbound_crossbow",
+                    "description": "A wooden crossbow wrapped in soot‑blackened leather, the string glows faintly with phosphorescent mist.",
+                    "color": "#2A2A2A"
+                },
+                "rarity": 5,
+                "weight": 4,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "fogbound_crossbow",
+                    "description": "A wooden crossbow wrapped in soot‑blackened leather, the string glows faintly with phosphorescent mist.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ashen_gas_launcher",
+                    "description": "A hulking device that spews ash‑filled gas, the barrel etched with eldritch runes that pulse red.",
+                    "color": "#3B3B3B"
+                },
+                "rarity": 9,
+                "weight": 7,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "ashen_gas_launcher",
+                    "description": "A hulking device that spews ash‑filled gas, the barrel etched with eldritch runes that pulse red.",
+                    "color": "#3B3B3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "midnight_maul",
+                    "description": "A massive hammer of polished mahogany and iron, its head throbs like a heartbeat in the mist.",
+                    "color": "#1C1C1C"
+                },
+                "rarity": 9,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "midnight_maul",
+                    "description": "A massive hammer of polished mahogany and iron, its head throbs like a heartbeat in the mist.",
+                    "color": "#1C1C1C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "vanes_etheric_staff",
+                    "description": "A slender staff of brass and obsidian, topped with a crystal that hums with violet energy.",
+                    "color": "#5D3A6A"
+                },
+                "rarity": 9,
+                "weight": 4,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "vanes_etheric_staff",
+                    "description": "A slender staff of brass and obsidian, topped with a crystal that hums with violet energy.",
+                    "color": "#5D3A6A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff with a dagger symbol on the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "spectral_wristblade",
+                    "description": "A thin blade affixed to a gauntlet, its edge seems to phase in and out of reality.",
+                    "color": "#8B0000"
+                },
+                "rarity": 2,
+                "weight": 1,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "spectral_wristblade",
+                    "description": "A thin blade affixed to a gauntlet, its edge seems to phase in and out of reality.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium-rarity greatsword. With detailed blade."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "brass_cog_shotgun",
+                    "description": "A short shotgun with rotating brass cogs, each shot erupts in a spray of steam and iron shards.",
+                    "color": "#C49E63"
+                },
+                "rarity": 5,
+                "weight": 6,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "brass_cog_shotgun",
+                    "description": "A short shotgun with rotating brass cogs, each shot erupts in a spray of steam and iron shards.",
+                    "color": "#C49E63",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 9
+                        },
+                        "tileset_description": "Sawed-off shotgun."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crimson_heart_blade",
+                    "description": "A curved sword whose blade pulses with a deep red glow, the hilt shaped like a beating heart.",
+                    "color": "#8B0015"
+                },
+                "rarity": 9,
+                "weight": 5,
+                "mana_cost": 4,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "crimson_heart_blade",
+                    "description": "A curved sword whose blade pulses with a deep red glow, the hilt shaped like a beating heart.",
+                    "color": "#8B0015",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "crimson_heart_core",
+            "description": "A pulsating orb of coagulated mist and obsidian steel, veins of ruby blood run across its surface, emitting a low thrum that syncs with the train's heartbeat.",
+            "color": "#8B0000"
+        },
+        "back_history": "The Crimson Heart is the sealed nucleus of the Crimson Mist, forged when Lord Alistair Vane's engine was corrupted by the Vampiric Ley. It pumps the mist through the train's veins, granting the fog sentience and the power to breach worlds. As long as the Heart remains bound in the engine room, the rift stays open and the Mist will continue to devour souls. Removing the Heart and carrying it to the surface allows the Railwarden to either reseal the rift with the ancient binding sigils or shatter the core, ending the Mist's influence forever. Leaving it in the depths would let the Mist grow unchecked, dooming countless realms.",
+        "tile_with_texture": {
+            "name": "crimson_heart_core",
+            "description": "A pulsating orb of coagulated mist and obsidian steel, veins of ruby blood run across its surface, emitting a low thrum that syncs with the train's heartbeat.",
+            "color": "#8B0000",
+            "texture": {
+                "tileset_position": {
+                    "x": 33,
+                    "y": 7
+                },
+                "tileset_description": "Rare, detailed iron sword. Excalibur."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "output_token_details": {
+                "reasoning": 4345
+            },
+            "total_tokens": 17343,
+            "output_tokens": 7489,
+            "input_tokens": 9854
+        }
+    }
+}

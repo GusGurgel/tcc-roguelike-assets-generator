@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "openai/gpt-oss-120b",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 92,
+    "semantic_reconstruction_metric": 0.787502788200666,
+    "prompt": "A desolate, sun-scorched desert canyon littered with the colossal bones of ancient titans, inhabited by scavengers and blood-magic shamans.",
+    "prompt_name": "titan_bone_desert",
+    "prompt_index": 4,
+    "asset_bundle_file": "bundle_titan_bone_desert_openai_gpt_oss_120b_5bdcf8.json"
+}

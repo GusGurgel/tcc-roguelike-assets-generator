@@ -1,0 +1,628 @@
+{
+    "name": "Bleak Maw Necropolis",
+    "raw_description": "A sprawling trench-warfare wasteland locked in World War I era technology, but twisted by necromancy, featuring zombie infantry and chemical-mutated behemoths.",
+    "description": "**1. Setting Name**  \n**The Bleak Maw Trenchlands**  \n\n---\n\n**2. Visual Style & Atmosphere**  \n\n*Art Direction – Grim‑Industrial Necro‑Gothic*  \nThe world is rendered in a muted, sepia‑toned palette punctuated by sickly greens and bruised purples that bleed from the lingering chemical miasma. Rusted steel, cracked concrete, and shattered wooden revetments dominate the landscape, while twisted, bone‑white necromantic sigils glow faintly on the walls of the trenches, casting an eerie, phosphorescent light.  \n\n*Lighting & Weather*  \nA perpetual twilight hangs over the Maw, the sun forever filtered through a thick veil of ash, smoke, and low‑hanging clouds that never fully part. Occasional rain falls as a thin, acidic drizzle that hisses on exposed metal, turning puddles into bubbling cauldrons of toxic sludge. Lightning is rare but when it strikes, it illuminates the battlefield in stark, skeletal silhouettes.  \n\n*Ambient Noise*  \nThe soundscape is a constant, oppressive chorus: distant artillery thuds that echo like a dying heartbeat, the metallic clank of rusted gear shifting in the wind, the low, mournful moan of the wind through endless shell‑craters, and the ever‑present, low‑frequency hum of necromantic energy resonating from the ground itself. Intermittent, guttural snarls of mutated behemoths and the shuffling shuffle of reanimated infantry punctuate the background, keeping the player on edge.  \n\n---\n\n**3. Lore**  \n\nWhen the Great War reached its apex, the Allied and Central powers dug a network of trenches that stretched for hundreds of miles across the scarred continent, each side desperate to break the stalemate. In a desperate bid for supremacy, a secret cabal of occult engineers—known only as the **Ebon Corps**—unleashed a forbidden rite: they fused the raw, industrial might of WWI technology with the dark arts of necromancy.  \n\nThe ritual was meant to animate fallen soldiers, turning them into tireless, obedient troops. Instead, the spell backfired, warping the very fabric of the battlefield. The dead rose, but not as disciplined infantry; they became mindless, ravenous **Zombie Legions**, forever bound to the trenches that birthed them. The chemical weapons that once poisoned the air mutated under the necrotic influence, giving rise to hulking **Mutant Behemoths**—massive, sludge‑covered monstrosities that stalk the no‑man’s land, their bodies a grotesque amalgam of steel, flesh, and arcane sigils.  \n\nThe war never truly ended. The trench network became a self‑sustaining nightmare, a sprawling wasteland where time stalls and death feeds itself. Nations abandoned the front, but the necromantic energy continues to pulse, drawing in the curious, the desperate, and the damned.  \n\n---\n\n**4. Core Conflict**  \n\nAt the heart of the Bleak Maw lies the **Corrupted Engine**, a massive, rune‑etched artillery platform that was the focal point of the Ebon Corps’ ritual. Its core is a black, throbbing crystal of necrotic power, constantly feeding the undead tide and mutating the environment.  \n\n*The enemy force* is the **Necro‑Swarm**, a hive‑mind of reanimated soldiers, mutated beasts, and sentient war‑machines that obey the will of the Engine. The Swarm seeks to expand its influence beyond the trenchlines, spreading the necrotic blight across the world.  \n\n*The player’s struggle* is to navigate the labyrinthine trenches, survive wave after wave of relentless foes, and ultimately locate and dismantle the Corrupted Engine. Doing so requires confronting the Engine’s guardians—elite necro‑infused commanders, massive chemical‑scented behemoths, and the ever‑present threat of the environment itself (collapsing tunnels, toxic fog, and cursed sigils that can turn allies into foes).  \n\nOnly by severing the Engine’s link to the necromantic ley‑lines can the Maw be purged, allowing the land to finally heal—or, if the player fails, the Swarm will break free, carrying the nightmare of trench‑war necromancy to the rest of the world.",
+    "generation_time_seconds": 108,
+    "player": {
+        "tile": {
+            "name": "trench_warden",
+            "description": "A soot‑stained trench runner clad in rusted armor and glowing necromantic sigils, wielding a modified bolt‑action rifle",
+            "color": "#4B3A2F"
+        },
+        "back_history": "Archetype: The Trench Warden – a former elite engineer of the Ebon Corps who defected after witnessing the ritual's horror. Backstory & Motivation: Once tasked with maintaining the Corrupted Engine's mechanisms, she saw the nightmare it birthed and swore vengeance, seeking redemption by destroying the Engine and freeing the souls trapped in the Maw. Visuals: She wears a patched, oil‑slicked coat of soot‑blackened canvas, reinforced with salvaged steel plates etched with fading necromantic sigils that glow faintly green. Her face is scarred, one eye replaced by a cracked brass monocle that filters the toxic haze. A rusted gas mask hangs around her neck, and she carries a modified bolt‑action rifle that fires both lead and alchemical acid rounds. The overall look is grim‑industrial necro‑gothic, matching the trench’s muted sepia tones.",
+        "tile_with_texture": {
+            "name": "trench_warden",
+            "description": "A soot‑stained trench runner clad in rusted armor and glowing necromantic sigils, wielding a modified bolt‑action rifle",
+            "color": "#4B3A2F",
+            "texture": {
+                "tileset_position": {
+                    "x": 31,
+                    "y": 0
+                },
+                "tileset_description": "A warrior in armor carrying a sword and a shield. His helmet has horns."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "Depth 1 – The outermost trench lines are bathed in perpetual twilight. Rusted steel walls glint under sickly green sigils, while cracked concrete floors are slick with oily sludge. The air smells of rust, wet ash, and faint chemical burn. Distant artillery thuds echo like a dying heartbeat, accompanied by the hiss of acidic drizzle on metal.",
+                "name": "The Frontline Trenches",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "rusted_steel_wall",
+                    "description": "Corroded steel plates scarred by acid rain",
+                    "color": "#5A3A2A"
+                },
+                "floor_tile": {
+                    "name": "sludge_covered_concrete",
+                    "description": "Cracked concrete slick with oily sludge",
+                    "color": "#4B4B2F"
+                },
+                "wall_tile_with_texture": {
+                    "name": "rusted_steel_wall",
+                    "description": "Corroded steel plates scarred by acid rain",
+                    "color": "#5A3A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "sludge_covered_concrete",
+                    "description": "Cracked concrete slick with oily sludge",
+                    "color": "#4B4B2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            },
+            {
+                "description": "Depth 2 – Deeper tunnels descend into vaulted catacombs where necrotic bone‑white sigils pulse faintly. The lighting is dim, punctuated by phosphorescent glows from the walls. A sour, mutating chemical odor pervades, and the constant low‑frequency hum of necromantic energy vibrates through the stone. Echoes of shuffling reanimated infantry and distant behemoth roars reverberate off the walls.",
+                "name": "The Echoing Catacombs",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "bone_etched_steel",
+                    "description": "Steel reinforced with necrotic bone sigils",
+                    "color": "#3B2E4A"
+                },
+                "floor_tile": {
+                    "name": "toxic_mire",
+                    "description": "Viscous toxic mire that bubbles faintly",
+                    "color": "#2E5C3A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "bone_etched_steel",
+                    "description": "Steel reinforced with necrotic bone sigils",
+                    "color": "#3B2E4A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "toxic_mire",
+                    "description": "Viscous toxic mire that bubbles faintly",
+                    "color": "#2E5C3A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Depth 3 – At the heart of the Maw lies the Corrupted Engine, a massive artillery platform surrounded by runic iron walls that glow with black necrotic light. The floor is a jagged field of necrotic crystal shards that pulse in time with the Engine's throbbing core. The air is thick with acrid fumes, the smell of burning metal, and a choking, cursed incense. Lightning flashes reveal skeletal silhouettes of elite necro‑infused commanders and towering behemoths, while the hum of the Engine reaches a deafening crescendo.",
+                "name": "The Corrupted Engine Core",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "runic_iron",
+                    "description": "Massive iron walls etched with glowing runes",
+                    "color": "#1F1F1F"
+                },
+                "floor_tile": {
+                    "name": "necrotic_crystal_floor",
+                    "description": "Jagged crystal shards pulsing with necrotic energy",
+                    "color": "#0A0A0A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "runic_iron",
+                    "description": "Massive iron walls etched with glowing runes",
+                    "color": "#1F1F1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "necrotic_crystal_floor",
+                    "description": "Jagged crystal shards pulsing with necrotic energy",
+                    "color": "#0A0A0A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "skeletal_rusher",
+                    "description": "A gaunt reanimated soldier with tattered uniform, its bones exposed, moving with frantic speed.",
+                    "color": "#4B3A2F"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "skeletal_rusher",
+                    "description": "A gaunt reanimated soldier with tattered uniform, its bones exposed, moving with frantic speed.",
+                    "color": "#4B3A2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 6
+                        },
+                        "tileset_description": "A skeleton without weapons or armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rusted_shank",
+                    "description": "Thin necrotic infantry wielding rusted bayonet, skittering through sludge.",
+                    "color": "#6E4B3C"
+                },
+                "weight": 4,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "rusted_shank",
+                    "description": "Thin necrotic infantry wielding rusted bayonet, skittering through sludge.",
+                    "color": "#6E4B3C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blight_spitter",
+                    "description": "A lean mutagenic creature that spits acidic bile, its skin mottled with corrosive patches.",
+                    "color": "#5A7A3F"
+                },
+                "weight": 3,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "blight_spitter",
+                    "description": "A lean mutagenic creature that spits acidic bile, its skin mottled with corrosive patches.",
+                    "color": "#5A7A3F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 18,
+                            "y": 9
+                        },
+                        "tileset_description": "A strange creature with ears, it looks like an alien."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sigil_hunter",
+                    "description": "A lithe figure cloaked in necrotic sigils, moving silently, darts of dark energy trailing.",
+                    "color": "#2C1F3D"
+                },
+                "weight": 4,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "sigil_hunter",
+                    "description": "A lithe figure cloaked in necrotic sigils, moving silently, darts of dark energy trailing.",
+                    "color": "#2C1F3D",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 0
+                        },
+                        "tileset_description": "A person wearing a hooded coat. Could be a mage. A person from the desert."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "shrapnel_sprinter",
+                    "description": "A jittery corpse with embedded shrapnel, darts quickly across the battlefield.",
+                    "color": "#8B5A2B"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "shrapnel_sprinter",
+                    "description": "A jittery corpse with embedded shrapnel, darts quickly across the battlefield.",
+                    "color": "#8B5A2B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 0
+                        },
+                        "tileset_description": "A warrior in armor, carrying a shield and a spear."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "iron_warden",
+                    "description": "Heavy armored behemoth fused with steel plates, its chest a pulsating necrotic core.",
+                    "color": "#3B3B3B"
+                },
+                "weight": 9,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "iron_warden",
+                    "description": "Heavy armored behemoth fused with steel plates, its chest a pulsating necrotic core.",
+                    "color": "#3B3B3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blighted_goliath",
+                    "description": "Massive sludge-covered titan, limbs of twisted metal and bone, exudes toxic fumes.",
+                    "color": "#4A2E2E"
+                },
+                "weight": 10,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "blighted_goliath",
+                    "description": "Massive sludge-covered titan, limbs of twisted metal and bone, exudes toxic fumes.",
+                    "color": "#4A2E2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_engine_guard",
+                    "description": "Elite necro-infused commander, encased in rune-etched armor, slow but devastating.",
+                    "color": "#2D2D44"
+                },
+                "weight": 9,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "corrupted_engine_guard",
+                    "description": "Elite necro-infused commander, encased in rune-etched armor, slow but devastating.",
+                    "color": "#2D2D44",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_reaver",
+                    "description": "A towering specter of necrotic energy, its form rippling with void threads, crushing all.",
+                    "color": "#0A0A2A"
+                },
+                "weight": 8,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "void_reaver",
+                    "description": "A towering specter of necrotic energy, its form rippling with void threads, crushing all.",
+                    "color": "#0A0A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "apex_harbinger",
+                    "description": "Fast, erratic entity composed of condensed necrotic threads, darts with lethal precision.",
+                    "color": "#1F0A3C"
+                },
+                "weight": 5,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "apex_harbinger",
+                    "description": "Fast, erratic entity composed of condensed necrotic threads, darts with lethal precision.",
+                    "color": "#1F0A3C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_trench_knife_tile",
+                    "description": "A corroded steel knife, its edge dulled by ash and the endless rain of the Maw.",
+                    "color": "#6e4b3c"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_trench_knife_tile",
+                    "description": "A corroded steel knife, its edge dulled by ash and the endless rain of the Maw.",
+                    "color": "#6e4b3c",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "improvised_pipe_hammer_tile",
+                    "description": "A length of rusted pipe welded to a scrap iron head, heavy enough to crush bone and steel alike.",
+                    "color": "#7a5c4d"
+                },
+                "rarity": 2,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "improvised_pipe_hammer_tile",
+                    "description": "A length of rusted pipe welded to a scrap iron head, heavy enough to crush bone and steel alike.",
+                    "color": "#7a5c4d",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scarlet_chem_gun_tile",
+                    "description": "A crude chemical injector gun, its barrel stained scarlet from corrosive munitions.",
+                    "color": "#8b2c2c"
+                },
+                "rarity": 3,
+                "weight": 4,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "scarlet_chem_gun_tile",
+                    "description": "A crude chemical injector gun, its barrel stained scarlet from corrosive munitions.",
+                    "color": "#8b2c2c",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 9
+                        },
+                        "tileset_description": "Sawed-off shotgun."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bent_revolver_tile",
+                    "description": "A warped brass revolver, its cylinder jammed but still capable of firing leaded rounds.",
+                    "color": "#5a4b3d"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "bent_revolver_tile",
+                    "description": "A warped brass revolver, its cylinder jammed but still capable of firing leaded rounds.",
+                    "color": "#5a4b3d",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 9
+                        },
+                        "tileset_description": "Old pistol. Alien pistol. Different pistol."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tarnished_wand_tile",
+                    "description": "A wooden wand blackened by soot, etched with faint necrotic runes that pulse when used.",
+                    "color": "#4b3e5a"
+                },
+                "rarity": 3,
+                "weight": 2,
+                "mana_cost": 4,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "tarnished_wand_tile",
+                    "description": "A wooden wand blackened by soot, etched with faint necrotic runes that pulse when used.",
+                    "color": "#4b3e5a",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 43,
+                            "y": 8
+                        },
+                        "tileset_description": "Wooden necklace with a cross."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "etched_sigil_sword_tile",
+                    "description": "A steel sabre whose blade bears glowing bone‑white sigils that hum with necrotic energy.",
+                    "color": "#c2c2c2"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "etched_sigil_sword_tile",
+                    "description": "A steel sabre whose blade bears glowing bone‑white sigils that hum with necrotic energy.",
+                    "color": "#c2c2c2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "acidic_railgun_tile",
+                    "description": "A massive railgun fitted with acid‑lined barrels, spewing searing streams of corrosive plasma.",
+                    "color": "#7d3a3a"
+                },
+                "rarity": 7,
+                "weight": 6,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "acidic_railgun_tile",
+                    "description": "A massive railgun fitted with acid‑lined barrels, spewing searing streams of corrosive plasma.",
+                    "color": "#7d3a3a",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "necrotic_staff_tile",
+                    "description": "A long staff of warped iron, its tip crowned with a throbbing black crystal that draws in mana.",
+                    "color": "#2a2a2a"
+                },
+                "rarity": 6,
+                "weight": 3,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "necrotic_staff_tile",
+                    "description": "A long staff of warped iron, its tip crowned with a throbbing black crystal that draws in mana.",
+                    "color": "#2a2a2a",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "iron_heart_hammer_tile",
+                    "description": "A colossal war hammer forged from salvaged artillery, its head pulsing with a faint red glow.",
+                    "color": "#5c2e1f"
+                },
+                "rarity": 9,
+                "weight": 9,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "iron_heart_hammer_tile",
+                    "description": "A colossal war hammer forged from salvaged artillery, its head pulsing with a faint red glow.",
+                    "color": "#5c2e1f",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ebon_engine_rifle_tile",
+                    "description": "A prototype rifle built around a fragment of the Corrupted Engine, crackling with dark energy.",
+                    "color": "#1f1f2e"
+                },
+                "rarity": 10,
+                "weight": 7,
+                "mana_cost": 9,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "ebon_engine_rifle_tile",
+                    "description": "A prototype rifle built around a fragment of the Corrupted Engine, crackling with dark energy.",
+                    "color": "#1f1f2e",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium rarity Greatsword."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "heart_of_the_corrupted_engine",
+            "description": "A pulsating obsidian core, encased in a lattice of rusted steel and etched with glowing necrotic sigils. The crystal throbs with black necrotic energy, casting an eerie violet aura that seems to pulse in time with the dying heart of the trenchlands.",
+            "color": "#1a0a2e"
+        },
+        "back_history": "The artifact is the Heart of the Corrupted Engine, the black necrotic crystal that once powered the Ebon Corps' forbidden rite. When the Engine was forged, this heart was bound to the ley‑lines beneath the trenchlands, turning the entire network into a self‑sustaining necrotic furnace. Its pulse fuels the Necro‑Swarm, mutates the chemical miasma, and keeps the Engine’s rune‑etched artillery humming. Extracting the heart severs the Engine’s link to the ley‑lines, causing the Engine to collapse and the Swarm to lose its hive‑mind. However, the crystal retains a volatile reservoir of necrotic energy; if it remains buried, the Engine will eventually regenerate, unleashing the blight upon the world. Carrying the heart to the surface allows the surviving scholars of the Old Order to perform a counter‑ritual that purges the necrotic resonance and seals the ley‑lines forever, preventing the nightmare from ever rising again. The player cannot leave it behind, for doing so would doom the surface to an unstoppable wave of undead and mutated horror.",
+        "tile_with_texture": {
+            "name": "heart_of_the_corrupted_engine",
+            "description": "A pulsating obsidian core, encased in a lattice of rusted steel and etched with glowing necrotic sigils. The crystal throbs with black necrotic energy, casting an eerie violet aura that seems to pulse in time with the dying heart of the trenchlands.",
+            "color": "#1a0a2e",
+            "texture": {
+                "tileset_position": {
+                    "x": 46,
+                    "y": 8
+                },
+                "tileset_description": "Diamond necklace with a strange figure in the middle, it looks like a spider, an insect."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "total_tokens": 16075,
+            "output_token_details": {
+                "reasoning": 3117
+            },
+            "input_tokens": 9749,
+            "input_token_details": {
+                "cache_read": 512
+            },
+            "output_tokens": 6326
+        }
+    }
+}

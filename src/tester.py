@@ -347,7 +347,7 @@ if __name__ == "__main__":
     
     # Definição dos Modelos Testado e Juiz
     tested_prov = Providers.GROQ
-    tested_model = GroqModels.OPENAI_GPT_OSS_20B
+    tested_model = GroqModels.OPENAI_GPT_OSS_120B
     
     judge_prov = Providers.GROQ
     judge_model = GroqModels.META_LLAMA_LLAMA_4_SCOUT_17B_16E_INSTRUCT

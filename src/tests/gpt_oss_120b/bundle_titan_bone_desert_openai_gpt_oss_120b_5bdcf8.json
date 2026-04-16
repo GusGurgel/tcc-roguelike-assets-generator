@@ -1,0 +1,625 @@
+{
+    "name": "Scoured Maw Ascendant",
+    "raw_description": "A desolate, sun-scorched desert canyon littered with the colossal bones of ancient titans, inhabited by scavengers and blood-magic shamans.",
+    "description": "**Setting Name**  \n**The Scoured Maw of Xal’thar**  \n\n---\n\n### Visual Style & Atmosphere  \n\n*Art Direction*: **Bleak Sun‑Scorched Gothic** – a blend of hyper‑realistic desert textures with the oppressive, monolithic architecture of forgotten titan‑cult ruins. Massive, weather‑worn bone spires dominate the horizon, their surfaces etched with faint, glowing sigils that pulse like dying embers. The palette is dominated by burnt ochre, bleached ivory, and deep umber, punctuated by occasional shards of iridescent crystal that catch the relentless sun.  \n\n*Lighting*: A perpetual high‑noon glare that never fully yields to night; the sun hangs low on the horizon, casting long, stark shadows that shift like living silhouettes across the canyon floor. During the brief twilight that follows each day‑cycle, the bones emit a cold, phosphorescent glow, revealing hidden glyphs and the silhouettes of lurking scavengers.  \n\n*Weather*: Scorching, dry winds whip through the canyon, carrying fine, glass‑like sand that bites at exposed skin. Occasional sandstorms rise without warning, turning the sky an angry crimson and muffling all sound. When the wind dies, an oppressive stillness settles, broken only by the distant clatter of bone fragments striking each other.  \n\n*Ambient Noise*: A low, resonant hum that seems to emanate from the very ground—rumblings of ancient, dormant power. Overlaid with the occasional crack of bone underfoot, the distant howl of wind‑carved stone, and the whispered chants of shamans that drift like a dying breeze.  \n\n---\n\n### Lore  \n\nEons ago, the world of **Xal’thar** was ruled by the **Titanic Sovereigns**, colossal beings of flesh and stone who walked the plains, shaping continents with each stride. Their reign was not tyrannical; they cultivated the land, coaxed rivers from the sand, and taught early mortals the secrets of blood‑woven magic.  \n\nA cataclysmic event known as **The Shattering** fractured the Titans’ hearts. A rogue cabal of blood‑magic shamans, seeking to bind the Titans’ life‑force for themselves, performed a forbidden rite that ripped the very essence of the titans from their bodies. The titans fell, their bodies crashing into the canyon that would become the Scoured Maw. Their colossal skeletons now litter the gorge, each rib a vaulted arch, each femur a towering monolith.  \n\nThe blood‑ritual left a lingering scar on the land: a **Vein of Crimson Echo**, a pulsating ley‑line of corrupted blood‑magic that seeps through the sand and bone. It feeds on the life force of any creature that draws near, warping flesh and mind.  \n\nOver the centuries, desperate scavengers—**Dust‑Runners**, **Bone‑Harvesters**, and **Sand‑Wraiths**—have been drawn to the Maw, lured by rumors of untold relics and the promise of harnessing the lingering titan power. The shamans, now twisted by the very magic they unleashed, have formed the **Crimson Covenant**, a cult that worships the Vein as a living deity and uses its power to command the canyon’s denizens.  \n\n---\n\n### Core Conflict  \n\nThe **Crimson Covenant** has begun a new, world‑shaking ritual: **The Ascendant Bleed**. By channeling the Vein’s corrupt energy through the titan bones, they aim to resurrect a single, all‑consuming Titan‑Heart that will merge with the covenant’s leader, granting god‑like dominion over the desert and beyond.  \n\nEvery step deeper into the Maw brings the player closer to this ritual site—a cavernous altar formed from the fused skulls of the greatest Titans. The covenant’s blood‑shamans, bolstered by the Vein’s mutating influence, summon twisted abominations—bone‑clad golems, sand‑infused revenants, and blood‑spitting serpents.  \n\nThe canyon itself fights back: the Vein’s corruption seeps into the sand, turning ordinary dunes into **Living Dunes** that lash out with razor‑sharp granules. The ancient titan bones, once inert, now resonate with the Vein’s pulse, occasionally cracking open to release bursts of raw, necrotic energy.  \n\nThe player’s objective is to **pierce the Vein**, disrupt the Ascendant Bleed, and either seal the titan remnants back into their dormant state or harness their power to escape the Maw alive. The conflict is not just against the cult, but against the environment itself—a relentless, ever‑shifting desert that seeks to consume all who trespass.  \n\n--- \n\n*The Scoured Maw of Xal’thar* is a crucible of heat, bone, and blood, where every echo of a shattered step may be a warning—or a promise of the power that lies beneath the sand.",
+    "generation_time_seconds": 129,
+    "player": {
+        "tile": {
+            "name": "veinwalker",
+            "description": "A gaunt figure wrapped in bone‑plate and crimson cloth, bearing a glowing scar.",
+            "color": "#8B2500"
+        },
+        "back_history": "A blood‑sundered Veinwalker, once a high‑ranking blood‑shaman of the Crimson Covenant who fled after witnessing the Ascendant Bleed's true horror. Cast out and marked by the Vein's corrupt scar across his left forearm, he now seeks redemption by piercing the Vein and ending the ritual, or else to claim its power to escape the Maw. Clad in cracked bone‑plate armor dyed in burnt ochre, a tattered crimson cloak flutters over his shoulders, and his eyes glow with a faint phosphorescent amber. He carries a rusted bone‑spear etched with sigils and a blood‑etched talisman that pulses with the rhythm of the canyon.",
+        "tile_with_texture": {
+            "name": "veinwalker",
+            "description": "A gaunt figure wrapped in bone‑plate and crimson cloth, bearing a glowing scar.",
+            "color": "#8B2500",
+            "texture": {
+                "tileset_position": {
+                    "x": 28,
+                    "y": 2
+                },
+                "tileset_description": "A horned creature wielding a staff. Simple armor with some details."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The entrance lies among sun‑scorched outcrops of titan rib arches. A perpetual high‑noon glare bounces off bleached ivory bone, casting stark shadows across the burnt‑ochre sand. The air smells of hot glass‑like grit and distant ozone. Low hums of ancient power mingle with the whisper of dry wind and occasional clatter of bone fragments.",
+                "name": "Sun‑Scorched Outcrops",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "cracked_bone_wall",
+                    "description": "Weather‑worn titan rib fragments, dark umber with deep fissures, etched with faint sigils.",
+                    "color": "#4B3A2E"
+                },
+                "floor_tile": {
+                    "name": "scorched_sand_floor",
+                    "description": "Fine glass‑like sand, burnt ochre in color, shimmering under the relentless sun.",
+                    "color": "#C19A6B"
+                },
+                "wall_tile_with_texture": {
+                    "name": "cracked_bone_wall",
+                    "description": "Weather‑worn titan rib fragments, dark umber with deep fissures, etched with faint sigils.",
+                    "color": "#4B3A2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "scorched_sand_floor",
+                    "description": "Fine glass‑like sand, burnt ochre in color, shimmering under the relentless sun.",
+                    "color": "#C19A6B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "Deeper, the Vein‑Stained Catacombs pulse with the Crimson Echo. Walls of bone are streaked with fresh crimson veins that glow faintly, casting a sickly red light. The scent of iron‑rich blood mixes with hot sand, while the wind carries a metallic tang. Ambient sounds include a resonant thrum from the Vein and distant, echoing chants of the Crimson Covenant.",
+                "name": "Vein‑Stained Catacombs",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "blood_etched_bone",
+                    "description": "Bone walls slick with coagulated blood, veins pulsing with a cold phosphorescent glow.",
+                    "color": "#8B0000"
+                },
+                "floor_tile": {
+                    "name": "crimson_dune_floor",
+                    "description": "Sand infused with coagulated blood, sticky and dark, crunching underfoot with each step.",
+                    "color": "#7A3B3C"
+                },
+                "wall_tile_with_texture": {
+                    "name": "blood_etched_bone",
+                    "description": "Bone walls slick with coagulated blood, veins pulsing with a cold phosphorescent glow.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "crimson_dune_floor",
+                    "description": "Sand infused with coagulated blood, sticky and dark, crunching underfoot with each step.",
+                    "color": "#7A3B3C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "At the heart lies the Skull‑Altar Abyss, a cavernous altar of fused titan skulls. Pale ivory skulls tower, their surfaces cracked and etched with blazing sigils that pulse like dying embers. The Vein’s corruption erupts in bursts of necrotic energy, filling the air with a metallic, coppery odor. The constant hum of the Vein is overlaid by the roar of shifting living dunes and the crackle of raw blood‑magic.",
+                "name": "Skull‑Altar Abyss",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "ashen_skull_wall",
+                    "description": "Massive fused skulls, pale ivory cracked, sigils glowing with a cold ember light.",
+                    "color": "#E8E8E8"
+                },
+                "floor_tile": {
+                    "name": "necrotic_bone_floor",
+                    "description": "Broken bone slabs soaked in necrotic ichor, dark umber and slick, radiating corrupt energy.",
+                    "color": "#2F2F2F"
+                },
+                "wall_tile_with_texture": {
+                    "name": "ashen_skull_wall",
+                    "description": "Massive fused skulls, pale ivory cracked, sigils glowing with a cold ember light.",
+                    "color": "#E8E8E8",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "necrotic_bone_floor",
+                    "description": "Broken bone slabs soaked in necrotic ichor, dark umber and slick, radiating corrupt energy.",
+                    "color": "#2F2F2F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "dust_runner",
+                    "description": "A gaunt, skeletal scavenger that darts across the dunes with frantic speed, its cracked bone armor clattering.",
+                    "color": "#C2B280"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "dust_runner",
+                    "description": "A gaunt, skeletal scavenger that darts across the dunes with frantic speed, its cracked bone armor clattering.",
+                    "color": "#C2B280",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 6
+                        },
+                        "tileset_description": "A skeleton without weapons or armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sand_wraith",
+                    "description": "Ethereal, thin-bodied wraith that flits just above the sand, its hollow ribs echoing with each swift movement.",
+                    "color": "#8B4513"
+                },
+                "weight": 2,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "sand_wraith",
+                    "description": "Ethereal, thin-bodied wraith that flits just above the sand, its hollow ribs echoing with each swift movement.",
+                    "color": "#8B4513",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_harvester",
+                    "description": "Massive, hulking figure draped in layered bone plates, each step shaking the canyon floor.",
+                    "color": "#A9A9A9"
+                },
+                "weight": 8,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "bone_harvester",
+                    "description": "Massive, hulking figure draped in layered bone plates, each step shaking the canyon floor.",
+                    "color": "#A9A9A9",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crimson_cultist",
+                    "description": "Broad-shouldered shaman swathed in blood‑stained robes, veins pulsing with corrupt magic.",
+                    "color": "#8B0000"
+                },
+                "weight": 7,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "crimson_cultist",
+                    "description": "Broad-shouldered shaman swathed in blood‑stained robes, veins pulsing with corrupt magic.",
+                    "color": "#8B0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "living_dune",
+                    "description": "A shifting mound of sand and bone fragments that lashes out with razor‑sharp granules.",
+                    "color": "#DEB887"
+                },
+                "weight": 4,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "living_dune",
+                    "description": "A shifting mound of sand and bone fragments that lashes out with razor‑sharp granules.",
+                    "color": "#DEB887",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 0
+                        },
+                        "tileset_description": "A person wearing a hooded coat. Could be a mage. A person from the desert."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_serpent",
+                    "description": "Enormous, coiled serpent of bone and blood, its fangs dripping corrosive ichor.",
+                    "color": "#B22222"
+                },
+                "weight": 9,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "blood_serpent",
+                    "description": "Enormous, coiled serpent of bone and blood, its fangs dripping corrosive ichor.",
+                    "color": "#B22222",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "titan_bone_golem",
+                    "description": "Towering golem forged from titan femurs and ribs, its weight crushing all beneath it.",
+                    "color": "#D2B48C"
+                },
+                "weight": 10,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "titan_bone_golem",
+                    "description": "Towering golem forged from titan femurs and ribs, its weight crushing all beneath it.",
+                    "color": "#D2B48C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "vein_warden",
+                    "description": "Lean guardian of the Vein, its elongated limbs crackle with crimson energy.",
+                    "color": "#800080"
+                },
+                "weight": 5,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "vein_warden",
+                    "description": "Lean guardian of the Vein, its elongated limbs crackle with crimson energy.",
+                    "color": "#800080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ember_scorpion",
+                    "description": "Small, fast scorpion with a glowing ember carapace, its sting searing the sand.",
+                    "color": "#FF4500"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "ember_scorpion",
+                    "description": "Small, fast scorpion with a glowing ember carapace, its sting searing the sand.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 6
+                        },
+                        "tileset_description": "A gnome with a beard and a hat. It appears to be a warrior gnome with different armor. A small person with hat and beard."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_shaman",
+                    "description": "Heavy‑armored shaman whose flesh is fused with bone, radiating dark blood magic.",
+                    "color": "#4B0082"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "corrupted_shaman",
+                    "description": "Heavy‑armored shaman whose flesh is fused with bone, radiating dark blood magic.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_bone_dagger",
+                    "description": "A jagged dagger fashioned from a cracked femur, its edge stained with dried blood.",
+                    "color": "#8B4513"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_bone_dagger",
+                    "description": "A jagged dagger fashioned from a cracked femur, its edge stained with dried blood.",
+                    "color": "#8B4513",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sandstone_shortbow",
+                    "description": "A shortbow carved from porous sandstone, bound with sinew.",
+                    "color": "#C2B280"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "sandstone_shortbow",
+                    "description": "A shortbow carved from porous sandstone, bound with sinew.",
+                    "color": "#C2B280",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 5
+                        },
+                        "tileset_description": "Small wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "blood_etched_hammer",
+                    "description": "A heavy warhammer whose head is a polished bone, etched with crimson sigils that glow faintly.",
+                    "color": "#5A2D0C"
+                },
+                "rarity": 3,
+                "weight": 7,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "blood_etched_hammer",
+                    "description": "A heavy warhammer whose head is a polished bone, etched with crimson sigils that glow faintly.",
+                    "color": "#5A2D0C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crimson_shard_crossbow",
+                    "description": "A crossbow assembled from fractured crystal shards, the limbs humming with Vein energy.",
+                    "color": "#B22222"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "crimson_shard_crossbow",
+                    "description": "A crossbow assembled from fractured crystal shards, the limbs humming with Vein energy.",
+                    "color": "#B22222",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ashen_staff_of_whispers",
+                    "description": "A slender staff of bleached ivory bone, topped with a pulsating crimson crystal that whispers.",
+                    "color": "#F5F5DC"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "ashen_staff_of_whispers",
+                    "description": "A slender staff of bleached ivory bone, topped with a pulsating crimson crystal that whispers.",
+                    "color": "#F5F5DC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a gemstone at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "titan_fang_sword",
+                    "description": "A broad sword forged from a titan's fang, its blade humming with dormant power.",
+                    "color": "#A0522D"
+                },
+                "rarity": 7,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "titan_fang_sword",
+                    "description": "A broad sword forged from a titan's fang, its blade humming with dormant power.",
+                    "color": "#A0522D",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "veinbound_glaive",
+                    "description": "A polearm of bone and blood‑etched metal, its tip channels the Vein's corrupt flow.",
+                    "color": "#800000"
+                },
+                "rarity": 9,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "veinbound_glaive",
+                    "description": "A polearm of bone and blood‑etched metal, its tip channels the Vein's corrupt flow.",
+                    "color": "#800000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scarlet_breath_wand",
+                    "description": "A slender wand of cracked bone, wrapped in scarlet veins that exhale searing bloodfire.",
+                    "color": "#FF4500"
+                },
+                "rarity": 10,
+                "weight": 2,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "scarlet_breath_wand",
+                    "description": "A slender wand of cracked bone, wrapped in scarlet veins that exhale searing bloodfire.",
+                    "color": "#FF4500",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "dustrunner_throwing_axe",
+                    "description": "A compact axe of hardened sandstone, balanced for deadly throws.",
+                    "color": "#DEB887"
+                },
+                "rarity": 1,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "dustrunner_throwing_axe",
+                    "description": "A compact axe of hardened sandstone, balanced for deadly throws.",
+                    "color": "#DEB887",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium-sized one-handed axe, with only one blade at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_hunter_repeater",
+                    "description": "An experimental repeater rifle built from fused bone and crystal, each shot erupts with crimson plasma.",
+                    "color": "#2F4F4F"
+                },
+                "rarity": 10,
+                "weight": 5,
+                "mana_cost": 4,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "bone_hunter_repeater",
+                    "description": "An experimental repeater rifle built from fused bone and crystal, each shot erupts with crimson plasma.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "heart_of_the_crimson_titan",
+            "description": "A pulsating, ruby‑veined crystal the size of a clenched fist, its surface etched with the shattered sigils of the Titan‑Sovereigns. It throbs with a dim, blood‑red light that seems to pulse in sync with the Vein of Crimson Echo, and a faint hum of ancient power resonates from within.",
+            "color": "#8B0000"
+        },
+        "back_history": "Forged from the shattered core of the first Titan‑Sovereign, the Heart of the Crimson Titan is the very source of the Vein of Crimson Echo that corrupts the Scoured Maw. When the rogue shamans performed the forbidden rite, fragments of the Titan’s beating heart were bound into this crystal, turning its life‑force into a conduit for blood‑magic. The Crimson Covenant now seeks to fuse the Heart with their leader in the Ascendant Bleed, which would unleash an unstoppable tide of corruption across the world. Only by extracting the Heart from the altar and carrying it back to the surface can the player shatter the Vein’s link, sealing the Titan’s power once more and preventing the rise of a god‑like tyrant. Leaving it in the depths would doom the surface to a blood‑soaked apocalypse, making its retrieval a matter of survival for all of Xal’thar.",
+        "tile_with_texture": {
+            "name": "heart_of_the_crimson_titan",
+            "description": "A pulsating, ruby‑veined crystal the size of a clenched fist, its surface etched with the shattered sigils of the Titan‑Sovereigns. It throbs with a dim, blood‑red light that seems to pulse in sync with the Vein of Crimson Echo, and a faint hum of ancient power resonates from within.",
+            "color": "#8B0000",
+            "texture": {
+                "tileset_position": {
+                    "x": 41,
+                    "y": 7
+                },
+                "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+            }
+        }
+    },
+    "usage_metadata": {
+        "openai/gpt-oss-120b": {
+            "output_token_details": {
+                "reasoning": 4027
+            },
+            "total_tokens": 20053,
+            "output_tokens": 7818,
+            "input_tokens": 12235
+        }
+    }
+}
