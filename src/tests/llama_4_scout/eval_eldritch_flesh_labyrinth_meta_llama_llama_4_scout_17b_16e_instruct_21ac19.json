@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "moonshotai/kimi-k2-instruct-0905",
+    "semantic_coherence_metric": 87,
+    "semantic_reconstruction_metric": 0.6760229809005773,
+    "prompt": "A twisted, flesh-and-bone labyrinth inside the stomach of a sleeping eldritch god, swarming with parasitic worms and twisted digestive demons.",
+    "prompt_name": "eldritch_flesh_labyrinth",
+    "prompt_index": 6,
+    "asset_bundle_file": "bundle_eldritch_flesh_labyrinth_meta_llama_llama_4_scout_17b_16e_instruct_21ac19.json"
+}

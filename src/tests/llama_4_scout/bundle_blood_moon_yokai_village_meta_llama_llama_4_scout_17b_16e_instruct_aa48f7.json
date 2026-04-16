@@ -1,0 +1,661 @@
+{
+    "name": "Cursed Blood Moon Village",
+    "raw_description": "A cursed feudal Japanese village trapped in an eternal blood-moon night, stalked by vengeful yokai and undead samurai.",
+    "description": "**Setting Name:** Kokuryu no Sato - The Cursed Village of Black Dragon's Night\n\n**Visual Style & Atmosphere:** Kokuryu no Sato is set in a dark, mystical, and eerie feudal Japanese village, perpetually shrouded in an eternal blood-moon night. The art direction blends traditional Japanese aesthetics with a haunting, supernatural atmosphere. Think rustic, weathered wood, crumbling stone, and vibrant, eerie lanterns casting flickering shadows. The village is a maze of narrow, winding streets, alleyways, and canals, with buildings adorned with tattered, prayer flags and makeshift talismans. The atmosphere is heavy with the scent of incense, smoke, and wet earth.\n\nThe lighting is dim, with an orange-red glow emanating from lanterns and fires, casting long shadows across the village. Weather effects are minimal, with a perpetual, eerie mist rolling in from the surrounding mountains, shrouding the village in an unsettling, unnatural silence. Ambient noise consists of distant, mournful cries, whispers, and the creaking of wooden structures.\n\n**The Lore:** Kokuryu no Sato was once a thriving, rural village nestled in the mountains of feudal Japan. The villagers lived in harmony with nature, respecting the spirits of the land and the ancient traditions of their ancestors. However, a catastrophic event known as the \"Blood-Moon Incident\" occurred, where a powerful, vengeful yokai was summoned, and a dark, supernatural force began to corrupt the village. The once-clear streams ran red with blood, and the villagers, driven mad by the influence of the yokai, turned against each other.\n\nThe village was eventually abandoned, left to rot under the eternal blood-moon night. Over time, the yokai and undead samurai, risen from their graves, began to stalk the village, seeking to claim the souls of any who dared to enter. The villagers' descendants, now a mix of onmyoji, Shinto priests, and vengeful spirits, are trapped within the village, doomed to relive the horrors of their past.\n\n**The Core Conflict:** The corruption, curse, or enemy force controlling Kokuryu no Sato is a powerful, malevolent entity known as the \"Kokuryu,\" a vengeful yokai born from the collective darkness and madness of the villagers. The Kokuryu feeds on the fear and suffering of those who enter the village, growing stronger with each passing night.\n\nThe Kokuryu's influence has spawned a legion of undead samurai, the \"Akuma Shinigami\" (Demon Death Gods), and twisted, corrupted yokai, which roam the village, seeking to claim the souls of the living. The villagers' descendants, now tormented spirits, are forced to navigate the treacherous landscape, seeking a way to lift the curse and find peace.\n\nAs the blood-moon rises, the Kokuryu's power grows, and the village becomes increasingly twisted and distorted, reflecting the darkness within. The player's goal is to survive the eternal night, uncover the secrets of the Blood-Moon Incident, and put an end to the Kokuryu's malevolent influence, freeing the village from its supernatural torment.",
+    "generation_time_seconds": 60,
+    "player": {
+        "tile": {
+            "name": "ronin",
+            "description": "A disheveled, weary ronin with a haunted expression",
+            "color": "#452B1F"
+        },
+        "back_history": "A former samurai seeking redemption for past failures",
+        "tile_with_texture": {
+            "name": "ronin",
+            "description": "A disheveled, weary ronin with a haunted expression",
+            "color": "#452B1F",
+            "texture": {
+                "tileset_position": {
+                    "x": 24,
+                    "y": 2
+                },
+                "tileset_description": "A wizard with a large gray beard, wearing a hood. He appears to be wise. He is not carrying anything."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The village's outskirts, where the once-peaceful streets meet the darkness. The air is heavy with the scent of incense and smoke, and the flickering lanterns cast eerie shadows on the crumbling buildings.",
+                "name": "The Blood-Moon Gate",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "stone_wall",
+                    "description": "A rough-hewn stone wall, with a rugged texture and a muted, earthy color.",
+                    "color": "#454545"
+                },
+                "floor_tile": {
+                    "name": "weathered_wood",
+                    "description": "A worn, weathered wood tile, with a subtle grain and a soft, muted color.",
+                    "color": "#969696"
+                },
+                "wall_tile_with_texture": {
+                    "name": "stone_wall",
+                    "description": "A rough-hewn stone wall, with a rugged texture and a muted, earthy color.",
+                    "color": "#454545",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "weathered_wood",
+                    "description": "A worn, weathered wood tile, with a subtle grain and a soft, muted color.",
+                    "color": "#969696",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A narrow, winding street lined with abandoned homes and shops. The buildings seem to lean in, as if listening to the whispers of the wind. The air is thick with the scent of wet earth and decay.",
+                "name": "Whispering Alleys",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "tattered_paper",
+                    "description": "A tattered, paper-like wall, with a fragile texture and a soft, muted color.",
+                    "color": "#C9C9C9"
+                },
+                "floor_tile": {
+                    "name": "cobblestone",
+                    "description": "A worn, cobblestone tile, with a rough texture and a muted, grey color.",
+                    "color": "#666666"
+                },
+                "wall_tile_with_texture": {
+                    "name": "tattered_paper",
+                    "description": "A tattered, paper-like wall, with a fragile texture and a soft, muted color.",
+                    "color": "#C9C9C9",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "cobblestone",
+                    "description": "A worn, cobblestone tile, with a rough texture and a muted, grey color.",
+                    "color": "#666666",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A district of crumbling temples and shrines, overgrown with vines and moss. The air is heavy with the scent of incense and the sound of distant chanting echoes through the mist.",
+                "name": "The Forgotten Sanctum",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "carved_wood",
+                    "description": "A intricately carved wood wall, with a detailed texture and a warm, golden color.",
+                    "color": "#FFD700"
+                },
+                "floor_tile": {
+                    "name": "moss_stone",
+                    "description": "A stone tile covered in moss, with a soft, green color and a subtle texture.",
+                    "color": "#8B9467"
+                },
+                "wall_tile_with_texture": {
+                    "name": "carved_wood",
+                    "description": "A intricately carved wood wall, with a detailed texture and a warm, golden color.",
+                    "color": "#FFD700",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "moss_stone",
+                    "description": "A stone tile covered in moss, with a soft, green color and a subtle texture.",
+                    "color": "#8B9467",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The heart of the cursed village, where the Kokuryu's influence is strongest. The air is thick with malevolent energy, and the sky seems to burn with an otherworldly fire. The ground trembles with the whispers of the damned.",
+                "name": "The Kokuryu's Lair",
+                "depth": 4,
+                "wall_tile": {
+                    "name": "twisted_metal",
+                    "description": "A twisted, metal-like wall, with a distorted texture and a dark, ominous color.",
+                    "color": "#6E6E6E"
+                },
+                "floor_tile": {
+                    "name": "blood_stained",
+                    "description": "A tile stained with blood, with a dark, crimson color and a rough texture.",
+                    "color": "#8B0A1A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "twisted_metal",
+                    "description": "A twisted, metal-like wall, with a distorted texture and a dark, ominous color.",
+                    "color": "#6E6E6E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "blood_stained",
+                    "description": "A tile stained with blood, with a dark, crimson color and a rough texture.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "skeleton_warrior",
+                    "description": "A weathered, undead samurai with a tattered, prayer flag-adorned helmet and a rusted, curved sword.",
+                    "color": "#964B00"
+                },
+                "weight": 6,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "skeleton_warrior",
+                    "description": "A weathered, undead samurai with a tattered, prayer flag-adorned helmet and a rusted, curved sword.",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 0
+                        },
+                        "tileset_description": "A warrior in armor carrying a sword and a shield. His helmet has horns."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gaki",
+                    "description": "A gaunt, demonic yokai with long, spindly limbs and a twisted, inhuman face. Glowing red eyes pierce through the darkness.",
+                    "color": "#660033"
+                },
+                "weight": 8,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "gaki",
+                    "description": "A gaunt, demonic yokai with long, spindly limbs and a twisted, inhuman face. Glowing red eyes pierce through the darkness.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "onryo",
+                    "description": "A vengeful, female spirit with long, flowing black hair and a white, tattered kimono. Her eyes burn with a malevolent green fire.",
+                    "color": "#003300"
+                },
+                "weight": 4,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "onryo",
+                    "description": "A vengeful, female spirit with long, flowing black hair and a white, tattered kimono. Her eyes burn with a malevolent green fire.",
+                    "color": "#003300",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "akuma_shinigami",
+                    "description": "A towering, undead samurai with a black, armor-plated exoskeleton and a helmet adorned with a fearsome, dragon-like crest.",
+                    "color": "#000000"
+                },
+                "weight": 10,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "akuma_shinigami",
+                    "description": "A towering, undead samurai with a black, armor-plated exoskeleton and a helmet adorned with a fearsome, dragon-like crest.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "kappa",
+                    "description": "A green, humanoid yokai with a beak-like mouth and a turtle shell on its back. It wields a rusty, iron sickle.",
+                    "color": "#00CC00"
+                },
+                "weight": 3,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "kappa",
+                    "description": "A green, humanoid yokai with a beak-like mouth and a turtle shell on its back. It wields a rusty, iron sickle.",
+                    "color": "#00CC00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "yurei",
+                    "description": "A ghostly, female apparition with a pale, translucent complexion and long, flowing white hair. Her eyes are empty, black voids.",
+                    "color": "#FFFFFF"
+                },
+                "weight": 2,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "yurei",
+                    "description": "A ghostly, female apparition with a pale, translucent complexion and long, flowing white hair. Her eyes are empty, black voids.",
+                    "color": "#FFFFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 8
+                        },
+                        "tileset_description": "The specter of a person. A person without a face. A transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "golem",
+                    "description": "A hulking, humanoid creature crafted from dark, weathered wood and adorned with twisted, thorn-like protrusions.",
+                    "color": "#663300"
+                },
+                "weight": 9,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "golem",
+                    "description": "A hulking, humanoid creature crafted from dark, weathered wood and adorned with twisted, thorn-like protrusions.",
+                    "color": "#663300",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 2
+                        },
+                        "tileset_description": "A man wearing a hat and holding a piece of wood."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tsukumogami",
+                    "description": "A sentient, animated sake jar with a grotesque, human-like face and a tattered, straw hat.",
+                    "color": "#CC9966"
+                },
+                "weight": 1,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "tsukumogami",
+                    "description": "A sentient, animated sake jar with a grotesque, human-like face and a tattered, straw hat.",
+                    "color": "#CC9966",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 6
+                        },
+                        "tileset_description": "A gnome with a beard and a hat. It appears to be a warrior gnome with different armor. A small person with hat and beard."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "jiki",
+                    "description": "A small, impish yokai with a mischievous grin and a pair of curved, horns. It wields a tiny, iron trident.",
+                    "color": "#990000"
+                },
+                "weight": 5,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "jiki",
+                    "description": "A small, impish yokai with a mischievous grin and a pair of curved, horns. It wields a tiny, iron trident.",
+                    "color": "#990000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 2
+                        },
+                        "tileset_description": "A demon wielding a trident. He is not wearing armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "kyuketsuki",
+                    "description": "A vampiric, humanoid creature with pale, deathly skin and a pair of glowing, red eyes. It wears a tattered, black kimono.",
+                    "color": "#330000"
+                },
+                "weight": 7,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "kyuketsuki",
+                    "description": "A vampiric, humanoid creature with pale, deathly skin and a pair of glowing, red eyes. It wears a tattered, black kimono.",
+                    "color": "#330000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "katana",
+                    "description": "A traditional Japanese sword with a worn leather scabbard.",
+                    "color": "#964B00"
+                },
+                "rarity": 5,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "katana",
+                    "description": "A traditional Japanese sword with a worn leather scabbard.",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 1
+                        },
+                        "tileset_description": "Leather jacket with a hood."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rusty_dagger",
+                    "description": "A crude, rusty dagger with a worn wooden hilt.",
+                    "color": "#786C3B"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_dagger",
+                    "description": "A crude, rusty dagger with a worn wooden hilt.",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "yumi",
+                    "description": "A traditional Japanese bow with a worn bamboo limb.",
+                    "color": "#3E8E41"
+                },
+                "rarity": 4,
+                "weight": 5,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "yumi",
+                    "description": "A traditional Japanese bow with a worn bamboo limb.",
+                    "color": "#3E8E41",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tessen",
+                    "description": "A Japanese iron fan with a worn wooden handle.",
+                    "color": "#663300"
+                },
+                "rarity": 3,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "tessen",
+                    "description": "A Japanese iron fan with a worn wooden handle.",
+                    "color": "#663300",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 5
+                        },
+                        "tileset_description": "Iron spear with detail on the bottom."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "oni_staff",
+                    "description": "A staff adorned with oni masks and worn red cord.",
+                    "color": "#8B0A1A"
+                },
+                "rarity": 7,
+                "weight": 8,
+                "mana_cost": 5,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "oni_staff",
+                    "description": "A staff adorned with oni masks and worn red cord.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "wakizashi",
+                    "description": "A short Japanese sword with a worn leather scabbard.",
+                    "color": "#4C5154"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "wakizashi",
+                    "description": "A short Japanese sword with a worn leather scabbard.",
+                    "color": "#4C5154",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 2
+                        },
+                        "tileset_description": "Old small wooden shield."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "hanbo",
+                    "description": "A Japanese staff with a worn wooden handle.",
+                    "color": "#969696"
+                },
+                "rarity": 1,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "hanbo",
+                    "description": "A Japanese staff with a worn wooden handle.",
+                    "color": "#969696",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 4
+                        },
+                        "tileset_description": "Simple wooden staff. Noah's staff."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "shuriken",
+                    "description": "A set of Japanese throwing stars with a worn cloth pouch.",
+                    "color": "#C9C4B5"
+                },
+                "rarity": 8,
+                "weight": 3,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "shuriken",
+                    "description": "A set of Japanese throwing stars with a worn cloth pouch.",
+                    "color": "#C9C4B5",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 2
+                        },
+                        "tileset_description": "Old small wooden shield."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "daikyu",
+                    "description": "A Japanese crossbow with a worn wooden stock.",
+                    "color": "#452B1F"
+                },
+                "rarity": 9,
+                "weight": 9,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "daikyu",
+                    "description": "A Japanese crossbow with a worn wooden stock.",
+                    "color": "#452B1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tsurugi",
+                    "description": "A Japanese longsword with a worn leather scabbard.",
+                    "color": "#1A1D23"
+                },
+                "rarity": 10,
+                "weight": 10,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "tsurugi",
+                    "description": "A Japanese longsword with a worn leather scabbard.",
+                    "color": "#1A1D23",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 7
+                        },
+                        "tileset_description": "Old broken iron sword."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "kokuryu_no_kizuna",
+            "description": "A glowing, crystalline shard imbued with the essence of the Black Dragon's Night. Its facets reflect the eternal blood-moon, and its core pulsates with a malevolent energy.",
+            "color": "#FF3737"
+        },
+        "back_history": "The kokuryu_no_kizuna is the fabled shard of the Kokuryu's own essence, torn asunder by the village's ancestors in a desperate bid to seal the yokai's power. This relic holds the key to reversing the curse that has consumed Kokuryu no Sato. If left at the bottom of the dungeon, the shard will continue to fuel the Kokuryu's growth, ensuring the village's eternal torment. The player's retrieval of the kokuryu_no_kizuna is the only hope to restore balance to the village and shatter the curse that has haunted its people for generations.",
+        "tile_with_texture": {
+            "name": "kokuryu_no_kizuna",
+            "description": "A glowing, crystalline shard imbued with the essence of the Black Dragon's Night. Its facets reflect the eternal blood-moon, and its core pulsates with a malevolent energy.",
+            "color": "#FF3737",
+            "texture": {
+                "tileset_position": {
+                    "x": 33,
+                    "y": 8
+                },
+                "tileset_description": "Medium rarity Greatsword."
+            }
+        }
+    },
+    "usage_metadata": {
+        "meta-llama/llama-4-scout-17b-16e-instruct": {
+            "total_tokens": 11004,
+            "input_tokens": 7765,
+            "output_tokens": 3239
+        }
+    }
+}

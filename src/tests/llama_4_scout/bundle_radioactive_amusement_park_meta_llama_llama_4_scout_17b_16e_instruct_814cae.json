@@ -1,0 +1,661 @@
+{
+    "name": "Cursed Carnival of Chaos",
+    "raw_description": "A post-apocalyptic amusement park in a radioactive wasteland, patrolled by deranged animatronics and mutated clowns.",
+    "description": "**Setting Name:** \"Carnival of Curses: Freakshow Falls\"\n\n**Visual Style & Atmosphere:** The world of Freakshow Falls is a twisted fusion of decaying grandeur and eerie whimsy, blending elements of a post-apocalyptic wasteland with the remnants of a once-vibrant amusement park. The art direction leans towards a dark, gritty aesthetic with splashes of neon and rusting steel, evoking a sense of nostalgia tainted by horror. The sky is perpetually shrouded in a sickly yellow haze, casting an otherworldly glow over the ruins. Weather effects are minimal, with an almost constant, unsettling drizzle of radioactive rain that seems to seep from the very fabric of the sky itself. Ambient noise is a mix of creaking metal, distant, maniacal laughter, and the occasional, jarring melody from broken calliope music.\n\n**The Lore:** Freakshow Falls was once a beloved amusement park, known for its thrilling rides and mesmerizing freak shows. However, a catastrophic event known as \"The Great Malfunction\" brought about a cataclysmic transformation. A combination of human error, a freak electrical storm, and the park's own experimental technologies merged to create a rift, unleashing a torrent of dark energy into the park. This energy, known as \"The Corruption,\" twisted and mutated the park's animatronic entertainers and various attractions, turning them into deranged, sadistic guardians of a nightmarish realm. The park's human visitors and staff either fled, were consumed by The Corruption, or were transformed into grotesque, mutated creatures. Over time, the surrounding landscape became a radioactive wasteland, as if The Corruption had infected the very earth itself.\n\n**The Core Conflict:** The Corruption, a malevolent force that seeps from the heart of Freakshow Falls, is the primary antagonist. It is a sentient, chaotic evil that delights in the suffering and terror of those who dare to enter its domain. The Corruption controls and animates the park's twisted creations, including the deranged animatronics and mutated clowns, turning them into an ever-changing, deadly threat. It warps reality within the park, causing attractions to shift and change, creating new paths and obstacles for intruders. The Corruption's ultimate goal is to spread beyond the park's boundaries, infecting the wider world with its dark influence. Those who venture into Freakshow Falls must navigate the ever-shifting, nightmarish landscape and confront The Corruption's minions to uncover the secrets of the park and prevent The Corruption from unleashing its full fury upon the world.\n\nIn Freakshow Falls, players will face a constant struggle for survival against The Corruption's twisted creations, navigating a world that is as unpredictable as it is deadly. The setting promises a rich, immersive experience, filled with dark wonder, grotesque beauty, and an undercurrent of existential horror.",
+    "generation_time_seconds": 53,
+    "player": {
+        "tile": {
+            "name": "wasteland_survivor",
+            "description": "A grizzled survivor of the post-apocalyptic wasteland, clad in tattered clothing and scavenged armor.",
+            "color": "#964B00"
+        },
+        "back_history": "Once a member of a ragtag group of scavengers, the player was ousted after a failed expedition into Freakshow Falls left them with a crippling injury and a burning desire for revenge against the twisted creations that destroyed their former life. Now, they seek redemption and a chance to reclaim their place in the world by delving into the heart of the corrupted amusement park and uncovering its dark secrets.",
+        "tile_with_texture": {
+            "name": "wasteland_survivor",
+            "description": "A grizzled survivor of the post-apocalyptic wasteland, clad in tattered clothing and scavenged armor.",
+            "color": "#964B00",
+            "texture": {
+                "tileset_position": {
+                    "x": 25,
+                    "y": 6
+                },
+                "tileset_description": "A gnome with a beard and a hat. It appears to be a warrior gnome with different armor. A small person with hat and beard."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The entrance of Freakshow Falls, now a twisted and rusting gate, creaks in the wind. The once vibrant paint has faded and chipped away, revealing a dark, metallic surface. The air is thick with the smell of rust and ozone. Distant, maniacal laughter echoes through the air, punctuated by the creaking of metal and the faint, jarring melody of a broken calliope.",
+                "name": "The Entrance of Freakshow Falls",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "rusting_metal",
+                    "description": "Rusting metal sheets, held together by wire and screws.",
+                    "color": "#B22222"
+                },
+                "floor_tile": {
+                    "name": "asphalt",
+                    "description": "Cracked and weathered asphalt, worn down by time and neglect.",
+                    "color": "#454545"
+                },
+                "wall_tile_with_texture": {
+                    "name": "rusting_metal",
+                    "description": "Rusting metal sheets, held together by wire and screws.",
+                    "color": "#B22222",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "asphalt",
+                    "description": "Cracked and weathered asphalt, worn down by time and neglect.",
+                    "color": "#454545",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The midway of Freakshow Falls, now a desolate stretch of broken booths and rusting game stalls. The air is heavy with the smell of smoke and grease. The sky above seems to press down, casting long shadows across the ground. The distant hum of broken machinery and the faint screams of twisted creatures create an unsettling atmosphere.",
+                "name": "The Midway of Madness",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "tattered_tent",
+                    "description": "Tattered and worn tent fabric, flapping in the wind.",
+                    "color": "#7F7F7F"
+                },
+                "floor_tile": {
+                    "name": "wooden_planks",
+                    "description": "Weathered wooden planks, worn smooth by years of foot traffic.",
+                    "color": "#969696"
+                },
+                "wall_tile_with_texture": {
+                    "name": "tattered_tent",
+                    "description": "Tattered and worn tent fabric, flapping in the wind.",
+                    "color": "#7F7F7F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "wooden_planks",
+                    "description": "Weathered wooden planks, worn smooth by years of foot traffic.",
+                    "color": "#969696",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The freak show tents, now twisted and distorted, seem to shift and writhe like living things. The air is thick with the smell of decay and corruption. The sickly yellow haze seems to seep into every pore, casting an otherworldly glow over the surroundings. The sound of distant, maniacal laughter grows louder, punctuated by the screams of the twisted freaks.",
+                "name": "The Freak Show of Horrors",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "distorted_tent",
+                    "description": "Twisted and distorted tent fabric, seeming to writhe and twist.",
+                    "color": "#660033"
+                },
+                "floor_tile": {
+                    "name": "muddy_ground",
+                    "description": "Muddy, uneven ground, slick with radioactive rain.",
+                    "color": "#786C3B"
+                },
+                "wall_tile_with_texture": {
+                    "name": "distorted_tent",
+                    "description": "Twisted and distorted tent fabric, seeming to writhe and twist.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "muddy_ground",
+                    "description": "Muddy, uneven ground, slick with radioactive rain.",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The heart of The Corruption, a twisted and nightmarish landscape of dark, glistening flesh and pulsing, bioluminescent growths. The air is heavy with the smell of decay and corruption, and the very ground seems to writhe and twist beneath your feet. The sound of screams and maniacal laughter reaches a fever pitch, as if The Corruption itself is alive and watching.",
+                "name": "The Core of Corruption",
+                "depth": 4,
+                "wall_tile": {
+                    "name": "corrupted_flesh",
+                    "description": "Twisted, pulsing flesh, seeming to shift and writhe like a living thing.",
+                    "color": "#990099"
+                },
+                "floor_tile": {
+                    "name": "glowing_flesh",
+                    "description": "Pulsaing, bioluminescent flesh, casting an eerie glow over the surroundings.",
+                    "color": "#33CC33"
+                },
+                "wall_tile_with_texture": {
+                    "name": "corrupted_flesh",
+                    "description": "Twisted, pulsing flesh, seeming to shift and writhe like a living thing.",
+                    "color": "#990099",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "glowing_flesh",
+                    "description": "Pulsaing, bioluminescent flesh, casting an eerie glow over the surroundings.",
+                    "color": "#33CC33",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "twisted_clown_face",
+                    "description": "A grotesque clown face with a cracked and twisted grin.",
+                    "color": "#FF69B4"
+                },
+                "weight": 6,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "twisted_clown_face",
+                    "description": "A grotesque clown face with a cracked and twisted grin.",
+                    "color": "#FF69B4",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rusted_mechanic",
+                    "description": "A hulking mass of rusted machinery with glowing red eyes.",
+                    "color": "#8B0A1A"
+                },
+                "weight": 8,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "rusted_mechanic",
+                    "description": "A hulking mass of rusted machinery with glowing red eyes.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "skeleton_worker",
+                    "description": "A skeletal worker with a top hat and a wrench.",
+                    "color": "#D3D3D3"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "skeleton_worker",
+                    "description": "A skeletal worker with a top hat and a wrench.",
+                    "color": "#D3D3D3",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 6
+                        },
+                        "tileset_description": "A skeleton without weapons or armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_dancer",
+                    "description": "A dancer with a corrupted, elongated body and a painted-on smile.",
+                    "color": "#FFC0CB"
+                },
+                "weight": 5,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "corrupted_dancer",
+                    "description": "A dancer with a corrupted, elongated body and a painted-on smile.",
+                    "color": "#FFC0CB",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "giant_spider",
+                    "description": "A massive, mutated spider with a grotesque, humanoid face.",
+                    "color": "#8B008B"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "giant_spider",
+                    "description": "A massive, mutated spider with a grotesque, humanoid face.",
+                    "color": "#8B008B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "broken_puppet",
+                    "description": "A broken, stringless puppet with a cracked and faded paint job.",
+                    "color": "#964B00"
+                },
+                "weight": 3,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "broken_puppet",
+                    "description": "A broken, stringless puppet with a cracked and faded paint job.",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 6
+                        },
+                        "tileset_description": "A skeleton without weapons or armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "mechanical_juggernaut",
+                    "description": "A massive, mechanical juggernaut with glowing blue eyes.",
+                    "color": "#00BFFF"
+                },
+                "weight": 7,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "mechanical_juggernaut",
+                    "description": "A massive, mechanical juggernaut with glowing blue eyes.",
+                    "color": "#00BFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rat",
+                    "description": "A mutated rat with glowing red eyes.",
+                    "color": "#786C3B"
+                },
+                "weight": 1,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "rat",
+                    "description": "A mutated rat with glowing red eyes.",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 8
+                        },
+                        "tileset_description": "A ferret, a rat, an opossum."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_acrobat",
+                    "description": "An acrobat with a corrupted, twisted body and a painted-on smile.",
+                    "color": "#FF99CC"
+                },
+                "weight": 4,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "corrupted_acrobat",
+                    "description": "An acrobat with a corrupted, twisted body and a painted-on smile.",
+                    "color": "#FF99CC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "the_corruption_boss",
+                    "description": "A massive, twisted creature born from The Corruption itself.",
+                    "color": "#660033"
+                },
+                "weight": 10,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "the_corruption_boss",
+                    "description": "A massive, twisted creature born from The Corruption itself.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_dagger",
+                    "description": "A crude, rusted dagger with a worn leather hilt.",
+                    "color": "#964B00"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_dagger",
+                    "description": "A crude, rusted dagger with a worn leather hilt.",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "freakshow_flapper",
+                    "description": "A tattered, oversized mallet with a grotesque clown face painted on the head.",
+                    "color": "#FF69B4"
+                },
+                "rarity": 5,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "freakshow_flapper",
+                    "description": "A tattered, oversized mallet with a grotesque clown face painted on the head.",
+                    "color": "#FF69B4",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scavenger_pistol",
+                    "description": "A hodgepodge handgun cobbled together from scavenged parts, with a wonky grip and a misfiring cylinder.",
+                    "color": "#786C3B"
+                },
+                "rarity": 3,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "scavenger_pistol",
+                    "description": "A hodgepodge handgun cobbled together from scavenged parts, with a wonky grip and a misfiring cylinder.",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 9
+                        },
+                        "tileset_description": "Sawed-off shotgun."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_crossbow",
+                    "description": "A twisted, nightmarish crossbow with wooden limbs that seem to shift and writhe like a living thing.",
+                    "color": "#452B1F"
+                },
+                "rarity": 7,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "corrupted_crossbow",
+                    "description": "A twisted, nightmarish crossbow with wooden limbs that seem to shift and writhe like a living thing.",
+                    "color": "#452B1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tinkerer's_staff",
+                    "description": "A ramshackle staff adorned with scraps of metal, wires, and tiny, glowing orbs that pulse with a faint blue light.",
+                    "color": "#6495ED"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 5,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "tinkerer's_staff",
+                    "description": "A ramshackle staff adorned with scraps of metal, wires, and tiny, glowing orbs that pulse with a faint blue light.",
+                    "color": "#6495ED",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 4
+                        },
+                        "tileset_description": "Simple wooden staff. Noah's staff."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "executioner_sword",
+                    "description": "A massive, two-handed greatsword with a blade etched with macabre carnival scenes and a hilt shaped like a freakshow banner.",
+                    "color": "#3F3F3F"
+                },
+                "rarity": 9,
+                "weight": 9,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "executioner_sword",
+                    "description": "A massive, two-handed greatsword with a blade etched with macabre carnival scenes and a hilt shaped like a freakshow banner.",
+                    "color": "#3F3F3F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "spark_pistol",
+                    "description": "An experimental pistol that fires electrified projectiles, with a grip that crackles with live sparks.",
+                    "color": "#FFC080"
+                },
+                "rarity": 8,
+                "weight": 6,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "spark_pistol",
+                    "description": "An experimental pistol that fires electrified projectiles, with a grip that crackles with live sparks.",
+                    "color": "#FFC080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 9
+                        },
+                        "tileset_description": "Modern one-handed machine gun. Uzi submachine gun."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_wand",
+                    "description": "A wand made from a human femur, adorned with tiny, glowing gemstones and a thread of black fabric.",
+                    "color": "#C7B8EA"
+                },
+                "rarity": 4,
+                "weight": 3,
+                "mana_cost": 7,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "bone_wand",
+                    "description": "A wand made from a human femur, adorned with tiny, glowing gemstones and a thread of black fabric.",
+                    "color": "#C7B8EA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a gemstone at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "carnival_halberd",
+                    "description": "A long-handled halberd with a head shaped like a freakshow attraction sign, complete with a rusty hook and a tattered banner.",
+                    "color": "#8B0A1A"
+                },
+                "rarity": 1,
+                "weight": 7,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "carnival_halberd",
+                    "description": "A long-handled halberd with a head shaped like a freakshow attraction sign, complete with a rusty hook and a tattered banner.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "dark_energy_launcher",
+                    "description": "An otherworldly launcher that fires bursts of dark energy, with a body that seems to shift and writhe like a living thing.",
+                    "color": "#2E4053"
+                },
+                "rarity": 10,
+                "weight": 10,
+                "mana_cost": 10,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "dark_energy_launcher",
+                    "description": "An otherworldly launcher that fires bursts of dark energy, with a body that seems to shift and writhe like a living thing.",
+                    "color": "#2E4053",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 4
+                        },
+                        "tileset_description": "Large shield, wall shield, dark with detail on the edges and in the middle."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "echo_of_erebus",
+            "description": "A glowing, crystalline shard pulsing with a faint, blue-green light. Its surface etched with microscopic, swirling patterns that seem to shift and writhe like living tendrils.",
+            "color": "#66CCCC"
+        },
+        "back_history": "The Echo of Erebus is the last remnant of the park's former entertainment technology, imbued with the essence of The Corruption's antithesis - a being known only as 'The Architect.' The Architect, a mysterious figure from the park's early days, had secretly designed the Echo as a failsafe to contain and eventually purge The Corruption from Freakshow Falls. When The Great Malfunction occurred, The Architect vanished, but the Echo remained, hidden deep within the park. It is said that the Echo holds the knowledge to reverse The Corruption and restore balance to the world. If left at the bottom of the dungeon, The Corruption will inevitably find and reclaim it, using its power to accelerate its spread across the world. The player must carry the Echo back to the surface, where it can be used to create a resonance field, slowly cleansing The Corruption's influence and restoring hope to the survivors of Freakshow Falls.",
+        "tile_with_texture": {
+            "name": "echo_of_erebus",
+            "description": "A glowing, crystalline shard pulsing with a faint, blue-green light. Its surface etched with microscopic, swirling patterns that seem to shift and writhe like living tendrils.",
+            "color": "#66CCCC",
+            "texture": {
+                "tileset_position": {
+                    "x": 23,
+                    "y": 4
+                },
+                "tileset_description": "Blue small diamond."
+            }
+        }
+    },
+    "usage_metadata": {
+        "meta-llama/llama-4-scout-17b-16e-instruct": {
+            "total_tokens": 10848,
+            "input_tokens": 7413,
+            "output_tokens": 3435
+        }
+    }
+}

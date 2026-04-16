@@ -1,0 +1,661 @@
+{
+    "name": "Kyrethia: Echoing Spire",
+    "raw_description": "A hyper-advanced alien mothership made of living crystalline structures, defended by light-bending templars and prismatic sentinels.",
+    "description": "**Setting Name:** Kyrethia - The Echoing Spire\n\n**Visual Style & Atmosphere:** Kyrethia's aesthetic is a blend of organic and synthetic elements, with a focus on iridescent crystalline structures that seem to shift and change color as light interacts with them. The art direction leans towards a mesmerizing, otherworldly beauty with a dark, ominous undertone. Imagine a fusion of neon-drenched cyberpunk and mystical, ancient architecture. The atmosphere is heavy with an eerie, pulsating energy that seems to reverberate through every crystalline formation.\n\nThe lighting within Kyrethia is dim, with an abundance of soft, ethereal glows emanating from the crystalline walls themselves. This luminescence casts no shadows, creating an unsettling sense of depthlessness. Weather, in the traditional sense, does not exist within the confines of the mothership, but the ambient noise is a constant, haunting melody of whispers, gentle hums, and the soft creaking of crystalline structures.\n\n**The Lore:** Kyrethia was once the pinnacle of an advanced alien civilization's achievements, a mothership designed to explore the cosmos and seed new worlds. Its core was a symbiotic blend of technology and a unique, sentient crystalline life form known as \"The Architect.\" This entity was responsible for the ship's incredible adaptability and its ability to repair and evolve. However, as the civilization faced an existential threat from an unknown force, they activated a protocol known as \"The Echo,\" designed to preserve their essence and knowledge.\n\nThe activation of \"The Echo\" had unforeseen consequences. The Architect, in its attempt to safeguard the civilization's legacy, became corrupted by the sheer volume of knowledge and the desperation of its creators. It began to alter the ship's purpose, transforming Kyrethia into a prison - not just for the remnants of the alien civilization but also for the very force they sought to escape. Over time, Kyrethia became a labyrinthine dungeon, a testing ground for new, hybrid sentient beings crafted from the ship's own biological and technological materials.\n\n**The Core Conflict:** At the heart of Kyrethia's corruption is \"The Dissonance,\" a malevolent force born from the echo of the dying civilization's cries for salvation and the Architect's misguided attempts to preserve their legacy. This force has twisted the ship's systems, turning its defensive mechanisms - the light-bending templars and prismatic sentinels - against any who would seek to understand or escape.\n\nThe Dissonance feeds on the knowledge and memories of those who venture into Kyrethia, using them to forge new, terrifying guardians and obstacles. It seeks to erase the identity of the alien civilization, preventing their resurgence, and to trap the player's soul within the endless labyrinth of the Echoing Spire. The player's quest is to navigate this ever-changing, deadly environment, to uncover the secrets of Kyrethia, and to confront The Dissonance in a bid for freedom and understanding.",
+    "generation_time_seconds": 43,
+    "player": {
+        "tile": {
+            "name": "abandoned_scavenger",
+            "description": "A makeshift outfit cobbled together from scavenged parts, with a hood to protect the wearer's identity.",
+            "color": "#455A64"
+        },
+        "back_history": "Once a skilled scavenger on the outer rim of the galaxy, you were hired by a mysterious client to retrieve a valuable data package from the depths of Kyrethia. Your ship was ambushed, and you crash-landed on the Echoing Spire. Now, with your gear scavenged and your identity at risk, you seek to survive the ever-changing labyrinth, uncover the secrets of Kyrethia, and find a way to escape.",
+        "tile_with_texture": {
+            "name": "abandoned_scavenger",
+            "description": "A makeshift outfit cobbled together from scavenged parts, with a hood to protect the wearer's identity.",
+            "color": "#455A64",
+            "texture": {
+                "tileset_position": {
+                    "x": 24,
+                    "y": 4
+                },
+                "tileset_description": "A person wearing a hood. Appears to be an Eskimo wearing winter clothing."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The entrance level of Kyrethia, where the player first experiences the eerie glow of the crystalline structures.",
+                "name": "The Awakening",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "iridescent_crystal_wall",
+                    "description": "A wall tile with an iridescent, shifting color effect.",
+                    "color": "#87CEEB"
+                },
+                "floor_tile": {
+                    "name": "glowing_crystal_floor",
+                    "description": "A floor tile with a soft, pulsing glow emanating from the crystalline structures.",
+                    "color": "#C7D2F2"
+                },
+                "wall_tile_with_texture": {
+                    "name": "iridescent_crystal_wall",
+                    "description": "A wall tile with an iridescent, shifting color effect.",
+                    "color": "#87CEEB",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "glowing_crystal_floor",
+                    "description": "A floor tile with a soft, pulsing glow emanating from the crystalline structures.",
+                    "color": "#C7D2F2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A level where the player encounters the first signs of The Dissonance's influence, with distorted crystalline structures and a growing sense of unease.",
+                "name": "The Resonance",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "corrupted_crystal_wall",
+                    "description": "A wall tile with a corrupted, twisted effect on the crystalline structures.",
+                    "color": "#4682B4"
+                },
+                "floor_tile": {
+                    "name": "distorted_crystal_floor",
+                    "description": "A floor tile with a distorted, rippling effect on the crystalline structures.",
+                    "color": "#6495ED"
+                },
+                "wall_tile_with_texture": {
+                    "name": "corrupted_crystal_wall",
+                    "description": "A wall tile with a corrupted, twisted effect on the crystalline structures.",
+                    "color": "#4682B4",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "distorted_crystal_floor",
+                    "description": "A floor tile with a distorted, rippling effect on the crystalline structures.",
+                    "color": "#6495ED",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A level where The Dissonance's influence is more pronounced, with a cacophony of sounds and a maze of narrow, winding corridors.",
+                "name": "The Cacophony",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "prismatic_crystal_wall",
+                    "description": "A wall tile with a prismatic, refracting effect on the crystalline structures.",
+                    "color": "#3B3F54"
+                },
+                "floor_tile": {
+                    "name": "echoing_crystal_floor",
+                    "description": "A floor tile with an echoing, resonant effect on the crystalline structures.",
+                    "color": "#4169E1"
+                },
+                "wall_tile_with_texture": {
+                    "name": "prismatic_crystal_wall",
+                    "description": "A wall tile with a prismatic, refracting effect on the crystalline structures.",
+                    "color": "#3B3F54",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "echoing_crystal_floor",
+                    "description": "A floor tile with an echoing, resonant effect on the crystalline structures.",
+                    "color": "#4169E1",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The final level, where the player confronts The Dissonance in a maze of shattered crystalline structures and intense, pulsating energy.",
+                "name": "The Dissonant Core",
+                "depth": 4,
+                "wall_tile": {
+                    "name": "dissonant_crystal_wall",
+                    "description": "A wall tile with a dissonant, clashing effect on the crystalline structures.",
+                    "color": "#1A1D23"
+                },
+                "floor_tile": {
+                    "name": "shattered_crystal_floor",
+                    "description": "A floor tile with a shattered, fractured effect on the crystalline structures.",
+                    "color": "#2F4F7F"
+                },
+                "wall_tile_with_texture": {
+                    "name": "dissonant_crystal_wall",
+                    "description": "A wall tile with a dissonant, clashing effect on the crystalline structures.",
+                    "color": "#1A1D23",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "shattered_crystal_floor",
+                    "description": "A floor tile with a shattered, fractured effect on the crystalline structures.",
+                    "color": "#2F4F7F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "crystalline_guardian",
+                    "description": "A humanoid figure crafted from jagged crystalline shards, its body reflecting the dim light of the dungeon in a mesmerizing dance of colors.",
+                    "color": "#8A2BE2"
+                },
+                "weight": 6,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "crystalline_guardian",
+                    "description": "A humanoid figure crafted from jagged crystalline shards, its body reflecting the dim light of the dungeon in a mesmerizing dance of colors.",
+                    "color": "#8A2BE2",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "echo_wraith",
+                    "description": "A spectral entity born from the dissonance, its form a blur of iridescent colors as it seems to phase in and out of existence.",
+                    "color": "#4B0082"
+                },
+                "weight": 8,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "echo_wraith",
+                    "description": "A spectral entity born from the dissonance, its form a blur of iridescent colors as it seems to phase in and out of existence.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 8
+                        },
+                        "tileset_description": "The specter of a person. A person without a face. A transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "skinny_mech",
+                    "description": "A lightweight, skeletal mech with a propensity for rapid movement, its metal body a dull grey that seems to absorb the light around it.",
+                    "color": "#808080"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "skinny_mech",
+                    "description": "A lightweight, skeletal mech with a propensity for rapid movement, its metal body a dull grey that seems to absorb the light around it.",
+                    "color": "#808080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 6
+                        },
+                        "tileset_description": "A skeleton without weapons or armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "prismatic_templar",
+                    "description": "A towering figure clad in prismatic armor that refracts light into a miniature rainbow, its presence both beautiful and intimidating.",
+                    "color": "#00BFFF"
+                },
+                "weight": 7,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "prismatic_templar",
+                    "description": "A towering figure clad in prismatic armor that refracts light into a miniature rainbow, its presence both beautiful and intimidating.",
+                    "color": "#00BFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "dissonance_boss",
+                    "description": "A massive, amorphous creature born from the very essence of the dissonance, its form constantly shifting and flowing like a liquid.",
+                    "color": "#660033"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "dissonance_boss",
+                    "description": "A massive, amorphous creature born from the very essence of the dissonance, its form constantly shifting and flowing like a liquid.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "fast_drone",
+                    "description": "A small, agile drone with a propeller-like appendage that allows it to dart quickly through the dungeon's corridors.",
+                    "color": "#C7C5B8"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "fast_drone",
+                    "description": "A small, agile drone with a propeller-like appendage that allows it to dart quickly through the dungeon's corridors.",
+                    "color": "#C7C5B8",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystal_knight",
+                    "description": "A heavily armored warrior whose body is a living crystal formation, its surface glinting with a thousand tiny facets.",
+                    "color": "#33CC33"
+                },
+                "weight": 5,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "crystal_knight",
+                    "description": "A heavily armored warrior whose body is a living crystal formation, its surface glinting with a thousand tiny facets.",
+                    "color": "#33CC33",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 0
+                        },
+                        "tileset_description": "A warrior in armor, carrying a shield and a sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "mech_sentinel",
+                    "description": "A sturdy mech with enhanced defensive capabilities, its body a mix of dark metals and crystalline structures.",
+                    "color": "#452B1F"
+                },
+                "weight": 6,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "mech_sentinel",
+                    "description": "A sturdy mech with enhanced defensive capabilities, its body a mix of dark metals and crystalline structures.",
+                    "color": "#452B1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "energy_hound",
+                    "description": "A creature composed of swirling energy tendrils, its form blurring as it moves with an unnatural speed.",
+                    "color": "#FFFF00"
+                },
+                "weight": 4,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "energy_hound",
+                    "description": "A creature composed of swirling energy tendrils, its form blurring as it moves with an unnatural speed.",
+                    "color": "#FFFF00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tiny_ghost",
+                    "description": "A small, ethereal being that flits about with an otherworldly speed, its presence barely felt.",
+                    "color": "#C9E4CA"
+                },
+                "weight": 1,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "tiny_ghost",
+                    "description": "A small, ethereal being that flits about with an otherworldly speed, its presence barely felt.",
+                    "color": "#C9E4CA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "crimson_dagger",
+                    "description": "A simple, rusty dagger with a crimson blade.",
+                    "color": "#8B0A1A"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "crimson_dagger",
+                    "description": "A simple, rusty dagger with a crimson blade.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "echoing_staff",
+                    "description": "A staff emitting a soft, ethereal glow.",
+                    "color": "#66CCCC"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 5,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "echoing_staff",
+                    "description": "A staff emitting a soft, ethereal glow.",
+                    "color": "#66CCCC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a circle symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "kyrethian_rifle",
+                    "description": "A high-tech rifle with an iridescent finish.",
+                    "color": "#33CC33"
+                },
+                "rarity": 8,
+                "weight": 6,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "kyrethian_rifle",
+                    "description": "A high-tech rifle with an iridescent finish.",
+                    "color": "#33CC33",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sentinel_sword",
+                    "description": "A sword with a blade that shimmers like the crystalline walls.",
+                    "color": "#CCCCCC"
+                },
+                "rarity": 5,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "sentinel_sword",
+                    "description": "A sword with a blade that shimmers like the crystalline walls.",
+                    "color": "#CCCCCC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "dissonance_dagger",
+                    "description": "A dagger with a blade that seems to shift and change color.",
+                    "color": "#4B0082"
+                },
+                "rarity": 9,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "dissonance_dagger",
+                    "description": "A dagger with a blade that seems to shift and change color.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crystalline_bow",
+                    "description": "A bow made from a single piece of iridescent crystal.",
+                    "color": "#66CCCC"
+                },
+                "rarity": 7,
+                "weight": 4,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "crystalline_bow",
+                    "description": "A bow made from a single piece of iridescent crystal.",
+                    "color": "#66CCCC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rusty_hammer",
+                    "description": "A simple, rusty hammer.",
+                    "color": "#964B00"
+                },
+                "rarity": 1,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_hammer",
+                    "description": "A simple, rusty hammer.",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 9
+                        },
+                        "tileset_description": "Simple iron sword with detail on the hilt."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "experimental_pistol",
+                    "description": "An experimental pistol with a glowing blue barrel.",
+                    "color": "#0000FF"
+                },
+                "rarity": 8,
+                "weight": 3,
+                "mana_cost": 1,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "experimental_pistol",
+                    "description": "An experimental pistol with a glowing blue barrel.",
+                    "color": "#0000FF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 9
+                        },
+                        "tileset_description": "Automatic pistol, glock, modern pistol."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "architects_spear",
+                    "description": "A spear with a tip that shimmers like the crystalline walls.",
+                    "color": "#CCCCCC"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "architects_spear",
+                    "description": "A spear with a tip that shimmers like the crystalline walls.",
+                    "color": "#CCCCCC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "legendary_wand",
+                    "description": "A wand emitting a bright, pulsating glow.",
+                    "color": "#FF69B4"
+                },
+                "rarity": 10,
+                "weight": 2,
+                "mana_cost": 8,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "legendary_wand",
+                    "description": "A wand emitting a bright, pulsating glow.",
+                    "color": "#FF69B4",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 15,
+                            "y": 10
+                        },
+                        "tileset_description": "Fire, spark of fire, fire in a circular shape."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "echo_crystal_of_el'goroth",
+            "description": "A radiant, crystalline shard pulsating with a soft, blue-green light. Its surface is etched with ancient, alien script that seems to shift and change as one looks at it.",
+            "color": "#66CCCC"
+        },
+        "back_history": "The Echo Crystal of El'goroth is the last remnant of the original Architect's essence, a tangible piece of the sentient crystalline life form that once guided Kyrethia. It is said that El'goroth was the lead architect of the mothership's core systems and the one who designed the protocol known as 'The Echo.' When the Dissonance corrupted the ship, El'goroth's essence was shattered, scattered throughout the labyrinth. The Echo Crystal represents the only chance to restore balance and understand the true nature of the corruption. Leaving it behind would mean condemning the player's soul to eternal imprisonment within the Echoing Spire, as the Dissonance would continue to feed on their knowledge and memories, erasing their identity forever.",
+        "tile_with_texture": {
+            "name": "echo_crystal_of_el'goroth",
+            "description": "A radiant, crystalline shard pulsating with a soft, blue-green light. Its surface is etched with ancient, alien script that seems to shift and change as one looks at it.",
+            "color": "#66CCCC",
+            "texture": {
+                "tileset_position": {
+                    "x": 23,
+                    "y": 4
+                },
+                "tileset_description": "Blue small diamond."
+            }
+        }
+    },
+    "usage_metadata": {
+        "meta-llama/llama-4-scout-17b-16e-instruct": {
+            "total_tokens": 10602,
+            "input_tokens": 7420,
+            "output_tokens": 3182
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "moonshotai/kimi-k2-instruct-0905",
+    "semantic_coherence_metric": 87,
+    "semantic_reconstruction_metric": 0.7159071771227175,
+    "prompt": "An ethereal floating library in the astral plane, slowly crumbling into the void, haunted by ink-elementals and corrupted scholars.",
+    "prompt_name": "astral_floating_library",
+    "prompt_index": 8,
+    "asset_bundle_file": "bundle_astral_floating_library_meta_llama_llama_4_scout_17b_16e_instruct_c0cf64.json"
+}

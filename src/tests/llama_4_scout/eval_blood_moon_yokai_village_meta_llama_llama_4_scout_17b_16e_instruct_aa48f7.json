@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "moonshotai/kimi-k2-instruct-0905",
+    "semantic_coherence_metric": 88,
+    "semantic_reconstruction_metric": 0.6709834514349723,
+    "prompt": "A cursed feudal Japanese village trapped in an eternal blood-moon night, stalked by vengeful yokai and undead samurai.",
+    "prompt_name": "blood_moon_yokai_village",
+    "prompt_index": 13,
+    "asset_bundle_file": "bundle_blood_moon_yokai_village_meta_llama_llama_4_scout_17b_16e_instruct_aa48f7.json"
+}

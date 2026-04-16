@@ -1,0 +1,661 @@
+{
+    "name": "Titans of Arkon's Scar",
+    "raw_description": "A desolate, sun-scorched desert canyon littered with the colossal bones of ancient titans, inhabited by scavengers and blood-magic shamans.",
+    "description": "**Setting Name:** Arkon's Scar\n\n**Visual Style & Atmosphere:** Arkon's Scar is a desolate, sun-scorched world with a gritty, post-apocalyptic art direction. The landscape is dominated by the skeletal remains of colossal titans, their bones bleached white and cracked, stretching towards the sky like macabre sentinels. The terrain is a maze of deep, winding canyons, ravines, and gorges, carved out by ancient rivers long since vanished. The atmosphere is oppressive, with blistering sandstorms and a perpetual haze of heat mirages. As the sun dips below the horizon, the sky transforms into a deep, bloody red, casting an eerie glow over the bones and ruins.\n\nThe visual palette is characterized by warm, earthy tones, with an emphasis on sandy beiges, rust-reds, and the stark white of bone. Weather effects include intense sandstorms, heat waves, and rare, eerie sandstorms that seem to have a life of their own. Ambient noise consists of the constant howl of wind, the creaking of ancient bones, and the distant, unsettling chanting of unknown voices.\n\n**The Lore:** Arkon's Scar was once a thriving world, home to a civilization that revered the titans as gods. These ancient beings were said to have possessed unfathomable power, and their worship was steeped in dark, blood magic. As the civilization grew in power, so did their ambition, and they sought to harness the titans' energy to transcend mortality. A catastrophic event, known as \"The Great Desecration,\" occurred when the practitioners of blood magic attempted to exploit the titans' power. The titans, enraged by the desecration of their bodies and the theft of their life force, unleashed a cataclysmic fury upon the world.\n\nThe world was reshaped in the aftermath, as the titans' life force was ripped asunder, leaving behind their skeletal remains and a scarred, barren landscape. The survivors, twisted by their exposure to the dark magic, became the scavengers and blood-magic shamans that now inhabit Arkon's Scar. They eke out a brutal existence, scrounging for resources and seeking to exploit the residual power of the titans.\n\n**The Core Conflict:** The corruption at the heart of Arkon's Scar is a malevolent force known as \"The Devouring.\" This dark energy, born from the titans' life force and the blood magic that once sustained them, now seeps from the very earth itself. The Devouring is a sentient, corrosive force that seeks to consume all life and matter, reshaping the world in its image. It manifests as a creeping, corrosive mist that seeps from the bones and ruins, corroding everything it touches.\n\nThe Devouring has spawned a multitude of twisted creatures, from massive, worm-like scavengers to humanoid abominations born from the fusion of flesh and bone. These creatures roam the landscape, driven by a constant hunger for life force and a desire to serve The Devouring. The blood-magic shamans, while corrupted by their own dark practices, are the only ones who seem to understand the true nature of The Devouring and the danger it poses to all life in Arkon's Scar.\n\nAs adventurers explore Arkon's Scar, they will need to navigate the ever-shifting landscape, avoiding The Devouring's minions and confronting the dark secrets of a civilization that was consumed by its own ambition. Will they be able to unravel the mysteries of this desolate world, or will they succumb to The Devouring's relentless hunger?",
+    "generation_time_seconds": 46,
+    "player": {
+        "tile": {
+            "name": "survivor_vagabond",
+            "description": "A weathered and weary adventurer, clad in tattered leather armor and carrying a well-worn rifle.",
+            "color": "#964B00"
+        },
+        "back_history": "Once a member of a nomadic tribe on the outskirts of Arkon's Scar, the player was cast out after a catastrophic sandstorm destroyed their home and killed their family. Seeking redemption and a chance to reclaim their lost heritage, they now venture into the unforgiving landscape to scavenge for resources, uncover the secrets of their tribe's downfall, and take a stand against the corrosive force of The Devouring.",
+        "tile_with_texture": {
+            "name": "survivor_vagabond",
+            "description": "A weathered and weary adventurer, clad in tattered leather armor and carrying a well-worn rifle.",
+            "color": "#964B00",
+            "texture": {
+                "tileset_position": {
+                    "x": 28,
+                    "y": 0
+                },
+                "tileset_description": "A warrior in armor, carrying a shield and a sword."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A shallow, winding canyon carved out by ancient rivers. The air is thick with the acrid smell of sand and dust.",
+                "name": "The Wasted Gorge",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "cracked_earth",
+                    "description": "Dry, cracked earth",
+                    "color": "#964B00"
+                },
+                "floor_tile": {
+                    "name": "sand",
+                    "description": "Coarse, golden sand",
+                    "color": "#F5F5DC"
+                },
+                "wall_tile_with_texture": {
+                    "name": "cracked_earth",
+                    "description": "Dry, cracked earth",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "sand",
+                    "description": "Coarse, golden sand",
+                    "color": "#F5F5DC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A narrow, rocky gorge flanked by the skeletal remains of a titanic creature. The air is heavy with the stench of decay.",
+                "name": "The Titan's Ribs",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "bleached_bone",
+                    "description": "Bleached, cracked bone",
+                    "color": "#FFFFFF"
+                },
+                "floor_tile": {
+                    "name": "rocky_outcropping",
+                    "description": "Jagged, rocky outcroppings",
+                    "color": "#786C3B"
+                },
+                "wall_tile_with_texture": {
+                    "name": "bleached_bone",
+                    "description": "Bleached, cracked bone",
+                    "color": "#FFFFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "rocky_outcropping",
+                    "description": "Jagged, rocky outcroppings",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A twisted, nightmarish landscape where The Devouring's corrosive mist seeps from the earth. The air is thick with the stench of corruption.",
+                "name": "The Devouring's Edge",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "blackened_stone",
+                    "description": "Blackened, twisted stone",
+                    "color": "#333333"
+                },
+                "floor_tile": {
+                    "name": "corroded_metal",
+                    "description": "Corroded, twisted metal",
+                    "color": "#666666"
+                },
+                "wall_tile_with_texture": {
+                    "name": "blackened_stone",
+                    "description": "Blackened, twisted stone",
+                    "color": "#333333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "corroded_metal",
+                    "description": "Corroded, twisted metal",
+                    "color": "#666666",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            },
+            {
+                "description": "A twisted, hellish landscape where The Devouring's power is at its strongest. The air is a maelstrom of corrosive energy.",
+                "name": "The Scar's Core",
+                "depth": 4,
+                "wall_tile": {
+                    "name": "twisted_bone",
+                    "description": "Twisted, corrupted bone",
+                    "color": "#C0C0C0"
+                },
+                "floor_tile": {
+                    "name": "molten_lava",
+                    "description": "Molten, burning lava",
+                    "color": "#FF0000"
+                },
+                "wall_tile_with_texture": {
+                    "name": "twisted_bone",
+                    "description": "Twisted, corrupted bone",
+                    "color": "#C0C0C0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "molten_lava",
+                    "description": "Molten, burning lava",
+                    "color": "#FF0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "desiccated_corpse",
+                    "description": "A withered, skeletal remains of a long dead creature.",
+                    "color": "#663300"
+                },
+                "weight": 2,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "desiccated_corpse",
+                    "description": "A withered, skeletal remains of a long dead creature.",
+                    "color": "#663300",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 6
+                        },
+                        "tileset_description": "A skeleton without weapons or armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "titan_bone_wraith",
+                    "description": "A ghostly apparition crafted from the bones of a titan.",
+                    "color": "#FFFFFF"
+                },
+                "weight": 8,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "titan_bone_wraith",
+                    "description": "A ghostly apparition crafted from the bones of a titan.",
+                    "color": "#FFFFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sand_swarm",
+                    "description": "A cloud of razor-sharp sand particles.",
+                    "color": "#969696"
+                },
+                "weight": 1,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "sand_swarm",
+                    "description": "A cloud of razor-sharp sand particles.",
+                    "color": "#969696",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_shaman",
+                    "description": "A twisted, corrupted shaman using dark magic.",
+                    "color": "#450045"
+                },
+                "weight": 5,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "corrupted_shaman",
+                    "description": "A twisted, corrupted shaman using dark magic.",
+                    "color": "#450045",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "devouring_titan",
+                    "description": "A massive, titanic creature consumed by The Devouring.",
+                    "color": "#000000"
+                },
+                "weight": 10,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "devouring_titan",
+                    "description": "A massive, titanic creature consumed by The Devouring.",
+                    "color": "#000000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_snapper",
+                    "description": "A small, skeletal creature with a powerful bite.",
+                    "color": "#808080"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "bone_snapper",
+                    "description": "A small, skeletal creature with a powerful bite.",
+                    "color": "#808080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "sand_wraith",
+                    "description": "A ghostly, humanoid figure made of swirling sand.",
+                    "color": "#C0C0C0"
+                },
+                "weight": 7,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "sand_wraith",
+                    "description": "A ghostly, humanoid figure made of swirling sand.",
+                    "color": "#C0C0C0",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 7
+                        },
+                        "tileset_description": "The specter of a person. It looks like a transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "flesh_ripper",
+                    "description": "A grotesque, humanoid creature with sharp claws.",
+                    "color": "#660033"
+                },
+                "weight": 4,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "flesh_ripper",
+                    "description": "A grotesque, humanoid creature with sharp claws.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "titan_spine",
+                    "description": "A segment of a titan's spine, come to life.",
+                    "color": "#996600"
+                },
+                "weight": 6,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "titan_spine",
+                    "description": "A segment of a titan's spine, come to life.",
+                    "color": "#996600",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 3
+                        },
+                        "tileset_description": "It's a human being, but instead of legs it has a wheel. It looks like a unicycle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_guardian",
+                    "description": "A massive, corrupted creature guarding a titan's remains.",
+                    "color": "#333300"
+                },
+                "weight": 9,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "corrupted_guardian",
+                    "description": "A massive, corrupted creature guarding a titan's remains.",
+                    "color": "#333300",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "scavenged_dagger",
+                    "description": "A rusty, improvised dagger with a short blade and worn handle.",
+                    "color": "#964B00"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "scavenged_dagger",
+                    "description": "A rusty, improvised dagger with a short blade and worn handle.",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "titan_bone_club",
+                    "description": "A crude club made from a shattered titan bone, wrapped in worn leather.",
+                    "color": "#F5F5DC"
+                },
+                "rarity": 5,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "titan_bone_club",
+                    "description": "A crude club made from a shattered titan bone, wrapped in worn leather.",
+                    "color": "#F5F5DC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "desecrator_staff",
+                    "description": "A staff imbued with dark magic, adorned with tiny bones and scraps of corrupted flesh.",
+                    "color": "#660033"
+                },
+                "rarity": 8,
+                "weight": 4,
+                "mana_cost": 6,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "desecrator_staff",
+                    "description": "A staff imbued with dark magic, adorned with tiny bones and scraps of corrupted flesh.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scorched_crossbow",
+                    "description": "A weathered crossbow with a scorched wooden stock and rusted metal components.",
+                    "color": "#786C3B"
+                },
+                "rarity": 3,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "scorched_crossbow",
+                    "description": "A weathered crossbow with a scorched wooden stock and rusted metal components.",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bone_shard_bow",
+                    "description": "A bow crafted from a single piece of curved titan bone, strung with a length of worn cord.",
+                    "color": "#B9B9B9"
+                },
+                "rarity": 6,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "bone_shard_bow",
+                    "description": "A bow crafted from a single piece of curved titan bone, strung with a length of worn cord.",
+                    "color": "#B9B9B9",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 6
+                        },
+                        "tileset_description": "A very rare wooden bow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "devouring_dart_gun",
+                    "description": "An experimental dart gun infused with The Devouring's corrosive energy.",
+                    "color": "#333300"
+                },
+                "rarity": 9,
+                "weight": 4,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "devouring_dart_gun",
+                    "description": "An experimental dart gun infused with The Devouring's corrosive energy.",
+                    "color": "#333300",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium rarity Greatsword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "shamanic_focus",
+                    "description": "A focus crystal attuned to the shaman's dark magic, pulsing with an otherworldly energy.",
+                    "color": "#4B0082"
+                },
+                "rarity": 7,
+                "weight": 1,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "shamanic_focus",
+                    "description": "A focus crystal attuned to the shaman's dark magic, pulsing with an otherworldly energy.",
+                    "color": "#4B0082",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 40,
+                            "y": 4
+                        },
+                        "tileset_description": "Large shield, wall shield, dark with detail on the edges and in the middle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "titan_tooth_hammer",
+                    "description": "A massive war hammer with a head forged from a titan's tooth, adorned with ancient runes.",
+                    "color": "#786C3B"
+                },
+                "rarity": 4,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "titan_tooth_hammer",
+                    "description": "A massive war hammer with a head forged from a titan's tooth, adorned with ancient runes.",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_flail",
+                    "description": "A flail with a head made from a twisted mass of corrupted flesh and bone, attached to a worn chain.",
+                    "color": "#450000"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "corrupted_flail",
+                    "description": "A flail with a head made from a twisted mass of corrupted flesh and bone, attached to a worn chain.",
+                    "color": "#450000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "echoing_spear",
+                    "description": "A spectral spear imbued with the echoes of ancient battles, its blade shimmering with a faint, ethereal glow.",
+                    "color": "#C7C5B8"
+                },
+                "rarity": 10,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "echoing_spear",
+                    "description": "A spectral spear imbued with the echoes of ancient battles, its blade shimmering with a faint, ethereal glow.",
+                    "color": "#C7C5B8",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 5
+                        },
+                        "tileset_description": "An iron spear with a hook or anchor at the tip."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "Echo of Erebus",
+            "description": "A glowing, crystalline shard pulsing with a faint, blue-green light. The surface is etched with ancient, arcane symbols that seem to shift and writhe like living serpents.",
+            "color": "#66CCCC"
+        },
+        "back_history": "The Echo of Erebus is the last remnant of the titans' life force, a concentrated essence of their power and knowledge. It was once used by the ancient civilization to control and harness the energy of the titans, but during the Great Desecration, the Echo was shattered and scattered across the world. The Devouring, born from the titans' life force, seeks to reclaim this Echo and use its power to consume all life in Arkon's Scar. The player must retrieve the Echo and carry it back to the surface to prevent The Devouring from becoming unstoppable and to give the survivors a chance to find a cure for the corruption that has consumed their world.",
+        "tile_with_texture": {
+            "name": "Echo of Erebus",
+            "description": "A glowing, crystalline shard pulsing with a faint, blue-green light. The surface is etched with ancient, arcane symbols that seem to shift and writhe like living serpents.",
+            "color": "#66CCCC",
+            "texture": {
+                "tileset_position": {
+                    "x": 23,
+                    "y": 4
+                },
+                "tileset_description": "Blue small diamond."
+            }
+        }
+    },
+    "usage_metadata": {
+        "meta-llama/llama-4-scout-17b-16e-instruct": {
+            "input_tokens": 8374,
+            "total_tokens": 11583,
+            "output_tokens": 3209
+        }
+    }
+}

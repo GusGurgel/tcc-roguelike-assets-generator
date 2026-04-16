@@ -1,0 +1,661 @@
+{
+    "name": "Twilight Wasteland Carnage",
+    "raw_description": "A sprawling trench-warfare wasteland locked in World War I era technology, but twisted by necromancy, featuring zombie infantry and chemical-mutated behemoths.",
+    "description": "**Setting Name:** \"Carnage's Scape\"\n\n**Visual Style & Atmosphere:** Carnage's Scape is a grim, industrial wasteland with a perpetual twilight atmosphere. The art direction is a blend of Gritty Industrial and Gothic Horror, with a focus on muted, earthy tones and a heavy emphasis on rust, decay, and neglect. The landscape is scarred by trenches, craters, and ruined fortifications, with tangled barbed wire and makeshift wooden palisades. Weather conditions are often bleak, with a thick, impenetrable fog rolling in from the horizon, shrouding the battlefield in an eerie, damp mist. Ambient noise consists of the distant rumble of artillery fire, the creaking of twisted metal, and the unsettling moans of the undead.\n\n**The Lore:** Carnage's Scape was once a major battleground during the Great War, where the armies of Europe clashed in a brutal and devastating conflict. As the war dragged on, both sides began to experiment with dark, arcane forces in an attempt to gain an advantage. Necromancers and chemists collaborated to create unholy abominations, hoping to turn the tide of battle. However, their experiments spiralled out of control, unleashing a terrible corruption that twisted the land and its inhabitants. The war ended abruptly, but the horrors that were unleashed continued to evolve, spreading across the battlefield like a stain. Today, Carnage's Scape remains a haunted, nightmarish realm, where zombie infantry, known as the \"Eternal Sentinels,\" shamble through the trenches, and massive, chemical-mutated behemoths, called the \"Aberrations,\" roam the wasteland, driven by a maddening hunger for destruction.\n\n**The Core Conflict:** The corruption controlling Carnage's Scape is known as the \"Devouring Influence,\" a malevolent force born from the confluence of necromancy and industrial-scale warfare. This dark energy animates the Eternal Sentinels, turning them into an unending horde of undead soldiers, and drives the Aberrations to grow stronger, more twisted, and increasingly aggressive. The Devouring Influence seeks to consume all life in Carnage's Scape, perpetuating a cycle of death, decay, and rebirth, as it slowly spreads across the world, threatening to engulf everything in its path. Those who dare to enter Carnage's Scape must navigate this twisted landscape, avoiding the relentless undead and Aberrations, while confronting the dark forces driving this apocalyptic realm.\n\nAs adventurers explore Carnage's Scape, they'll uncover remnants of the Great War, including abandoned trench networks, ruined fortifications, and makeshift hospitals. They'll encounter scattered groups of survivors, some of whom have formed uneasy alliances with rogue factions vying for power in this broken world. The landscape itself seems to shift and change, as if the very fabric of reality is unraveling. Players will need to adapt to this ever-changing environment, leveraging their wits, strategy, and cunning to survive the horrors that lurk within Carnage's Scape.",
+    "generation_time_seconds": 60,
+    "player": {
+        "tile": {
+            "name": "disgraced_knight",
+            "description": "A battered and rusted suit of armor, symbolizing a once-noble warrior's fall from grace.",
+            "color": "#454545"
+        },
+        "back_history": "A former knight, disgraced and cast out for questioning the orders of his corrupt lord, now seeks redemption in the depths of Carnage's Scape. He hopes to find a way to restore his honor and possibly uncover the truth behind the corruption that consumed his homeland.",
+        "tile_with_texture": {
+            "name": "disgraced_knight",
+            "description": "A battered and rusted suit of armor, symbolizing a once-noble warrior's fall from grace.",
+            "color": "#454545",
+            "texture": {
+                "tileset_position": {
+                    "x": 31,
+                    "y": 0
+                },
+                "tileset_description": "A warrior in armor carrying a sword and a shield. His helmet has horns."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The air is thick with the acrid smell of smoke and char. Twisted metal and wooden palisades line the trenches, with tangled barbed wire snaking through the debris.",
+                "name": "The Scorched Trenches",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "twisted_metal",
+                    "description": "A twisted and rusted metal sheet",
+                    "color": "#786C3B"
+                },
+                "floor_tile": {
+                    "name": "scorched_earth",
+                    "description": "A patch of scorched and barren earth",
+                    "color": "#964B00"
+                },
+                "wall_tile_with_texture": {
+                    "name": "twisted_metal",
+                    "description": "A twisted and rusted metal sheet",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "scorched_earth",
+                    "description": "A patch of scorched and barren earth",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The fog rolls in, shrouding the landscape in an eerie mist. The ground is dry and cracked, with withered plants struggling to survive.",
+                "name": "The Wasteland Moors",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "crumbling_concrete",
+                    "description": "A crumbling concrete bunker",
+                    "color": "#969696"
+                },
+                "floor_tile": {
+                    "name": "dry_moor",
+                    "description": "A patch of dry and cracked earth",
+                    "color": "#C9B99B"
+                },
+                "wall_tile_with_texture": {
+                    "name": "crumbling_concrete",
+                    "description": "A crumbling concrete bunker",
+                    "color": "#969696",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "dry_moor",
+                    "description": "A patch of dry and cracked earth",
+                    "color": "#C9B99B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The air is heavy with the stench of rot and decay. Abandoned machinery and rusting hulks of metal litter the floor.",
+                "name": "The Abandoned Factory",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "rusted_girder",
+                    "description": "A rusted and twisted metal girder",
+                    "color": "#FFC080"
+                },
+                "floor_tile": {
+                    "name": "oil_stained_concrete",
+                    "description": "A patch of oil-stained concrete",
+                    "color": "#786C3B"
+                },
+                "wall_tile_with_texture": {
+                    "name": "rusted_girder",
+                    "description": "A rusted and twisted metal girder",
+                    "color": "#FFC080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "oil_stained_concrete",
+                    "description": "A patch of oil-stained concrete",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The air is thick with an unholy energy, and the ground seems to writhe and twist beneath your feet. The walls are slick with a noxious, greenish ichor.",
+                "name": "The Aberration's Lair",
+                "depth": 4,
+                "wall_tile": {
+                    "name": "biomechanical_mass",
+                    "description": "A twisted mass of biomechanical tissue",
+                    "color": "#8B0A1A"
+                },
+                "floor_tile": {
+                    "name": "corrupted_earth",
+                    "description": "A patch of corrupted and twisted earth",
+                    "color": "#452B1F"
+                },
+                "wall_tile_with_texture": {
+                    "name": "biomechanical_mass",
+                    "description": "A twisted mass of biomechanical tissue",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "corrupted_earth",
+                    "description": "A patch of corrupted and twisted earth",
+                    "color": "#452B1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "zombie_infantry",
+                    "description": "A twisted, undead soldier with tattered uniform and vacant eyes.",
+                    "color": "#3A3D41"
+                },
+                "weight": 2,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "zombie_infantry",
+                    "description": "A twisted, undead soldier with tattered uniform and vacant eyes.",
+                    "color": "#3A3D41",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 8
+                        },
+                        "tileset_description": "The specter of a person. A person without a face. A transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "chemical_mutant",
+                    "description": "A hulking, chemically-mutated behemoth with bulging, pulsing growths.",
+                    "color": "#8B0A1A"
+                },
+                "weight": 8,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "chemical_mutant",
+                    "description": "A hulking, chemically-mutated behemoth with bulging, pulsing growths.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "skeleton_archer",
+                    "description": "A skeletal archer with a bow made from twisted, rusted metal.",
+                    "color": "#C7B8EA"
+                },
+                "weight": 1,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "skeleton_archer",
+                    "description": "A skeletal archer with a bow made from twisted, rusted metal.",
+                    "color": "#C7B8EA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 6
+                        },
+                        "tileset_description": "A skeleton without weapons or armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "aberration_hound",
+                    "description": "A twisted, nightmarish hound with razor-sharp teeth and glowing red eyes.",
+                    "color": "#660033"
+                },
+                "weight": 5,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "aberration_hound",
+                    "description": "A twisted, nightmarish hound with razor-sharp teeth and glowing red eyes.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "titanic_aberration",
+                    "description": "A massive, twisted monstrosity with bulging, pulsing growths and razor-sharp claws.",
+                    "color": "#2E1F4F"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "titanic_aberration",
+                    "description": "A massive, twisted monstrosity with bulging, pulsing growths and razor-sharp claws.",
+                    "color": "#2E1F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "zombie_pioneer",
+                    "description": "A zombie pioneer with a pickaxe and a tattered, worn uniform.",
+                    "color": "#452B1F"
+                },
+                "weight": 3,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "zombie_pioneer",
+                    "description": "A zombie pioneer with a pickaxe and a tattered, worn uniform.",
+                    "color": "#452B1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 6
+                        },
+                        "tileset_description": "A gnome with a beard and a hat. It appears to be a warrior gnome with different armor. A small person with hat and beard."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "chemical_spider",
+                    "description": "A massive, chemically-mutated spider with razor-sharp fangs and glowing green eyes.",
+                    "color": "#33CC33"
+                },
+                "weight": 7,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "chemical_spider",
+                    "description": "A massive, chemically-mutated spider with razor-sharp fangs and glowing green eyes.",
+                    "color": "#33CC33",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "skeleton_sniper",
+                    "description": "A skeletal sniper with a rifle made from twisted, rusted metal.",
+                    "color": "#969696"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "skeleton_sniper",
+                    "description": "A skeletal sniper with a rifle made from twisted, rusted metal.",
+                    "color": "#969696",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 6
+                        },
+                        "tileset_description": "A skeleton without weapons or armor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "aberration_guard",
+                    "description": "A twisted, nightmarish guard with razor-sharp claws and glowing blue eyes.",
+                    "color": "#03055B"
+                },
+                "weight": 6,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "aberration_guard",
+                    "description": "A twisted, nightmarish guard with razor-sharp claws and glowing blue eyes.",
+                    "color": "#03055B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "zombie_cavalry",
+                    "description": "A zombie cavalryman with a twisted, undead horse and a tattered, worn uniform.",
+                    "color": "#786C3B"
+                },
+                "weight": 4,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "zombie_cavalry",
+                    "description": "A zombie cavalryman with a twisted, undead horse and a tattered, worn uniform.",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 7
+                        },
+                        "tileset_description": "A horse or a donkey."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "trench_knife",
+                    "description": "A rusty, improvised knife with a wooden handle",
+                    "color": "#964B00"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "trench_knife",
+                    "description": "A rusty, improvised knife with a wooden handle",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": " bolt_action_rifle",
+                    "description": "A standard issue rifle with a bolt action mechanism",
+                    "color": "#786C3B"
+                },
+                "rarity": 5,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": " bolt_action_rifle",
+                    "description": "A standard issue rifle with a bolt action mechanism",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 9
+                        },
+                        "tileset_description": "Sniper rifle, machine gun with scope. Modern weapon."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "warhammer",
+                    "description": "A heavy, gothic warhammer with intricate engravings",
+                    "color": "#452B1F"
+                },
+                "rarity": 7,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "warhammer",
+                    "description": "A heavy, gothic warhammer with intricate engravings",
+                    "color": "#452B1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 7
+                        },
+                        "tileset_description": "Large two-handed hammer."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "necromancer_staff",
+                    "description": "A staff imbued with dark, necromantic energy",
+                    "color": "#2F4F4F"
+                },
+                "rarity": 9,
+                "weight": 4,
+                "mana_cost": 6,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "necromancer_staff",
+                    "description": "A staff imbued with dark, necromantic energy",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff with a dagger symbol on the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "crossbow",
+                    "description": "A basic, wooden crossbow with a simple trigger mechanism",
+                    "color": "#969696"
+                },
+                "rarity": 3,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "crossbow",
+                    "description": "A basic, wooden crossbow with a simple trigger mechanism",
+                    "color": "#969696",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 5
+                        },
+                        "tileset_description": "Small wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "flamethrower",
+                    "description": "An experimental, chemical-powered flamethrower",
+                    "color": "#FF9900"
+                },
+                "rarity": 8,
+                "weight": 7,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "flamethrower",
+                    "description": "An experimental, chemical-powered flamethrower",
+                    "color": "#FF9900",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 47,
+                            "y": 9
+                        },
+                        "tileset_description": "Smoke grenade."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "pike",
+                    "description": "A long, rusty pike with a wooden shaft",
+                    "color": "#663300"
+                },
+                "rarity": 1,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "pike",
+                    "description": "A long, rusty pike with a wooden shaft",
+                    "color": "#663300",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 3
+                        },
+                        "tileset_description": "Large wooden shield with a protrusion in the middle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "plasma_pistol",
+                    "description": "An experimental, high-tech plasma pistol",
+                    "color": "#00FFFF"
+                },
+                "rarity": 10,
+                "weight": 6,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "plasma_pistol",
+                    "description": "An experimental, high-tech plasma pistol",
+                    "color": "#00FFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 37,
+                            "y": 9
+                        },
+                        "tileset_description": "Automatic pistol, glock, modern pistol."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gothic_sword",
+                    "description": "A ornate, gothic sword with intricate engravings",
+                    "color": "#6C5CE7"
+                },
+                "rarity": 6,
+                "weight": 7,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "gothic_sword",
+                    "description": "A ornate, gothic sword with intricate engravings",
+                    "color": "#6C5CE7",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "grenade_launcher",
+                    "description": "A makeshift grenade launcher with a simple firing mechanism",
+                    "color": "#786C3B"
+                },
+                "rarity": 4,
+                "weight": 8,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "grenade_launcher",
+                    "description": "A makeshift grenade launcher with a simple firing mechanism",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 5
+                        },
+                        "tileset_description": "Simple iron spear."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "Echo_of_Erebus",
+            "description": "A crystalline shard imbued with the essence of Erebus, the primordial god of darkness and shadow. The shard pulsates with a faint, otherworldly glow, as if the very fabric of darkness has been distilled into its crystalline structure.",
+            "color": "#3B3F54"
+        },
+        "back_history": "The Echo of Erebus was forged in the depths of Carnage's Scape during the Great War, when necromancers and dark sorcerers attempted to summon the primordial forces of Erebus to turn the tide of battle. The ritual went catastrophically wrong, and the Echo was shattered, its fragments scattered across the battlefield. Over time, the Devouring Influence, a corruption born from the confluence of necromancy and industrial-scale warfare, began to take hold, animating the Eternal Sentinels and driving the Aberrations to grow stronger. The Echo of Erebus is the key to reversing this corruption and restoring balance to Carnage's Scape. If left at the bottom of the dungeon, the Echo will continue to fuel the Devouring Influence, ensuring that the cycle of death and decay will perpetuate indefinitely. The player must retrieve the Echo and carry it back to the surface, where it can be used to weaken the Devouring Influence and bring hope to a world on the brink of collapse.",
+        "tile_with_texture": {
+            "name": "Echo_of_Erebus",
+            "description": "A crystalline shard imbued with the essence of Erebus, the primordial god of darkness and shadow. The shard pulsates with a faint, otherworldly glow, as if the very fabric of darkness has been distilled into its crystalline structure.",
+            "color": "#3B3F54",
+            "texture": {
+                "tileset_position": {
+                    "x": 33,
+                    "y": 7
+                },
+                "tileset_description": "Rare, detailed iron sword. Excalibur."
+            }
+        }
+    },
+    "usage_metadata": {
+        "meta-llama/llama-4-scout-17b-16e-instruct": {
+            "total_tokens": 10813,
+            "input_tokens": 7657,
+            "output_tokens": 3156
+        }
+    }
+}

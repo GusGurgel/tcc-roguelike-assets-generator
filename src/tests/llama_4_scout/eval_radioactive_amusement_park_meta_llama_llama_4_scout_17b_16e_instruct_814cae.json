@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "moonshotai/kimi-k2-instruct-0905",
+    "semantic_coherence_metric": 87,
+    "semantic_reconstruction_metric": 0.6657302257072776,
+    "prompt": "A post-apocalyptic amusement park in a radioactive wasteland, patrolled by deranged animatronics and mutated clowns.",
+    "prompt_name": "radioactive_amusement_park",
+    "prompt_index": 11,
+    "asset_bundle_file": "bundle_radioactive_amusement_park_meta_llama_llama_4_scout_17b_16e_instruct_814cae.json"
+}

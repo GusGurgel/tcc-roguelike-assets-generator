@@ -1,0 +1,661 @@
+{
+    "name": "Khaos Scriptorium: Tome of Madness",
+    "raw_description": "An ethereal floating library in the astral plane, slowly crumbling into the void, haunted by ink-elementals and corrupted scholars.",
+    "description": "**The Setting Name:** \"Khaos Scriptorium\"\n\n**Visual Style & Atmosphere:** Khaos Scriptorium is a hauntingly beautiful, eerie environment with a mix of mystical and decaying elements. The art direction blends Gothic and Baroque architectural styles with an otherworldly, dreamlike quality. Towering shelves, adorned with glowing, ethereal orbs, stretch towards the sky like skeletal fingers. The color palette shifts between warm, golden hues and cold, dark blues, evoking a sense of fading knowledge and lost wisdom.\n\nThe atmosphere is heavy with the scent of old parchment, dust, and ozone. Flickering, luminescent quills dance across the darkness, casting eerie shadows on the walls. Ambient noise consists of whispering voices, creaking wooden shelves, and the distant, mournful sighs of ink-elementals. Weather effects are nonexistent, as Khaos Scriptorium exists outside the mortal realm, but the sensation of weightlessness and disorientation pervades the environment.\n\n**The Lore:** Khaos Scriptorium was once a revered repository of knowledge, a sacred place where scholars and scribes could access the collective wisdom of the cosmos. However, as the library's power grew, so did its corruption. A cabal of ambitious scholars, seeking to unlock the secrets of the universe, made a pact with malevolent entities from the void. They traded their souls for access to forbidden knowledge, which they recorded in a series of cursed tomes.\n\nAs the scholars delved deeper into the mysteries of the cosmos, they became increasingly obsessed with their discoveries. Their writings attracted ink-elementals, creatures born from the raw energy of the void. These elementals fed on the scholars' madness, growing stronger with each passing day. The scholars, now corrupted by their own ambition, began to see themselves as gods, rewriting reality to suit their twisted desires.\n\nThe library, once a beacon of knowledge, slowly began to crumble into the void. Shelves collapsed, tomes were scattered, and the very fabric of reality began to unravel. The ink-elementals, now bound to the library, ensure that no one escapes Khaos Scriptorium's labyrinthine halls. The corrupted scholars, trapped in their own creations, continue to scribble their madness-inducing works, further destabilizing the environment.\n\n**The Core Conflict:** The primary antagonist force controlling Khaos Scriptorium is the \"Devouring Quill,\" a sentient, reality-bending entity born from the collective corruption of the scholars. The Devouring Quill feeds on the knowledge and sanity of those who dare to enter the library, using their fears and ambitions against them.\n\nThe Devouring Quill manipulates the ink-elementals, corrupting them into twisted, nightmarish creatures that serve as its agents. These elementals haunt the shelves, seeking to claim the minds of unwary explorers. As adventurers navigate the crumbling library, they will encounter various manifestations of the Devouring Quill's power, including:\n\n* Corrupted scholars, now mere puppets of the Quill's will\n* Ink-elementals, twisted into grotesque, reality-bending creatures\n* Cursed tomes, containing forbidden knowledge that slowly drives readers mad\n* Reality distortions, as the Quill rewrites the library's layout to trap and confuse intruders\n\nIn Khaos Scriptorium, the line between knowledge and madness is blurred. Will you dare to explore this haunted, ethereal realm, risking your sanity and soul to uncover the secrets within?",
+    "generation_time_seconds": 59,
+    "player": {
+        "tile": {
+            "name": "forgotten_scribe",
+            "description": "A worn, humanoid figure with a hood over their head, clutching a quill and a tattered journal.",
+            "color": "#452B1F"
+        },
+        "back_history": "A former scribe seeking redemption for lost knowledge and sanity.",
+        "tile_with_texture": {
+            "name": "forgotten_scribe",
+            "description": "A worn, humanoid figure with a hood over their head, clutching a quill and a tattered journal.",
+            "color": "#452B1F",
+            "texture": {
+                "tileset_position": {
+                    "x": 24,
+                    "y": 1
+                },
+                "tileset_description": "A wizard wearing a hood, carrying a staff in his hand."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "A dimly lit chamber filled with dusty, leather-bound tomes and flickering candles. Shelves stretch towards the ceiling, lined with glowing orbs that cast an eerie light.",
+                "name": "The Faded Index",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "wooden_shelves",
+                    "description": "Tall, wooden shelves adorned with glowing orbs.",
+                    "color": "#964B00"
+                },
+                "floor_tile": {
+                    "name": "stone_floor",
+                    "description": "A worn, stone floor with faint scuff marks.",
+                    "color": "#454545"
+                },
+                "wall_tile_with_texture": {
+                    "name": "wooden_shelves",
+                    "description": "Tall, wooden shelves adorned with glowing orbs.",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "stone_floor",
+                    "description": "A worn, stone floor with faint scuff marks.",
+                    "color": "#454545",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A labyrinthine section of the library where shelves seem to twist and turn upon themselves. The air is thick with the scent of decay and forgotten knowledge. Flickering quills dance across the darkness, casting eerie shadows.",
+                "name": "The Corrupted Stacks",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "corrupted_shelves",
+                    "description": "Shelves twisted and corrupted, with glowing orbs pulsing with an otherworldly energy.",
+                    "color": "#7A288A"
+                },
+                "floor_tile": {
+                    "name": "carpeted_floor",
+                    "description": "A worn, crimson carpet with frayed edges.",
+                    "color": "#660033"
+                },
+                "wall_tile_with_texture": {
+                    "name": "corrupted_shelves",
+                    "description": "Shelves twisted and corrupted, with glowing orbs pulsing with an otherworldly energy.",
+                    "color": "#7A288A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "carpeted_floor",
+                    "description": "A worn, crimson carpet with frayed edges.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A vast, cavernous space filled with ink-elementals, their twisted forms writhing like living darkness. The air is heavy with the scent of ozone and burning parchment. Whispering voices seem to emanate from all directions.",
+                "name": "The Ink-Elemental Sanctum",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "void_rifts",
+                    "description": "Rifts in reality, pulsing with dark energy.",
+                    "color": "#2F343A"
+                },
+                "floor_tile": {
+                    "name": "ink_stained_floor",
+                    "description": "A floor stained with dark, swirling patterns of ink.",
+                    "color": "#1A1D23"
+                },
+                "wall_tile_with_texture": {
+                    "name": "void_rifts",
+                    "description": "Rifts in reality, pulsing with dark energy.",
+                    "color": "#2F343A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "ink_stained_floor",
+                    "description": "A floor stained with dark, swirling patterns of ink.",
+                    "color": "#1A1D23",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A twisted, nightmarish realm where the very fabric of reality seems to unravel. The Devouring Quill's presence is palpable, its power warping the environment into impossible geometries. The air is thick with the scent of madness and despair.",
+                "name": "The Devouring Quill's Lair",
+                "depth": 4,
+                "wall_tile": {
+                    "name": "reality_distortions",
+                    "description": "Walls that seem to shift and writhe like living things, reflecting the chaos of the Quill's power.",
+                    "color": "#C7A9F5"
+                },
+                "floor_tile": {
+                    "name": "quill_scratched_floor",
+                    "description": "A floor scratched and scarred by the Devouring Quill's power.",
+                    "color": "#8B0A1A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "reality_distortions",
+                    "description": "Walls that seem to shift and writhe like living things, reflecting the chaos of the Quill's power.",
+                    "color": "#C7A9F5",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "quill_scratched_floor",
+                    "description": "A floor scratched and scarred by the Devouring Quill's power.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "ink_stain",
+                    "description": "A small, dark stain of ink on the floor.",
+                    "color": "#1A1D23"
+                },
+                "weight": 2,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "ink_stain",
+                    "description": "A small, dark stain of ink on the floor.",
+                    "color": "#1A1D23",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_scribe",
+                    "description": "A twisted, corrupted scribe with glowing red eyes.",
+                    "color": "#660033"
+                },
+                "weight": 8,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "corrupted_scribe",
+                    "description": "A twisted, corrupted scribe with glowing red eyes.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "dust_mite",
+                    "description": "A small, fast dust mite scurrying across the floor.",
+                    "color": "#969696"
+                },
+                "weight": 1,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "dust_mite",
+                    "description": "A small, fast dust mite scurrying across the floor.",
+                    "color": "#969696",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 6
+                        },
+                        "tileset_description": "A gnome with a beard and a hat. It appears to be a warrior gnome with different armor. A small person with hat and beard."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_elemental",
+                    "description": "A swirling, ethereal ink elemental.",
+                    "color": "#00BFFF"
+                },
+                "weight": 5,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "ink_elemental",
+                    "description": "A swirling, ethereal ink elemental.",
+                    "color": "#00BFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 24,
+                            "y": 8
+                        },
+                        "tileset_description": "The specter of a person. A person without a face. A transparent person."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "devouring_quill",
+                    "description": "A massive, reality-bending quill with glowing purple ink.",
+                    "color": "#7A288A"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "devouring_quill",
+                    "description": "A massive, reality-bending quill with glowing purple ink.",
+                    "color": "#7A288A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 6
+                        },
+                        "tileset_description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "parchment_wraith",
+                    "description": "A ghostly, wraith-like creature made of parchment and ink.",
+                    "color": "#C7B8EA"
+                },
+                "weight": 3,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "parchment_wraith",
+                    "description": "A ghostly, wraith-like creature made of parchment and ink.",
+                    "color": "#C7B8EA",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_scholar",
+                    "description": "A corrupted scholar with twisted, elongated limbs.",
+                    "color": "#452B7F"
+                },
+                "weight": 7,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "corrupted_scholar",
+                    "description": "A corrupted scholar with twisted, elongated limbs.",
+                    "color": "#452B7F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 8
+                        },
+                        "tileset_description": "A snake, an eel, a serpent."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_blob",
+                    "description": "A small, amorphous blob of ink.",
+                    "color": "#3B3F54"
+                },
+                "weight": 4,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "ink_blob",
+                    "description": "A small, amorphous blob of ink.",
+                    "color": "#3B3F54",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "quill_knight",
+                    "description": "A heavily armored quill knight with a glowing blue quill.",
+                    "color": "#2E4053"
+                },
+                "weight": 6,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "quill_knight",
+                    "description": "A heavily armored quill knight with a glowing blue quill.",
+                    "color": "#2E4053",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 0
+                        },
+                        "tileset_description": "A warrior in armor, carrying a shield and a sword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "madness_manifest",
+                    "description": "A manifestation of pure madness, taking the form of a swirling vortex.",
+                    "color": "#FFC57C"
+                },
+                "weight": 10,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "madness_manifest",
+                    "description": "A manifestation of pure madness, taking the form of a swirling vortex.",
+                    "color": "#FFC57C",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "quill_tip",
+                    "description": "A delicate, glowing quill tip",
+                    "color": "#8B9467"
+                },
+                "rarity": 2,
+                "weight": 1,
+                "mana_cost": 5,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "quill_tip",
+                    "description": "A delicate, glowing quill tip",
+                    "color": "#8B9467",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 3
+                        },
+                        "tileset_description": "A staff detailed with a heart or arrow symbol at the tip."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_splattered_dagger",
+                    "description": "A dagger with ink-splattered blade",
+                    "color": "#3B3F4E"
+                },
+                "rarity": 5,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "ink_splattered_dagger",
+                    "description": "A dagger with ink-splattered blade",
+                    "color": "#3B3F4E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_scholars_staff",
+                    "description": "A staff made from corrupted scholar's remains",
+                    "color": "#452B1F"
+                },
+                "rarity": 8,
+                "weight": 6,
+                "mana_cost": 8,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "corrupted_scholars_staff",
+                    "description": "A staff made from corrupted scholar's remains",
+                    "color": "#452B1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 4
+                        },
+                        "tileset_description": "Simple wooden staff. Noah's staff."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "void_pistol",
+                    "description": "A pistol firing void-infused projectiles",
+                    "color": "#2F4F7F"
+                },
+                "rarity": 9,
+                "weight": 7,
+                "mana_cost": 6,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "void_pistol",
+                    "description": "A pistol firing void-infused projectiles",
+                    "color": "#2F4F7F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 9
+                        },
+                        "tileset_description": "Old pistol. Alien pistol. Different pistol."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tome_shard",
+                    "description": "A shard of a cursed tome",
+                    "color": "#6c5ce7"
+                },
+                "rarity": 1,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "tome_shard",
+                    "description": "A shard of a cursed tome",
+                    "color": "#6c5ce7",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 8
+                        },
+                        "tileset_description": "A very rare greatsword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_crossbow",
+                    "description": "A crossbow firing ink-coated bolts",
+                    "color": "#1A1D23"
+                },
+                "rarity": 4,
+                "weight": 5,
+                "mana_cost": 3,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "ink_crossbow",
+                    "description": "A crossbow firing ink-coated bolts",
+                    "color": "#1A1D23",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "devouring_quill",
+                    "description": "The Devouring Quill's twisted, glowing form",
+                    "color": "#FFC080"
+                },
+                "rarity": 10,
+                "weight": 9,
+                "mana_cost": 10,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "devouring_quill",
+                    "description": "The Devouring Quill's twisted, glowing form",
+                    "color": "#FFC080",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "scholar_sword",
+                    "description": "A sword once wielded by a corrupted scholar",
+                    "color": "#786C3B"
+                },
+                "rarity": 6,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "scholar_sword",
+                    "description": "A sword once wielded by a corrupted scholar",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 7
+                        },
+                        "tileset_description": "Rare, detailed iron sword. Excalibur."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "experimental_void_rifle",
+                    "description": "An experimental rifle firing void-energy projectiles",
+                    "color": "#3498db"
+                },
+                "rarity": 8,
+                "weight": 8,
+                "mana_cost": 9,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "experimental_void_rifle",
+                    "description": "An experimental rifle firing void-energy projectiles",
+                    "color": "#3498db",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 9
+                        },
+                        "tileset_description": "Sniper rifle, machine gun with scope. Modern weapon."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "ink_stained_mace",
+                    "description": "A mace with an ink-stained, crimson head",
+                    "color": "#660033"
+                },
+                "rarity": 3,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "ink_stained_mace",
+                    "description": "A mace with an ink-stained, crimson head",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 17,
+                            "y": 8
+                        },
+                        "tileset_description": "Large red flag."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "Erebus Codex",
+            "description": "A leather-bound tome adorned with intricate, silver filigree and a glowing, crimson gemstone set into the cover. The book emits a soft, pulsating glow, as if the knowledge within is alive and waiting to be unleashed.",
+            "color": "#660033"
+        },
+        "back_history": "The Erebus Codex was once the prized possession of the cabal of scholars who made the pact with malevolent entities from the void. This cursed tome contains the collective knowledge of the corrupted scholars, including the secrets of reality manipulation and the incantations used to summon ink-elementals. The Devouring Quill, born from the corruption of the scholars, was said to have been imprisoned within the Codex, its power bound by ancient incantations. If left at the bottom of the dungeon, the Codex will continue to corrupt the library, ensuring that Khaos Scriptorium remains a labyrinthine prison, forever trapping the souls of those who dare to enter. The player must retrieve the Erebus Codex and carry it back to the surface to prevent the further corruption of the world above.",
+        "tile_with_texture": {
+            "name": "Erebus Codex",
+            "description": "A leather-bound tome adorned with intricate, silver filigree and a glowing, crimson gemstone set into the cover. The book emits a soft, pulsating glow, as if the knowledge within is alive and waiting to be unleashed.",
+            "color": "#660033",
+            "texture": {
+                "tileset_position": {
+                    "x": 35,
+                    "y": 4
+                },
+                "tileset_description": "A staff with a gemstone at the tip."
+            }
+        }
+    },
+    "usage_metadata": {
+        "meta-llama/llama-4-scout-17b-16e-instruct": {
+            "total_tokens": 11322,
+            "input_tokens": 8134,
+            "output_tokens": 3188
+        }
+    }
+}
