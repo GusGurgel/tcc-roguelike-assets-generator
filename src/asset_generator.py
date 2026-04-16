@@ -175,7 +175,7 @@ Guidelines for generation:
 3. **Cohesion**: Ensure the transition between levels makes logical sense within the theme.
 4. **Variety**: Avoid repeating the exact same descriptions.
 
-Generate the {number_of_levels_per_bundle} levels now.
+Generate the list of {number_of_levels_per_bundle} levels now.
 {JSON_CONSTRAINT_PROMPT}
 """
                 )
