@@ -57,10 +57,6 @@ class GroqModels:
 
     META_LLAMA_LLAMA_4_SCOUT_17B_16E_INSTRUCT = "meta-llama/llama-4-scout-17b-16e-instruct"
 
-    MOONSHOTAI_KIMI_K2_INSTRUCT = "moonshotai/kimi-k2-instruct"
-
-    MOONSHOTAI_KIMI_K2_INSTRUCT_0905 = "moonshotai/kimi-k2-instruct-0905"
-
     QWEN_QWEN3_32B = "qwen/qwen3-32b"
 
     # --------------------------------------------------------------------------
