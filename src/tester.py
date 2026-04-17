@@ -303,21 +303,21 @@ if __name__ == "__main__":
         #     "prompt_name": "toxic_cyberpunk_slum",
         #     "prompt_index": 7
         # },
-        # {
-        #     "prompt": "An ethereal floating library in the astral plane, slowly crumbling into the void, haunted by ink-elementals and corrupted scholars.",
-        #     "prompt_name": "astral_floating_library",
-        #     "prompt_index": 8
-        # },
-        # {
-        #     "prompt": "A Victorian-era train hurtling infinitely through a realm of thick fog, infested with shapeshifting vampires and spectral passengers.",
-        #     "prompt_name": "victorian_ghost_train",
-        #     "prompt_index": 9
-        # },
-        # {
-        #     "prompt": "A subterranean dwarven mining complex entirely corrupted by liquid gold and animated greed-spirits, featuring molten rivers and gemstone golems.",
-        #     "prompt_name": "corrupted_gold_mines",
-        #     "prompt_index": 10
-        # },
+        {
+            "prompt": "An ethereal floating library in the astral plane, slowly crumbling into the void, haunted by ink-elementals and corrupted scholars.",
+            "prompt_name": "astral_floating_library",
+            "prompt_index": 8
+        },
+        {
+            "prompt": "A Victorian-era train hurtling infinitely through a realm of thick fog, infested with shapeshifting vampires and spectral passengers.",
+            "prompt_name": "victorian_ghost_train",
+            "prompt_index": 9
+        },
+        {
+            "prompt": "A subterranean dwarven mining complex entirely corrupted by liquid gold and animated greed-spirits, featuring molten rivers and gemstone golems.",
+            "prompt_name": "corrupted_gold_mines",
+            "prompt_index": 10
+        },
         {
             "prompt": "A post-apocalyptic amusement park in a radioactive wasteland, patrolled by deranged animatronics and mutated clowns.",
             "prompt_name": "radioactive_amusement_park",
@@ -347,7 +347,7 @@ if __name__ == "__main__":
     
     # Definição dos Modelos Testado e Juiz
     tested_prov = Providers.GROQ
-    tested_model = GroqModels.OPENAI_GPT_OSS_120B
+    tested_model = GroqModels.META_LLAMA_LLAMA_4_SCOUT_17B_16E_INSTRUCT
     
     judge_prov = Providers.GROQ
     judge_model = GroqModels.META_LLAMA_LLAMA_4_SCOUT_17B_16E_INSTRUCT

@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 82,
+    "semantic_reconstruction_metric": 0.810623213142519,
+    "prompt": "A cyberpunk mega-slum built on top of a massive toxic landfill, controlled by cyborg syndicates and rogue surgical drones.",
+    "prompt_name": "toxic_cyberpunk_slum",
+    "prompt_index": 7,
+    "asset_bundle_file": "bundle_toxic_cyberpunk_slum_meta_llama_llama_4_scout_17b_16e_instruct_7e1151.json"
+}

@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 88,
+    "semantic_reconstruction_metric": 0.832769553052578,
+    "prompt": "A Victorian-era train hurtling infinitely through a realm of thick fog, infested with shapeshifting vampires and spectral passengers.",
+    "prompt_name": "victorian_ghost_train",
+    "prompt_index": 9,
+    "asset_bundle_file": "bundle_victorian_ghost_train_meta_llama_llama_4_scout_17b_16e_instruct_df0ac1.json"
+}

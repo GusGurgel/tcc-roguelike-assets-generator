@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 82,
+    "semantic_reconstruction_metric": 0.7582939362761727,
+    "prompt": "A desolate, sun-scorched desert canyon littered with the colossal bones of ancient titans, inhabited by scavengers and blood-magic shamans.",
+    "prompt_name": "titan_bone_desert",
+    "prompt_index": 4,
+    "asset_bundle_file": "bundle_titan_bone_desert_meta_llama_llama_4_scout_17b_16e_instruct_4a5e1d.json"
+}

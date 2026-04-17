@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 85,
+    "semantic_reconstruction_metric": 0.7719304208720932,
+    "prompt": "A hyper-advanced alien mothership made of living crystalline structures, defended by light-bending templars and prismatic sentinels.",
+    "prompt_name": "crystalline_alien_mothership",
+    "prompt_index": 12,
+    "asset_bundle_file": "bundle_crystalline_alien_mothership_meta_llama_llama_4_scout_17b_16e_instruct_c5b05f.json"
+}

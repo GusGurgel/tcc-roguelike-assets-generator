@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 88,
+    "semantic_reconstruction_metric": 0.8003134296372172,
+    "prompt": "An abandoned orbital space station overgrown by aggressive, bioluminescent plant life and hive-mind fungi.",
+    "prompt_name": "overgrown_space_station",
+    "prompt_index": 2,
+    "asset_bundle_file": "bundle_overgrown_space_station_meta_llama_llama_4_scout_17b_16e_instruct_2fa59a.json"
+}

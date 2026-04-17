@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 82,
+    "semantic_reconstruction_metric": 0.8446765214470159,
+    "prompt": "A submerged neon-gothic underwater city filled with mutated fish-people cultists.",
+    "prompt_name": "neon_gothic_underwater",
+    "prompt_index": 1,
+    "asset_bundle_file": "bundle_neon_gothic_underwater_meta_llama_llama_4_scout_17b_16e_instruct_66ba2a.json"
+}

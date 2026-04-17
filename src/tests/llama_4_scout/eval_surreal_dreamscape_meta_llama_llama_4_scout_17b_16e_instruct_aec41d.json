@@ -1,0 +1,10 @@
+{
+    "tested_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "judge_model_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "semantic_coherence_metric": 82,
+    "semantic_reconstruction_metric": 0.751862848223878,
+    "prompt": "A dreamscape realm made of floating staircases and melting clocks, populated by faceless manifestations of forgotten memories and nightmare weavers.",
+    "prompt_name": "surreal_dreamscape",
+    "prompt_index": 14,
+    "asset_bundle_file": "bundle_surreal_dreamscape_meta_llama_llama_4_scout_17b_16e_instruct_aec41d.json"
+}

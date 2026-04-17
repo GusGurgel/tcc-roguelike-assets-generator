@@ -1,0 +1,622 @@
+{
+    "name": "Carnis Abyss: The Devouring Labyrinth",
+    "raw_description": "A twisted, flesh-and-bone labyrinth inside the stomach of a sleeping eldritch god, swarming with parasitic worms and twisted digestive demons.",
+    "description": "**The Setting Name:** \"Carnis Abyss\" - The Devouring Labyrinth\n\n**Visual Style & Atmosphere:** Carnis Abyss is a twisted, nightmarish realm that embodies a grotesque fusion of organic and hellish elements. The art direction leans towards a dark, visceral Gothic Horror style with an emphasis on fleshy textures, bulging veins, and pulsing, bioluminescent growths. Walls and floors are composed of a mass of living, quivering tissue, exuding a perpetual stench of rot and acidic digestive fluids. The sky is a sickly shade of greenish-yellow, reminiscent of bile, and seems to writhe and twist like a living entity.\n\nThe lighting in Carnis Abyss is dim and eerie, with flickering, candle-like flames that seem to burn with an otherworldly energy. Shadows writhe and twist across the walls, taking on macabre forms that seem to move of their own accord. The ambient noise is a cacophony of gurgling, churning, and screeching, punctuated by the distant, thunderous growls of the eldritch god that slumbers above.\n\n**The Lore:** Carnis Abyss was born from the slumbering digestive system of Zha'thik, an ancient, eldritch deity said to have consumed worlds and civilizations with a mere thought. As Zha'thik sleeps, its stomach churns and convulses, birthing a labyrinthine nightmare that serves as a prison for the god's countless digestive demons and parasitic worms. These creatures swarm through the labyrinth, feeding on the flesh and souls of any who dare to enter.\n\nThe history of Carnis Abyss is one of unending torment and suffering. Many brave adventurers have entered the labyrinth seeking fortune, knowledge, or simply to prove their worth. Few have returned, and those who do are often changed, their minds shattered by the horrors they witnessed within. The whispers of those who have ventured into Carnis Abyss speak of an otherworldly corruption that seeps into the very fabric of reality, tempting adventurers with promises of forbidden knowledge and eldritch power.\n\n**The Core Conflict:** The corruption that controls Carnis Abyss is the manifestation of Zha'thik's digestive system, fueled by the god's dark energy. This energy, known as \"The Devouring,\" seeps through every aspect of the labyrinth, animating the twisted creatures that inhabit it. The Devouring is a constant, corrosive force that wears down the resolve and sanity of those who dare to explore Carnis Abyss.\n\nAt the heart of this corruption is the Overworm, a gargantuan, parasitic creature that serves as Zha'thik's digestive system's primary enforcer. The Overworm seeks to claim the souls of all who enter the labyrinth, using them to satiate Zha'thik's eternal hunger. As adventurers navigate the ever-shifting paths of Carnis Abyss, they must contend with the Overworm's minions, twisted digestive demons, and the labyrinth's own sadistic, adaptive mechanisms, all while resisting the insidious influence of The Devouring.\n\nIn Carnis Abyss, death is not the only fate worse than death. Those who succumb to The Devouring risk becoming part of the labyrinth itself, their essence trapped in an eternal cycle of torment, fueling the Overworm's power and Zha'thik's slumbering malevolence.",
+    "generation_time_seconds": 63,
+    "player": {
+        "tile": {
+            "name": "cursed_warrior",
+            "description": "A once-noble warrior now twisted by dark forces",
+            "color": "#660033"
+        },
+        "back_history": "A former knight of the Order of the White Rose, Sir Valoric was accused of heresy and cast out after a mysterious affliction began to warp his body and mind. Seeking redemption and a cure for his corruption, he ventures into Carnis Abyss, driven by a burning need to prove his innocence and find a way to reverse the dark transformations consuming him.",
+        "tile_with_texture": {
+            "name": "cursed_warrior",
+            "description": "A once-noble warrior now twisted by dark forces",
+            "color": "#660033",
+            "texture": {
+                "tileset_position": {
+                    "x": 25,
+                    "y": 6
+                },
+                "tileset_description": "A gnome with a beard and a hat. It appears to be a warrior gnome with different armor. A small person with hat and beard."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The entrance to Carnis Abyss, a twisted, quivering tunnel that seems to writhe like a living thing. The air is thick with the stench of rot and digestive fluids.",
+                "name": "The Retching Gullet",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "glistening_tissue",
+                    "description": "A wall of glistening, translucent tissue that seems to pulse with an otherworldly energy.",
+                    "color": "#2A2A2A"
+                },
+                "floor_tile": {
+                    "name": "quivering_flesh",
+                    "description": "A mass of quivering, pulsing flesh that seems to shift and writhe like a living thing.",
+                    "color": "#8B0A1A"
+                },
+                "wall_tile_with_texture": {
+                    "name": "glistening_tissue",
+                    "description": "A wall of glistening, translucent tissue that seems to pulse with an otherworldly energy.",
+                    "color": "#2A2A2A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "quivering_flesh",
+                    "description": "A mass of quivering, pulsing flesh that seems to shift and writhe like a living thing.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                }
+            },
+            {
+                "description": "A network of twisting, cavernous tunnels that seem to shift and change like a living, breathing entity. The air is thick with the sounds of churning, gurgling fluids and the distant screeches of unseen creatures.",
+                "name": "The Churning Caverns",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "veined_tissue",
+                    "description": "A wall of veined, pulsing tissue that seems to throb with an eldritch energy.",
+                    "color": "#660033"
+                },
+                "floor_tile": {
+                    "name": "corroded_flesh",
+                    "description": "A mass of corroded, decaying flesh that seems to eat away at itself.",
+                    "color": "#452B1F"
+                },
+                "wall_tile_with_texture": {
+                    "name": "veined_tissue",
+                    "description": "A wall of veined, pulsing tissue that seems to throb with an eldritch energy.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "corroded_flesh",
+                    "description": "A mass of corroded, decaying flesh that seems to eat away at itself.",
+                    "color": "#452B1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A twisted, nightmarish realm of writhing, pulsing flesh that seems to be the very lair of the Overworm itself. The air is thick with the stench of rot, decay, and the distant, thunderous growls of Zha'thik.",
+                "name": "The Overworm's Lair",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "the_overworm",
+                    "description": "A wall of writhing, pulsing flesh that seems to be the very body of the Overworm itself.",
+                    "color": "#880000"
+                },
+                "floor_tile": {
+                    "name": "pulsing_abyss",
+                    "description": "A mass of pulsing, quivering flesh that seems to be the very source of the labyrinth's dark energy.",
+                    "color": "#110033"
+                },
+                "wall_tile_with_texture": {
+                    "name": "the_overworm",
+                    "description": "A wall of writhing, pulsing flesh that seems to be the very body of the Overworm itself.",
+                    "color": "#880000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "pulsing_abyss",
+                    "description": "A mass of pulsing, quivering flesh that seems to be the very source of the labyrinth's dark energy.",
+                    "color": "#110033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "flesh_blob",
+                    "description": "A quivering mass of flesh with bulging, pulsing growths.",
+                    "color": "#8B0A1A"
+                },
+                "weight": 6,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "flesh_blob",
+                    "description": "A quivering mass of flesh with bulging, pulsing growths.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gastric_demon",
+                    "description": "A hulking, demonic creature with razor-sharp claws and teeth.",
+                    "color": "#660033"
+                },
+                "weight": 8,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "gastric_demon",
+                    "description": "A hulking, demonic creature with razor-sharp claws and teeth.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 5
+                        },
+                        "tileset_description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "skinny_worm",
+                    "description": "A long, thin worm-like creature with a pointed head.",
+                    "color": "#663300"
+                },
+                "weight": 2,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "skinny_worm",
+                    "description": "A long, thin worm-like creature with a pointed head.",
+                    "color": "#663300",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_guardian",
+                    "description": "A twisted, humanoid creature with corrupted flesh and bulging veins.",
+                    "color": "#330066"
+                },
+                "weight": 5,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "corrupted_guardian",
+                    "description": "A twisted, humanoid creature with corrupted flesh and bulging veins.",
+                    "color": "#330066",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "overworm_minion",
+                    "description": "A massive, parasitic creature with a gaping maw.",
+                    "color": "#990033"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "overworm_minion",
+                    "description": "A massive, parasitic creature with a gaping maw.",
+                    "color": "#990033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "flesh_fly",
+                    "description": "A small, fly-like creature with a bloated body.",
+                    "color": "#996600"
+                },
+                "weight": 4,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "flesh_fly",
+                    "description": "A small, fly-like creature with a bloated body.",
+                    "color": "#996600",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 31,
+                            "y": 5
+                        },
+                        "tileset_description": "A fairy. A small being with wings. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "digestive_demon",
+                    "description": "A demonic creature with a bulging, digestive sac.",
+                    "color": "#660066"
+                },
+                "weight": 7,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "digestive_demon",
+                    "description": "A demonic creature with a bulging, digestive sac.",
+                    "color": "#660066",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 8
+                        },
+                        "tileset_description": "A bat or a little demon. A flying creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "slime_blob",
+                    "description": "A quivering mass of slime with a trail of goo.",
+                    "color": "#336600"
+                },
+                "weight": 3,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "slime_blob",
+                    "description": "A quivering mass of slime with a trail of goo.",
+                    "color": "#336600",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "corrupted_knight",
+                    "description": "A twisted, humanoid creature with corrupted armor.",
+                    "color": "#330033"
+                },
+                "weight": 6,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "corrupted_knight",
+                    "description": "A twisted, humanoid creature with corrupted armor.",
+                    "color": "#330033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 29,
+                            "y": 9
+                        },
+                        "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gastric_acid_blob",
+                    "description": "A quivering mass of acidic flesh with a corrosive trail.",
+                    "color": "#66CC00"
+                },
+                "weight": 5,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "gastric_acid_blob",
+                    "description": "A quivering mass of acidic flesh with a corrosive trail.",
+                    "color": "#66CC00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 8
+                        },
+                        "tileset_description": "A slime, a small cone-shaped creature."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_dagger",
+                    "description": "A crude, rusty dagger with a worn leather hilt.",
+                    "color": "#964B00"
+                },
+                "rarity": 2,
+                "weight": 3,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_dagger",
+                    "description": "A crude, rusty dagger with a worn leather hilt.",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gutted_sword",
+                    "description": "A sword with a blade that seems to have been ripped from the gut of some beast.",
+                    "color": "#8B0A1A"
+                },
+                "rarity": 6,
+                "weight": 7,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "gutted_sword",
+                    "description": "A sword with a blade that seems to have been ripped from the gut of some beast.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 9
+                        },
+                        "tileset_description": "Iron sword with a detail at the base of the blade. Appears to be very rare."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "fleshy_mace",
+                    "description": "A mace with a head made from what appears to be a mass of quivering, pulsing flesh.",
+                    "color": "#FF69B4"
+                },
+                "rarity": 4,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "fleshy_mace",
+                    "description": "A mace with a head made from what appears to be a mass of quivering, pulsing flesh.",
+                    "color": "#FF69B4",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 41,
+                            "y": 7
+                        },
+                        "tileset_description": "Large axe with two blades at the tip. Appears to be of medium rarity."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "overworm_tooth",
+                    "description": "A razor-sharp tooth ripped from the maw of the Overworm itself.",
+                    "color": "#3F7F4E"
+                },
+                "rarity": 8,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "overworm_tooth",
+                    "description": "A razor-sharp tooth ripped from the maw of the Overworm itself.",
+                    "color": "#3F7F4E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 8
+                        },
+                        "tileset_description": "A very rare greatsword."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "cursed_staff",
+                    "description": "A staff that seems to writhe and twist in your hands, as if alive.",
+                    "color": "#660033"
+                },
+                "rarity": 9,
+                "weight": 4,
+                "mana_cost": 6,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "cursed_staff",
+                    "description": "A staff that seems to writhe and twist in your hands, as if alive.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "acid_sprayer",
+                    "description": "An experimental device that sprays a stream of corrosive acid.",
+                    "color": "#33CC33"
+                },
+                "rarity": 7,
+                "weight": 5,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "acid_sprayer",
+                    "description": "An experimental device that sprays a stream of corrosive acid.",
+                    "color": "#33CC33",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 0
+                        },
+                        "tileset_description": "Futuristic, cybernetic soldier's helmet."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gut_bow",
+                    "description": "A bow made from the stretched and dried intestines of some massive beast.",
+                    "color": "#786C3B"
+                },
+                "rarity": 3,
+                "weight": 4,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "gut_bow",
+                    "description": "A bow made from the stretched and dried intestines of some massive beast.",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 39,
+                            "y": 5
+                        },
+                        "tileset_description": "Large wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "vomit_crossbow",
+                    "description": "A crossbow that seems to vomit forth its bolts with a sickening, wet sound.",
+                    "color": "#663300"
+                },
+                "rarity": 5,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "vomit_crossbow",
+                    "description": "A crossbow that seems to vomit forth its bolts with a sickening, wet sound.",
+                    "color": "#663300",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "devouring_demon_wand",
+                    "description": "A wand that channels the dark energy of The Devouring.",
+                    "color": "#990000"
+                },
+                "rarity": 10,
+                "weight": 3,
+                "mana_cost": 8,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "devouring_demon_wand",
+                    "description": "A wand that channels the dark energy of The Devouring.",
+                    "color": "#990000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 8
+                        },
+                        "tileset_description": "Large, two-handed axe with two blades at the tip. Extremely rare. Well detailed."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "basic_polearm",
+                    "description": "A simple, makeshift polearm with a crude blade.",
+                    "color": "#444444"
+                },
+                "rarity": 1,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "basic_polearm",
+                    "description": "A simple, makeshift polearm with a crude blade.",
+                    "color": "#444444",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 7
+                        },
+                        "tileset_description": "Medium-sized axe, very simple with only one blade at the tip."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "Echo_of_Eldrid",
+            "description": "A crystalline shard pulsing with a faint, blue-green light, as if it contains the essence of a dying star.",
+            "color": "#66CCCC"
+        },
+        "back_history": "The Echo of Eldrid is a remnant of the last mortal king who dared to challenge Zha'thik's power. Eldrid, a just and righteous ruler, discovered that the only way to stop The Devouring was to shatter the Overworm's hold on the labyrinth. Using ancient knowledge, Eldrid created the Echo, a focus of his people's collective soul and willpower. As he descended into Carnis Abyss to confront the Overworm, Eldrid infused his essence into the Echo, imbuing it with the power to resist The Devouring. Though Eldrid was consumed by the labyrinth, his Echo remained, waiting for a worthy adventurer to claim it and use its power to break the Overworm's hold on Carnis Abyss, thus ending the corruption that has plagued the realm.",
+        "tile_with_texture": {
+            "name": "Echo_of_Eldrid",
+            "description": "A crystalline shard pulsing with a faint, blue-green light, as if it contains the essence of a dying star.",
+            "color": "#66CCCC",
+            "texture": {
+                "tileset_position": {
+                    "x": 23,
+                    "y": 4
+                },
+                "tileset_description": "Blue small diamond."
+            }
+        }
+    },
+    "usage_metadata": {
+        "meta-llama/llama-4-scout-17b-16e-instruct": {
+            "total_tokens": 11213,
+            "input_tokens": 8091,
+            "output_tokens": 3122
+        }
+    }
+}

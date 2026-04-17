@@ -1,0 +1,622 @@
+{
+    "name": "Shadowed Blood Moon Village",
+    "raw_description": "A cursed feudal Japanese village trapped in an eternal blood-moon night, stalked by vengeful yokai and undead samurai.",
+    "description": "**Setting Name:** Kage no Sato - \"Village of Eternal Dusk\"\n\n**Visual Style & Atmosphere:** Kage no Sato is a foreboding, eerie environment that blends traditional feudal Japanese architecture with a haunting, supernatural twist. The art direction is rooted in a dark, gothic aesthetic with muted, earthy tones, and an emphasis on ominous lighting. The village is perpetually shrouded in a deep, blood-red haze, as if the very fabric of reality is stained by the eternal blood-moon night. Weather effects are minimal, with an occasional, unsettling mist rolling in to shroud the village, and an unearthly, pungent scent of blooming cherry blossoms hanging heavy in the air. Ambient noise consists of distant, mournful howls, the creaking of wooden buildings, and the soft, metallic clinking of samurai armor.\n\n**The Lore:** Kage no Sato was once a thriving, rural village in feudal Japan, nestled in the shadow of a sacred, ancient forest. However, a catastrophic event known as the \"Blood-Moon Cataclysm\" occurred, triggered by a group of reckless, supernatural warriors who sought to harness the power of the yokai - malevolent spirits from Japanese mythology. The ritual went awry, and the village was cursed, trapped in an eternal, blood-moon night. The villagers, unaware of the impending doom, were slowly transformed into twisted, undead creatures, or driven mad by the supernatural forces that now stalk the village. The once-peaceful villagers now roam the streets as vengeful, zombie-like creatures, or are controlled by dark forces as undead samurai.\n\n**The Core Conflict:** The corruption, curse, or enemy force controlling Kage no Sato is a powerful, malevolent entity known as the \"Kuro-Kaze\" - the Black Wind. This dark, supernatural force is a manifestation of the collective, vengeful spirits of the yokai and the undead samurai, bound together by the dark energies unleashed during the Blood-Moon Cataclysm. The Kuro-Kaze seeks to spread its influence, consuming the living and the dead alike, and perpetuating the eternal blood-moon night that has become synonymous with Kage no Sato. Those who dare to enter the village are forced to confront the twisted, supernatural creatures that now inhabit it, and the dark, manipulative forces that control them.\n\nAs a Lead Game Designer and World Builder, I envision Kage no Sato as a rich, immersive environment that draws players into a world of horror, mystery, and exploration. The village, with its dark history and supernatural forces, offers a unique blend of psychological tension, strategic combat, and roguelike gameplay, where players must navigate the ever-changing, procedurally generated landscape to uncover the secrets of Kage no Sato, and ultimately, confront the malevolent force that controls it.",
+    "generation_time_seconds": 56,
+    "player": {
+        "tile": {
+            "name": "ronin",
+            "description": "A disheveled, armor-clad figure with a haunted expression.",
+            "color": "#452B1F"
+        },
+        "back_history": "A former samurai, cast out of his clan for questioning the honor of his lord, now seeks redemption in the depths of Kage no Sato, driven by a burning need to prove his worth and atone for past mistakes.",
+        "tile_with_texture": {
+            "name": "ronin",
+            "description": "A disheveled, armor-clad figure with a haunted expression.",
+            "color": "#452B1F",
+            "texture": {
+                "tileset_position": {
+                    "x": 29,
+                    "y": 9
+                },
+                "tileset_description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+            }
+        }
+    },
+    "dungeon_levels": {
+        "items": [
+            {
+                "description": "The village outskirts, with crumbling torii gates and overgrown shrines.",
+                "name": "The Blood-Moon Gate",
+                "depth": 1,
+                "wall_tile": {
+                    "name": "wooden_palace_wall",
+                    "description": "Dark, weathered wood with hints of red lacquer.",
+                    "color": "#452B1F"
+                },
+                "floor_tile": {
+                    "name": "tiled_courtyard",
+                    "description": "Weathered, earthy tiles.",
+                    "color": "#964B00"
+                },
+                "wall_tile_with_texture": {
+                    "name": "wooden_palace_wall",
+                    "description": "Dark, weathered wood with hints of red lacquer.",
+                    "color": "#452B1F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "tiled_courtyard",
+                    "description": "Weathered, earthy tiles.",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "A maze of narrow alleys and decrepit, traditional Japanese houses.",
+                "name": "The Shadowed Alleyways",
+                "depth": 2,
+                "wall_tile": {
+                    "name": "paper_thin_walls",
+                    "description": "Flimsy, paper-thin walls with a hint of lantern glow.",
+                    "color": "#F7F7DC"
+                },
+                "floor_tile": {
+                    "name": "cobblestone_street",
+                    "description": "Uneven, worn cobblestones.",
+                    "color": "#786C3B"
+                },
+                "wall_tile_with_texture": {
+                    "name": "paper_thin_walls",
+                    "description": "Flimsy, paper-thin walls with a hint of lantern glow.",
+                    "color": "#F7F7DC",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "cobblestone_street",
+                    "description": "Uneven, worn cobblestones.",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            },
+            {
+                "description": "The dark, foreboding castle of the Kuro-Kaze's stronghold.",
+                "name": "The Black Wind's Citadel",
+                "depth": 3,
+                "wall_tile": {
+                    "name": "dark_stone_wall",
+                    "description": "Cold, unforgiving stone with an aura of malevolence.",
+                    "color": "#3B3F4E"
+                },
+                "floor_tile": {
+                    "name": "black_marble_floor",
+                    "description": "Polished, dark marble with hints of blood-red veins.",
+                    "color": "#1A1D23"
+                },
+                "wall_tile_with_texture": {
+                    "name": "dark_stone_wall",
+                    "description": "Cold, unforgiving stone with an aura of malevolence.",
+                    "color": "#3B3F4E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 9,
+                            "y": 14
+                        },
+                        "tileset_description": "Television"
+                    }
+                },
+                "floor_tile_with_texture": {
+                    "name": "black_marble_floor",
+                    "description": "Polished, dark marble with hints of blood-red veins.",
+                    "color": "#1A1D23",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 32,
+                            "y": 15
+                        },
+                        "tileset_description": "Map"
+                    }
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "items": [
+            {
+                "tile": {
+                    "name": "onryo",
+                    "description": "A vengeful spirit with a pale, ghostly complexion and long, black hair.",
+                    "color": "#660033"
+                },
+                "weight": 2,
+                "thread": 3,
+                "tile_with_texture": {
+                    "name": "onryo",
+                    "description": "A vengeful spirit with a pale, ghostly complexion and long, black hair.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "gaki",
+                    "description": "A demonic, skeletal samurai with a twisted, nightmarish visage.",
+                    "color": "#990000"
+                },
+                "weight": 8,
+                "thread": 9,
+                "tile_with_texture": {
+                    "name": "gaki",
+                    "description": "A demonic, skeletal samurai with a twisted, nightmarish visage.",
+                    "color": "#990000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "kuchisake",
+                    "description": "A gaunt, zombie-like creature with a grotesquely disfigured face.",
+                    "color": "#333333"
+                },
+                "weight": 1,
+                "thread": 1,
+                "tile_with_texture": {
+                    "name": "kuchisake",
+                    "description": "A gaunt, zombie-like creature with a grotesquely disfigured face.",
+                    "color": "#333333",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "yurei",
+                    "description": "A female ghost with a white kimono and a menacing, vengeful aura.",
+                    "color": "#FFFFFF"
+                },
+                "weight": 5,
+                "thread": 6,
+                "tile_with_texture": {
+                    "name": "yurei",
+                    "description": "A female ghost with a white kimono and a menacing, vengeful aura.",
+                    "color": "#FFFFFF",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "oni",
+                    "description": "A hulking, demonic creature with sharp horns and a gruesome, red complexion.",
+                    "color": "#FF0000"
+                },
+                "weight": 9,
+                "thread": 10,
+                "tile_with_texture": {
+                    "name": "oni",
+                    "description": "A hulking, demonic creature with sharp horns and a gruesome, red complexion.",
+                    "color": "#FF0000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 3
+                        },
+                        "tileset_description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tsukumogami",
+                    "description": "A possessed, decrepit samurai with a haunted, sorrowful expression.",
+                    "color": "#666666"
+                },
+                "weight": 3,
+                "thread": 4,
+                "tile_with_texture": {
+                    "name": "tsukumogami",
+                    "description": "A possessed, decrepit samurai with a haunted, sorrowful expression.",
+                    "color": "#666666",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "bakuretsu",
+                    "description": "A massive, exploding zombie with a distended, grotesque body.",
+                    "color": "#008000"
+                },
+                "weight": 7,
+                "thread": 8,
+                "tile_with_texture": {
+                    "name": "bakuretsu",
+                    "description": "A massive, exploding zombie with a distended, grotesque body.",
+                    "color": "#008000",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 28,
+                            "y": 6
+                        },
+                        "tileset_description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "koropokkur",
+                    "description": "A small, mischievous spirit with a grotesque, fungal growth on its head.",
+                    "color": "#33CC33"
+                },
+                "weight": 2,
+                "thread": 2,
+                "tile_with_texture": {
+                    "name": "koropokkur",
+                    "description": "A small, mischievous spirit with a grotesque, fungal growth on its head.",
+                    "color": "#33CC33",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 26,
+                            "y": 6
+                        },
+                        "tileset_description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "jiki",
+                    "description": "A possessed, humanoid creature with a dark, hooded figure looming over it.",
+                    "color": "#2F4F4F"
+                },
+                "weight": 6,
+                "thread": 5,
+                "tile_with_texture": {
+                    "name": "jiki",
+                    "description": "A possessed, humanoid creature with a dark, hooded figure looming over it.",
+                    "color": "#2F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 27,
+                            "y": 9
+                        },
+                        "tileset_description": "A creature with a hood, or insulating clothing."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "rokudo",
+                    "description": "A hellish, demonic creature with six eyes and a twisted, nightmarish body.",
+                    "color": "#8B0A1A"
+                },
+                "weight": 4,
+                "thread": 7,
+                "tile_with_texture": {
+                    "name": "rokudo",
+                    "description": "A hellish, demonic creature with six eyes and a twisted, nightmarish body.",
+                    "color": "#8B0A1A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 25,
+                            "y": 8
+                        },
+                        "tileset_description": "An octopus, an alien, a creature from another universe."
+                    }
+                }
+            }
+        ]
+    },
+    "weapons": {
+        "items": [
+            {
+                "tile": {
+                    "name": "rusty_dagger",
+                    "description": "A simple, rusty dagger with a worn leather hilt.",
+                    "color": "#964B00"
+                },
+                "rarity": 2,
+                "weight": 2,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "rusty_dagger",
+                    "description": "A simple, rusty dagger with a worn leather hilt.",
+                    "color": "#964B00",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 33,
+                            "y": 6
+                        },
+                        "tileset_description": "Iron dagger of medium rarity with detail on the handle."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "samurai_katar",
+                    "description": "A pair of curved, steel katar with intricate engravings.",
+                    "color": "#3E3F43"
+                },
+                "rarity": 6,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "samurai_katar",
+                    "description": "A pair of curved, steel katar with intricate engravings.",
+                    "color": "#3E3F43",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 5
+                        },
+                        "tileset_description": "Iron spear with two blades at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "yumi_bow",
+                    "description": "A traditional, curved yumi bow with a quiver of arrows.",
+                    "color": "#8B9467"
+                },
+                "rarity": 4,
+                "weight": 6,
+                "mana_cost": 2,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "yumi_bow",
+                    "description": "A traditional, curved yumi bow with a quiver of arrows.",
+                    "color": "#8B9467",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 6
+                        },
+                        "tileset_description": "A quiver with arrows in it."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "tessen",
+                    "description": "A small, iron tessen with a worn, fabric cover.",
+                    "color": "#4F4F4F"
+                },
+                "rarity": 1,
+                "weight": 1,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "tessen",
+                    "description": "A small, iron tessen with a worn, fabric cover.",
+                    "color": "#4F4F4F",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 2
+                        },
+                        "tileset_description": "Small parry shield, or iron buckler."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "experimental_crossbow",
+                    "description": "A strange, experimental crossbow with a glowing blue stock.",
+                    "color": "#03A9F4"
+                },
+                "rarity": 8,
+                "weight": 7,
+                "mana_cost": 5,
+                "weapon_type": "range",
+                "tile_with_texture": {
+                    "name": "experimental_crossbow",
+                    "description": "A strange, experimental crossbow with a glowing blue stock.",
+                    "color": "#03A9F4",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 38,
+                            "y": 5
+                        },
+                        "tileset_description": "Medium-sized wooden crossbow."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "nodachi",
+                    "description": "A long, curved nodachi with a intricately carved scabbard.",
+                    "color": "#786C3B"
+                },
+                "rarity": 5,
+                "weight": 8,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "nodachi",
+                    "description": "A long, curved nodachi with a intricately carved scabbard.",
+                    "color": "#786C3B",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 8
+                        },
+                        "tileset_description": "High-rarity greatsword. Detailed hilt."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "yurei_staff",
+                    "description": "A staff imbued with the spirit of a vengeful yurei.",
+                    "color": "#FFC0CB"
+                },
+                "rarity": 9,
+                "weight": 4,
+                "mana_cost": 8,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "yurei_staff",
+                    "description": "A staff imbued with the spirit of a vengeful yurei.",
+                    "color": "#FFC0CB",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 36,
+                            "y": 4
+                        },
+                        "tileset_description": "A staff with a spiked club at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "katana",
+                    "description": "A finely crafted, curved katana with a hamon.",
+                    "color": "#2E2E2E"
+                },
+                "rarity": 7,
+                "weight": 6,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "katana",
+                    "description": "A finely crafted, curved katana with a hamon.",
+                    "color": "#2E2E2E",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 34,
+                            "y": 8
+                        },
+                        "tileset_description": "Medium-rarity greatsword. With detailed blade."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "oni_g槍",
+                    "description": "A demonic, curved spear with a oni's face on the blade.",
+                    "color": "#7A288A"
+                },
+                "rarity": 3,
+                "weight": 5,
+                "mana_cost": 0,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "oni_g槍",
+                    "description": "A demonic, curved spear with a oni's face on the blade.",
+                    "color": "#7A288A",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 35,
+                            "y": 5
+                        },
+                        "tileset_description": "Iron spear with two blades at the end."
+                    }
+                }
+            },
+            {
+                "tile": {
+                    "name": "oni_no_te",
+                    "description": "A legendary, cursed glove said to grant immense power.",
+                    "color": "#660033"
+                },
+                "rarity": 10,
+                "weight": 3,
+                "mana_cost": 10,
+                "weapon_type": "melee",
+                "tile_with_texture": {
+                    "name": "oni_no_te",
+                    "description": "A legendary, cursed glove said to grant immense power.",
+                    "color": "#660033",
+                    "texture": {
+                        "tileset_position": {
+                            "x": 42,
+                            "y": 1
+                        },
+                        "tileset_description": "Simple leather gloves with a detail on the hand."
+                    }
+                }
+            }
+        ]
+    },
+    "final_objective": {
+        "tile": {
+            "name": "kokoro_no_kagami",
+            "description": "A shattered, yet radiant mirror with a surface etched with kanji characters that seem to shift and whisper warnings to those who approach. Its frame is made of a polished, black wood that seems almost liquid in the dim light.",
+            "color": "#8F0A1A"
+        },
+        "back_history": "The kokoro_no_kagami, or 'Mirror of the Soul', was once a sacred artifact used by the village's spiritual leaders to communicate with the spirits of the yokai. However, during the Blood-Moon Cataclysm, the mirror was shattered and its pieces scattered throughout the village. The Kuro-Kaze, in its quest for dominance, sought to reclaim the mirror and use its power to bind the souls of the villagers to its will. The mirror's power is said to be the only force capable of reflecting the true nature of the Kuro-Kaze, and thus, it is the key to understanding and defeating the dark force that controls Kage no Sato. Leaving the mirror at the bottom of the dungeon would allow the Kuro-Kaze to reclaim it, ensuring the eternal curse of the village and the doom of all who dwell within.",
+        "tile_with_texture": {
+            "name": "kokoro_no_kagami",
+            "description": "A shattered, yet radiant mirror with a surface etched with kanji characters that seem to shift and whisper warnings to those who approach. Its frame is made of a polished, black wood that seems almost liquid in the dim light.",
+            "color": "#8F0A1A",
+            "texture": {
+                "tileset_position": {
+                    "x": 40,
+                    "y": 3
+                },
+                "tileset_description": "Large wooden shield with a detail of a square in the middle."
+            }
+        }
+    },
+    "usage_metadata": {
+        "meta-llama/llama-4-scout-17b-16e-instruct": {
+            "output_tokens": 2879,
+            "total_tokens": 10262,
+            "input_tokens": 7383
+        }
+    }
+}
